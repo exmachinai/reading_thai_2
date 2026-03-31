@@ -2,55 +2,69 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>🪷 Kapitel 3 — ทํางาน</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Kapitel 3</title>
   <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <header class="chapter-header">
     <a href="../index.html" class="back-link">← Zurück</a>
-    <h1><span class="chapter-emoji" id="chapter-emoji"></span> Kapitel <span id="ch-num">3</span></h1>
+    <h1><span id="chapter-emoji"></span> Kapitel 3</h1>
     <h2 id="chapter-title"></h2>
   </header>
 
+  <!-- Settings Drawer -->
+  <div id="settings-panel" class="settings-panel" style="display:none;">
+    <div class="settings-content">
+      <h3>Einstellungen</h3>
+      <div class="setting-row">
+        <label for="speed-slider">Sprechgeschwindigkeit: <strong id="speed-value">0.7</strong>x</label>
+        <input type="range" id="speed-slider" min="0.3" max="1.5" step="0.1" value="0.7">
+        <div class="speed-labels"><span>Langsam</span><span>Normal</span><span>Schnell</span></div>
+      </div>
+      <button class="btn btn-accent btn-small" onclick="document.getElementById('settings-panel').style.display='none'">Fertig</button>
+    </div>
+  </div>
+
   <nav class="tabs" role="tablist">
-    <button class="tab active" data-tab="vocab" role="tab" aria-selected="true">📖 Vokabeln</button>
-    <button class="tab" data-tab="reading" role="tab">📚 Lesetext</button>
-    <button class="tab" data-tab="grammar" role="tab">🧠 Grammatik</button>
-    <button class="tab" data-tab="exercises" role="tab">💬 Übungen</button>
-    <button class="tab" data-tab="quiz" role="tab">🏆 Quiz</button>
+    <button class="tab active" data-tab="vocab" role="tab">Vokabeln</button>
+    <button class="tab" data-tab="reading" role="tab">Lesetext</button>
+    <button class="tab" data-tab="grammar" role="tab">Grammatik</button>
+    <button class="tab" data-tab="exercises" role="tab">Übungen</button>
+    <button class="tab" data-tab="quiz" role="tab">Quiz</button>
+    <button class="tab settings-tab" onclick="toggleSettings()" title="Einstellungen">⚙</button>
   </nav>
 
   <!-- Tab 1: Vocabulary / Flashcards -->
   <section id="tab-vocab" class="tab-content active">
     <div class="flashcard-container">
       <div class="flashcard-counter"><span id="card-current">1</span> / <span id="card-total">0</span></div>
+
       <div class="flashcard" id="flashcard" onclick="flipCard()">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="thai-big" id="fc-thai"></div>
-            <div class="romanization" id="fc-roman"></div>
-            <button class="tts-btn" onclick="event.stopPropagation(); speak(document.getElementById('fc-thai').textContent)">🔊</button>
-            <div class="flip-hint">Antippen zum Umdrehen 🔄</div>
-          </div>
-          <div class="card-back">
-            <div class="translation">
-              <span class="flag">🇩🇪</span> <span id="fc-german"></span>
-            </div>
-            <div class="translation">
-              <span class="flag">🇬🇧</span> <span id="fc-english"></span>
-            </div>
-            <div class="example-section" id="fc-example"></div>
-            <button class="tts-btn" onclick="event.stopPropagation(); speak(document.getElementById('fc-thai').textContent)">🔊 Aussprache</button>
-            <div class="card-actions">
-              <button class="btn btn-review" onclick="event.stopPropagation(); nextCard(false)">❌ Noch üben</button>
-              <button class="btn btn-learned" onclick="event.stopPropagation(); nextCard(true)">✅ Gelernt</button>
-            </div>
-          </div>
+        <!-- FRONT (shown when not flipped) -->
+        <div class="card-side card-front" id="card-front">
+          <div class="card-thai" id="fc-thai"></div>
+          <div class="card-roman" id="fc-roman"></div>
+          <button class="tts-btn" onclick="event.stopPropagation(); speakThai(document.getElementById('fc-thai').textContent)">🔊 Anhören</button>
+          <div class="card-hint">Antippen zum Umdrehen</div>
+        </div>
+        <!-- BACK (shown when flipped) -->
+        <div class="card-side card-back" id="card-back" style="display:none;">
+          <div class="card-translation"><span class="flag">🇩🇪</span> <span id="fc-german"></span></div>
+          <div class="card-translation"><span class="flag">🇬🇧</span> <span id="fc-english"></span></div>
+          <div id="fc-example" class="card-example"></div>
+          <button class="tts-btn" onclick="event.stopPropagation(); speakThai(document.getElementById('fc-thai').textContent)">🔊 Nochmal hören</button>
+          <div class="card-hint">Antippen zum Zurückdrehen</div>
         </div>
       </div>
-      <div class="swipe-hint">⬅️ Noch üben | Gelernt ➡️</div>
+
+      <div class="card-buttons">
+        <button class="btn btn-review" onclick="nextCard(false)">Nochmal üben</button>
+        <button class="btn btn-learned" onclick="nextCard(true)">Gelernt ✓</button>
+      </div>
+      <div class="swipe-hint">← Wischen: üben | gelernt →</div>
     </div>
   </section>
 
@@ -58,15 +72,15 @@
   <section id="tab-reading" class="tab-content">
     <div id="reading-text" class="reading-container"></div>
     <div class="accordion">
-      <button class="accordion-toggle" onclick="toggleAccordion(this)">▶ 🇩🇪 Deutsche Übersetzung anzeigen</button>
+      <button class="accordion-toggle" onclick="toggleAccordion(this)">▶ 🇩🇪 Deutsche Übersetzung</button>
       <div class="accordion-content" id="reading-german"></div>
     </div>
     <div class="accordion">
       <button class="accordion-toggle" onclick="toggleAccordion(this)">▶ 🇬🇧 English Translation</button>
       <div class="accordion-content" id="reading-english"></div>
     </div>
-    <button class="btn btn-primary btn-read-done" id="btn-read-done" onclick="markReadingDone()">
-      📖 Ich habe den Text gelesen (+20 XP)
+    <button class="btn btn-primary btn-full" id="btn-read-done" onclick="markReadingDone()">
+      Ich habe den Text gelesen (+20 XP)
     </button>
   </section>
 
@@ -77,20 +91,29 @@
 
   <!-- Tab 4: Exercises -->
   <section id="tab-exercises" class="tab-content">
-    <h3>💬 Übung 1 — Konversation</h3>
+    <h3 class="exercise-title">Übung 1 — Konversation</h3>
     <div id="exercise-conversation" class="exercise-list"></div>
-
-    <h3>🔊 Übung 2 — Aussprache</h3>
+    <h3 class="exercise-title">Übung 2 — Aussprache</h3>
     <div id="exercise-pronunciation" class="exercise-pronunciation"></div>
-
-    <h3>🔄 Übung 3 — Übersetzung</h3>
+    <h3 class="exercise-title">Übung 3 — Übersetzung</h3>
     <div id="exercise-translation" class="exercise-list"></div>
   </section>
 
   <!-- Tab 5: Quiz -->
   <section id="tab-quiz" class="tab-content">
-    <div id="quiz-container"></div>
+    <div id="quiz-container">
+      <div class="quiz-start-screen">
+        <div class="quiz-start-icon">🏆</div>
+        <h3>Kapitel-Quiz</h3>
+        <p>Teste dein Wissen mit 10 Fragen.</p>
+        <p class="quiz-info">Mindestens 7 richtige Antworten zum Bestehen.</p>
+        <button class="btn btn-primary" onclick="initQuiz(3)">Quiz starten</button>
+      </div>
+    </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="footer">&copy; exmachinAI GmbH</footer>
 
   <script src="../js/data.js"></script>
   <script src="../js/app.js"></script>
@@ -99,32 +122,56 @@
   const CHAPTER_ID = 3;
   let currentCardIndex = 0;
   let chapterData = null;
+  let isFlipped = false;
+  let speechRate = 0.7;
+
+  try { speechRate = parseFloat(localStorage.getItem('speechRate') || '0.7'); } catch(e){}
 
   document.addEventListener('DOMContentLoaded', () => {
     chapterData = COURSE_DATA.chapters.find(c => c.id === CHAPTER_ID);
     if (!chapterData) { document.body.innerHTML = '<p>Kapitel nicht gefunden</p>'; return; }
 
-    // Set titles
     document.getElementById('chapter-emoji').textContent = chapterData.emoji || '';
     document.getElementById('chapter-title').innerHTML =
-      '<span class="thai-title">' + chapterData.thai_title + '</span> · ' +
-      '<span class="german-title">' + chapterData.german_title + '</span> · ' +
-      '<span class="english-title">' + chapterData.english_title + '</span>';
-    document.title = '🪷 Kapitel ' + CHAPTER_ID + ' — ' + chapterData.thai_title;
+      '<span class="thai-title">' + (chapterData.thai_title||'') + '</span> · ' +
+      '<span>' + (chapterData.german_title||'') + '</span> · ' +
+      '<span>' + (chapterData.english_title||'') + '</span>';
 
     initVocab();
     initReading();
     initGrammar();
     initExercises();
     initTabs();
-    updateStreak();
+    initSettings();
+    try { updateStreak(); } catch(e){}
   });
+
+  // === SETTINGS ===
+  function toggleSettings() {
+    const p = document.getElementById('settings-panel');
+    p.style.display = p.style.display === 'none' ? 'block' : 'none';
+  }
+  function initSettings() {
+    const slider = document.getElementById('speed-slider');
+    const val = document.getElementById('speed-value');
+    slider.value = speechRate;
+    val.textContent = speechRate;
+    slider.addEventListener('input', function() {
+      speechRate = parseFloat(this.value);
+      val.textContent = speechRate;
+      try { localStorage.setItem('speechRate', speechRate); } catch(e){}
+    });
+  }
+
+  function speakThai(text) {
+    if (typeof speak === 'function') speak(text, { rate: speechRate });
+  }
 
   // === TABS ===
   function initTabs() {
-    document.querySelectorAll('.tab').forEach(tab => {
+    document.querySelectorAll('.tab[data-tab]').forEach(tab => {
       tab.addEventListener('click', () => {
-        document.querySelectorAll('.tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+        document.querySelectorAll('.tab[data-tab]').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
         document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
         tab.classList.add('active');
         tab.setAttribute('aria-selected','true');
@@ -133,7 +180,7 @@
     });
   }
 
-  // === FLASHCARDS ===
+  // === FLASHCARDS (JS-based flip, no 3D CSS) ===
   function initVocab() {
     const vocab = chapterData.vocabulary || [];
     document.getElementById('card-total').textContent = vocab.length;
@@ -142,29 +189,51 @@
 
   function showCard(index) {
     const vocab = chapterData.vocabulary || [];
-    if (index >= vocab.length) { index = 0; }
+    if (index >= vocab.length) index = 0;
     currentCardIndex = index;
     const v = vocab[index];
-    document.getElementById('fc-thai').textContent = v.thai;
+
+    document.getElementById('fc-thai').textContent = v.thai || '';
     document.getElementById('fc-roman').textContent = v.romanization || '';
     document.getElementById('fc-german').textContent = v.german || '';
     document.getElementById('fc-english').textContent = v.english || '';
+
     const exDiv = document.getElementById('fc-example');
     if (v.example_thai) {
-      exDiv.innerHTML = '<div class="example-label">📝 Beispiel:</div>' +
-        '<div class="example-thai">' + v.example_thai + '</div>' +
-        (v.example_german ? '<div class="example-trans">🇩🇪 ' + v.example_german + '</div>' : '') +
-        (v.example_english ? '<div class="example-trans">🇬🇧 ' + v.example_english + '</div>' : '');
+      exDiv.innerHTML =
+        '<div class="ex-label">Beispiel:</div>' +
+        '<div class="ex-thai">' + v.example_thai + ' <button class="tts-small" onclick="event.stopPropagation();speakThai(\'' + v.example_thai.replace(/'/g,"\\'") + '\')">🔊</button></div>' +
+        (v.example_romanization ? '<div class="romanization-line">' + v.example_romanization + '</div>' : '') +
+        (v.example_german ? '<div class="ex-trans">🇩🇪 ' + v.example_german + '</div>' : '') +
+        (v.example_english ? '<div class="ex-trans">🇬🇧 ' + v.example_english + '</div>' : '');
     } else { exDiv.innerHTML = ''; }
+
     document.getElementById('card-current').textContent = index + 1;
+
+    // Reset to front
+    isFlipped = false;
+    document.getElementById('card-front').style.display = 'flex';
+    document.getElementById('card-back').style.display = 'none';
     document.getElementById('flashcard').classList.remove('flipped');
   }
 
-  function flipCard() { document.getElementById('flashcard').classList.toggle('flipped'); }
+  function flipCard() {
+    isFlipped = !isFlipped;
+    const fc = document.getElementById('flashcard');
+    if (isFlipped) {
+      fc.classList.add('flipped');
+      document.getElementById('card-front').style.display = 'none';
+      document.getElementById('card-back').style.display = 'flex';
+    } else {
+      fc.classList.remove('flipped');
+      document.getElementById('card-front').style.display = 'flex';
+      document.getElementById('card-back').style.display = 'none';
+    }
+  }
 
   function nextCard(learned) {
     if (learned) {
-      try { awardFlashcardXP(CHAPTER_ID, currentCardIndex); } catch(e){}
+      try { awardFlashcardXP(CHAPTER_ID + '_' + currentCardIndex); } catch(e){}
     }
     showCard(currentCardIndex + 1);
   }
@@ -174,36 +243,36 @@
   document.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, {passive:true});
   document.addEventListener('touchend', e => {
     const diff = e.changedTouches[0].screenX - touchStartX;
-    if (Math.abs(diff) > 50) {
-      if (diff > 0) nextCard(true);   // swipe right = learned
-      else nextCard(false);            // swipe left = review
+    if (Math.abs(diff) > 60) {
+      if (diff > 0) nextCard(true);
+      else nextCard(false);
     }
   }, {passive:true});
 
   // === READING ===
   function initReading() {
-    const sentences = chapterData.reading?.sentences || chapterData.reading || [];
+    const sentences = chapterData.reading?.sentences || (Array.isArray(chapterData.reading) ? chapterData.reading : []);
     const thaiDiv = document.getElementById('reading-text');
     const deDiv = document.getElementById('reading-german');
     const enDiv = document.getElementById('reading-english');
-
     let thaiHtml = '', deHtml = '', enHtml = '';
     sentences.forEach(s => {
-      thaiHtml += '<p class="reading-thai">' + (s.thai||'') + '</p>';
+      const t = (s.thai||'').replace(/'/g, "\\'").replace(/\n/g,' ');
+      thaiHtml += '<div class="reading-block">' +
+        '<p class="reading-thai">' + (s.thai||'') + '</p>' +
+        (s.romanization ? '<p class="romanization-line">' + s.romanization + '</p>' : '') +
+        '<button class="tts-small" onclick="speakThai(\'' + t + '\')">🔊</button>' +
+        '</div>';
       deHtml += '<p>' + (s.german||'') + '</p>';
       enHtml += '<p>' + (s.english||'') + '</p>';
     });
-    thaiDiv.innerHTML = thaiHtml || '<p>Kein Lesetext verfügbar.</p>';
+    thaiDiv.innerHTML = thaiHtml || '<p class="empty-state">Kein Lesetext verfügbar.</p>';
     deDiv.innerHTML = deHtml;
     enDiv.innerHTML = enHtml;
-
-    // Check if already read
     try {
       if (localStorage.getItem('read_ch' + CHAPTER_ID)) {
         const btn = document.getElementById('btn-read-done');
-        btn.textContent = '✅ Bereits gelesen';
-        btn.disabled = true;
-        btn.classList.add('btn-disabled');
+        btn.textContent = '✓ Bereits gelesen'; btn.disabled = true; btn.classList.add('btn-disabled');
       }
     } catch(e){}
   }
@@ -214,9 +283,7 @@
         localStorage.setItem('read_ch' + CHAPTER_ID, 'true');
         addXP(20);
         const btn = document.getElementById('btn-read-done');
-        btn.textContent = '✅ Gelesen! +20 XP';
-        btn.disabled = true;
-        btn.classList.add('btn-disabled');
+        btn.textContent = '✓ Gelesen! +20 Punkte'; btn.disabled = true; btn.classList.add('btn-disabled');
         showXPAnimation(20);
       }
     } catch(e){}
@@ -226,23 +293,24 @@
   function initGrammar() {
     const structures = chapterData.structures || [];
     const container = document.getElementById('grammar-content');
-    if (structures.length === 0) {
-      container.innerHTML = '<p class="empty-state">Keine Grammatik-Strukturen für dieses Kapitel.</p>';
-      return;
-    }
+    if (!structures.length) { container.innerHTML = '<p class="empty-state">Keine Grammatik-Strukturen für dieses Kapitel.</p>'; return; }
     let html = '';
     structures.forEach((s, i) => {
-      html += '<div class="structure-card">' +
-        '<h4>🏗️ Struktur ' + (i+1) + '</h4>' +
-        '<div class="structure-pattern"><strong>Thai:</strong> ' + (s.pattern_thai||s.pattern||'') + '</div>' +
+      const pat = s.pattern_thai || s.pattern || '';
+      html += '<div class="structure-card"><h4>Struktur ' + (i+1) + '</h4>' +
+        '<div class="structure-thai">' + pat +
+        ' <button class="tts-small" onclick="speakThai(\'' + pat.replace(/'/g,"\\'") + '\')">🔊</button></div>' +
+        (s.pattern_romanization ? '<div class="romanization-line">' + s.pattern_romanization + '</div>' : '') +
         (s.meaning_german ? '<div class="structure-meaning">🇩🇪 ' + s.meaning_german + '</div>' : '') +
         (s.meaning_english ? '<div class="structure-meaning">🇬🇧 ' + s.meaning_english + '</div>' : '') +
         '<div class="structure-examples">';
-      (s.examples || []).forEach(ex => {
+      (s.examples||[]).forEach(ex => {
+        const et = ex.thai||'';
         html += '<div class="example-item">' +
-          '<div class="example-thai">• ' + (ex.thai||'') + '</div>' +
-          (ex.german ? '<div class="example-trans">🇩🇪 ' + ex.german + '</div>' : '') +
-          (ex.english ? '<div class="example-trans">🇬🇧 ' + ex.english + '</div>' : '') +
+          '<div class="ex-thai">' + et + ' <button class="tts-small" onclick="speakThai(\'' + et.replace(/'/g,"\\'") + '\')">🔊</button></div>' +
+          (ex.romanization ? '<div class="romanization-line">' + ex.romanization + '</div>' : '') +
+          (ex.german ? '<div class="ex-trans">🇩🇪 ' + ex.german + '</div>' : '') +
+          (ex.english ? '<div class="ex-trans">🇬🇧 ' + ex.english + '</div>' : '') +
           '</div>';
       });
       html += '</div></div>';
@@ -253,73 +321,84 @@
   // === EXERCISES ===
   function initExercises() {
     const ex = chapterData.exercises || {};
-
     // Conversation
     const convDiv = document.getElementById('exercise-conversation');
     const conv = ex.conversation || [];
-    let convHtml = '';
+    let ch = '';
     conv.forEach((q, i) => {
-      convHtml += '<div class="exercise-item">' +
-        '<div class="exercise-num">' + (i+1) + '.</div>' +
-        '<div class="exercise-content">' +
-        '<div class="exercise-thai">' + (q.thai||'') + '</div>' +
-        (q.german ? '<div class="exercise-trans">🇩🇪 ' + q.german + '</div>' : '') +
-        (q.english ? '<div class="exercise-trans">🇬🇧 ' + q.english + '</div>' : '') +
-        '<button class="btn btn-small btn-self-assess" onclick="this.textContent=\'✅ Kann ich!\'">✅ Kann ich beantworten</button>' +
-        '</div></div>';
+      if (typeof q === 'string') {
+        ch += '<div class="exercise-item"><span class="ex-num">' + (i+1) + '.</span><div class="ex-body"><div class="ex-thai">' + q + '</div></div></div>';
+      } else {
+        const t = q.thai||'';
+        ch += '<div class="exercise-item"><span class="ex-num">' + (i+1) + '.</span><div class="ex-body">' +
+          '<div class="ex-thai">' + t + ' <button class="tts-small" onclick="speakThai(\'' + t.replace(/'/g,"\\'") + '\')">🔊</button></div>' +
+          (q.romanization ? '<div class="romanization-line">' + q.romanization + '</div>' : '') +
+          (q.german ? '<div class="ex-trans">🇩🇪 ' + q.german + '</div>' : '') +
+          (q.english ? '<div class="ex-trans">🇬🇧 ' + q.english + '</div>' : '') +
+          '<button class="btn btn-small btn-self" onclick="this.textContent=\'✓ Kann ich!\'">Kann ich beantworten</button>' +
+          '</div></div>';
+      }
     });
-    convDiv.innerHTML = convHtml || '<p class="empty-state">Keine Konversationsübungen.</p>';
+    convDiv.innerHTML = ch || '<p class="empty-state">Keine Übung.</p>';
 
     // Pronunciation
     const pronDiv = document.getElementById('exercise-pronunciation');
     const pron = ex.pronunciation || {};
-    if (pron.thai) {
-      pronDiv.innerHTML = '<div class="pronunciation-card">' +
-        '<div class="thai-big">' + pron.thai + '</div>' +
-        '<button class="tts-btn" onclick="speak(\'' + pron.thai.replace(/'/g,"\\'") + '\')">🔊 Anhören</button>' +
-        '<div class="self-assess-row">' +
-        '<button class="btn btn-small btn-accent" onclick="speak(\'' + pron.thai.replace(/'/g,"\\'") + '\')">🔄 Nochmal</button>' +
-        '<button class="btn btn-small btn-learned" onclick="this.textContent=\'✅ Gut!\'">✅ Aussprache gut</button>' +
+    if (typeof pron === 'object' && !Array.isArray(pron) && pron.thai) {
+      pronDiv.innerHTML = '<div class="pron-card">' +
+        '<div class="pron-thai">' + pron.thai + '</div>' +
+        (pron.romanization ? '<div class="romanization-line">' + pron.romanization + '</div>' : '') +
+        '<div class="pron-actions">' +
+        '<button class="btn btn-accent btn-small" onclick="speakThai(\'' + pron.thai.replace(/'/g,"\\'") + '\')">🔊 Anhören</button>' +
+        '<button class="btn btn-learned btn-small" onclick="this.textContent=\'✓ Gut!\'">Aussprache gut</button>' +
         '</div></div>';
-    } else {
-      pronDiv.innerHTML = '<p class="empty-state">Keine Ausspracheübung.</p>';
-    }
+    } else if (Array.isArray(pron)) {
+      let ph = '';
+      pron.forEach(p => {
+        const text = typeof p === 'string' ? p : (p.thai||'');
+        ph += '<div class="pron-card"><div class="pron-thai">' + text + '</div>' +
+          '<button class="btn btn-accent btn-small" onclick="speakThai(\'' + text.replace(/'/g,"\\'") + '\')">🔊</button></div>';
+      });
+      pronDiv.innerHTML = ph || '<p class="empty-state">Keine Übung.</p>';
+    } else { pronDiv.innerHTML = '<p class="empty-state">Keine Übung.</p>'; }
 
-    // Translation (write-free: show solution on tap)
+    // Translation
     const transDiv = document.getElementById('exercise-translation');
     const trans = ex.translation || [];
-    let transHtml = '';
+    let th = '';
     trans.forEach((t, i) => {
-      const source = t.source_english || t.source_text || t.english || '';
-      const answer = t.answer_thai || t.thai || '';
-      transHtml += '<div class="exercise-item translation-item">' +
-        '<div class="exercise-num">' + (i+1) + '.</div>' +
-        '<div class="exercise-content">' +
-        '<div class="exercise-source">🇬🇧 ' + source + '</div>' +
-        '<button class="btn btn-small btn-reveal" onclick="this.nextElementSibling.style.display=\'block\'; this.style.display=\'none\';">🔍 Thai-Lösung anzeigen</button>' +
-        '<div class="reveal-answer" style="display:none">' +
-        '<div class="exercise-thai">▼ ' + answer + '</div>' +
-        '<div class="self-assess-row">' +
-        '<button class="btn btn-small btn-learned" onclick="this.textContent=\'✅\'">✅ Kannte ich</button>' +
-        '<button class="btn btn-small btn-review" onclick="this.textContent=\'❌\'">❌ Noch lernen</button>' +
-        '</div></div></div></div>';
+      if (typeof t === 'string') {
+        th += '<div class="exercise-item"><span class="ex-num">' + (i+1) + '.</span><div class="ex-body">' + t + '</div></div>';
+      } else {
+        const src = t.source_english||t.source_text||t.english||'';
+        const ans = t.answer_thai||t.thai||'';
+        const rom = t.answer_romanization||'';
+        th += '<div class="exercise-item"><span class="ex-num">' + (i+1) + '.</span><div class="ex-body">' +
+          '<div class="ex-source">🇬🇧 ' + src + '</div>' +
+          '<button class="btn btn-small btn-reveal" onclick="this.nextElementSibling.style.display=\'block\';this.style.display=\'none\';">Lösung zeigen</button>' +
+          '<div class="reveal-box" style="display:none">' +
+          '<div class="ex-thai">' + ans + ' <button class="tts-small" onclick="speakThai(\'' + ans.replace(/'/g,"\\'") + '\')">🔊</button></div>' +
+          (rom ? '<div class="romanization-line">' + rom + '</div>' : '') +
+          '<div class="assess-row">' +
+          '<button class="btn btn-small btn-learned" onclick="this.textContent=\'✓\'">Wusste ich</button>' +
+          '<button class="btn btn-small btn-review" onclick="this.textContent=\'✗\'">Noch lernen</button>' +
+          '</div></div></div></div>';
+      }
     });
-    transDiv.innerHTML = transHtml || '<p class="empty-state">Keine Übersetzungsübung.</p>';
+    transDiv.innerHTML = th || '<p class="empty-state">Keine Übung.</p>';
   }
 
-  // === ACCORDION ===
   function toggleAccordion(btn) {
-    const content = btn.nextElementSibling;
-    const isOpen = content.style.display === 'block';
-    content.style.display = isOpen ? 'none' : 'block';
-    btn.textContent = btn.textContent.replace(isOpen ? '▼' : '▶', isOpen ? '▶' : '▼');
+    const c = btn.nextElementSibling;
+    const open = c.style.display === 'block';
+    c.style.display = open ? 'none' : 'block';
+    btn.textContent = btn.textContent.replace(open ? '▼' : '▶', open ? '▶' : '▼');
   }
 
-  // === XP ANIMATION ===
   function showXPAnimation(amount) {
     const el = document.createElement('div');
     el.className = 'xp-float';
-    el.textContent = '+' + amount + ' XP';
+    el.textContent = '+' + amount + ' Punkte';
     document.body.appendChild(el);
     setTimeout(() => el.remove(), 2000);
   }

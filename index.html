@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>🪷 Thai Lesen II — I Can Read Thai (Book II)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Thai Lesen II — Thailändisch Lesen lernen</title>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,349 +12,230 @@
     <!-- Header -->
     <header class="header">
         <div class="header-content">
-            <h1 class="header-title">🪷 Thai Lesen II</h1>
-            <div class="header-divider">━━━━━━━━━━━━━━━━━━━━━━━━</div>
+            <h1 class="header-title">Thai Lesen II</h1>
             <div class="header-level">
-                <span class="level-badge">🌱 Level 1 · Anfänger</span>
+                <span class="level-badge" id="levelBadge">🌱 Stufe 1 · Anfänger</span>
                 <div class="level-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:45%"></div></div>
-                    <span class="progress-text">45 XP</span>
+                    <div class="progress-bar"><div class="progress-fill" id="levelProgress" style="width:0%"></div></div>
+                    <span class="progress-text" id="levelXP">0 Punkte</span>
                 </div>
             </div>
             <div class="header-streak">
                 <span class="streak-icon">🔥</span>
-                <span class="streak-text">3 Tage Streak</span>
+                <span class="streak-text" id="streakText">Starte deinen ersten Lerntag!</span>
             </div>
         </div>
     </header>
 
-    <!-- Stats Banner -->
+    <!-- Lernfortschritt (didaktisch optimiert) -->
     <section class="stats-banner">
         <div class="stat-card">
-            <div class="stat-number">245</div>
-            <div class="stat-label">XP Gesamt</div>
+            <div class="stat-number" id="userXP">0</div>
+            <div class="stat-label">Punkte</div>
         </div>
         <div class="stat-card">
-            <div class="stat-number">48</div>
-            <div class="stat-label">Vokabeln gelernt</div>
+            <div class="stat-number" id="vocabCount">0</div>
+            <div class="stat-label">Wörter gelernt</div>
         </div>
         <div class="stat-card">
-            <div class="stat-number">3</div>
-            <div class="stat-label">Tests bestanden</div>
+            <div class="stat-number" id="quizCount">0/20</div>
+            <div class="stat-label">Quiz bestanden</div>
         </div>
         <div class="stat-card">
-            <div class="stat-number">🔥 5d</div>
-            <div class="stat-label">Streak</div>
+            <div class="stat-number" id="userStreak">0</div>
+            <div class="stat-label">Tage am Stück</div>
         </div>
     </section>
 
-    <!-- Chapter Grid -->
+    <!-- Kapitelübersicht -->
     <section class="chapters-section">
-        <h2 class="section-title">Kapitel</h2>
+        <h2 class="section-title">20 Kapitel</h2>
         <div class="chapters-grid">
-            <!-- Chapter 1 -->
-            <a href="chapters/ch01.html" class="chapter-card" data-chapter="1">
+            <a href="chapters/ch01.html" class="chapter-card">
                 <div class="card-emoji">👨‍👩‍👧</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 1</span>
                     <span class="card-thai">ครอบครัว</span>
-                    <span class="card-subtitle">Familie · Family</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-subtitle">Familie</span>
                 </div>
             </a>
-
-            <!-- Chapter 2 -->
-            <a href="chapters/ch02.html" class="chapter-card" data-chapter="2">
+            <a href="chapters/ch02.html" class="chapter-card">
                 <div class="card-emoji">🎮</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 2</span>
                     <span class="card-thai">เวลาว่าง</span>
-                    <span class="card-subtitle">Freizeit · Free Time</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-subtitle">Freizeit</span>
                 </div>
             </a>
-
-            <!-- Chapter 3 -->
-            <a href="chapters/ch03.html" class="chapter-card" data-chapter="3">
+            <a href="chapters/ch03.html" class="chapter-card">
                 <div class="card-emoji">💼</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 3</span>
                     <span class="card-thai">ทํางาน</span>
-                    <span class="card-subtitle">Arbeit · Work</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-subtitle">Arbeit</span>
                 </div>
             </a>
-
-            <!-- Chapter 4 -->
-            <a href="chapters/ch04.html" class="chapter-card" data-chapter="4">
+            <a href="chapters/ch04.html" class="chapter-card">
                 <div class="card-emoji">📅</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 4</span>
                     <span class="card-thai">ชีวิตประจําวัน</span>
-                    <span class="card-subtitle">Alltag · Daily Life</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-subtitle">Alltag</span>
                 </div>
             </a>
-
-            <!-- Chapter 5 -->
-            <a href="chapters/ch05.html" class="chapter-card" data-chapter="5">
+            <a href="chapters/ch05.html" class="chapter-card">
                 <div class="card-emoji">🛒</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 5</span>
                     <span class="card-thai">วันเสาร์อาทิตย์</span>
-                    <span class="card-subtitle">Wochenende · Weekend</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-subtitle">Wochenende</span>
                 </div>
             </a>
-
-            <!-- Chapter 6 -->
-            <a href="chapters/ch06.html" class="chapter-card" data-chapter="6">
+            <a href="chapters/ch06.html" class="chapter-card">
                 <div class="card-emoji">📦</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 6</span>
                     <span class="card-thai">ซื้อของออนไลน์</span>
-                    <span class="card-subtitle">Online-Shopping · Online Shopping</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-subtitle">Online-Shopping</span>
                 </div>
             </a>
-
-            <!-- Chapter 7 -->
-            <a href="chapters/ch07.html" class="chapter-card" data-chapter="7">
+            <a href="chapters/ch07.html" class="chapter-card">
                 <div class="card-emoji">🚇</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 7</span>
-                    <span class="card-thai">การเดินทางในกรุงเทพฯ</span>
-                    <span class="card-subtitle">Verkehr · Travelling in Bangkok</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-thai">การเดินทาง</span>
+                    <span class="card-subtitle">Verkehr in Bangkok</span>
                 </div>
             </a>
-
-            <!-- Chapter 8 -->
-            <a href="chapters/ch08.html" class="chapter-card" data-chapter="8">
+            <a href="chapters/ch08.html" class="chapter-card">
                 <div class="card-emoji">🛕</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 8</span>
                     <span class="card-thai">ไปเที่ยววัด</span>
-                    <span class="card-subtitle">Tempelbesuch · Visiting Temples</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-subtitle">Tempelbesuch</span>
                 </div>
             </a>
-
-            <!-- Chapter 9 -->
-            <a href="chapters/ch09.html" class="chapter-card" data-chapter="9">
+            <a href="chapters/ch09.html" class="chapter-card">
                 <div class="card-emoji">🐱</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 9</span>
                     <span class="card-thai">สัตว์เลี้ยง</span>
-                    <span class="card-subtitle">Haustiere · Pets</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-subtitle">Haustiere</span>
                 </div>
             </a>
-
-            <!-- Chapter 10 -->
-            <a href="chapters/ch10.html" class="chapter-card" data-chapter="10">
+            <a href="chapters/ch10.html" class="chapter-card">
                 <div class="card-emoji">🏘️</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 10</span>
                     <span class="card-thai">เพื่อนบ้าน</span>
-                    <span class="card-subtitle">Nachbarn · Neighbors</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-subtitle">Nachbarn</span>
                 </div>
             </a>
-
-            <!-- Chapter 11 -->
-            <a href="chapters/ch11.html" class="chapter-card" data-chapter="11">
+            <a href="chapters/ch11.html" class="chapter-card">
                 <div class="card-emoji">🏢</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 11</span>
                     <span class="card-thai">อยู่คอนโดฯ</span>
-                    <span class="card-subtitle">Im Condo · Living in a Condo</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-subtitle">Im Condo</span>
                 </div>
             </a>
-
-            <!-- Chapter 12 -->
-            <a href="chapters/ch12.html" class="chapter-card" data-chapter="12">
+            <a href="chapters/ch12.html" class="chapter-card">
                 <div class="card-emoji">🙏</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 12</span>
-                    <span class="card-thai">ทําบุญคอนโดฯ</span>
-                    <span class="card-subtitle">Merit-Making · Condo Merit Making</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-thai">ทําบุญ</span>
+                    <span class="card-subtitle">Verdienst-Zeremonie</span>
                 </div>
             </a>
-
-            <!-- Chapter 13 -->
-            <a href="chapters/ch13.html" class="chapter-card" data-chapter="13">
+            <a href="chapters/ch13.html" class="chapter-card">
                 <div class="card-emoji">🎉</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 13</span>
                     <span class="card-thai">เทศกาล</span>
-                    <span class="card-subtitle">Feste & Feiern · Festivals</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-subtitle">Feste & Feiern</span>
                 </div>
             </a>
-
-            <!-- Chapter 14 -->
-            <a href="chapters/ch14.html" class="chapter-card" data-chapter="14">
+            <a href="chapters/ch14.html" class="chapter-card">
                 <div class="card-emoji">🛍️</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 14</span>
                     <span class="card-thai">ถุงพลาสติก</span>
-                    <span class="card-subtitle">Plastiktüten · Plastic Bags</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-subtitle">Plastiktüten</span>
                 </div>
             </a>
-
-            <!-- Chapter 15 -->
-            <a href="chapters/ch15.html" class="chapter-card" data-chapter="15">
+            <a href="chapters/ch15.html" class="chapter-card">
                 <div class="card-emoji">🏮</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 15</span>
                     <span class="card-thai">เยาวราช</span>
-                    <span class="card-subtitle">Chinatown · Yaowarat</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-subtitle">Chinatown</span>
                 </div>
             </a>
-
-            <!-- Chapter 16 -->
-            <a href="chapters/ch16.html" class="chapter-card" data-chapter="16">
+            <a href="chapters/ch16.html" class="chapter-card">
                 <div class="card-emoji">👃</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 16</span>
-                    <span class="card-thai">กลิ่นของกรุงเทพฯ</span>
-                    <span class="card-subtitle">Gerüche Bangkoks · Smells of Bangkok</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-thai">กลิ่นกรุงเทพฯ</span>
+                    <span class="card-subtitle">Bangkoks Gerüche</span>
                 </div>
             </a>
-
-            <!-- Chapter 17 -->
-            <a href="chapters/ch17.html" class="chapter-card" data-chapter="17">
+            <a href="chapters/ch17.html" class="chapter-card">
                 <div class="card-emoji">☀️</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 17</span>
-                    <span class="card-thai">อากาศที่กรุงเทพฯ</span>
-                    <span class="card-subtitle">Wetter in Bangkok · Weather in Bangkok</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-thai">อากาศ</span>
+                    <span class="card-subtitle">Wetter</span>
                 </div>
             </a>
-
-            <!-- Chapter 18 -->
-            <a href="chapters/ch18.html" class="chapter-card" data-chapter="18">
+            <a href="chapters/ch18.html" class="chapter-card">
                 <div class="card-emoji">🦷</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 18</span>
                     <span class="card-thai">การทําฟัน</span>
-                    <span class="card-subtitle">Zahnarztbehandlung · Dental Treatment</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-subtitle">Zahnarzt</span>
                 </div>
             </a>
-
-            <!-- Chapter 19 -->
-            <a href="chapters/ch19.html" class="chapter-card" data-chapter="19">
+            <a href="chapters/ch19.html" class="chapter-card">
                 <div class="card-emoji">✈️</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 19</span>
                     <span class="card-thai">ย้ายประเทศ</span>
-                    <span class="card-subtitle">Auswandern · Moving Countries</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-subtitle">Auswandern</span>
                 </div>
             </a>
-
-            <!-- Chapter 20 -->
-            <a href="chapters/ch20.html" class="chapter-card" data-chapter="20">
+            <a href="chapters/ch20.html" class="chapter-card">
                 <div class="card-emoji">🔒</div>
                 <div class="card-info">
                     <span class="card-number">Kapitel 20</span>
-                    <span class="card-thai">อยู่อย่างปลอดภัย</span>
-                    <span class="card-subtitle">Sicher leben · Living Safely</span>
-                </div>
-                <div class="card-progress">
-                    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
-                    <span class="card-status">🔓 Freigeschaltet</span>
+                    <span class="card-thai">ปลอดภัย</span>
+                    <span class="card-subtitle">Sicher leben</span>
                 </div>
             </a>
         </div>
     </section>
 
-    <!-- Badge Shelf -->
-    <section class="badge-section">
-        <h2 class="section-title">Abzeichen</h2>
-        <div id="badge-shelf" class="badge-shelf">
-            <!-- Dynamically populated by app.js -->
-        </div>
-    </section>
+    <footer class="footer"><p>&copy; exmachinAI GmbH</p></footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>🪷 Thai Lesen II · I Can Read Thai (Book II) · Sasithorn Yakorn & Jutamas Buppha</p>
-    </footer>
-
-    <!-- Scripts -->
     <script src="js/data.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/quiz.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            updateStreak();
-            updateDashboard();
+            try { updateStreak(); } catch(e){}
+            try {
+                const stats = getDashboardStats();
+                document.getElementById('userXP').textContent = stats.xp;
+                document.getElementById('vocabCount').textContent = stats.vocabLearned;
+                document.getElementById('quizCount').textContent = stats.badgesEarned + '/20';
+                document.getElementById('userStreak').textContent = stats.streak;
+
+                // Header
+                const lvl = stats.level;
+                document.getElementById('levelBadge').textContent = lvl.emoji + ' Stufe ' + lvl.level + ' · ' + lvl.name;
+                document.getElementById('levelProgress').style.width = lvl.progress + '%';
+                document.getElementById('levelXP').textContent = stats.xp + ' Punkte';
+                document.getElementById('streakText').textContent =
+                    stats.streak > 0 ? stats.streak + ' Tage am Stück gelernt!' : 'Starte deinen ersten Lerntag!';
+            } catch(e) { console.warn(e); }
         });
     </script>
 </body>
