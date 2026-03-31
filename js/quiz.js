@@ -206,7 +206,10 @@ function attachQuestionListeners(question) {
   const optionButtons = document.querySelectorAll('.option-button');
 
   optionButtons.forEach((button) => {
-    button.addEventListener('click', () => handleAnswer(button, question));
+    button.addEventListener('click', (e) => {
+      e.stopPropagation();
+      handleAnswer(button, question);
+    });
   });
 
   const langToggle = document.querySelector('.lang-toggle-btn');
@@ -303,6 +306,7 @@ function handleAnswer(button, question) {
  */
 function autoAdvance() {
   QuizState.isTransitioning = true;
+  let hasAdvanced = false;
 
   const nextButton = document.querySelector('.quiz-wrapper');
   if (nextButton) {
@@ -310,25 +314,29 @@ function autoAdvance() {
   }
 
   const advanceFunction = () => {
+    if (hasAdvanced) return;
+    hasAdvanced = true;
     QuizState.currentQuestionIndex++;
     QuizState.isAnswered = false;
     QuizState.isTransitioning = false;
     renderQuestion();
   };
 
-  // Allow user to tap to continue immediately
+  // Allow user to tap to continue — delay listener registration
+  // so the current click event doesn't immediately bubble up and trigger it
   const container = document.getElementById('quiz-container');
-  if (container) {
-    container.addEventListener('click', advanceFunction, { once: true });
-  }
-
-  // Auto-advance after 1.5 seconds
   setTimeout(() => {
-    if (QuizState.isTransitioning) {
-      QuizState.isTransitioning = false;
+    if (container && !hasAdvanced) {
+      container.addEventListener('click', advanceFunction, { once: true });
+    }
+  }, 50);
+
+  // Auto-advance after 2.5 seconds (give user time to read feedback)
+  setTimeout(() => {
+    if (QuizState.isTransitioning && !hasAdvanced) {
       advanceFunction();
     }
-  }, 1500);
+  }, 2500);
 }
 
 /**
