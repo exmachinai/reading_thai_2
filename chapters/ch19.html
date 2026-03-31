@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="chapter-header">
-    <a href="../index.html" class="back-link">← Zurück</a>
+    <a href="../index.html" class="back-link">← Zurück · Back · กลับ</a>
     <div class="chapter-header-row">
       <div class="chapter-header-left">
         <h1><span id="chapter-emoji"></span> Kapitel 19</h1>
@@ -23,22 +23,22 @@
   <!-- Settings Drawer -->
   <div id="settings-panel" class="settings-panel" style="display:none;">
     <div class="settings-content">
-      <h3>Einstellungen</h3>
+      <h3>Einstellungen · Settings · ตั้งค่า</h3>
       <div class="setting-row">
-        <label for="speed-slider">Sprechgeschwindigkeit: <strong id="speed-value">0.7</strong>x</label>
+        <label for="speed-slider">Sprechgeschwindigkeit · Speed · ความเร็ว: <strong id="speed-value">0.7</strong>x</label>
         <input type="range" id="speed-slider" min="0.3" max="1.5" step="0.1" value="0.7">
-        <div class="speed-labels"><span>Langsam</span><span>Normal</span><span>Schnell</span></div>
+        <div class="speed-labels"><span>Langsam · Slow · ช้า</span><span>Normal · ปกติ</span><span>Schnell · Fast · เร็ว</span></div>
       </div>
-      <button class="btn btn-accent btn-small" onclick="document.getElementById('settings-panel').style.display='none'">Fertig</button>
+      <button class="btn btn-accent btn-small" onclick="document.getElementById('settings-panel').style.display='none'">Fertig · Done · เสร็จ</button>
     </div>
   </div>
 
   <nav class="tabs" role="tablist">
-    <button class="tab active" data-tab="vocab" role="tab">Vokabeln</button>
-    <button class="tab" data-tab="reading" role="tab">Lesetext</button>
-    <button class="tab" data-tab="grammar" role="tab">Grammatik</button>
-    <button class="tab" data-tab="exercises" role="tab">Übungen</button>
-    <button class="tab" data-tab="quiz" role="tab">Quiz</button>
+    <button class="tab active" data-tab="vocab" role="tab"><span class="tab-label">Vokabeln<br><small>Vocab · คำศัพท์</small></span></button>
+    <button class="tab" data-tab="reading" role="tab"><span class="tab-label">Lesen<br><small>Read · อ่าน</small></span></button>
+    <button class="tab" data-tab="grammar" role="tab"><span class="tab-label">Grammatik<br><small>Grammar · ไวยากรณ์</small></span></button>
+    <button class="tab" data-tab="exercises" role="tab"><span class="tab-label">Übungen<br><small>Exercises · แบบฝึกหัด</small></span></button>
+    <button class="tab" data-tab="quiz" role="tab"><span class="tab-label">Quiz<br><small>ควิซ</small></span></button>
     <button class="tab settings-tab" onclick="toggleSettings()" title="Einstellungen">⚙</button>
   </nav>
 
@@ -52,24 +52,24 @@
         <div class="card-side card-front" id="card-front">
           <div class="card-thai" id="fc-thai"></div>
           <div class="card-roman" id="fc-roman"></div>
-          <button class="tts-btn" onclick="event.stopPropagation(); speakThai(document.getElementById('fc-thai').textContent)">🔊 Anhören</button>
-          <div class="card-hint">Antippen zum Umdrehen</div>
+          <button class="tts-btn" onclick="event.stopPropagation(); speakThai(document.getElementById('fc-thai').textContent)">🔊 Anhören · Listen · ฟัง</button>
+          <div class="card-hint">Antippen zum Umdrehen · Tap to flip · แตะเพื่อพลิก</div>
         </div>
         <!-- BACK (shown when flipped) -->
         <div class="card-side card-back" id="card-back" style="display:none;">
           <div class="card-translation"><span class="flag">🇩🇪</span> <span id="fc-german"></span></div>
           <div class="card-translation"><span class="flag">🇬🇧</span> <span id="fc-english"></span></div>
           <div id="fc-example" class="card-example"></div>
-          <button class="tts-btn" onclick="event.stopPropagation(); speakThai(document.getElementById('fc-thai').textContent)">🔊 Nochmal hören</button>
-          <div class="card-hint">Antippen zum Zurückdrehen</div>
+          <button class="tts-btn" onclick="event.stopPropagation(); speakThai(document.getElementById('fc-thai').textContent)">🔊 Nochmal · Again · อีกครั้ง</button>
+          <div class="card-hint">Antippen zum Zurückdrehen · Tap to flip back · แตะเพื่อพลิกกลับ</div>
         </div>
       </div>
 
       <div class="card-buttons">
-        <button class="btn btn-review" onclick="nextCard(false)">Nochmal üben</button>
-        <button class="btn btn-learned" onclick="nextCard(true)">Gelernt ✓</button>
+        <button class="btn btn-review" onclick="nextCard(false)">Nochmal üben · Practice · ฝึกอีก</button>
+        <button class="btn btn-learned" onclick="nextCard(true)">Gelernt · Learned · เรียนรู้แล้ว ✓</button>
       </div>
-      <div class="swipe-hint">← Wischen: üben | gelernt →</div>
+      <div class="swipe-hint">← üben · practice · ฝึก | gelernt · learned · เรียนรู้แล้ว →</div>
     </div>
   </section>
 
@@ -85,7 +85,7 @@
       <div class="accordion-content" id="reading-english"></div>
     </div>
     <button class="btn btn-primary btn-full" id="btn-read-done" onclick="markReadingDone()">
-      Ich habe den Text gelesen (+20 XP)
+      Gelesen · Read · อ่านแล้ว (+20 XP)
     </button>
   </section>
 
@@ -96,11 +96,11 @@
 
   <!-- Tab 4: Exercises -->
   <section id="tab-exercises" class="tab-content">
-    <h3 class="exercise-title">Übung 1 — Konversation</h3>
+    <h3 class="exercise-title">Übung 1 · Exercise 1 · แบบฝึก 1 — Konversation · Conversation · สนทนา</h3>
     <div id="exercise-conversation" class="exercise-list"></div>
-    <h3 class="exercise-title">Übung 2 — Aussprache</h3>
+    <h3 class="exercise-title">Übung 2 · Exercise 2 · แบบฝึก 2 — Aussprache · Pronunciation · การออกเสียง</h3>
     <div id="exercise-pronunciation" class="exercise-pronunciation"></div>
-    <h3 class="exercise-title">Übung 3 — Übersetzung</h3>
+    <h3 class="exercise-title">Übung 3 · Exercise 3 · แบบฝึก 3 — Übersetzung · Translation · แปล</h3>
     <div id="exercise-translation" class="exercise-list"></div>
   </section>
 
@@ -109,10 +109,10 @@
     <div id="quiz-container">
       <div class="quiz-start-screen">
         <div class="quiz-start-icon">🏆</div>
-        <h3>Kapitel-Quiz</h3>
-        <p>Teste dein Wissen mit 10 Fragen.</p>
-        <p class="quiz-info">Mindestens 7 richtige Antworten zum Bestehen.</p>
-        <button class="btn btn-primary" onclick="initQuiz(19)">Quiz starten</button>
+        <h3>Kapitel-Quiz · Chapter Quiz · ควิซบท</h3>
+        <p>Teste dein Wissen · Test your knowledge · ทดสอบความรู้</p>
+        <p class="quiz-info">7/10 zum Bestehen · to pass · เพื่อผ่าน</p>
+        <button class="btn btn-primary" onclick="initQuiz(19)">Quiz starten · Start Quiz · เริ่มควิซ</button>
       </div>
     </div>
   </section>
@@ -288,11 +288,11 @@
     container.innerHTML =
       '<div class="completion-screen">' +
       '<div class="completion-emoji">🎉</div>' +
-      '<h3>Alle ' + total + ' Vokabeln gelernt!</h3>' +
-      '<p>+30 Punkte für dieses Kapitel</p>' +
+      '<h3>Alle ' + total + ' Vokabeln gelernt! · All learned! · เรียนรู้ครบ!</h3>' +
+      '<p>+30 Punkte · Points · คะแนน</p>' +
       '<div class="completion-actions">' +
-      '<button class="btn btn-primary" onclick="resetFlashcards()">Nochmal üben</button>' +
-      '<button class="btn btn-accent" onclick="document.querySelector(\'.tab[data-tab=reading]\').click()">Weiter zum Lesetext →</button>' +
+      '<button class="btn btn-primary" onclick="resetFlashcards()">Nochmal · Again · อีกครั้ง</button>' +
+      '<button class="btn btn-accent" onclick="document.querySelector(\'.tab[data-tab=reading]\').click()">Weiter · Next · ต่อไป →</button>' +
       '</div></div>';
     try { showXPAnimation(30); } catch(e){}
   }
@@ -305,18 +305,18 @@
       '<div class="card-side card-front" id="card-front">' +
       '<div class="card-thai" id="fc-thai"></div>' +
       '<div class="card-roman" id="fc-roman"></div>' +
-      '<button class="tts-btn" onclick="event.stopPropagation(); speakThai(document.getElementById(\'fc-thai\').textContent)">🔊 Anhören</button>' +
-      '<div class="card-hint">Antippen zum Umdrehen</div></div>' +
+      '<button class="tts-btn" onclick="event.stopPropagation(); speakThai(document.getElementById(\'fc-thai\').textContent)">🔊 Anhören · Listen · ฟัง</button>' +
+      '<div class="card-hint">Antippen zum Umdrehen · Tap to flip · แตะเพื่อพลิก</div></div>' +
       '<div class="card-side card-back" id="card-back" style="display:none;">' +
       '<div class="card-translation"><span class="flag">🇩🇪</span> <span id="fc-german"></span></div>' +
       '<div class="card-translation"><span class="flag">🇬🇧</span> <span id="fc-english"></span></div>' +
       '<div id="fc-example" class="card-example"></div>' +
-      '<button class="tts-btn" onclick="event.stopPropagation(); speakThai(document.getElementById(\'fc-thai\').textContent)">🔊 Nochmal hören</button>' +
-      '<div class="card-hint">Antippen zum Zurückdrehen</div></div></div>' +
+      '<button class="tts-btn" onclick="event.stopPropagation(); speakThai(document.getElementById(\'fc-thai\').textContent)">🔊 Nochmal · Again · อีกครั้ง</button>' +
+      '<div class="card-hint">Antippen zum Zurückdrehen · Tap to flip back · แตะเพื่อพลิกกลับ</div></div></div>' +
       '<div class="card-buttons">' +
-      '<button class="btn btn-review" onclick="nextCard(false)">Nochmal üben</button>' +
-      '<button class="btn btn-learned" onclick="nextCard(true)">Gelernt ✓</button></div>' +
-      '<div class="swipe-hint">← Wischen: üben | gelernt →</div>';
+      '<button class="btn btn-review" onclick="nextCard(false)">Nochmal üben · Practice · ฝึกอีก</button>' +
+      '<button class="btn btn-learned" onclick="nextCard(true)">Gelernt · Learned · เรียนรู้แล้ว ✓</button></div>' +
+      '<div class="swipe-hint">← üben · practice · ฝึก | gelernt · learned · เรียนรู้แล้ว →</div>';
     initVocab();
   }
 
@@ -354,7 +354,7 @@
     try {
       if (localStorage.getItem('read_ch' + CHAPTER_ID)) {
         const btn = document.getElementById('btn-read-done');
-        btn.textContent = '✓ Bereits gelesen'; btn.disabled = true; btn.classList.add('btn-disabled');
+        btn.textContent = '✓ Bereits gelesen · Already read · อ่านแล้ว'; btn.disabled = true; btn.classList.add('btn-disabled');
       }
     } catch(e){}
   }
@@ -365,7 +365,7 @@
         localStorage.setItem('read_ch' + CHAPTER_ID, 'true');
         try { addXP(20); } catch(e){}
         const btn = document.getElementById('btn-read-done');
-        btn.textContent = '✓ Gelesen! +20 Punkte'; btn.disabled = true; btn.classList.add('btn-disabled');
+        btn.textContent = '✓ Gelesen! · Read! · อ่านแล้ว! +20'; btn.disabled = true; btn.classList.add('btn-disabled');
         try { showXPAnimation(20); } catch(e){}
       }
     } catch(e){}
@@ -417,7 +417,7 @@
           (q.romanization ? '<div class="romanization-line">' + q.romanization + '</div>' : '') +
           (q.german ? '<div class="ex-trans">🇩🇪 ' + q.german + '</div>' : '') +
           (q.english ? '<div class="ex-trans">🇬🇧 ' + q.english + '</div>' : '') +
-          '<button class="btn btn-small btn-self" onclick="this.textContent=\'✓ Kann ich!\'">Kann ich beantworten</button>' +
+          '<button class="btn btn-small btn-self" onclick="this.textContent=\'✓ Kann ich! · Got it! · ได้แล้ว!\'">Kann ich · I know · ตอบได้</button>' +
           '</div></div>';
       }
     });
@@ -431,8 +431,8 @@
         '<div class="pron-thai">' + pron.thai + '</div>' +
         (pron.romanization ? '<div class="romanization-line">' + pron.romanization + '</div>' : '') +
         '<div class="pron-actions">' +
-        '<button class="btn btn-accent btn-small" onclick="speakThai(\'' + pron.thai.replace(/'/g,"\\'") + '\')">🔊 Anhören</button>' +
-        '<button class="btn btn-learned btn-small" onclick="this.textContent=\'✓ Gut!\'">Aussprache gut</button>' +
+        '<button class="btn btn-accent btn-small" onclick="speakThai(\'' + pron.thai.replace(/'/g,"\\'") + '\')">🔊 Anhören · Listen · ฟัง</button>' +
+        '<button class="btn btn-learned btn-small" onclick="this.textContent=\'✓ Gut! · Good! · ดี!\'">Aussprache gut · Good · ดี</button>' +
         '</div></div>';
     } else if (Array.isArray(pron)) {
       let ph = '';
@@ -459,13 +459,13 @@
         th += '<div class="exercise-item"><span class="ex-num">' + (i+1) + '.</span><div class="ex-body">' +
           (srcDe ? '<div class="ex-source">🇩🇪 ' + srcDe + '</div>' : '') +
           '<div class="ex-source">🇬🇧 ' + src + '</div>' +
-          '<button class="btn btn-small btn-reveal" onclick="this.nextElementSibling.style.display=\'block\';this.style.display=\'none\';">Lösung zeigen</button>' +
+          '<button class="btn btn-small btn-reveal" onclick="this.nextElementSibling.style.display=\'block\';this.style.display=\'none\';">Lösung · Solution · เฉลย</button>' +
           '<div class="reveal-box" style="display:none">' +
           '<div class="ex-thai">' + ans + ' <button class="tts-small" onclick="speakThai(\'' + ans.replace(/'/g,"\\'") + '\')">🔊</button></div>' +
           (rom ? '<div class="romanization-line">' + rom + '</div>' : '') +
           '<div class="assess-row">' +
-          '<button class="btn btn-small btn-learned" onclick="this.textContent=\'✓\'">Wusste ich</button>' +
-          '<button class="btn btn-small btn-review" onclick="this.textContent=\'✗\'">Noch lernen</button>' +
+          '<button class="btn btn-small btn-learned" onclick="this.textContent=\'✓\'">Wusste ich · Knew it · รู้แล้ว</button>' +
+          '<button class="btn btn-small btn-review" onclick="this.textContent=\'✗\'">Noch lernen · Study more · เรียนเพิ่ม</button>' +
           '</div></div></div></div>';
       }
     });
