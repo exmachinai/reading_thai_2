@@ -45,12 +45,12 @@ function initQuiz(chapterId) {
   QuizState.isTransitioning = false;
 
   // Load questions from COURSE_DATA
-  if (!window.COURSE_DATA || !window.COURSE_DATA.chapters) {
+  if (typeof COURSE_DATA === 'undefined' || !COURSE_DATA.chapters) {
     console.error('COURSE_DATA not available');
     return;
   }
 
-  const chapter = window.COURSE_DATA.chapters.find((ch) => ch.id === chapterId);
+  const chapter = COURSE_DATA.chapters.find((ch) => ch.id === chapterId);
   if (!chapter || !chapter.quiz) {
     console.error(`No quiz data found for chapter ${chapterId}`);
     return;

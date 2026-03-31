@@ -16,6 +16,7 @@
         <h1><span id="chapter-emoji"></span> Kapitel 7</h1>
         <h2 id="chapter-title"></h2>
       </div>
+      <!-- Logo removed per user request -->
     </div>
   </header>
 
@@ -101,6 +102,15 @@
     <div id="exercise-pronunciation" class="exercise-pronunciation"></div>
     <h3 class="exercise-title">Übung 3 · Exercise 3 · แบบฝึก 3 — Übersetzung · Translation · แปล</h3>
     <div id="exercise-translation" class="exercise-list"></div>
+
+    <!-- Exercise progress + Weiter button -->
+    <div class="exercise-progress" id="exercise-progress">
+      <div class="exercise-progress-bar"><div class="exercise-progress-fill" id="exercise-progress-fill"></div></div>
+      <span class="exercise-progress-text" id="exercise-progress-text">0 / 0</span>
+    </div>
+    <button class="btn btn-primary btn-full btn-disabled" id="btn-exercise-done" disabled onclick="completeExercises()">
+      Weiter zum Quiz · Continue to Quiz · ไปควิซ →
+    </button>
   </section>
 
   <!-- Tab 5: Quiz -->
@@ -416,7 +426,7 @@
           (q.romanization ? '<div class="romanization-line">' + q.romanization + '</div>' : '') +
           (q.german ? '<div class="ex-trans">🇩🇪 ' + q.german + '</div>' : '') +
           (q.english ? '<div class="ex-trans">🇬🇧 ' + q.english + '</div>' : '') +
-          '<button class="btn btn-small btn-self" onclick="this.textContent=\'✓ Kann ich! · Got it! · ได้แล้ว!\'">Kann ich · I know · ตอบได้</button>' +
+          '<button class="btn btn-small btn-self" onclick="markExerciseDone(this)">Kann ich · I know · ตอบได้</button>' +
           '</div></div>';
       }
     });
@@ -431,7 +441,7 @@
         (pron.romanization ? '<div class="romanization-line">' + pron.romanization + '</div>' : '') +
         '<div class="pron-actions">' +
         '<button class="btn btn-accent btn-small" onclick="speakThai(\'' + pron.thai.replace(/'/g,"\\'") + '\')">🔊 Anhören · Listen · ฟัง</button>' +
-        '<button class="btn btn-learned btn-small" onclick="this.textContent=\'✓ Gut! · Good! · ดี!\'">Aussprache gut · Good · ดี</button>' +
+        '<button class="btn btn-learned btn-small" onclick="markExerciseDone(this)">Aussprache gut · Good · ดี</button>' +
         '</div></div>';
     } else if (Array.isArray(pron)) {
       let ph = '';
@@ -463,8 +473,8 @@
           '<div class="ex-thai">' + ans + ' <button class="tts-small" onclick="speakThai(\'' + ans.replace(/'/g,"\\'") + '\')">🔊</button></div>' +
           (rom ? '<div class="romanization-line">' + rom + '</div>' : '') +
           '<div class="assess-row">' +
-          '<button class="btn btn-small btn-learned" onclick="this.textContent=\'✓\'">Wusste ich · Knew it · รู้แล้ว</button>' +
-          '<button class="btn btn-small btn-review" onclick="this.textContent=\'✗\'">Noch lernen · Study more · เรียนเพิ่ม</button>' +
+          '<button class="btn btn-small btn-learned" onclick="markExerciseDone(this)">Wusste ich · Knew it · รู้แล้ว</button>' +
+          '<button class="btn btn-small btn-review" onclick="markExerciseReview(this)">Noch lernen · Study more · เรียนเพิ่ม</button>' +
           '</div></div></div></div>';
       }
     });
@@ -481,10 +491,79 @@
   function showXPAnimation(amount) {
     const el = document.createElement('div');
     el.className = 'xp-float';
-    el.textContent = '+' + amount + ' Punkte';
+    el.textContent = '+' + amount + ' Punkte · Points · คะแนน';
     document.body.appendChild(el);
     setTimeout(() => el.remove(), 2000);
   }
+
+  // === EXERCISE COMPLETION TRACKING ===
+  let exerciseTotal = 0;
+  let exerciseDone = 0;
+
+  function initExerciseTracking() {
+    // Count all trackable exercise buttons
+    exerciseTotal = 0;
+    exerciseDone = 0;
+    // Conversation "Kann ich" buttons
+    exerciseTotal += document.querySelectorAll('#exercise-conversation .btn-self').length;
+    // Pronunciation "Aussprache gut" buttons
+    exerciseTotal += document.querySelectorAll('#exercise-pronunciation .btn-learned').length;
+    // Translation "Wusste ich" buttons (one per translation item)
+    exerciseTotal += document.querySelectorAll('#exercise-translation .assess-row').length;
+    updateExerciseProgress();
+  }
+
+  function markExerciseDone(btn) {
+    if (btn.dataset.done === 'true') return;
+    btn.dataset.done = 'true';
+    // Set visual feedback based on button type
+    if (btn.classList.contains('btn-self')) {
+      btn.textContent = '✓ Kann ich! · Got it! · ได้แล้ว!';
+    } else if (btn.classList.contains('btn-learned') && btn.closest('.pron-actions')) {
+      btn.textContent = '✓ Gut! · Good! · ดี!';
+    } else if (btn.classList.contains('btn-learned') && btn.closest('.assess-row')) {
+      btn.textContent = '✓';
+      // Disable sibling review button
+      const sibling = btn.closest('.assess-row').querySelector('.btn-review');
+      if (sibling) { sibling.disabled = true; sibling.style.opacity = '0.4'; }
+    }
+    btn.disabled = true;
+    btn.classList.add('btn-disabled');
+    exerciseDone++;
+    updateExerciseProgress();
+  }
+
+  function markExerciseReview(btn) {
+    btn.textContent = '✗';
+    // Does NOT count as done — user must study more
+  }
+
+  function updateExerciseProgress() {
+    const fill = document.getElementById('exercise-progress-fill');
+    const text = document.getElementById('exercise-progress-text');
+    const doneBtn = document.getElementById('btn-exercise-done');
+    if (!fill || !text || !doneBtn) return;
+    const pct = exerciseTotal > 0 ? Math.round((exerciseDone / exerciseTotal) * 100) : 0;
+    fill.style.width = pct + '%';
+    text.textContent = exerciseDone + ' / ' + exerciseTotal;
+    if (exerciseDone >= exerciseTotal && exerciseTotal > 0) {
+      doneBtn.disabled = false;
+      doneBtn.classList.remove('btn-disabled');
+    }
+  }
+
+  function completeExercises() {
+    // Award XP for completing all exercises
+    try { addXP(25); showXPAnimation(25); } catch(e){}
+    // Switch to Quiz tab
+    const quizTab = document.querySelector('.tab[data-tab="quiz"]');
+    if (quizTab) quizTab.click();
+  }
+
+  // Initialize exercise tracking after exercises are rendered
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(initExerciseTracking, 100);
+  });
   </script>
 </body>
 </html>
