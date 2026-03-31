@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50">
+  <circle cx="25" cy="25" r="24" fill="#E89C30"/>
+  <text x="60" y="22" font-family="'Sarabun', sans-serif" font-size="18" font-weight="700" fill="#E89C30">Palm</text>
+  <text x="60" y="40" font-family="'Sarabun', sans-serif" font-size="14" font-weight="700" fill="#E89C30" letter-spacing="2">SAMRAN</text>
+  <!-- Simplified girl silhouette -->
+  <g transform="translate(25,25) scale(0.35)" fill="white" stroke="white" stroke-width="0.5">
+    <!-- Head -->
+    <circle cx="0" cy="-25" r="16"/>
+    <!-- Hair -->
+    <path d="M-16,-25 Q-18,-42 -5,-45 Q5,-48 15,-40 Q18,-35 16,-25" fill="white"/>
+    <path d="M-16,-25 Q-20,-15 -18,0" fill="white" stroke="white" stroke-width="2"/>
+    <path d="M16,-25 Q20,-15 18,0" fill="white" stroke="white" stroke-width="2"/>
+    <!-- Eyes and smile -->
+    <circle cx="-5" cy="-27" r="1.5" fill="#E89C30"/>
+    <circle cx="7" cy="-27" r="1.5" fill="#E89C30"/>
+    <path d="M-3,-21 Q1,-18 6,-21" fill="none" stroke="#E89C30" stroke-width="1.2"/>
+    <!-- Body hint -->
+    <path d="M-8,-8 Q-12,5 -10,20 Q0,22 10,20 Q12,5 8,-8" fill="white"/>
+    <!-- Cat silhouette bottom right -->
+    <g transform="translate(12,5) scale(0.6)">
+      <ellipse cx="0" cy="5" rx="8" ry="6" fill="white"/>
+      <circle cx="0" cy="-4" r="6" fill="white"/>
+      <polygon points="-6,-9 -4,-2 -1,-6" fill="white"/>
+      <polygon points="6,-9 4,-2 1,-6" fill="white"/>
+      <circle cx="-2" cy="-5" r="1" fill="#E89C30"/>
+      <circle cx="3" cy="-5" r="1" fill="#E89C30"/>
+    </g>
+  </g>
+</svg>

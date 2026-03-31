@@ -11,8 +11,13 @@
 <body>
   <header class="chapter-header">
     <a href="../index.html" class="back-link">← Zurück</a>
-    <h1><span id="chapter-emoji"></span> Kapitel 17</h1>
-    <h2 id="chapter-title"></h2>
+    <div class="chapter-header-row">
+      <div class="chapter-header-left">
+        <h1><span id="chapter-emoji"></span> Kapitel 17</h1>
+        <h2 id="chapter-title"></h2>
+      </div>
+      <img src="../img/logo-palm-samran.png" alt="Palm Samran" class="header-logo">
+    </div>
   </header>
 
   <!-- Settings Drawer -->
@@ -40,7 +45,7 @@
   <!-- Tab 1: Vocabulary / Flashcards -->
   <section id="tab-vocab" class="tab-content active">
     <div class="flashcard-container">
-      <div class="flashcard-counter"><span id="card-current">1</span> / <span id="card-total">0</span></div>
+      <div class="flashcard-counter"><span id="card-current">0</span> von <span id="card-total">0</span> gelernt</div>
 
       <div class="flashcard" id="flashcard" onclick="flipCard()">
         <!-- FRONT (shown when not flipped) -->
@@ -125,6 +130,11 @@
   let isFlipped = false;
   let speechRate = 0.7;
 
+  // Flashcard state tracking
+  let cardStates = []; // 'pending', 'learned', 'review' for each card
+  let activeQueue = []; // indices of cards still to review
+  let learnedCount = 0;
+
   try { speechRate = parseFloat(localStorage.getItem('speechRate') || '0.7'); } catch(e){}
 
   document.addEventListener('DOMContentLoaded', () => {
@@ -180,11 +190,23 @@
     });
   }
 
-  // === FLASHCARDS (JS-based flip, no 3D CSS) ===
+  // === FLASHCARDS (ENHANCED WITH STATE TRACKING) ===
   function initVocab() {
     const vocab = chapterData.vocabulary || [];
-    document.getElementById('card-total').textContent = vocab.length;
-    if (vocab.length > 0) showCard(0);
+    const total = vocab.length;
+    document.getElementById('card-total').textContent = total;
+    // Initialize all cards as pending
+    cardStates = new Array(total).fill('pending');
+    activeQueue = Array.from({length: total}, (_, i) => i);
+    learnedCount = 0;
+    updateLearnedCounter();
+    if (total > 0) showCard(activeQueue[0]);
+  }
+
+  function updateLearnedCounter() {
+    const total = (chapterData.vocabulary || []).length;
+    document.getElementById('card-current').textContent = learnedCount;
+    document.getElementById('card-total').textContent = total;
   }
 
   function showCard(index) {
@@ -208,8 +230,6 @@
         (v.example_english ? '<div class="ex-trans">🇬🇧 ' + v.example_english + '</div>' : '');
     } else { exDiv.innerHTML = ''; }
 
-    document.getElementById('card-current').textContent = index + 1;
-
     // Reset to front
     isFlipped = false;
     document.getElementById('card-front').style.display = 'flex';
@@ -232,18 +252,80 @@
   }
 
   function nextCard(learned) {
+    const vocab = chapterData.vocabulary || [];
+
     if (learned) {
+      cardStates[currentCardIndex] = 'learned';
+      learnedCount++;
       try { awardFlashcardXP(CHAPTER_ID + '_' + currentCardIndex); } catch(e){}
+      // Remove from active queue
+      activeQueue = activeQueue.filter(i => i !== currentCardIndex);
+    } else {
+      cardStates[currentCardIndex] = 'review';
+      // Move to end of queue
+      activeQueue = activeQueue.filter(i => i !== currentCardIndex);
+      activeQueue.push(currentCardIndex);
     }
-    showCard(currentCardIndex + 1);
+
+    updateLearnedCounter();
+
+    // Check if all learned
+    if (learnedCount === vocab.length) {
+      showCompletionScreen();
+      return;
+    }
+
+    // Show next card in queue
+    if (activeQueue.length > 0) {
+      showCard(activeQueue[0]);
+    }
   }
 
-  // === SWIPE ===
+  function showCompletionScreen() {
+    const container = document.querySelector('.flashcard-container');
+    const total = (chapterData.vocabulary || []).length;
+    try { addXP(30); } catch(e){}
+    container.innerHTML =
+      '<div class="completion-screen">' +
+      '<div class="completion-emoji">🎉</div>' +
+      '<h3>Alle ' + total + ' Vokabeln gelernt!</h3>' +
+      '<p>+30 Punkte für dieses Kapitel</p>' +
+      '<div class="completion-actions">' +
+      '<button class="btn btn-primary" onclick="resetFlashcards()">Nochmal üben</button>' +
+      '<button class="btn btn-accent" onclick="document.querySelector(\'.tab[data-tab=reading]\').click()">Weiter zum Lesetext →</button>' +
+      '</div></div>';
+    try { showXPAnimation(30); } catch(e){}
+  }
+
+  function resetFlashcards() {
+    // Re-render the flashcard container HTML and reinitialize
+    document.querySelector('.flashcard-container').innerHTML =
+      '<div class="flashcard-counter"><span id="card-current">0</span> von <span id="card-total">0</span> gelernt</div>' +
+      '<div class="flashcard" id="flashcard" onclick="flipCard()">' +
+      '<div class="card-side card-front" id="card-front">' +
+      '<div class="card-thai" id="fc-thai"></div>' +
+      '<div class="card-roman" id="fc-roman"></div>' +
+      '<button class="tts-btn" onclick="event.stopPropagation(); speakThai(document.getElementById(\'fc-thai\').textContent)">🔊 Anhören</button>' +
+      '<div class="card-hint">Antippen zum Umdrehen</div></div>' +
+      '<div class="card-side card-back" id="card-back" style="display:none;">' +
+      '<div class="card-translation"><span class="flag">🇩🇪</span> <span id="fc-german"></span></div>' +
+      '<div class="card-translation"><span class="flag">🇬🇧</span> <span id="fc-english"></span></div>' +
+      '<div id="fc-example" class="card-example"></div>' +
+      '<button class="tts-btn" onclick="event.stopPropagation(); speakThai(document.getElementById(\'fc-thai\').textContent)">🔊 Nochmal hören</button>' +
+      '<div class="card-hint">Antippen zum Zurückdrehen</div></div></div>' +
+      '<div class="card-buttons">' +
+      '<button class="btn btn-review" onclick="nextCard(false)">Nochmal üben</button>' +
+      '<button class="btn btn-learned" onclick="nextCard(true)">Gelernt ✓</button></div>' +
+      '<div class="swipe-hint">← Wischen: üben | gelernt →</div>';
+    initVocab();
+  }
+
+  // === SWIPE (ONLY WHEN ON VOCAB TAB) ===
   let touchStartX = 0;
   document.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, {passive:true});
   document.addEventListener('touchend', e => {
     const diff = e.changedTouches[0].screenX - touchStartX;
-    if (Math.abs(diff) > 60) {
+    if (Math.abs(diff) > 60 && document.getElementById('tab-vocab').classList.contains('active')) {
       if (diff > 0) nextCard(true);
       else nextCard(false);
     }
@@ -281,10 +363,10 @@
     try {
       if (!localStorage.getItem('read_ch' + CHAPTER_ID)) {
         localStorage.setItem('read_ch' + CHAPTER_ID, 'true');
-        addXP(20);
+        try { addXP(20); } catch(e){}
         const btn = document.getElementById('btn-read-done');
         btn.textContent = '✓ Gelesen! +20 Punkte'; btn.disabled = true; btn.classList.add('btn-disabled');
-        showXPAnimation(20);
+        try { showXPAnimation(20); } catch(e){}
       }
     } catch(e){}
   }
@@ -371,9 +453,11 @@
         th += '<div class="exercise-item"><span class="ex-num">' + (i+1) + '.</span><div class="ex-body">' + t + '</div></div>';
       } else {
         const src = t.source_english||t.source_text||t.english||'';
+        const srcDe = t.source_german||'';
         const ans = t.answer_thai||t.thai||'';
         const rom = t.answer_romanization||'';
         th += '<div class="exercise-item"><span class="ex-num">' + (i+1) + '.</span><div class="ex-body">' +
+          (srcDe ? '<div class="ex-source">🇩🇪 ' + srcDe + '</div>' : '') +
           '<div class="ex-source">🇬🇧 ' + src + '</div>' +
           '<button class="btn btn-small btn-reveal" onclick="this.nextElementSibling.style.display=\'block\';this.style.display=\'none\';">Lösung zeigen</button>' +
           '<div class="reveal-box" style="display:none">' +

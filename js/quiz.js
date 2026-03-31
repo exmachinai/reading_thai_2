@@ -13,7 +13,7 @@ const QuizState = {
   shuffledQuestions: [],
   currentQuestionIndex: 0,
   correctAnswers: 0,
-  language: localStorage.getItem('quizLanguage') || 'de',
+  language: (function() { try { return localStorage.getItem('quizLanguage') || 'de'; } catch(e) { return 'de'; } })(),
   isAnswered: false,
   isTransitioning: false,
 };
@@ -220,7 +220,7 @@ function attachQuestionListeners(question) {
  */
 function toggleLanguage() {
   QuizState.language = QuizState.language === 'de' ? 'en' : 'de';
-  localStorage.setItem('quizLanguage', QuizState.language);
+  try { localStorage.setItem('quizLanguage', QuizState.language); } catch(e) {}
 
   // Re-shuffle options with new language (keep same order)
   renderQuestion();

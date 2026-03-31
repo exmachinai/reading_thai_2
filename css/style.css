@@ -54,7 +54,9 @@ img { max-width: 100%; }
   background: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(212,175,55,0.05) 20px, rgba(212,175,55,0.05) 40px);
   pointer-events: none;
 }
-.header-content { position: relative; z-index: 1; }
+.header-content { position: relative; z-index: 1; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.header-left { flex: 1; }
+.header-logo { height: 55px; width: auto; border-radius: 8px; object-fit: contain; flex-shrink: 0; margin-top: 4px; background: white; padding: 4px 8px; }
 .header-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 8px; }
 .header-divider { display: none; }
 .header-level { margin-bottom: 8px; }
@@ -128,7 +130,9 @@ img { max-width: 100%; }
 .card-info { display: flex; flex-direction: column; gap: 2px; }
 .card-number { font-size: 0.75rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.05em; }
 .card-thai { font-size: 1rem; font-weight: 700; color: var(--text); }
+.card-romanization { font-size: 0.7rem; font-style: italic; color: var(--text-light); }
 .card-subtitle { font-size: 0.75rem; color: var(--text-muted); }
+.card-english { font-size: 0.7rem; color: var(--text-light); }
 .card-progress { width: 100%; margin-top: 8px; }
 .card-progress .progress-bar { height: 4px; background: #ECF0F1; }
 .card-status { font-size: 0.7rem; color: var(--text-muted); margin-top: 4px; display: block; }
@@ -149,6 +153,9 @@ img { max-width: 100%; }
   color: white;
   padding: calc(12px + env(safe-area-inset-top, 0)) 16px 16px;
 }
+.chapter-header-row { display: flex; align-items: flex-start; justify-content: space-between; }
+.chapter-header-left { flex: 1; }
+.chapter-header .header-logo { height: 45px; width: auto; border-radius: 6px; object-fit: contain; flex-shrink: 0; background: white; padding: 3px 6px; margin-top: 2px; }
 .back-link {
   color: rgba(255,255,255,0.9);
   font-size: 0.9rem;
@@ -282,6 +289,20 @@ img { max-width: 100%; }
   color: var(--text-muted);
   margin-top: 8px;
 }
+
+/* === 11b. FLASHCARD COMPLETION SCREEN === */
+.completion-screen {
+  text-align: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.completion-emoji { font-size: 3rem; }
+.completion-screen h3 { font-size: 1.3rem; color: var(--text); margin: 0; }
+.completion-screen p { font-size: 0.95rem; color: var(--text-light); margin: 0; }
+.completion-actions { display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; justify-content: center; }
 
 /* === 12. BUTTONS === */
 .btn {

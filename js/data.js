@@ -208,9 +208,10 @@ const COURSE_DATA = {
         },
         "translation": [
           {
-            "source_english": "I have lived 3 years",
+            "source_english": "I have lived here for 3 years.",
             "answer_thai": "ผมอยู่มาสามปีแล้ว",
-            "answer_romanization": "phom yu ma sam pi laeo"
+            "answer_romanization": "phom yu ma sam pi laeo",
+            "source_german": "Ich lebe seit 3 Jahren hier."
           }
         ]
       },
@@ -519,7 +520,8 @@ const COURSE_DATA = {
       "thai_title": "ครอบครัว",
       "english_title": "Family",
       "german_title": "Familie",
-      "emoji": "👨‍👩‍👧"
+      "emoji": "👨‍👩‍👧",
+      "thai_title_romanization": "khrop khrua"
     },
     {
       "id": 2,
@@ -727,9 +729,10 @@ const COURSE_DATA = {
         },
         "translation": [
           {
-            "source_english": "I think interesting",
+            "source_english": "I think that is interesting.",
             "answer_thai": "ผมคิดว่าน่าสนใจ",
-            "answer_romanization": "phom khit wa natnchai"
+            "answer_romanization": "phom khit wa natnchai",
+            "source_german": "Ich finde das interessant."
           }
         ]
       },
@@ -1038,7 +1041,8 @@ const COURSE_DATA = {
       "thai_title": "เวลาว่าง",
       "english_title": "Free Time",
       "german_title": "Freizeit",
-      "emoji": "🎮"
+      "emoji": "🎮",
+      "thai_title_romanization": "we-la wang"
     },
     {
       "id": 3,
@@ -1236,9 +1240,10 @@ const COURSE_DATA = {
         },
         "translation": [
           {
-            "source_english": "I like working Thai",
+            "source_english": "I like working with Thai people.",
             "answer_thai": "ผมชอบทํางานกับคนไทย",
-            "answer_romanization": "phom chop tha ngan kap khanathai"
+            "answer_romanization": "phom chop tha ngan kap khanathai",
+            "source_german": "Ich arbeite gern mit Thailändern."
           }
         ]
       },
@@ -1547,7 +1552,8 @@ const COURSE_DATA = {
       "thai_title": "ทํางาน",
       "english_title": "Work",
       "german_title": "Arbeit",
-      "emoji": "💼"
+      "emoji": "💼",
+      "thai_title_romanization": "tham ngan"
     },
     {
       "id": 4,
@@ -1745,9 +1751,10 @@ const COURSE_DATA = {
         },
         "translation": [
           {
-            "source_english": "Lucky not cook",
+            "source_english": "Luckily, I don't have to cook.",
             "answer_thai": "โชคดีไม่ต้องทําอาหาร",
-            "answer_romanization": "chokdi mataing tha ahan"
+            "answer_romanization": "chokdi mataing tha ahan",
+            "source_german": "Zum Glück muss ich nicht kochen."
           }
         ]
       },
@@ -2056,7 +2063,8 @@ const COURSE_DATA = {
       "thai_title": "ชีวิตประจําวัน",
       "english_title": "Daily Life",
       "german_title": "Alltag",
-      "emoji": "📅"
+      "emoji": "📅",
+      "thai_title_romanization": "chi-wit pra-cham wan"
     },
     {
       "id": 5,
@@ -2238,9 +2246,10 @@ const COURSE_DATA = {
         },
         "translation": [
           {
-            "source_english": "Bangkok heaven food lovers",
+            "source_english": "Bangkok is a paradise for food lovers.",
             "answer_thai": "กรุงเทพเป็นสวรรค์ของคนชอบกิน",
-            "answer_romanization": "krungthep pen suaan khong khon chop kin"
+            "answer_romanization": "krungthep pen suaan khong khon chop kin",
+            "source_german": "Bangkok ist ein Paradies für Feinschmecker."
           }
         ]
       },
@@ -2549,7 +2558,8 @@ const COURSE_DATA = {
       "thai_title": "วันเสาร์อาทิตย์",
       "english_title": "Weekend",
       "german_title": "Wochenende",
-      "emoji": "🛒"
+      "emoji": "🛒",
+      "thai_title_romanization": "wan sao a-thit"
     },
     {
       "id": 6,
@@ -2672,50 +2682,62 @@ const COURSE_DATA = {
               "romanization": "thuengmae wakan sue khong onlai cha ngai lae saduak mak tae chan k yang chop ok pai nokban"
             }
           ],
-          "pattern_romanization": "thuengmaeo … tae …"
+          "pattern_romanization": "thuengmaeo … tae …",
+          "meaning_english": "Although…, …",
+          "meaning_german": "Obwohl…, …"
         }
       ],
       "exercises": {
         "conversation": [
           {
             "question": "ทุกวันคุณใช้อินเทอร์เน็ตทําอะไรบ้าง",
-            "english": "What do you use the internet for every day?"
+            "english": "What do you use the internet for every day?",
+            "german": "Wofür nutzt du das Internet jeden Tag?"
           },
           {
             "question": "คุณชอบทํางานที่บ้านไหม",
-            "english": "Do you like working at home?"
+            "english": "Do you like working at home?",
+            "german": "Arbeitest du gerne von Zuhause aus?"
           },
           {
             "question": "คุณชอบซื้อของออนไลน์ไหม",
-            "english": "Do you like online shopping?"
+            "english": "Do you like online shopping?",
+            "german": "Magst du Online-Shopping?"
           },
           {
             "question": "อยู่ที่กรุงเทพฯ คุณซื้ออาหารออนไลน์ไหม",
-            "english": "In Bangkok, do you order food online?"
+            "english": "In Bangkok, do you order food online?",
+            "german": "Bestellst du Essen online in Bangkok?"
           },
           {
             "question": "คุณคิดว่าจะใช้ชีวิตแบบไม่ออกจากบ้านเลยได้กี่วัน",
-            "english": "How many days do you think you can stay home without going out?"
+            "english": "How many days do you think you can stay home without going out?",
+            "german": "Wie viele Tage denkst du, kannst du zu Hause bleiben?"
           },
           {
             "question": "การซื้อของออนไลน์ดีเพราะง่ายและสะดวก แต่คุณคิดว่ามีอะไรไม่ดีไหม",
-            "english": "Online shopping is good because it's easy and convenient, but what do you think is not good?"
+            "english": "Online shopping is good because it's easy and convenient, but what do you think is not good?",
+            "german": "Online-Shopping ist gut, weil es einfach ist, aber was magst du nicht daran?"
           },
           {
             "question": "แอปพลิเคชันที่คุณใช้บ่อยที่สุดเวลาทํางานคือแอปฯ อะไร",
-            "english": "What is the application you use most often when working?"
+            "english": "What is the application you use most often when working?",
+            "german": "Welche App nutzt du am häufigsten bei der Arbeit?"
           },
           {
             "question": "คุณมีแอปพลิเคชันที่ใช้ช่วยเรียนภาษาไทยไหม",
-            "english": "Do you have any applications that help you learn Thai?"
+            "english": "Do you have any applications that help you learn Thai?",
+            "german": "Hast du eine App, die dir beim Lernen von Thai hilft?"
           },
           {
             "question": "คุณเชื่อว่าอินเทอร์เน็ตทําให้ชีวิตดีขึ้นไหม",
-            "english": "Do you believe the internet makes life better?"
+            "english": "Do you believe the internet makes life better?",
+            "german": "Glaubst du, dass das Internet das Leben verbessert?"
           },
           {
             "question": "ถ้าไม่มีอินเทอร์เน็ต คุณจะทําอะไร",
-            "english": "If there was no internet, what would you do?"
+            "english": "If there was no internet, what would you do?",
+            "german": "Was würdest du tun, wenn es das Internet nicht gäbe?"
           }
         ],
         "pronunciation": {
@@ -2726,27 +2748,32 @@ const COURSE_DATA = {
           {
             "english": "I usually connect with friends via email.",
             "thai": "ฉันติดต่อเพื่อนผ่านอีเมลเป็นปกติ",
-            "answer_romanization": "chan titto phuean phan imen penpkti"
+            "answer_romanization": "chan titto phuean phan imen penpkti",
+            "source_german": "Ich verbinde mich gewöhnlich mit Freunden per E-Mail."
           },
           {
             "english": "I like living in Bangkok because it is very convenient.",
             "thai": "ฉันชอบอยู่กรุงเทพฯ เพราะมันสะดวกมาก",
-            "answer_romanization": "chan chop yu krungthep phera man saduak mak"
+            "answer_romanization": "chan chop yu krungthep phera man saduak mak",
+            "source_german": "Ich lebe gerne in Bangkok, weil es sehr praktisch ist."
           },
           {
             "english": "I don't like ordering food via mobile applications.",
             "thai": "ฉันไม่ชอบสั่งอาหารผ่านแอปพลิเคชัน",
-            "answer_romanization": "chan mai chop sangohan phan aepplikhechan"
+            "answer_romanization": "chan mai chop sangohan phan aepplikhechan",
+            "source_german": "Ich mag es nicht, Essen über Apps zu bestellen."
           },
           {
             "english": "Although I am very busy, I exercise every day.",
             "thai": "ถึงแม้ว่าฉันยุ่งมาก แต่ฉันก็ออกกําลังกายทุกวัน",
-            "answer_romanization": "thuengmaeo chan yung mak tae chan k o kok lang kai thukwan"
+            "answer_romanization": "thuengmaeo chan yung mak tae chan k o kok lang kai thukwan",
+            "source_german": "Obwohl ich sehr beschäftigt bin, trainiere ich jeden Tag."
           },
           {
             "english": "Ordering food via mobile applications is not complicated.",
             "thai": "การสั่งอาหารผ่านแอปพลิเคชันไม่ยุ่งยาก",
-            "answer_romanization": "kan sangohan phan aepplikhechan mai yungyak"
+            "answer_romanization": "kan sangohan phan aepplikhechan mai yungyak",
+            "source_german": "Essen über Apps zu bestellen ist nicht kompliziert."
           }
         ]
       },
@@ -3051,7 +3078,8 @@ const COURSE_DATA = {
           "explanation_en": "'บัตรเครดิต' means 'credit card'.",
           "question_romanization": "batnkhendit"
         }
-      ]
+      ],
+      "thai_title_romanization": "sue khong on-lai"
     },
     {
       "id": 7,
@@ -3216,7 +3244,9 @@ const COURSE_DATA = {
               "romanization": "khakrongchip thi krungthep phaeng khuen"
             }
           ],
-          "pattern_romanization": "adjective + khuen"
+          "pattern_romanization": "adjective + khuen",
+          "meaning_english": "adjective + more/higher (comparative)",
+          "meaning_german": "Adjektiv + mehr/höher (Komparativ)"
         },
         {
           "pattern": "Subject + verb/adjective น้อยลง",
@@ -3236,40 +3266,62 @@ const COURSE_DATA = {
               "romanization": "duean ni chan chai ngoen noinng phera mai sue khong onlai loei"
             }
           ],
-          "pattern_romanization": "Subject + verb /adjective noinng"
+          "pattern_romanization": "Subject + verb /adjective noinng",
+          "meaning_english": "Subject + verb/adjective less/fewer (comparative)",
+          "meaning_german": "Subjekt + Verb/Adjektiv weniger (Komparativ)"
         }
       ],
       "exercises": {
         "conversation": [
           {
-            "question": "การเดินทางในบ้านเมืองของคุณสะดวกไหม"
+            "question": "การเดินทางในบ้านเมืองของคุณสะดวกไหม",
+            "english": "Is transportation in your city convenient?",
+            "german": "Ist der Verkehr in deiner Stadt bequem?"
           },
           {
-            "question": "คุณชอบใช้ยานพาหนะแบบไหน เพื่อไปทํางาน"
+            "question": "คุณชอบใช้ยานพาหนะแบบไหน เพื่อไปทํางาน",
+            "english": "What kind of transportation do you prefer to use for work?",
+            "german": "Welche Art von Verkehrsmittel bevorzugst du für die Arbeit?"
           },
           {
-            "question": "เมืองของคุณมีรถไฟฟ้าหรือรถไฟใต้ดินไหม"
+            "question": "เมืองของคุณมีรถไฟฟ้าหรือรถไฟใต้ดินไหม",
+            "english": "Does your city have an electric train or subway?",
+            "german": "Hat deine Stadt eine elektrische Bahn oder U-Bahn?"
           },
           {
-            "question": "ที่เมืองของคุณ ช่วงไหนคือชั่วโมงเร่งด่วน"
+            "question": "ที่เมืองของคุณ ช่วงไหนคือชั่วโมงเร่งด่วน",
+            "english": "What time is rush hour in your city?",
+            "german": "Wann ist die Stoßzeit in deiner Stadt?"
           },
           {
-            "question": "คุณเคยนั่งมอเตอร์ไซค์รับจ้างไหม"
+            "question": "คุณเคยนั่งมอเตอร์ไซค์รับจ้างไหม",
+            "english": "Have you ever taken a motorcycle taxi?",
+            "german": "Bist du schon mit einem Motorradtaxi gefahren?"
           },
           {
-            "question": "คุณคิดว่าการเดินทางในกรุงเทพฯ ดีไหมเมื่อเปรียบเทียบกับเมืองอื่น"
+            "question": "คุณคิดว่าการเดินทางในกรุงเทพฯ ดีไหมเมื่อเปรียบเทียบกับเมืองอื่น",
+            "english": "Do you think transportation in Bangkok is good compared to other cities?",
+            "german": "Denkst du, dass der Verkehr in Bangkok im Vergleich zu anderen Städten gut ist?"
           },
           {
-            "question": "ค่าการเดินทางที่กรุงเทพฯ แพงไหม"
+            "question": "ค่าการเดินทางที่กรุงเทพฯ แพงไหม",
+            "english": "Is transportation expensive in Bangkok?",
+            "german": "Ist der Verkehr in Bangkok teuer?"
           },
           {
-            "question": "ถ้าหากไม่มีรถไฟฟ้า การเดินทางในกรุงเทพฯ จะเป็นอย่างไร"
+            "question": "ถ้าหากไม่มีรถไฟฟ้า การเดินทางในกรุงเทพฯ จะเป็นอย่างไร",
+            "english": "What would transportation in Bangkok be like without electric trains?",
+            "german": "Wie würde der Verkehr in Bangkok ohne Straßenbahn sein?"
           },
           {
-            "question": "คุณคิดว่าทํاไมค่าครองชีพที่กรุงเทพฯ แพงขึ้น"
+            "question": "คุณคิดว่าทําไมค่าครองชีพที่กรุงเทพฯ แพงขึ้น",
+            "english": "Why do you think the cost of living in Bangkok has increased?",
+            "german": "Warum denkst du, sind die Lebenshaltungskosten in Bangkok gestiegen?"
           },
           {
-            "question": "คุณอยากใช้มอเตอร์ไซค์รับจ้างหรือไม่ ทําไม"
+            "question": "คุณอยากใช้มอเตอร์ไซค์รับจ้างหรือไม่ ทําไม",
+            "english": "Would you like to use a motorcycle taxi? Why or why not?",
+            "german": "Möchtest du ein Motorradtaxi benutzen? Warum oder warum nicht?"
           }
         ],
         "pronunciation": {
@@ -3280,27 +3332,32 @@ const COURSE_DATA = {
           {
             "english": "Travelling in Bangkok is very convenient.",
             "thai": "การเดินทางในกรุงเทพฯ สะดวกมาก",
-            "answer_romanization": "kan doen thangnai krungthep saduak mak"
+            "answer_romanization": "kan doen thangnai krungthep saduak mak",
+            "source_german": "Die Reise in Bangkok ist sehr bequem."
           },
           {
             "english": "Comparing to many countries, the underground in Bangkok is very expensive.",
             "thai": "เมื่อเปรียบเทียบกับหลายประเทศ รถไฟใต้ดินที่กรุงเทพฯ แพงมาก",
-            "answer_romanization": "muea peripthiap kap lai prathet rathafaitaidin thi krungthep phaeng mak"
+            "answer_romanization": "muea peripthiap kap lai prathet rathafaitaidin thi krungthep phaeng mak",
+            "source_german": "Im Vergleich zu vielen Ländern ist die U-Bahn in Bangkok sehr teuer."
           },
           {
             "english": "I have never taken a motorcycle taxi in Bangkok.",
             "thai": "ฉันไม่เคยนั่งมอเตอร์ไซค์รับจ้างที่กรุงเทพฯ",
-            "answer_romanization": "chan mai khoei nang motoesal rapchang thi krungthep"
+            "answer_romanization": "chan mai khoei nang motoesal rapchang thi krungthep",
+            "source_german": "Ich bin noch nie mit einem Motorradtaxi in Bangkok gefahren."
           },
           {
             "english": "Bangkok has more cars but less traffic.",
             "thai": "กรุงเทพฯ มีรถมากขึ้นแต่รถติดน้อยลง",
-            "answer_romanization": "krungthep mi rot makkhuen tae rathatit noinng"
+            "answer_romanization": "krungthep mi rot makkhuen tae rathatit noinng",
+            "source_german": "Bangkok hat mehr Autos, aber weniger Stau."
           },
           {
             "english": "Although Bangkok has the sky train and the underground, it still has heavy traffic jam as usual.",
             "thai": "ถึงแม้ว่ากรุงเทพฯ มีรถไฟฟ้าและรถไฟใต้ดิน แต่ก็ยังมีรถติดหนักเหมือนเดิม",
-            "answer_romanization": "thuengmaeo krungthep mi rathafafai lae rathafaitaidin tae k yangmi rathatit nak emuendoem"
+            "answer_romanization": "thuengmaeo krungthep mi rathafafai lae rathafaitaidin tae k yangmi rathatit nak emuendoem",
+            "source_german": "Obwohl Bangkok Skytrain und U-Bahn hat, gibt es immer noch schwere Staus wie immer."
           }
         ]
       },
@@ -3604,7 +3661,8 @@ const COURSE_DATA = {
           "explanation_en": "'มอเตอร์ไซค์รับจ้าง' is a motorcycle taxi that you can hire.",
           "question_romanization": "motoesal rapchang"
         }
-      ]
+      ],
+      "thai_title_romanization": "kan doen thang nai krung thep"
     },
     {
       "id": 8,
@@ -3757,40 +3815,62 @@ const COURSE_DATA = {
               "romanization": "rao chai aepplikhechan sue khong onlai phuea khwamsaduak"
             }
           ],
-          "pattern_romanization": "Subject do something phuea + purpose"
+          "pattern_romanization": "Subject do something phuea + purpose",
+          "meaning_english": "Subject does something in order to / for the purpose of",
+          "meaning_german": "Subjekt tut etwas, um…zu / mit dem Zweck zu"
         }
       ],
       "exercises": {
         "conversation": [
           {
-            "question": "คุณเคยไปเที่ยววัดไหม เพื่อทําอะไร"
+            "question": "คุณเคยไปเที่ยววัดไหม เพื่อทําอะไร",
+            "english": "Have you ever visited a temple? What did you do there?",
+            "german": "Hast du schon einen Tempel besucht? Was hast du dort getan?"
           },
           {
-            "question": "วัดในประเทศของคุณมีอะไรพิเศษไหม"
+            "question": "วัดในประเทศของคุณมีอะไรพิเศษไหม",
+            "english": "Is there anything special about temples in your country?",
+            "german": "Gibt es etwas Besonderes an Tempeln in deinem Land?"
           },
           {
-            "question": "คุณแต่งตัวไปวัดอย่างไร"
+            "question": "คุณแต่งตัวไปวัดอย่างไร",
+            "english": "How do you dress when going to a temple?",
+            "german": "Wie kleidest du dich, wenn du einen Tempel besuchst?"
           },
           {
-            "question": "คุณคิดว่าเพราะอะไรคนจึงไปวัด"
+            "question": "คุณคิดว่าเพราะอะไรคนจึงไปวัด",
+            "english": "Why do you think people go to temples?",
+            "german": "Warum denkst du, gehen Menschen zu Tempeln?"
           },
           {
-            "question": "คุณทําบุญไหม ที่ไหน"
+            "question": "คุณทําบุญไหม ที่ไหน",
+            "english": "Do you make merit? Where do you do it?",
+            "german": "Tust du verdienstvoll Handlungen? Wo tust du das?"
           },
           {
-            "question": "ประเทศของคุณมีพระหรือนักบวชไหม"
+            "question": "ประเทศของคุณมีพระหรือนักบวชไหม",
+            "english": "Does your country have monks or priests?",
+            "german": "Hat dein Land Mönche oder Priester?"
           },
           {
-            "question": "คุณคิดว่าวัดสําคัญต่อประเทศไทยไหม เพราะอะไร"
+            "question": "คุณคิดว่าวัดสําคัญต่อประเทศไทยไหม เพราะอะไร",
+            "english": "Do you think temples are important to Thailand? Why or why not?",
+            "german": "Denkst du, dass Tempel für Thailand wichtig sind? Warum oder warum nicht?"
           },
           {
-            "question": "กิจกรรมแปลกๆ ที่คนไปทําที่วัดคืออะไร"
+            "question": "กิจกรรมแปลกๆ ที่คนไปทําที่วัดคืออะไร",
+            "english": "What are some unusual activities people do at temples?",
+            "german": "Was sind einige ungewöhnliche Aktivitäten, die Menschen in Tempeln machen?"
           },
           {
-            "question": "คุณคิดว่าวัดควรจะทันสมัยหรือเก่าๆ ดี"
+            "question": "คุณคิดว่าวัดควรจะทันสมัยหรือเก่าๆ ดี",
+            "english": "Do you think temples should be modern or traditional?",
+            "german": "Denkst du, sollten Tempel modern oder traditionell sein?"
           },
           {
-            "question": "คุณรู้สึกสบายใจที่ไหน ในเมืองของคุณ"
+            "question": "คุณรู้สึกสบายใจที่ไหน ในเมืองของคุณ",
+            "english": "Where do you feel at peace in your city?",
+            "german": "Wo fühlst du dich in deiner Stadt wohlig?"
           }
         ],
         "pronunciation": {
@@ -3801,27 +3881,32 @@ const COURSE_DATA = {
           {
             "english": "Where can I make a merit in Bangkok?",
             "thai": "ฉันสามารถทําบุญที่ไหนในกรุงเทพฯ",
-            "answer_romanization": "chan samant tha bun thinai nai krungthep"
+            "answer_romanization": "chan samant tha bun thinai nai krungthep",
+            "source_german": "Wo kann ich in Bangkok ein Verdienst machen?"
           },
           {
             "english": "I feel more relaxing after I went shopping.",
             "thai": "ฉันรู้สึกสบายใจมากขึ้นหลังจากไปเลือกซื้อ",
-            "answer_romanization": "chan rusuek sabaichai makkhuen lang chakpai lueak sue"
+            "answer_romanization": "chan rusuek sabaichai makkhuen lang chakpai lueak sue",
+            "source_german": "Ich fühlte mich entspannter, nachdem ich einkaufen ging."
           },
           {
             "english": "I was very surprised!",
             "thai": "ฉันตกใจมาก",
-            "answer_romanization": "chan takachai mak"
+            "answer_romanization": "chan takachai mak",
+            "source_german": "Ich war sehr überrascht!"
           },
           {
             "english": "I won't say this one is strange, but I will say this one is interesting.",
             "thai": "ฉันจะไม่บอกว่านี่แปลก แต่ฉันจะบอกว่านี่น่าสนใจ",
-            "answer_romanization": "chan cha mai bo kwa ni paenk tae chan cha bo kwa ni natnchai"
+            "answer_romanization": "chan cha mai bo kwa ni paenk tae chan cha bo kwa ni natnchai",
+            "source_german": "Ich würde das nicht seltsam nennen, aber ich würde sagen, das ist interessant."
           },
           {
             "english": "We must wash hands before eating and after using toilet.",
             "thai": "เราต้องล้างมือก่อนกินและหลังจากใช้ห้องน้ํา",
-            "answer_romanization": "rao tong langmue kon kin lae langchak chai ong na"
+            "answer_romanization": "rao tong langmue kon kin lae langchak chai ong na",
+            "source_german": "Wir müssen vor dem Essen und nach der Toilettenbenutzung die Hände waschen."
           }
         ]
       },
@@ -4125,7 +4210,8 @@ const COURSE_DATA = {
           "explanation_en": "'พระ' is the Buddhist monk in Thailand.",
           "question_romanization": "phra"
         }
-      ]
+      ],
+      "thai_title_romanization": "pai thiao wat"
     },
     {
       "id": 9,
@@ -4314,40 +4400,62 @@ const COURSE_DATA = {
               "romanization": "sami nuyat hai chan chai ngoen chak batnkhendit khong khao"
             }
           ],
-          "pattern_romanization": "Subject nuyat hai + someone do something"
+          "pattern_romanization": "Subject nuyat hai + someone do something",
+          "meaning_english": "Subject allows/permits someone to do something",
+          "meaning_german": "Subjekt erlaubt jemandem etwas zu tun"
         }
       ],
       "exercises": {
         "conversation": [
           {
-            "question": "คุณเลี้ยงสัตว์ไหม เลี้ยงสัตว์ประเภทไหน"
+            "question": "คุณเลี้ยงสัตว์ไหม เลี้ยงสัตว์ประเภทไหน",
+            "english": "Do you have any pets? What kind?",
+            "german": "Hast du Haustiere? Was für welche?"
           },
           {
-            "question": "ทําไมคุณจึงเลือกเลี้ยงสัตว์นั้น"
+            "question": "ทําไมคุณจึงเลือกเลี้ยงสัตว์นั้น",
+            "english": "Why did you choose that type of pet?",
+            "german": "Warum hast du dich für diese Art von Haustier entschieden?"
           },
           {
-            "question": "คุณเลี้ยงสัตว์ที่ไหน ที่บ้านหรือที่ไหน"
+            "question": "คุณเลี้ยงสัตว์ที่ไหน ที่บ้านหรือที่ไหน",
+            "english": "Where do you keep your pets? At home or somewhere else?",
+            "german": "Wo hältst du deine Haustiere? Zu Hause oder woanders?"
           },
           {
-            "question": "คุณรักสัตว์เลี้ยงของคุณไหม"
+            "question": "คุณรักสัตว์เลี้ยงของคุณไหม",
+            "english": "Do you love your pets?",
+            "german": "Liebst du deine Haustiere?"
           },
           {
-            "question": "คุณเคยเห็นแมวจรจัดไหม ที่ไหน"
+            "question": "คุณเคยเห็นแมวจรจัดไหม ที่ไหน",
+            "english": "Have you ever seen a stray cat? Where?",
+            "german": "Hast du schon eine streunende Katze gesehen? Wo?"
           },
           {
-            "question": "คุณจะช่วยแมวจรจัดไหมถ้าเห็น"
+            "question": "คุณจะช่วยแมวจรจัดไหมถ้าเห็น",
+            "english": "Would you help a stray cat if you saw one?",
+            "german": "Würdest du eine streunende Katze helfen, wenn du eine sehen würdest?"
           },
           {
-            "question": "การเลี้ยงสัตว์มีข้อดีอะไรบ้าง"
+            "question": "การเลี้ยงสัตว์มีข้อดีอะไรบ้าง",
+            "english": "What are the benefits of keeping pets?",
+            "german": "Was sind die Vorteile, Haustiere zu halten?"
           },
           {
-            "question": "การเลี้ยงสัตว์มีข้อเสียอะไรบ้าง"
+            "question": "การเลี้ยงสัตว์มีข้อเสียอะไรบ้าง",
+            "english": "What are the disadvantages of keeping pets?",
+            "german": "Was sind die Nachteile, Haustiere zu halten?"
           },
           {
-            "question": "คุณเชื่อเรื่องโชคร้ายเรื่องสัตว์ไหม"
+            "question": "คุณเชื่อเรื่องโชคร้ายเรื่องสัตว์ไหม",
+            "english": "Do you believe in superstitions about animals?",
+            "german": "Glaubst du an Aberglauben über Tiere?"
           },
           {
-            "question": "คุณเคยพาสัตว์ไปหมอสัตวแพทย์ไหม เมื่อไหร่"
+            "question": "คุณเคยพาสัตว์ไปหมอสัตวแพทย์ไหม เมื่อไหร่",
+            "english": "Have you ever taken your pet to the veterinarian? When?",
+            "german": "Hast du dein Haustier schon zum Tierarzt gebracht? Wann?"
           }
         ],
         "pronunciation": {
@@ -4358,27 +4466,32 @@ const COURSE_DATA = {
           {
             "english": "Now we have a dog at home.",
             "thai": "ตอนนี้เรามีหมาที่บ้าน",
-            "answer_romanization": "tonni rao mi ma thi ban"
+            "answer_romanization": "tonni rao mi ma thi ban",
+            "source_german": "Jetzt haben wir einen Hund zu Hause."
           },
           {
             "english": "Actually, I don't want to have pets, but my son took a stray dog back home.",
             "thai": "จริงๆ แล้ว ฉันไม่อยากมีสัตว์เลี้ยง แต่ลูกชายของฉันเอาหมาจรจัดกลับมา",
-            "answer_romanization": "chring laeo chan mai yak mi satliang tae lukchai khong chan ao ma chrachat klapma"
+            "answer_romanization": "chring laeo chan mai yak mi satliang tae lukchai khong chan ao ma chrachat klapma",
+            "source_german": "Eigentlich wollte ich keine Haustiere haben, aber mein Sohn brachte einen streunenden Hund nach Hause."
           },
           {
             "english": "I allowed my son to have the dog.",
             "thai": "ฉันอนุญาตให้ลูกชายเลี้ยงหมา",
-            "answer_romanization": "chan nuyat hai lukchai liang ma"
+            "answer_romanization": "chan nuyat hai lukchai liang ma",
+            "source_german": "Ich erlaubte meinem Sohn, den Hund zu haben."
           },
           {
             "english": "He takes care of the dog very well and will bring it to see a veterinarian on Saturday.",
             "thai": "เขาดูแลหมาได้ดีมาก และจะพามันไปหมอสัตวแพทย์ในวันเสาร์",
-            "answer_romanization": "khao dulae ma dai dimak lae cha pha man pai mo satphaet nai wan sao"
+            "answer_romanization": "khao dulae ma dai dimak lae cha pha man pai mo satphaet nai wan sao",
+            "source_german": "Er kümmert sich sehr gut um den Hund und wird ihn am Samstag zum Tierarzt bringen."
           },
           {
             "english": "The dog's name is Lucky.",
             "thai": "ชื่อหมาคือ โชคดี",
-            "answer_romanization": "chue ma khue chokdi"
+            "answer_romanization": "chue ma khue chokdi",
+            "source_german": "Der Name des Hundes ist Lucky."
           }
         ]
       },
@@ -4682,7 +4795,8 @@ const COURSE_DATA = {
           "explanation_en": "'วัคซีน' is the English word 'vaccine' written in Thai.",
           "question_romanization": "waksin"
         }
-      ]
+      ],
+      "thai_title_romanization": "sat liang"
     },
     {
       "id": 10,
@@ -4845,52 +4959,78 @@ const COURSE_DATA = {
           "pattern": "noun + ทั้งหมด",
           "meaning": "all + noun",
           "german": "alle + Substantiv",
-          "pattern_romanization": "noun + thangmt"
+          "pattern_romanization": "noun + thangmt",
+          "meaning_english": "noun + all/altogether",
+          "meaning_german": "Nomen + alles/insgesamt"
         },
         {
           "pattern": "noun + classifier + อื่นๆ",
           "meaning": "other nouns",
           "german": "andere Substantive",
-          "pattern_romanization": "noun + classifier + uen"
+          "pattern_romanization": "noun + classifier + uen",
+          "meaning_english": "noun + classifier + other/etc.",
+          "meaning_german": "Nomen + Klassifizierer + anderes/etc."
         },
         {
           "pattern": "วัน/อาทิตย์/เดือน/ปี + ละ + number + ครั้ง",
           "meaning": "…times per day/week/month/year",
           "german": "…mal pro Tag/Woche/Monat/Jahr",
-          "pattern_romanization": "wan / athit / duean / pi + la + number + khrang"
+          "pattern_romanization": "wan / athit / duean / pi + la + number + khrang",
+          "meaning_english": "day/week/month/year + per/each + number + times",
+          "meaning_german": "Tag/Woche/Monat/Jahr + pro/jeden + Anzahl + Mal"
         }
       ],
       "exercises": {
         "conversation": [
           {
-            "question": "คุณมีเพื่อนบ้านดีไหม"
+            "question": "คุณมีเพื่อนบ้านดีไหม",
+            "english": "Do you have good neighbors?",
+            "german": "Hast du gute Nachbarn?"
           },
           {
-            "question": "คุณคุยกับเพื่อนบ้านบ่อยไหม"
+            "question": "คุณคุยกับเพื่อนบ้านบ่อยไหม",
+            "english": "Do you talk to your neighbors often?",
+            "german": "Sprichst du oft mit deinen Nachbarn?"
           },
           {
-            "question": "เพื่อนบ้านของคุณมาจากประเทศไหน"
+            "question": "เพื่อนบ้านของคุณมาจากประเทศไหน",
+            "english": "What country are your neighbors from?",
+            "german": "Aus welchem Land kommen deine Nachbarn?"
           },
           {
-            "question": "คุณเคยแบ่งของให้เพื่อนบ้านไหม"
+            "question": "คุณเคยแบ่งของให้เพื่อนบ้านไหม",
+            "english": "Have you ever shared things with your neighbors?",
+            "german": "Hast du schon etwas mit deinen Nachbarn geteilt?"
           },
           {
-            "question": "ห้องข้างบน/ข้างล่าง/ข้างซ้าย/ข้างขวา มีเพื่อนบ้านไหม"
+            "question": "ห้องข้างบน/ข้างล่าง/ข้างซ้าย/ข้างขวา มีเพื่อนบ้านไหม",
+            "english": "Do you have neighbors above, below, left, or right of you?",
+            "german": "Hast du Nachbarn über, unter, links oder rechts von dir?"
           },
           {
-            "question": "เพื่อนบ้านของคุณ มีเด็กไหม"
+            "question": "เพื่อนบ้านของคุณ มีเด็กไหม",
+            "english": "Do your neighbors have any children?",
+            "german": "Haben deine Nachbarn Kinder?"
           },
           {
-            "question": "คุณรู้สึกกับเสียงดังจากเพื่อนบ้านไหม"
+            "question": "คุณรู้สึกกับเสียงดังจากเพื่อนบ้านไหม",
+            "english": "Do you mind the noise from your neighbors?",
+            "german": "Störst du dich am Lärm deiner Nachbarn?"
           },
           {
-            "question": "คุณจะบ่นเรื่องเพื่อนบ้านไหม"
+            "question": "คุณจะบ่นเรื่องเพื่อนบ้านไหม",
+            "english": "Would you complain about your neighbors?",
+            "german": "Würdest du dich über deine Nachbarn beschweren?"
           },
           {
-            "question": "บ้านของคุณรอบๆ เงียบไหม"
+            "question": "บ้านของคุณรอบๆ เงียบไหม",
+            "english": "Is the area around your house quiet?",
+            "german": "Ist die Gegend um dein Haus ruhig?"
           },
           {
-            "question": "คุณคิดว่ามีเพื่อนบ้านดีเป็นประโยชน์ไหม"
+            "question": "คุณคิดว่ามีเพื่อนบ้านดีเป็นประโยชน์ไหม",
+            "english": "Do you think having good neighbors is beneficial?",
+            "german": "Denkst du, dass gute Nachbarn vorteilhaft sind?"
           }
         ],
         "pronunciation": {
@@ -4901,27 +5041,32 @@ const COURSE_DATA = {
           {
             "english": "I am living in a condominium around Sukhumvit.",
             "thai": "ฉันอยู่ในคอนโดประมาณ สุขุมวิท",
-            "answer_romanization": "chan yu nai khondo praman sukhumwit"
+            "answer_romanization": "chan yu nai khondo praman sukhumwit",
+            "source_german": "Ich lebe in einem Wohnhaus um die Sukhumvit."
           },
           {
             "english": "My condominium is quiet and peaceful.",
             "thai": "คอนโดของฉันเงียบและสงบ",
-            "answer_romanization": "khondo khong chan ngiap lae sangop"
+            "answer_romanization": "khondo khong chan ngiap lae sangop",
+            "source_german": "Mein Wohnhaus ist ruhig und friedlich."
           },
           {
             "english": "I am living on the 12th floor.",
             "thai": "ฉันอยู่ที่ชั้น 12",
-            "answer_romanization": "chan yu thi chan 12"
+            "answer_romanization": "chan yu thi chan 12",
+            "source_german": "Ich wohne in der 12. Etage."
           },
           {
             "english": "I do not know any neighbors.",
             "thai": "ฉันไม่รู้จักเพื่อนบ้าน",
-            "answer_romanization": "chan mai ruchak phueanban"
+            "answer_romanization": "chan mai ruchak phueanban",
+            "source_german": "Ich kenne keine Nachbarn."
           },
           {
             "english": "We smile when we meet in the lift but we have never talked.",
             "thai": "เรายิ้มเมื่อเจอกันในลิฟต์ แต่ไม่เคยคุยกัน",
-            "answer_romanization": "rao yim muea choekan nai lip tae mai khoei khui kan"
+            "answer_romanization": "rao yim muea choekan nai lip tae mai khoei khui kan",
+            "source_german": "Wir lächeln, wenn wir im Aufzug aufeinander treffen, aber wir haben nie geredet."
           }
         ]
       },
@@ -5225,7 +5370,8 @@ const COURSE_DATA = {
           "explanation_en": "'แค่' means 'just' or 'only'.",
           "question_romanization": "khae"
         }
-      ]
+      ],
+      "thai_title_romanization": "phuean ban"
     },
     {
       "chapter": 11,
@@ -5492,16 +5638,66 @@ const COURSE_DATA = {
       ],
       "exercises": {
         "conversation": [
-          "คุณเอ็มมาและคุณคริสคิดว่าคอนโดฯ ที่เขาอยู่ดีอย่างไร",
-          "อาชีพยาม มีหน้าที่อะไร",
-          "อาชีพแม่บ้าน มีหน้าที่อะไร",
-          "อาชีพเจ้าหน้าที่ นิติฯ มีหน้าที่อะไร",
-          "อาชีพช่าง มีหน้าที่อะไร",
-          "คุณเอ็มมาและคุณคริสคิดอย่างไรกับพนักงานที่คอนโดฯ",
-          "คุณเอ็มมาและคุณคริสรู้สึกอย่างไรกับการอยู่ที่คอนโดฯ",
-          "ทุกครั้งที่ไปต่างจังหวัด คุณเอ็มมาจะเอาอะไรมาให้พนักงาน",
-          "ทุกๆ ปีใหม่ คุณเอ็มมาจะเอาอะไรมาให้พนักงาน",
-          "ทำไมคุณเอ็มมาเอาของให้พนักงานที่คอนโดฯ"
+          {
+            "thai": "คุณเอ็มมาและคุณคริสคิดว่าคอนโดฯ ที่เขาอยู่ดีอย่างไร",
+            "romanization": "",
+            "german": "",
+            "english": ""
+          },
+          {
+            "thai": "อาชีพยาม มีหน้าที่อะไร",
+            "romanization": "",
+            "german": "",
+            "english": ""
+          },
+          {
+            "thai": "อาชีพแม่บ้าน มีหน้าที่อะไร",
+            "romanization": "",
+            "german": "",
+            "english": ""
+          },
+          {
+            "thai": "อาชีพเจ้าหน้าที่ นิติฯ มีหน้าที่อะไร",
+            "romanization": "",
+            "german": "",
+            "english": ""
+          },
+          {
+            "thai": "อาชีพช่าง มีหน้าที่อะไร",
+            "romanization": "",
+            "german": "",
+            "english": ""
+          },
+          {
+            "thai": "คุณเอ็มมาและคุณคริสคิดอย่างไรกับพนักงานที่คอนโดฯ",
+            "romanization": "",
+            "german": "",
+            "english": ""
+          },
+          {
+            "thai": "คุณเอ็มมาและคุณคริสรู้สึกอย่างไรกับการอยู่ที่คอนโดฯ",
+            "romanization": "",
+            "german": "",
+            "english": ""
+          },
+          {
+            "thai": "ทุกครั้งที่ไปต่างจังหวัด คุณเอ็มมาจะเอาอะไรมาให้พนักงาน",
+            "romanization": "",
+            "german": "",
+            "english": ""
+          },
+          {
+            "thai": "ทุกๆ ปีใหม่ คุณเอ็มมาจะเอาอะไรมาให้พนักงาน",
+            "romanization": "",
+            "german": "",
+            "english": ""
+          },
+          {
+            "thai": "ทำไมคุณเอ็มมาเอาของให้พนักงานที่คอนโดฯ",
+            "romanization": "",
+            "german": "",
+            "english": ""
+          }
         ],
         "pronunciation": [
           "สวัสดีค่ะ ฉันมีของฝากเล็กๆ น้อยๆ มาให้ค่ะ"
@@ -5816,7 +6012,8 @@ const COURSE_DATA = {
       "thai_title": "อยู่คอนโดฯ",
       "english_title": "Living in a Condo",
       "german_title": "Im Condo",
-      "emoji": "🏢"
+      "emoji": "🏢",
+      "thai_title_romanization": "yu khon-do"
     },
     {
       "chapter": 12,
@@ -6050,21 +6247,63 @@ const COURSE_DATA = {
               "romanization": "phuying khon raek"
             }
           ],
-          "pattern_romanization": "noun + classifier + raek"
+          "pattern_romanization": "noun + classifier + raek",
+          "meaning_english": "The first [noun]",
+          "meaning_german": "The first [noun]"
         }
       ],
       "exercises": {
         "conversation": [
-          "ใครอธิบายเกี่ยวกับการทำบุญคอนโดฯ ให้คุณเอ็มมาเข้าใจ",
-          "การทำบุญคอนโดฯ คืออะไร",
-          "เวลามีการทำบุญคอนโดฯ คนไทยถวายอะไรให้พระบ้าง",
-          "ทำไมต้องมีการทำบุญคอนโดฯ หรือทำบุญบ้าน",
-          "ศาลพระภูมิคืออะไร",
-          "คอนโดฯ ของคุณเอ็มมามีศาลพระภูมิอยู่ตรงไหน",
-          "เทวดาในศาลพระภูมิมีหน้าที่อะไร",
-          "เจ้าหน้าที่นิติฯ บอกคุณเอ็มมาว่าศาลพระภูมิเป็นบ้านของใคร",
-          "คุณเอ็มมาเข้าใจคำว่าเจ้าที่ไหม",
-          "คุณเอ็มมาไม่เข้าใจเกี่ยวกับเทวดาและเจ้าที่ก็เลยพูดกับเจ้าหน้าที่นิติฯ ว่าอะไร"
+          {
+            "thai": "ใครอธิบายเกี่ยวกับการทำบุญคอนโดฯ ให้คุณเอ็มมาเข้าใจ",
+            "english": "Who explained to Emma about making merit at the condo",
+            "german": "Wer erklärte Emma etwas über Verdiensterwerben in der Eigentumswohnung"
+          },
+          {
+            "thai": "การทำบุญคอนโดฯ คืออะไร",
+            "english": "What is making merit at the condo",
+            "german": "Was ist Verdiensterwerben in der Eigentumswohnung"
+          },
+          {
+            "thai": "เวลามีการทำบุญคอนโดฯ คนไทยถวายอะไรให้พระบ้าง",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "ทำไมต้องมีการทำบุญคอนโดฯ หรือทำบุญบ้าน",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "ศาลพระภูมิคืออะไร",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "คอนโดฯ ของคุณเอ็มมามีศาลพระภูมิอยู่ตรงไหน",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "เทวดาในศาลพระภูมิมีหน้าที่อะไร",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "เจ้าหน้าที่นิติฯ บอกคุณเอ็มมาว่าศาลพระภูมิเป็นบ้านของใคร",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "คุณเอ็มมาเข้าใจคำว่าเจ้าที่ไหม",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "คุณเอ็มมาไม่เข้าใจเกี่ยวกับเทวดาและเจ้าที่ก็เลยพูดกับเจ้าหน้าที่นิติฯ ว่าอะไร",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          }
         ],
         "pronunciation": [
           "ผม/ฉันงงไปหมดแล้ว"
@@ -6379,7 +6618,8 @@ const COURSE_DATA = {
       "thai_title": "ทำบุญคอนโดฯ",
       "english_title": "Condo Merit Making",
       "german_title": "Verdienst-Zeremonie",
-      "emoji": "🙏"
+      "emoji": "🙏",
+      "thai_title_romanization": "tham bun khon-do"
     },
     {
       "chapter": 13,
@@ -6639,7 +6879,9 @@ const COURSE_DATA = {
               "romanization": "pakati phom / chan mai kin ela"
             }
           ],
-          "pattern_romanization": "pakati + sentence"
+          "pattern_romanization": "pakati + sentence",
+          "meaning_english": "Normally/Usually [sentence]",
+          "meaning_german": "Normally/Usually [sentence]"
         },
         {
           "pattern": "choice A หรือไม่ก็ choice B",
@@ -6652,7 +6894,9 @@ const COURSE_DATA = {
               "romanization": "pathaiiao ruemai k klapban"
             }
           ],
-          "pattern_romanization": "choice A ruemai k choice B"
+          "pattern_romanization": "choice A ruemai k choice B",
+          "meaning_english": "Choice A or else choice B",
+          "meaning_german": "Choice A or else choice B"
         },
         {
           "pattern": "adjective/adverb + ที่สุด",
@@ -6665,21 +6909,63 @@ const COURSE_DATA = {
               "romanization": "sanuk thisut"
             }
           ],
-          "pattern_romanization": "adjective /adverb + thisut"
+          "pattern_romanization": "adjective /adverb + thisut",
+          "meaning_english": "the most + adjective/adverb",
+          "meaning_german": "the most + adjective/adverb"
         }
       ],
       "exercises": {
         "conversation": [
-          "เทศกาลสำคัญของคนไทยคือเทศกาลอะไรบ้าง",
-          "มีเทศกาลอะไรบ้างที่คนไทยฉลองตอนกลางคืน",
-          "เทศกาลอะไรที่ฉลองตอนกลางวัน",
-          "ทำไมกรุงเทพฯ จะเงียบในช่วงวันหยุดยาว",
-          "ทำไมบางคนฝึกขับรถในช่วงเทศกาลสงกรานต์",
-          "คนกรุงเทพฯ ที่ไม่ไปเที่ยวในช่วงวันหยุดยาวจะมีกิจกรรมอะไร",
-          "ทำไมคนไทยบางคนไม่ชอบเทศกาลสงกรานต์",
-          "คุณเอ็มมาชอบเทศกาลอะไรมากที่สุด ทำไม",
-          "คุณคริสชอบเทศกาลอะไรมากที่สุด ทำไม",
-          "ทั้งสองคนไม่ชอบเทศกาลอะไร ทำไม"
+          {
+            "thai": "เทศกาลสำคัญของคนไทยคือเทศกาลอะไรบ้าง",
+            "english": "What are the important festivals for Thai people",
+            "german": "Was sind die wichtigen Feste der Thais"
+          },
+          {
+            "thai": "มีเทศกาลอะไรบ้างที่คนไทยฉลองตอนกลางคืน",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "เทศกาลอะไรที่ฉลองตอนกลางวัน",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "ทำไมกรุงเทพฯ จะเงียบในช่วงวันหยุดยาว",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "ทำไมบางคนฝึกขับรถในช่วงเทศกาลสงกรานต์",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "คนกรุงเทพฯ ที่ไม่ไปเที่ยวในช่วงวันหยุดยาวจะมีกิจกรรมอะไร",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "ทำไมคนไทยบางคนไม่ชอบเทศกาลสงกรานต์",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "คุณเอ็มมาชอบเทศกาลอะไรมากที่สุด ทำไม",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "คุณคริสชอบเทศกาลอะไรมากที่สุด ทำไม",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "ทั้งสองคนไม่ชอบเทศกาลอะไร ทำไม",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          }
         ],
         "pronunciation": [
           "ปกติผม/ฉันไม่กินเหล้า แต่ถ้าต้องฉลองอะไรก็จะกินนิดหน่อย"
@@ -6995,7 +7281,8 @@ const COURSE_DATA = {
       "thai_title": "เทศกาล",
       "english_title": "Festivals",
       "german_title": "Feste & Feiern",
-      "emoji": "🎉"
+      "emoji": "🎉",
+      "thai_title_romanization": "thet-sa-kan"
     },
     {
       "chapter": 14,
@@ -7255,7 +7542,9 @@ const COURSE_DATA = {
               "romanization": "chai thungplattik yoe"
             }
           ],
-          "pattern_romanization": "Subject + verb + yoe"
+          "pattern_romanization": "Subject + verb + yoe",
+          "meaning_english": "Subject verbs a lot",
+          "meaning_german": "Subject verbs a lot"
         },
         {
           "pattern": "Subject + do something + เยอะ",
@@ -7268,21 +7557,63 @@ const COURSE_DATA = {
               "romanization": "khanathai chai thungplattik yoe mak"
             }
           ],
-          "pattern_romanization": "Subject + do something + yoe"
+          "pattern_romanization": "Subject + do something + yoe",
+          "meaning_english": "Subject does a lot of something",
+          "meaning_german": "Subject does a lot of something"
         }
       ],
       "exercises": {
         "conversation": [
-          "คุณเอ็มมารู้เกี่ยวกับการใช้ถุงพลาสติกของคนไทยจากที่ไหน",
-          "คนไทยใช้ถุงพลาสติกใส่อะไรบ้าง",
-          "คนไทยส่วนใหญ่ใช้ถุงพลาสติกหนึ่งใบหลายๆ ครั้งใช่ไหม",
-          "ที่กรุงเทพฯ ถุงพลาสติกทำให้เกิดปัญหาอะไรในสิ่งแวดล้อม",
-          "ซูเปอร์มาร์เก็ตที่ประเทศไทยไม่ให้ถุงพลาสติกเพราะเป็นกฎหมายใช่ไหม",
-          "ซูเปอร์มาร์เก็ตที่ประเทศไทยเริ่มนโยบายไม่ให้ถุงพลาสติกตั้งแต่เมื่อไหร่",
-          "คนไทยใช้อะไรใส่ของเวลาไปซื้อของที่ซูเปอร์มาร์เก็ต",
-          "คนที่ไม่ชอบนโยบาย ไม่ให้ถุงพลาสติก บ่นว่าอะไร",
-          "คุณเอ็มมาคิดอย่างไรกับคนที่บ่นเกี่ยวกับนโยบายนี้",
-          "ถ้าไม่อยากได้ถุงพลาสติกเวลาไปซื้อของ ต้องพูดว่าอย่างไร"
+          {
+            "thai": "คุณเอ็มมารู้เกี่ยวกับการใช้ถุงพลาสติกของคนไทยจากที่ไหน",
+            "english": "Where did Emma learn about Thai people's use of plastic bags",
+            "german": "Wo erfuhr Emma von der Verwendung von Plastiktüten durch die Thais"
+          },
+          {
+            "thai": "คนไทยใช้ถุงพลาสติกใส่อะไรบ้าง",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "คนไทยส่วนใหญ่ใช้ถุงพลาสติกหนึ่งใบหลายๆ ครั้งใช่ไหม",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "ที่กรุงเทพฯ ถุงพลาสติกทำให้เกิดปัญหาอะไรในสิ่งแวดล้อม",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "ซูเปอร์มาร์เก็ตที่ประเทศไทยไม่ให้ถุงพลาสติกเพราะเป็นกฎหมายใช่ไหม",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "ซูเปอร์มาร์เก็ตที่ประเทศไทยเริ่มนโยบายไม่ให้ถุงพลาสติกตั้งแต่เมื่อไหร่",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "คนไทยใช้อะไรใส่ของเวลาไปซื้อของที่ซูเปอร์มาร์เก็ต",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "คนที่ไม่ชอบนโยบาย ไม่ให้ถุงพลาสติก บ่นว่าอะไร",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "คุณเอ็มมาคิดอย่างไรกับคนที่บ่นเกี่ยวกับนโยบายนี้",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "ถ้าไม่อยากได้ถุงพลาสติกเวลาไปซื้อของ ต้องพูดว่าอย่างไร",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          }
         ],
         "pronunciation": [
           "ไม่เอาถุงครับ/ค่ะ"
@@ -7598,7 +7929,8 @@ const COURSE_DATA = {
       "thai_title": "ถุงพลาสติก",
       "english_title": "Plastic Bags",
       "german_title": "Plastiktüten",
-      "emoji": "🛍️"
+      "emoji": "🛍️",
+      "thai_title_romanization": "thung phla-sa-tik"
     },
     {
       "chapter": 15,
@@ -7868,21 +8200,63 @@ const COURSE_DATA = {
               "romanization": "khohai pha pathaiiao"
             }
           ],
-          "pattern_romanization": "Subject khohai + someone do something"
+          "pattern_romanization": "Subject khohai + someone do something",
+          "meaning_english": "Subject asks someone to do something",
+          "meaning_german": "Subject asks someone to do something"
         }
       ],
       "exercises": {
         "conversation": [
-          "ไชน่าทาวน์ที่กรุงเทพฯ มีชื่อภาษาไทยว่าอะไร",
-          "ทำไมครอบครัวหรือเพื่อนๆ ของคุณคริสอยากไปเที่ยวเยาวราช",
-          "คนไทยเชื้อสายจีนไปซื้ออะไรที่เยาวราช",
-          "ที่เยาวราชจะปิดถนนบางส่วนตอนกลางคืน เพื่ออะไร",
-          "รถเข็นส่วนใหญ่ขายอะไร",
-          "ร้านอาหารทุกร้านมีโต๊ะและเก้าอี้ให้นั่งกินอาหารใช่ไหม",
-          "อาหารสตรีทฟู้ดราคาไม่แพงใช่ไหม",
-          "วัยรุ่นไทยชอบไปทำอะไรที่เยาวราช",
-          "นักท่องเที่ยวชอบไปทำอะไรที่เยาวราช",
-          "คุณเอ็มมาชอบไปเยาวราชตอนไหน เขาไปทำอะไร"
+          {
+            "thai": "ไชน่าทาวน์ที่กรุงเทพฯ มีชื่อภาษาไทยว่าอะไร",
+            "english": "What is the Thai name for Chinatown in Bangkok",
+            "german": "Wie heißt Chinatown in Bangkok auf Thai"
+          },
+          {
+            "thai": "ทำไมครอบครัวหรือเพื่อนๆ ของคุณคริสอยากไปเที่ยวเยาวราช",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "คนไทยเชื้อสายจีนไปซื้ออะไรที่เยาวราช",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "ที่เยาวราชจะปิดถนนบางส่วนตอนกลางคืน เพื่ออะไร",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "รถเข็นส่วนใหญ่ขายอะไร",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "ร้านอาหารทุกร้านมีโต๊ะและเก้าอี้ให้นั่งกินอาหารใช่ไหม",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "อาหารสตรีทฟู้ดราคาไม่แพงใช่ไหม",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "วัยรุ่นไทยชอบไปทำอะไรที่เยาวราช",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "นักท่องเที่ยวชอบไปทำอะไรที่เยาวราช",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          },
+          {
+            "thai": "คุณเอ็มมาชอบไปเยาวราชตอนไหน เขาไปทำอะไร",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
+          }
         ],
         "pronunciation": [],
         "translation": [
@@ -8196,7 +8570,8 @@ const COURSE_DATA = {
       "thai_title": "เยาวราช",
       "english_title": "Yaowarat/Chinatown",
       "german_title": "Chinatown",
-      "emoji": "🏮"
+      "emoji": "🏮",
+      "thai_title_romanization": "yao-wa-rat"
     },
     {
       "vocabulary": [
@@ -8470,7 +8845,9 @@ const COURSE_DATA = {
           "thai_example": "เขาป่วย ก็เลยไม่มา",
           "english_example": "He was sick, so he didn't come",
           "german_example": "Er war krank, daher kam er nicht",
-          "pattern_romanization": "Subject + k loei + verb /adjective"
+          "pattern_romanization": "Subject + k loei + verb /adjective",
+          "meaning_english": "Therefore/So subject...",
+          "meaning_german": "Therefore/So subject..."
         },
         {
           "pattern": "สำหรับ + noun",
@@ -8478,50 +8855,72 @@ const COURSE_DATA = {
           "thai_example": "สำหรับคนต่างชาติ",
           "english_example": "as for foreigners",
           "german_example": "für Ausländer",
-          "pattern_romanization": "samrap + noun"
+          "pattern_romanization": "samrap + noun",
+          "meaning_english": "(as) for, with connotation of comparing",
+          "meaning_german": "(as) for, with connotation of comparing"
         }
       ],
       "exercises": {
         "conversation": [
           {
             "question": "กรุงเทพฯ มีกลิ่นอะไรบ้าง",
-            "answer": "กรุงเทพฯ มีกลิ่นอากาศชื้น กลิ่นอาหาร กลิ่นควันรถ บางครั้งมีกลิ่นเหม็นจากท่อระบายน้ำ และในรถไฟฟ้ามีกลิ่นหอมจากน้ำหอม"
+            "answer": "กรุงเทพฯ มีกลิ่นอากาศชื้น กลิ่นอาหาร กลิ่นควันรถ บางครั้งมีกลิ่นเหม็นจากท่อระบายน้ำ และในรถไฟฟ้ามีกลิ่นหอมจากน้ำหอม",
+            "german": "",
+            "english": ""
           },
           {
             "question": "คุณคิดว่ากลิ่นทุเรียนเป็นอย่างไร",
-            "answer": "ฉันคิดว่ากลิ่นทุเรียนน่าแปลกใจสำหรับคนต่างชาติ แต่ฉันไม่มีปัญหา"
+            "answer": "ฉันคิดว่ากลิ่นทุเรียนน่าแปลกใจสำหรับคนต่างชาติ แต่ฉันไม่มีปัญหา",
+            "german": "",
+            "english": ""
           },
           {
             "question": "ทำไมคุณคิดว่าผู้หญิงดมกลิ่นได้ดีกว่าผู้ชาย",
-            "answer": "ฉันคิดว่าผู้หญิงมีความสามารถในการดมกลิ่นได้ดีกว่าผู้ชาย"
+            "answer": "ฉันคิดว่าผู้หญิงมีความสามารถในการดมกลิ่นได้ดีกว่าผู้ชาย",
+            "german": "",
+            "english": ""
           },
           {
             "question": "การใส่หน้ากากที่ประเทศไทยเป็นเรื่องแปลกไหม",
-            "answer": "ไม่ การใส่หน้ากากที่ประเทศไทยเป็นเรื่องปกติธรรมดา"
+            "answer": "ไม่ การใส่หน้ากากที่ประเทศไทยเป็นเรื่องปกติธรรมดา",
+            "german": "",
+            "english": ""
           },
           {
             "question": "คนไทยใส่หน้ากากเมื่อไหร่",
-            "answer": "คนไทยใส่หน้ากากเวลาเป็นหวัดและเวลาที่มีปัญหาเกี่ยวกับฝุ่น PM 2.5"
+            "answer": "คนไทยใส่หน้ากากเวลาเป็นหวัดและเวลาที่มีปัญหาเกี่ยวกับฝุ่น PM 2.5",
+            "german": "",
+            "english": ""
           },
           {
             "question": "ถ้าไม่ชอบกลิ่นทุเรียนต้องทำอย่างไร",
-            "answer": "ถ้าไม่ชอบกลิ่นทุเรียนสามารถใส่หน้ากากแก้ปัญหาได้"
+            "answer": "ถ้าไม่ชอบกลิ่นทุเรียนสามารถใส่หน้ากากแก้ปัญหาได้",
+            "german": "",
+            "english": ""
           },
           {
             "question": "กลิ่นหอมในรถไฟฟ้ามาจากอะไร",
-            "answer": "กลิ่นหอมในรถไฟฟ้ามาจากเสื้อผ้าและน้ำหอมของคนในรถ"
+            "answer": "กลิ่นหอมในรถไฟฟ้ามาจากเสื้อผ้าและน้ำหอมของคนในรถ",
+            "german": "",
+            "english": ""
           },
           {
             "question": "ประเทศไทยมีปัญหาเรื่องฝุ่นเมื่อไหร่",
-            "answer": "ประเทศไทยมีปัญหาฝุ่น PM 2.5 ในฤดูร้อนและฤดูหนาว"
+            "answer": "ประเทศไทยมีปัญหาฝุ่น PM 2.5 ในฤดูร้อนและฤดูหนาว",
+            "german": "",
+            "english": ""
           },
           {
             "question": "กลิ่นเหม็นในกรุงเทพฯ มาจากไหน",
-            "answer": "กลิ่นเหม็นในกรุงเทพฯ มาจากท่อระบายน้ำและควันรถ"
+            "answer": "กลิ่นเหม็นในกรุงเทพฯ มาจากท่อระบายน้ำและควันรถ",
+            "german": "",
+            "english": ""
           },
           {
             "question": "เวลาอยู่ในรถไฟฟ้าหรือรถไฟใต้ดินจะได้กลิ่นอะไร",
-            "answer": "เวลาอยู่ในรถไฟฟ้าหรือรถไฟใต้ดินจะได้กลิ่นหอมจากเสื้อผ้าและน้ำหอมของคนในรถ"
+            "answer": "เวลาอยู่ในรถไฟฟ้าหรือรถไฟใต้ดินจะได้กลิ่นหอมจากเสื้อผ้าและน้ำหอมของคนในรถ",
+            "german": "",
+            "english": ""
           }
         ]
       },
@@ -8831,7 +9230,8 @@ const COURSE_DATA = {
       "thai_title": "กลิ่นของกรุงเทพฯ",
       "german_title": "Bangkoks Gerüche",
       "english_title": "Smells of Bangkok",
-      "emoji": "👃"
+      "emoji": "👃",
+      "thai_title_romanization": "klin khong krung thep"
     },
     {
       "vocabulary": [
@@ -9089,7 +9489,9 @@ const COURSE_DATA = {
           "thai_example": "มาที่นี่ใหม่ๆ",
           "english_example": "newly came here",
           "german_example": "gerade angekommen",
-          "pattern_romanization": "verb /noun + aim"
+          "pattern_romanization": "verb /noun + aim",
+          "meaning_english": "at early stage of doing something",
+          "meaning_german": "at early stage of doing something"
         },
         {
           "pattern": "adjective + เกินไป",
@@ -9097,50 +9499,72 @@ const COURSE_DATA = {
           "thai_example": "ร้อนเกินไป",
           "english_example": "way too hot",
           "german_example": "viel zu heiß",
-          "pattern_romanization": "adjective + koenpai"
+          "pattern_romanization": "adjective + koenpai",
+          "meaning_english": "way too adjective",
+          "meaning_german": "way too adjective"
         }
       ],
       "exercises": {
         "conversation": [
           {
             "question": "ประเทศไทยมีกี่ฤดู",
-            "answer": "ประเทศไทยมีสามฤดู คือ ฤดูร้อน ฤดูฝน และฤดูหนาว"
+            "answer": "ประเทศไทยมีสามฤดู คือ ฤดูร้อน ฤดูฝน และฤดูหนาว",
+            "english": "How many seasons does Thailand have",
+            "german": "Wie viele Jahreszeiten hat Thailand"
           },
           {
             "question": "ฤดูร้อนที่กรุงเทพฯ ร้อนเพราะอะไร",
-            "answer": "ฤดูร้อนที่กรุงเทพฯ ร้อนเพราะนอกจากร้อนตามธรรมชาติแล้วยังมีความร้อนจากพื้นถนนและตึกสูง"
+            "answer": "ฤดูร้อนที่กรุงเทพฯ ร้อนเพราะนอกจากร้อนตามธรรมชาติแล้วยังมีความร้อนจากพื้นถนนและตึกสูง",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คนต่างชาติที่มาใหม่ๆ ชอบอากาศร้อนหรือเปล่า",
-            "answer": "บางคนชอบอากาศร้อนเพราะเบื่ออากาศหนาว"
+            "answer": "บางคนชอบอากาศร้อนเพราะเบื่ออากาศหนาว",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คนที่อยู่กรุงเทพฯ มาหลายปีชอบอากาศร้อนไหม",
-            "answer": "ไม่ พวกเขาไม่ชอบเพราะร้อนเกินไป"
+            "answer": "ไม่ พวกเขาไม่ชอบเพราะร้อนเกินไป",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "ฤดูฝนที่กรุงเทพฯ เป็นอย่างไร",
-            "answer": "ฤดูฝนที่กรุงเทพฯ ร้อนและชื้นมากด้วย บางคนบอกว่าหายใจไม่สะดวก"
+            "answer": "ฤดูฝนที่กรุงเทพฯ ร้อนและชื้นมากด้วย บางคนบอกว่าหายใจไม่สะดวก",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "ฤดูหนาวที่กรุงเทพฯ หนาวจริงไหม",
-            "answer": "ไม่ ฤดูหนาวที่กรุงเทพฯ ไม่หนาวจริงๆ อากาศแค่เย็นๆ เท่านั้น"
+            "answer": "ไม่ ฤดูหนาวที่กรุงเทพฯ ไม่หนาวจริงๆ อากาศแค่เย็นๆ เท่านั้น",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "เวลาเย็นที่กรุงเทพฯ นานเท่าไหร่",
-            "answer": "บางปีมีสองสามวัน แต่บางปีมีสองสามสัปดาห์"
+            "answer": "บางปีมีสองสามวัน แต่บางปีมีสองสามสัปดาห์",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "ฝุ่น PM 2.5 เกิดในฤดูอะไร",
-            "answer": "ฝุ่น PM 2.5 เกิดในฤดูร้อนและฤดูหนาว"
+            "answer": "ฝุ่น PM 2.5 เกิดในฤดูร้อนและฤดูหนาว",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คุณคริสชอบอากาศที่กรุงเทพฯ หรือลอนดอน",
-            "answer": "คุณคริสชอบอากาศที่กรุงเทพฯ มากกว่าลอนดอน"
+            "answer": "คุณคริสชอบอากาศที่กรุงเทพฯ มากกว่าลอนดอน",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "ของที่ต้องมีสำหรับอากาศที่กรุงเทพฯ คืออะไรบ้าง",
-            "answer": "ของที่ต้องมีคือร่มและหน้ากาก ไม่ต้องมีเสื้อกันหนาว"
+            "answer": "ของที่ต้องมีคือร่มและหน้ากาก ไม่ต้องมีเสื้อกันหนาว",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           }
         ]
       },
@@ -9450,7 +9874,8 @@ const COURSE_DATA = {
       "thai_title": "อากาศที่กรุงเทพฯ",
       "german_title": "Wetter in Bangkok",
       "english_title": "Weather in Bangkok",
-      "emoji": "☀️"
+      "emoji": "☀️",
+      "thai_title_romanization": "a-kat thi krung thep"
     },
     {
       "vocabulary": [
@@ -9724,7 +10149,9 @@ const COURSE_DATA = {
           "thai_example": "ไม่ชอบเลย",
           "english_example": "don't like at all",
           "german_example": "mag überhaupt nicht",
-          "pattern_romanization": "mai verb /adjective + loei"
+          "pattern_romanization": "mai verb /adjective + loei",
+          "meaning_english": "not verb/adjective at all",
+          "meaning_german": "not verb/adjective at all"
         },
         {
           "pattern": "Subject + จำเป็นต้อง + verb/adjective",
@@ -9732,50 +10159,72 @@ const COURSE_DATA = {
           "thai_example": "จำเป็นต้องไปหาหมอ",
           "english_example": "have to go to the doctor",
           "german_example": "muss zum Arzt gehen",
-          "pattern_romanization": "Subject + champentong + verb /adjective"
+          "pattern_romanization": "Subject + champentong + verb /adjective",
+          "meaning_english": "Subject have to + verb/adjective",
+          "meaning_german": "Subject have to + verb/adjective"
         }
       ],
       "exercises": {
         "conversation": [
           {
             "question": "คุณคริสและเพื่อนๆ ชอบบริการอะไรในประเทศไทย",
-            "answer": "คุณคริสและเพื่อนๆ ชอบบริการทำฟันในประเทศไทย"
+            "answer": "คุณคริสและเพื่อนๆ ชอบบริการทำฟันในประเทศไทย",
+            "english": "What services do Chris and friends prefer in Thailand",
+            "german": "Welche Dienstleistungen mögen Chris und seine Freunde in Thailand"
           },
           {
             "question": "ทำไมเพื่อนชาวอังกฤษบอกว่าการไปหาหมอฟันที่กรุงเทพฯ น่าประทับใจ",
-            "answer": "เพราะหมอฟันที่นี่เก่งมาก มือเบา ทำให้ไม่เจ็บ และราคาไม่แพง"
+            "answer": "เพราะหมอฟันที่นี่เก่งมาก มือเบา ทำให้ไม่เจ็บ และราคาไม่แพง",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "ทำไมคุณคริสไม่ชอบไปหาหมอฟัน",
-            "answer": "เพราะเขาไม่ชอบเสียงของเครื่องมือและกลิ่นของคลินิก"
+            "answer": "เพราะเขาไม่ชอบเสียงของเครื่องมือและกลิ่นของคลินิก",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คุณคริสไปหาหมอฟันที่โรงพยาบาลหรือคลินิก",
-            "answer": "คุณคริสไปหาหมอฟันที่คลินิก"
+            "answer": "คุณคริสไปหาหมอฟันที่คลินิก",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "หมอฟันทำอะไรกับฟันของคุณคริสบ้าง",
-            "answer": "หมอขูดหินปูน อุดฟัน และรักษารากฟัน"
+            "answer": "หมอขูดหินปูน อุดฟัน และรักษารากฟัน",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คุณคริสคิดว่าเพื่อนของเขาพูดถูกไหม",
-            "answer": "ใช่ คุณคริสเชื่อว่าเพื่อนของเขาพูดถูก"
+            "answer": "ใช่ คุณคริสเชื่อว่าเพื่อนของเขาพูดถูก",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "ธุรกิจทัวร์ทำฟันให้บริการอะไรบ้าง",
-            "answer": "ธุรกิจทัวร์พานักท่องเที่ยวมาทำฟันที่กรุงเทพฯ ทำฟันเสร็จแล้วก็ไปเที่ยว"
+            "answer": "ธุรกิจทัวร์พานักท่องเที่ยวมาทำฟันที่กรุงเทพฯ ทำฟันเสร็จแล้วก็ไปเที่ยว",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คุณเอ็มมาคิดอย่างไรกับการบริการต่างๆ ที่ประเทศไทย",
-            "answer": "คุณเอ็มมาบอกว่าที่ประเทศไทยมีบริการหลายอย่างที่ดีมากๆ และไม่แพง"
+            "answer": "คุณเอ็มมาบอกว่าที่ประเทศไทยมีบริการหลายอย่างที่ดีมากๆ และไม่แพง",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คนไทยชอบไปหาหมอฟันไหม",
-            "answer": "ไม่ มากขึ้นคนไทยคิดว่าค่าทำฟันแพงอยู่มาก ถ้าไม่จำเป็นก็ไม่อยากไป"
+            "answer": "ไม่ มากขึ้นคนไทยคิดว่าค่าทำฟันแพงอยู่มาก ถ้าไม่จำเป็นก็ไม่อยากไป",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "ค่าทำฟันที่ประเทศไทยเปรียบเทียบกับที่อังกฤษอย่างไร",
-            "answer": "ค่าทำฟันที่ประเทศไทยถูกกว่าที่อังกฤษและอเมริกา"
+            "answer": "ค่าทำฟันที่ประเทศไทยถูกกว่าที่อังกฤษและอเมริกา",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           }
         ]
       },
@@ -10085,7 +10534,8 @@ const COURSE_DATA = {
       "thai_title": "การทำฟัน",
       "german_title": "Zahnarzt",
       "english_title": "Dental Treatment",
-      "emoji": "🦷"
+      "emoji": "🦷",
+      "thai_title_romanization": "kan tham fan"
     },
     {
       "vocabulary": [
@@ -10343,50 +10793,72 @@ const COURSE_DATA = {
           "thai_example": "ครั้งแรก ครั้งที่สอง ครั้งที่สาม",
           "english_example": "first time, second time, third time",
           "german_example": "erstes Mal, zweites Mal, drittes Mal",
-          "pattern_romanization": "khrang + ordinal /number"
+          "pattern_romanization": "khrang + ordinal /number",
+          "meaning_english": "time(s), first time/second time, etc",
+          "meaning_german": "time(s), first time/second time, etc"
         }
       ],
       "exercises": {
         "conversation": [
           {
             "question": "คุณคริสมีสัญญาทำงานกี่ปี",
-            "answer": "คุณคริสมีสัญญาทำงานสี่ปี"
+            "answer": "คุณคริสมีสัญญาทำงานสี่ปี",
+            "english": "How many years is Chris's work contract",
+            "german": "Wie lange ist Christi Arbeitsvertrag"
           },
           {
             "question": "คุณคริสจะทำงานครบสัญญาเมื่อไหร่",
-            "answer": "อีกครึ่งปีคุณคริสจะทำงานครบสัญญา"
+            "answer": "อีกครึ่งปีคุณคริสจะทำงานครบสัญญา",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คุณคริสจะต่อสัญญาไหม",
-            "answer": "ไม่ คุณคริสตัดสินใจไม่ต่อสัญญา"
+            "answer": "ไม่ คุณคริสตัดสินใจไม่ต่อสัญญา",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คุณคริสจะย้ายไปทำงานที่ไหน",
-            "answer": "คุณคริสจะย้ายไปทำงานที่ญี่ปุ่น"
+            "answer": "คุณคริสจะย้ายไปทำงานที่ญี่ปุ่น",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คุณคริสเซ็นสัญญากับบริษัทญี่ปุ่นแล้วไหม",
-            "answer": "ใช่ คุณคริสเซ็นสัญญากับบริษัทญี่ปุ่นเรียบร้อยแล้ว"
+            "answer": "ใช่ คุณคริสเซ็นสัญญากับบริษัทญี่ปุ่นเรียบร้อยแล้ว",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "ช่วงนี้คุณคริสกับคุณเอ็มมาเตรียมตัวอย่างไร",
-            "answer": "คุณคริสเตรียมตัวจัดการงาน คุณเอ็มมาจัดการงานและวางแผนเกี่ยวกับการย้าย"
+            "answer": "คุณคริสเตรียมตัวจัดการงาน คุณเอ็มมาจัดการงานและวางแผนเกี่ยวกับการย้าย",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คุณคริสกับคุณเอ็มมาจะทำอย่างไรกับข้าวของต่างๆ",
-            "answer": "เขาจะเก็บของ ส่งกลับไปอังกฤษ ส่งไปญี่ปุ่น หรือให้เพื่อนไทยกับบริจาค"
+            "answer": "เขาจะเก็บของ ส่งกลับไปอังกฤษ ส่งไปญี่ปุ่น หรือให้เพื่อนไทยกับบริจาค",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คุณคริสมีประสบการณ์ย้ายประเทศมากี่ครั้ง",
-            "answer": "คุณคริสมีประสบการณ์ย้ายประเทศสามครั้ง"
+            "answer": "คุณคริสมีประสบการณ์ย้ายประเทศสามครั้ง",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คุณคริสย้ายจากที่ไหนไปที่ไหนบ้าง",
-            "answer": "ครั้งแรกจากอังกฤษไปสิงคโปร์ ครั้งที่สองจากสิงคโปร์มาประเทศไทย ครั้งนี้ไปญี่ปุ่น"
+            "answer": "ครั้งแรกจากอังกฤษไปสิงคโปร์ ครั้งที่สองจากสิงคโปร์มาประเทศไทย ครั้งนี้ไปญี่ปุ่น",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คุณเอ็มมาวางแผนจะทำอะไรที่ญี่ปุ่น",
-            "answer": "คุณเอ็มมาวางแผนจะเขียนสารคดีเกี่ยวกับวัดที่ญี่ปุ่น"
+            "answer": "คุณเอ็มมาวางแผนจะเขียนสารคดีเกี่ยวกับวัดที่ญี่ปุ่น",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           }
         ]
       },
@@ -10696,7 +11168,8 @@ const COURSE_DATA = {
       "thai_title": "ย้ายประเทศ",
       "german_title": "Auswandern",
       "english_title": "Moving Countries",
-      "emoji": "✈️"
+      "emoji": "✈️",
+      "thai_title_romanization": "yai pra-thet"
     },
     {
       "vocabulary": [
@@ -10952,43 +11425,63 @@ const COURSE_DATA = {
         "conversation": [
           {
             "question": "เอ็กซ์แพตต้องกังวลและระมัดระวังเกี่ยวกับอะไร",
-            "answer": "เอ็กซ์แพตต้องกังวลและระมัดระวังเกี่ยวกับความปลอดภัย เรื่องสุขภาพ และวัฒนธรรม"
+            "answer": "เอ็กซ์แพตต้องกังวลและระมัดระวังเกี่ยวกับความปลอดภัย เรื่องสุขภาพ และวัฒนธรรม",
+            "english": "What should expats be concerned and careful about",
+            "german": "Worüber sollten Expats besorgt und vorsichtig sein"
           },
           {
             "question": "เรื่องที่สำคัญที่สุดสำหรับเอ็กซ์แพตคืออะไร",
-            "answer": "เรื่องที่สำคัญที่สุดคือความปลอดภัย"
+            "answer": "เรื่องที่สำคัญที่สุดคือความปลอดภัย",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "ก่อนย้ายประเทศต้องพิจารณาเรื่องอะไรบ้าง",
-            "answer": "ต้องพิจารณาความปลอดภัยเรื่องสุขภาพ ความปลอดภัยในชีวิตและทรัพย์สิน และความปลอดภัยเกี่ยวกับวัฒนธรรม"
+            "answer": "ต้องพิจารณาความปลอดภัยเรื่องสุขภาพ ความปลอดภัยในชีวิตและทรัพย์สิน และความปลอดภัยเกี่ยวกับวัฒนธรรม",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "ประเทศที่ปลอดภัยเรื่องสุขภาพต้องมีอะไร",
-            "answer": "ต้องไม่มีโรคระบาด ต้องมีโรงพยาบาลที่ดี และมีหมอที่เก่ง"
+            "answer": "ต้องไม่มีโรคระบาด ต้องมีโรงพยาบาลที่ดี และมีหมอที่เก่ง",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "ความปลอดภัยในชีวิตและทรัพย์สินหมายถึงอะไร",
-            "answer": "หมายถึงการอยู่โดยไม่ต้องกลัวโจรหรือขโมยจนเกินไป ไม่มีอุบัติเหตุร้ายแรงบ่อยๆ ไม่มีการประท้วงรุนแรง"
+            "answer": "หมายถึงการอยู่โดยไม่ต้องกลัวโจรหรือขโมยจนเกินไป ไม่มีอุบัติเหตุร้ายแรงบ่อยๆ ไม่มีการประท้วงรุนแรง",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "ความปลอดภัยเกี่ยวกับวัฒนธรรมคืออะไร",
-            "answer": "คือการพิจารณาว่าสามารถปรับตัวให้เข้ากับวัฒนธรรมประเทศนั้นได้หรือไม่"
+            "answer": "คือการพิจารณาว่าสามารถปรับตัวให้เข้ากับวัฒนธรรมประเทศนั้นได้หรือไม่",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "ถ้าไม่สามารถปรับตัวได้จะเกิดอะไร",
-            "answer": "อาจอยู่อย่างไม่สบายใจและคนท้องถิ่นก็จะไม่สบายใจด้วย"
+            "answer": "อาจอยู่อย่างไม่สบายใจและคนท้องถิ่นก็จะไม่สบายใจด้วย",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คุณคริสกับภรรยากำลังจะย้ายไปไหน",
-            "answer": "กำลังจะย้ายไปที่โตเกียว"
+            "answer": "กำลังจะย้ายไปที่โตเกียว",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คุณคริสคิดว่าที่นั่นปลอดภัยไหม",
-            "answer": "ใช่ คิดว่าปลอดภัยมากในทุกๆ ด้าน"
+            "answer": "ใช่ คิดว่าปลอดภัยมากในทุกๆ ด้าน",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           },
           {
             "question": "คุณคริสกับภรรยาวางแผนว่าเกษียณแล้วจะทำอะไร",
-            "answer": "วางแผนว่าถ้าเป็นไปได้จะกลับมาใช้ชีวิตที่ประเทศไทย"
+            "answer": "วางแผนว่าถ้าเป็นไปได้จะกลับมาใช้ชีวิตที่ประเทศไทย",
+            "english": "Translation needed",
+            "german": "Übersetzung erforderlich"
           }
         ]
       },
@@ -11298,7 +11791,8 @@ const COURSE_DATA = {
       "thai_title": "อยู่อย่างปลอดภัย",
       "german_title": "Sicher leben",
       "english_title": "Living Safely",
-      "emoji": "🔒"
+      "emoji": "🔒",
+      "thai_title_romanization": "yu yang plot-phai"
     }
   ]
 };
