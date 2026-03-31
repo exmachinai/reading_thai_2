@@ -4961,7 +4961,8 @@ const COURSE_DATA = {
           "german": "alle + Substantiv",
           "pattern_romanization": "noun + thangmt",
           "meaning_english": "noun + all/altogether",
-          "meaning_german": "Nomen + alles/insgesamt"
+          "meaning_german": "Nomen + alles/insgesamt",
+          "examples": []
         },
         {
           "pattern": "noun + classifier + อื่นๆ",
@@ -4969,7 +4970,8 @@ const COURSE_DATA = {
           "german": "andere Substantive",
           "pattern_romanization": "noun + classifier + uen",
           "meaning_english": "noun + classifier + other/etc.",
-          "meaning_german": "Nomen + Klassifizierer + anderes/etc."
+          "meaning_german": "Nomen + Klassifizierer + anderes/etc.",
+          "examples": []
         },
         {
           "pattern": "วัน/อาทิตย์/เดือน/ปี + ละ + number + ครั้ง",
@@ -4977,7 +4979,8 @@ const COURSE_DATA = {
           "german": "…mal pro Tag/Woche/Monat/Jahr",
           "pattern_romanization": "wan / athit / duean / pi + la + number + khrang",
           "meaning_english": "day/week/month/year + per/each + number + times",
-          "meaning_german": "Tag/Woche/Monat/Jahr + pro/jeden + Anzahl + Mal"
+          "meaning_german": "Tag/Woche/Monat/Jahr + pro/jeden + Anzahl + Mal",
+          "examples": []
         }
       ],
       "exercises": {
@@ -5633,7 +5636,9 @@ const COURSE_DATA = {
               "romanization": "phuakkhao chuai kaepanha temthi"
             }
           ],
-          "pattern_romanization": "Subject + verb + temthi"
+          "pattern_romanization": "Subject + verb + temthi",
+          "meaning_german": "",
+          "meaning_english": ""
         }
       ],
       "exercises": {
@@ -8847,7 +8852,8 @@ const COURSE_DATA = {
           "german_example": "Er war krank, daher kam er nicht",
           "pattern_romanization": "Subject + k loei + verb /adjective",
           "meaning_english": "Therefore/So subject...",
-          "meaning_german": "Therefore/So subject..."
+          "meaning_german": "Therefore/So subject...",
+          "examples": []
         },
         {
           "pattern": "สำหรับ + noun",
@@ -8857,7 +8863,8 @@ const COURSE_DATA = {
           "german_example": "für Ausländer",
           "pattern_romanization": "samrap + noun",
           "meaning_english": "(as) for, with connotation of comparing",
-          "meaning_german": "(as) for, with connotation of comparing"
+          "meaning_german": "(as) for, with connotation of comparing",
+          "examples": []
         }
       ],
       "exercises": {
@@ -9491,7 +9498,8 @@ const COURSE_DATA = {
           "german_example": "gerade angekommen",
           "pattern_romanization": "verb /noun + aim",
           "meaning_english": "at early stage of doing something",
-          "meaning_german": "at early stage of doing something"
+          "meaning_german": "at early stage of doing something",
+          "examples": []
         },
         {
           "pattern": "adjective + เกินไป",
@@ -9501,7 +9509,8 @@ const COURSE_DATA = {
           "german_example": "viel zu heiß",
           "pattern_romanization": "adjective + koenpai",
           "meaning_english": "way too adjective",
-          "meaning_german": "way too adjective"
+          "meaning_german": "way too adjective",
+          "examples": []
         }
       ],
       "exercises": {
@@ -10151,7 +10160,8 @@ const COURSE_DATA = {
           "german_example": "mag überhaupt nicht",
           "pattern_romanization": "mai verb /adjective + loei",
           "meaning_english": "not verb/adjective at all",
-          "meaning_german": "not verb/adjective at all"
+          "meaning_german": "not verb/adjective at all",
+          "examples": []
         },
         {
           "pattern": "Subject + จำเป็นต้อง + verb/adjective",
@@ -10161,7 +10171,8 @@ const COURSE_DATA = {
           "german_example": "muss zum Arzt gehen",
           "pattern_romanization": "Subject + champentong + verb /adjective",
           "meaning_english": "Subject have to + verb/adjective",
-          "meaning_german": "Subject have to + verb/adjective"
+          "meaning_german": "Subject have to + verb/adjective",
+          "examples": []
         }
       ],
       "exercises": {
@@ -10795,7 +10806,8 @@ const COURSE_DATA = {
           "german_example": "erstes Mal, zweites Mal, drittes Mal",
           "pattern_romanization": "khrang + ordinal /number",
           "meaning_english": "time(s), first time/second time, etc",
-          "meaning_german": "time(s), first time/second time, etc"
+          "meaning_german": "time(s), first time/second time, etc",
+          "examples": []
         }
       ],
       "exercises": {

@@ -259,7 +259,7 @@
 
     <!-- Reset Section -->
     <section class="reset-section">
-        <button class="btn btn-reset" id="btn-reset" onclick="confirmReset()">Fortschritt zurücksetzen</button>
+        <button class="btn btn-reset" id="btn-reset" onclick="confirmReset()">Fortschritt zurücksetzen · Reset Progress · รีเซ็ตความก้าวหน้า</button>
     </section>
 
     <footer class="footer"><p>&copy; exmachinAI GmbH</p></footer>
@@ -287,13 +287,13 @@
         });
 
         function confirmReset() {
-            if (confirm('Möchtest du wirklich deinen gesamten Lernfortschritt zurücksetzen?\n\nAlle Punkte, Vokabeln, Quiz-Ergebnisse und Streaks werden gelöscht.')) {
+            if (confirm('Möchtest du wirklich deinen gesamten Lernfortschritt zurücksetzen?\nDo you really want to reset all your learning progress?\nคุณต้องการรีเซ็ตความก้าวหน้าทั้งหมดจริงๆ หรือไม่?\n\nAlle Punkte, Vokabeln, Quiz-Ergebnisse und Streaks werden gelöscht.\nAll points, vocabulary, quiz results and streaks will be deleted.\nคะแนน คำศัพท์ ผลควิซ และสตรีคทั้งหมดจะถูกลบ')) {
                 try {
                     localStorage.clear();
-                    alert('Fortschritt wurde zurückgesetzt.');
+                    alert('Fortschritt zurückgesetzt ✓\nProgress reset ✓\nรีเซ็ตเรียบร้อย ✓');
                     location.reload();
                 } catch(e) {
-                    alert('Fehler beim Zurücksetzen: ' + e.message);
+                    alert('Fehler / Error: ' + e.message);
                 }
             }
         }
