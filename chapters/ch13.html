@@ -389,8 +389,7 @@
     structures.forEach((s, i) => {
       const pat = s.pattern_thai || s.pattern || '';
       html += '<div class="structure-card"><h4>Struktur ' + (i+1) + '</h4>' +
-        '<div class="structure-thai">' + pat +
-        ' <button class="tts-small" onclick="speakThai(\'' + pat.replace(/'/g,"\\'") + '\')">🔊</button></div>' +
+        '<div class="structure-thai">' + pat + '</div>' +
         (s.pattern_romanization ? '<div class="romanization-line">' + s.pattern_romanization + '</div>' : '') +
         (s.meaning_german ? '<div class="structure-meaning">🇩🇪 ' + s.meaning_german + '</div>' : '') +
         (s.meaning_english ? '<div class="structure-meaning">🇬🇧 ' + s.meaning_english + '</div>' : '') +
