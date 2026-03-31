@@ -128,14 +128,31 @@ img { max-width: 100%; }
 .chapter-card:active { transform: scale(0.97); border-color: var(--gold); }
 .card-emoji { font-size: 1.8rem; margin-bottom: 6px; }
 .card-info { display: flex; flex-direction: column; gap: 2px; }
-.card-number { font-size: 0.75rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.05em; }
-.card-thai { font-size: 1rem; font-weight: 700; color: var(--text); }
-.card-romanization { font-size: 0.7rem; font-style: italic; color: var(--text-light); }
-.card-subtitle { font-size: 0.75rem; color: var(--text-muted); }
-.card-english { font-size: 0.7rem; color: var(--text-light); }
+.card-number { display: block; font-size: 0.75rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.05em; }
+.card-thai { display: block; font-size: 1rem; font-weight: 700; color: var(--text); }
+.card-romanization { display: block; font-size: 0.75rem; font-style: italic; color: #999; }
+.card-subtitle { display: block; font-size: 0.8rem; color: var(--text-muted); }
+.card-english { display: block; font-size: 0.75rem; color: #888; }
 .card-progress { width: 100%; margin-top: 8px; }
 .card-progress .progress-bar { height: 4px; background: #ECF0F1; }
 .card-status { font-size: 0.7rem; color: var(--text-muted); margin-top: 4px; display: block; }
+
+/* === 6b. RESET SECTION === */
+.reset-section {
+  text-align: center;
+  padding: 20px 16px 0;
+}
+.btn-reset {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  font-size: 0.8rem;
+  padding: 8px 20px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-reset:hover { color: var(--red); border-color: var(--red); }
 
 /* === 7. FOOTER === */
 .footer {

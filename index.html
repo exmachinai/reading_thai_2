@@ -257,6 +257,11 @@
         </div>
     </section>
 
+    <!-- Reset Section -->
+    <section class="reset-section">
+        <button class="btn btn-reset" id="btn-reset" onclick="confirmReset()">Fortschritt zurücksetzen</button>
+    </section>
+
     <footer class="footer"><p>&copy; exmachinAI GmbH</p></footer>
 
     <script src="js/data.js"></script>
@@ -280,6 +285,18 @@
                     stats.streak > 0 ? stats.streak + ' Tage am Stück gelernt!' : 'Starte deinen ersten Lerntag!';
             } catch(e) { console.warn(e); }
         });
+
+        function confirmReset() {
+            if (confirm('Möchtest du wirklich deinen gesamten Lernfortschritt zurücksetzen?\n\nAlle Punkte, Vokabeln, Quiz-Ergebnisse und Streaks werden gelöscht.')) {
+                try {
+                    localStorage.clear();
+                    alert('Fortschritt wurde zurückgesetzt.');
+                    location.reload();
+                } catch(e) {
+                    alert('Fehler beim Zurücksetzen: ' + e.message);
+                }
+            }
+        }
     </script>
 </body>
 </html>
