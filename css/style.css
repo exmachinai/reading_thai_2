@@ -56,7 +56,7 @@ img { max-width: 100%; }
 }
 .header-content { position: relative; z-index: 1; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
 .header-left { flex: 1; }
-.header-logo { height: 40px; width: auto; border-radius: 4px; object-fit: contain; flex-shrink: 0; margin-top: 4px; }
+.header-logo { height: 1.5rem; width: auto; border-radius: 0; object-fit: contain; flex-shrink: 0; margin-top: 2px; }
 .header-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 8px; }
 .header-divider { display: none; }
 .header-level { margin-bottom: 8px; }
@@ -174,7 +174,7 @@ img { max-width: 100%; }
 }
 .chapter-header-row { display: flex; align-items: flex-start; justify-content: space-between; }
 .chapter-header-left { flex: 1; }
-.chapter-header .header-logo { height: 35px; width: auto; border-radius: 4px; object-fit: contain; flex-shrink: 0; margin-top: 2px; }
+.chapter-header .header-logo { height: 1.4rem; width: auto; border-radius: 0; object-fit: contain; flex-shrink: 0; margin-top: 4px; }
 .back-link {
   color: rgba(255,255,255,0.9);
   font-size: 0.9rem;
