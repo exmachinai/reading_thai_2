@@ -497,16 +497,30 @@ function getOverallProgress() {
  */
 function speak(text, options = {}) {
   try {
+    if (!window.speechSynthesis) return;
+    // iOS Safari fix: cancel pending speech to avoid stuck queue
+    window.speechSynthesis.cancel();
+
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = options.lang || 'th-TH';
     utterance.rate = options.rate || 0.8;
     utterance.pitch = options.pitch || 1.0;
     utterance.volume = options.volume || 1.0;
 
+    // iOS Safari fix: voices may load asynchronously
+    const voices = window.speechSynthesis.getVoices();
+    const thaiVoice = voices.find(v => v.lang && v.lang.startsWith('th'));
+    if (thaiVoice) utterance.voice = thaiVoice;
+
     window.speechSynthesis.speak(utterance);
   } catch (error) {
     console.warn('Error with text-to-speech:', error);
   }
+}
+// iOS Safari: preload voices
+if (window.speechSynthesis) {
+  window.speechSynthesis.getVoices();
+  window.speechSynthesis.onvoiceschanged = () => { window.speechSynthesis.getVoices(); };
 }
 
 /**

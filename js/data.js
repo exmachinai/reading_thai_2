@@ -2689,70 +2689,60 @@ const COURSE_DATA = {
       "exercises": {
         "conversation": [
           {
-            "question": "ทุกวันคุณใช้อินเทอร์เน็ตทําอะไรบ้าง",
             "english": "What do you use the internet for every day?",
             "german": "Wofür nutzt du das Internet jeden Tag?",
             "thai": "ทุกวันคุณใช้อินเทอร์เน็ตทําอะไรบ้าง",
             "romanization": ""
           },
           {
-            "question": "คุณชอบทํางานที่บ้านไหม",
             "english": "Do you like working at home?",
             "german": "Arbeitest du gerne von Zuhause aus?",
             "thai": "คุณชอบทํางานที่บ้านไหม",
             "romanization": ""
           },
           {
-            "question": "คุณชอบซื้อของออนไลน์ไหม",
             "english": "Do you like online shopping?",
             "german": "Magst du Online-Shopping?",
             "thai": "คุณชอบซื้อของออนไลน์ไหม",
             "romanization": ""
           },
           {
-            "question": "อยู่ที่กรุงเทพฯ คุณซื้ออาหารออนไลน์ไหม",
             "english": "In Bangkok, do you order food online?",
             "german": "Bestellst du Essen online in Bangkok?",
             "thai": "อยู่ที่กรุงเทพฯ คุณซื้ออาหารออนไลน์ไหม",
             "romanization": ""
           },
           {
-            "question": "คุณคิดว่าจะใช้ชีวิตแบบไม่ออกจากบ้านเลยได้กี่วัน",
             "english": "How many days do you think you can stay home without going out?",
             "german": "Wie viele Tage denkst du, kannst du zu Hause bleiben?",
             "thai": "คุณคิดว่าจะใช้ชีวิตแบบไม่ออกจากบ้านเลยได้กี่วัน",
             "romanization": ""
           },
           {
-            "question": "การซื้อของออนไลน์ดีเพราะง่ายและสะดวก แต่คุณคิดว่ามีอะไรไม่ดีไหม",
             "english": "Online shopping is good because it's easy and convenient, but what do you think is not good?",
             "german": "Online-Shopping ist gut, weil es einfach ist, aber was magst du nicht daran?",
             "thai": "การซื้อของออนไลน์ดีเพราะง่ายและสะดวก แต่คุณคิดว่ามีอะไรไม่ดีไหม",
             "romanization": ""
           },
           {
-            "question": "แอปพลิเคชันที่คุณใช้บ่อยที่สุดเวลาทํางานคือแอปฯ อะไร",
             "english": "What is the application you use most often when working?",
             "german": "Welche App nutzt du am häufigsten bei der Arbeit?",
             "thai": "แอปพลิเคชันที่คุณใช้บ่อยที่สุดเวลาทํางานคือแอปฯ อะไร",
             "romanization": ""
           },
           {
-            "question": "คุณมีแอปพลิเคชันที่ใช้ช่วยเรียนภาษาไทยไหม",
             "english": "Do you have any applications that help you learn Thai?",
             "german": "Hast du eine App, die dir beim Lernen von Thai hilft?",
             "thai": "คุณมีแอปพลิเคชันที่ใช้ช่วยเรียนภาษาไทยไหม",
             "romanization": ""
           },
           {
-            "question": "คุณเชื่อว่าอินเทอร์เน็ตทําให้ชีวิตดีขึ้นไหม",
             "english": "Do you believe the internet makes life better?",
             "german": "Glaubst du, dass das Internet das Leben verbessert?",
             "thai": "คุณเชื่อว่าอินเทอร์เน็ตทําให้ชีวิตดีขึ้นไหม",
             "romanization": ""
           },
           {
-            "question": "ถ้าไม่มีอินเทอร์เน็ต คุณจะทําอะไร",
             "english": "If there was no internet, what would you do?",
             "german": "Was würdest du tun, wenn es das Internet nicht gäbe?",
             "thai": "ถ้าไม่มีอินเทอร์เน็ต คุณจะทําอะไร",
@@ -2760,39 +2750,39 @@ const COURSE_DATA = {
           }
         ],
         "pronunciation": {
-          "word": "ช่วยวางไว้บนโต๊ะที่ล็อบบี นะคะ/นะครับ",
-          "meaning": "Please leave it on the table in the lobby."
+          "thai": "อินเทอร์เน็ตทำให้ชีวิตสะดวกขึ้นมาก",
+          "romanization": "in-thoenet tham hai chiwit sa-duak khuen mak"
         },
         "translation": [
           {
-            "english": "I usually connect with friends via email.",
-            "thai": "ฉันติดต่อเพื่อนผ่านอีเมลเป็นปกติ",
-            "answer_romanization": "chan titto phuean phan imen penpkti",
-            "source_german": "Ich verbinde mich gewöhnlich mit Freunden per E-Mail."
+            "source_english": "I usually connect with friends via email.",
+            "source_german": "Ich verbinde mich gewöhnlich mit Freunden per E-Mail.",
+            "answer_thai": "ฉันติดต่อเพื่อนผ่านอีเมลเป็นปกติ",
+            "answer_romanization": "chan titto phuean phan imen penpkti"
           },
           {
-            "english": "I like living in Bangkok because it is very convenient.",
-            "thai": "ฉันชอบอยู่กรุงเทพฯ เพราะมันสะดวกมาก",
-            "answer_romanization": "chan chop yu krungthep phera man saduak mak",
-            "source_german": "Ich lebe gerne in Bangkok, weil es sehr praktisch ist."
+            "source_english": "I like living in Bangkok because it is very convenient.",
+            "source_german": "Ich lebe gerne in Bangkok, weil es sehr praktisch ist.",
+            "answer_thai": "ฉันชอบอยู่กรุงเทพฯ เพราะมันสะดวกมาก",
+            "answer_romanization": "chan chop yu krungthep phera man saduak mak"
           },
           {
-            "english": "I don't like ordering food via mobile applications.",
-            "thai": "ฉันไม่ชอบสั่งอาหารผ่านแอปพลิเคชัน",
-            "answer_romanization": "chan mai chop sangohan phan aepplikhechan",
-            "source_german": "Ich mag es nicht, Essen über Apps zu bestellen."
+            "source_english": "I don't like ordering food via mobile applications.",
+            "source_german": "Ich mag es nicht, Essen über Apps zu bestellen.",
+            "answer_thai": "ฉันไม่ชอบสั่งอาหารผ่านแอปพลิเคชัน",
+            "answer_romanization": "chan mai chop sangohan phan aepplikhechan"
           },
           {
-            "english": "Although I am very busy, I exercise every day.",
-            "thai": "ถึงแม้ว่าฉันยุ่งมาก แต่ฉันก็ออกกําลังกายทุกวัน",
-            "answer_romanization": "thuengmaeo chan yung mak tae chan k o kok lang kai thukwan",
-            "source_german": "Obwohl ich sehr beschäftigt bin, trainiere ich jeden Tag."
+            "source_english": "Although I am very busy, I exercise every day.",
+            "source_german": "Obwohl ich sehr beschäftigt bin, trainiere ich jeden Tag.",
+            "answer_thai": "ถึงแม้ว่าฉันยุ่งมาก แต่ฉันก็ออกกําลังกายทุกวัน",
+            "answer_romanization": "thuengmaeo chan yung mak tae chan k o kok lang kai thukwan"
           },
           {
-            "english": "Ordering food via mobile applications is not complicated.",
-            "thai": "การสั่งอาหารผ่านแอปพลิเคชันไม่ยุ่งยาก",
-            "answer_romanization": "kan sangohan phan aepplikhechan mai yungyak",
-            "source_german": "Essen über Apps zu bestellen ist nicht kompliziert."
+            "source_english": "Ordering food via mobile applications is not complicated.",
+            "source_german": "Essen über Apps zu bestellen ist nicht kompliziert.",
+            "answer_thai": "การสั่งอาหารผ่านแอปพลิเคชันไม่ยุ่งยาก",
+            "answer_romanization": "kan sangohan phan aepplikhechan mai yungyak"
           }
         ]
       },
@@ -3293,70 +3283,60 @@ const COURSE_DATA = {
       "exercises": {
         "conversation": [
           {
-            "question": "การเดินทางในบ้านเมืองของคุณสะดวกไหม",
             "english": "Is transportation in your city convenient?",
             "german": "Ist der Verkehr in deiner Stadt bequem?",
             "thai": "การเดินทางในบ้านเมืองของคุณสะดวกไหม",
             "romanization": ""
           },
           {
-            "question": "คุณชอบใช้ยานพาหนะแบบไหน เพื่อไปทํางาน",
             "english": "What kind of transportation do you prefer to use for work?",
             "german": "Welche Art von Verkehrsmittel bevorzugst du für die Arbeit?",
             "thai": "คุณชอบใช้ยานพาหนะแบบไหน เพื่อไปทํางาน",
             "romanization": ""
           },
           {
-            "question": "เมืองของคุณมีรถไฟฟ้าหรือรถไฟใต้ดินไหม",
             "english": "Does your city have an electric train or subway?",
             "german": "Hat deine Stadt eine elektrische Bahn oder U-Bahn?",
             "thai": "เมืองของคุณมีรถไฟฟ้าหรือรถไฟใต้ดินไหม",
             "romanization": ""
           },
           {
-            "question": "ที่เมืองของคุณ ช่วงไหนคือชั่วโมงเร่งด่วน",
             "english": "What time is rush hour in your city?",
             "german": "Wann ist die Stoßzeit in deiner Stadt?",
             "thai": "ที่เมืองของคุณ ช่วงไหนคือชั่วโมงเร่งด่วน",
             "romanization": ""
           },
           {
-            "question": "คุณเคยนั่งมอเตอร์ไซค์รับจ้างไหม",
             "english": "Have you ever taken a motorcycle taxi?",
             "german": "Bist du schon mit einem Motorradtaxi gefahren?",
             "thai": "คุณเคยนั่งมอเตอร์ไซค์รับจ้างไหม",
             "romanization": ""
           },
           {
-            "question": "คุณคิดว่าการเดินทางในกรุงเทพฯ ดีไหมเมื่อเปรียบเทียบกับเมืองอื่น",
             "english": "Do you think transportation in Bangkok is good compared to other cities?",
             "german": "Denkst du, dass der Verkehr in Bangkok im Vergleich zu anderen Städten gut ist?",
             "thai": "คุณคิดว่าการเดินทางในกรุงเทพฯ ดีไหมเมื่อเปรียบเทียบกับเมืองอื่น",
             "romanization": ""
           },
           {
-            "question": "ค่าการเดินทางที่กรุงเทพฯ แพงไหม",
             "english": "Is transportation expensive in Bangkok?",
             "german": "Ist der Verkehr in Bangkok teuer?",
             "thai": "ค่าการเดินทางที่กรุงเทพฯ แพงไหม",
             "romanization": ""
           },
           {
-            "question": "ถ้าหากไม่มีรถไฟฟ้า การเดินทางในกรุงเทพฯ จะเป็นอย่างไร",
             "english": "What would transportation in Bangkok be like without electric trains?",
             "german": "Wie würde der Verkehr in Bangkok ohne Straßenbahn sein?",
             "thai": "ถ้าหากไม่มีรถไฟฟ้า การเดินทางในกรุงเทพฯ จะเป็นอย่างไร",
             "romanization": ""
           },
           {
-            "question": "คุณคิดว่าทําไมค่าครองชีพที่กรุงเทพฯ แพงขึ้น",
             "english": "Why do you think the cost of living in Bangkok has increased?",
             "german": "Warum denkst du, sind die Lebenshaltungskosten in Bangkok gestiegen?",
             "thai": "คุณคิดว่าทําไมค่าครองชีพที่กรุงเทพฯ แพงขึ้น",
             "romanization": ""
           },
           {
-            "question": "คุณอยากใช้มอเตอร์ไซค์รับจ้างหรือไม่ ทําไม",
             "english": "Would you like to use a motorcycle taxi? Why or why not?",
             "german": "Möchtest du ein Motorradtaxi benutzen? Warum oder warum nicht?",
             "thai": "คุณอยากใช้มอเตอร์ไซค์รับจ้างหรือไม่ ทําไม",
@@ -3364,39 +3344,39 @@ const COURSE_DATA = {
           }
         ],
         "pronunciation": {
-          "word": "ผม/ฉันไม่เคยนั่งมอไซค์ที่กรุงเทพฯ",
-          "meaning": "I have never ridden a motorcycle taxi in Bangkok."
+          "thai": "คุณหมอแนะนำให้ออกกำลังกายทุกวัน",
+          "romanization": "khun mo naenam hai ok kamlangkai thuk wan"
         },
         "translation": [
           {
-            "english": "Travelling in Bangkok is very convenient.",
-            "thai": "การเดินทางในกรุงเทพฯ สะดวกมาก",
-            "answer_romanization": "kan doen thangnai krungthep saduak mak",
-            "source_german": "Die Reise in Bangkok ist sehr bequem."
+            "source_english": "Travelling in Bangkok is very convenient.",
+            "source_german": "Die Reise in Bangkok ist sehr bequem.",
+            "answer_thai": "การเดินทางในกรุงเทพฯ สะดวกมาก",
+            "answer_romanization": "kan doen thangnai krungthep saduak mak"
           },
           {
-            "english": "Comparing to many countries, the underground in Bangkok is very expensive.",
-            "thai": "เมื่อเปรียบเทียบกับหลายประเทศ รถไฟใต้ดินที่กรุงเทพฯ แพงมาก",
-            "answer_romanization": "muea peripthiap kap lai prathet rathafaitaidin thi krungthep phaeng mak",
-            "source_german": "Im Vergleich zu vielen Ländern ist die U-Bahn in Bangkok sehr teuer."
+            "source_english": "Comparing to many countries, the underground in Bangkok is very expensive.",
+            "source_german": "Im Vergleich zu vielen Ländern ist die U-Bahn in Bangkok sehr teuer.",
+            "answer_thai": "เมื่อเปรียบเทียบกับหลายประเทศ รถไฟใต้ดินที่กรุงเทพฯ แพงมาก",
+            "answer_romanization": "muea peripthiap kap lai prathet rathafaitaidin thi krungthep phaeng mak"
           },
           {
-            "english": "I have never taken a motorcycle taxi in Bangkok.",
-            "thai": "ฉันไม่เคยนั่งมอเตอร์ไซค์รับจ้างที่กรุงเทพฯ",
-            "answer_romanization": "chan mai khoei nang motoesal rapchang thi krungthep",
-            "source_german": "Ich bin noch nie mit einem Motorradtaxi in Bangkok gefahren."
+            "source_english": "I have never taken a motorcycle taxi in Bangkok.",
+            "source_german": "Ich bin noch nie mit einem Motorradtaxi in Bangkok gefahren.",
+            "answer_thai": "ฉันไม่เคยนั่งมอเตอร์ไซค์รับจ้างที่กรุงเทพฯ",
+            "answer_romanization": "chan mai khoei nang motoesal rapchang thi krungthep"
           },
           {
-            "english": "Bangkok has more cars but less traffic.",
-            "thai": "กรุงเทพฯ มีรถมากขึ้นแต่รถติดน้อยลง",
-            "answer_romanization": "krungthep mi rot makkhuen tae rathatit noinng",
-            "source_german": "Bangkok hat mehr Autos, aber weniger Stau."
+            "source_english": "Bangkok has more cars but less traffic.",
+            "source_german": "Bangkok hat mehr Autos, aber weniger Stau.",
+            "answer_thai": "กรุงเทพฯ มีรถมากขึ้นแต่รถติดน้อยลง",
+            "answer_romanization": "krungthep mi rot makkhuen tae rathatit noinng"
           },
           {
-            "english": "Although Bangkok has the sky train and the underground, it still has heavy traffic jam as usual.",
-            "thai": "ถึงแม้ว่ากรุงเทพฯ มีรถไฟฟ้าและรถไฟใต้ดิน แต่ก็ยังมีรถติดหนักเหมือนเดิม",
-            "answer_romanization": "thuengmaeo krungthep mi rathafafai lae rathafaitaidin tae k yangmi rathatit nak emuendoem",
-            "source_german": "Obwohl Bangkok Skytrain und U-Bahn hat, gibt es immer noch schwere Staus wie immer."
+            "source_english": "Although Bangkok has the sky train and the underground, it still has heavy traffic jam as usual.",
+            "source_german": "Obwohl Bangkok Skytrain und U-Bahn hat, gibt es immer noch schwere Staus wie immer.",
+            "answer_thai": "ถึงแม้ว่ากรุงเทพฯ มีรถไฟฟ้าและรถไฟใต้ดิน แต่ก็ยังมีรถติดหนักเหมือนเดิม",
+            "answer_romanization": "thuengmaeo krungthep mi rathafafai lae rathafaitaidin tae k yangmi rathatit nak emuendoem"
           }
         ]
       },
@@ -3862,70 +3842,60 @@ const COURSE_DATA = {
       "exercises": {
         "conversation": [
           {
-            "question": "คุณเคยไปเที่ยววัดไหม เพื่อทําอะไร",
             "english": "Have you ever visited a temple? What did you do there?",
             "german": "Hast du schon einen Tempel besucht? Was hast du dort getan?",
             "thai": "คุณเคยไปเที่ยววัดไหม เพื่อทําอะไร",
             "romanization": ""
           },
           {
-            "question": "วัดในประเทศของคุณมีอะไรพิเศษไหม",
             "english": "Is there anything special about temples in your country?",
             "german": "Gibt es etwas Besonderes an Tempeln in deinem Land?",
             "thai": "วัดในประเทศของคุณมีอะไรพิเศษไหม",
             "romanization": ""
           },
           {
-            "question": "คุณแต่งตัวไปวัดอย่างไร",
             "english": "How do you dress when going to a temple?",
             "german": "Wie kleidest du dich, wenn du einen Tempel besuchst?",
             "thai": "คุณแต่งตัวไปวัดอย่างไร",
             "romanization": ""
           },
           {
-            "question": "คุณคิดว่าเพราะอะไรคนจึงไปวัด",
             "english": "Why do you think people go to temples?",
             "german": "Warum denkst du, gehen Menschen zu Tempeln?",
             "thai": "คุณคิดว่าเพราะอะไรคนจึงไปวัด",
             "romanization": ""
           },
           {
-            "question": "คุณทําบุญไหม ที่ไหน",
             "english": "Do you make merit? Where do you do it?",
             "german": "Tust du verdienstvoll Handlungen? Wo tust du das?",
             "thai": "คุณทําบุญไหม ที่ไหน",
             "romanization": ""
           },
           {
-            "question": "ประเทศของคุณมีพระหรือนักบวชไหม",
             "english": "Does your country have monks or priests?",
             "german": "Hat dein Land Mönche oder Priester?",
             "thai": "ประเทศของคุณมีพระหรือนักบวชไหม",
             "romanization": ""
           },
           {
-            "question": "คุณคิดว่าวัดสําคัญต่อประเทศไทยไหม เพราะอะไร",
             "english": "Do you think temples are important to Thailand? Why or why not?",
             "german": "Denkst du, dass Tempel für Thailand wichtig sind? Warum oder warum nicht?",
             "thai": "คุณคิดว่าวัดสําคัญต่อประเทศไทยไหม เพราะอะไร",
             "romanization": ""
           },
           {
-            "question": "กิจกรรมแปลกๆ ที่คนไปทําที่วัดคืออะไร",
             "english": "What are some unusual activities people do at temples?",
             "german": "Was sind einige ungewöhnliche Aktivitäten, die Menschen in Tempeln machen?",
             "thai": "กิจกรรมแปลกๆ ที่คนไปทําที่วัดคืออะไร",
             "romanization": ""
           },
           {
-            "question": "คุณคิดว่าวัดควรจะทันสมัยหรือเก่าๆ ดี",
             "english": "Do you think temples should be modern or traditional?",
             "german": "Denkst du, sollten Tempel modern oder traditionell sein?",
             "thai": "คุณคิดว่าวัดควรจะทันสมัยหรือเก่าๆ ดี",
             "romanization": ""
           },
           {
-            "question": "คุณรู้สึกสบายใจที่ไหน ในเมืองของคุณ",
             "english": "Where do you feel at peace in your city?",
             "german": "Wo fühlst du dich in deiner Stadt wohlig?",
             "thai": "คุณรู้สึกสบายใจที่ไหน ในเมืองของคุณ",
@@ -3933,39 +3903,39 @@ const COURSE_DATA = {
           }
         ],
         "pronunciation": {
-          "word": "คุณ… มันไม่ใช่เรื่องแปลก",
-          "meaning": "This is not a strange thing for you."
+          "thai": "ห้างสรรพสินค้าเปิดตั้งแต่สิบโมงถึงสามทุ่ม",
+          "romanization": "hang sapphasinkhaa poet tangtae sip mong thueng sam thum"
         },
         "translation": [
           {
-            "english": "Where can I make a merit in Bangkok?",
-            "thai": "ฉันสามารถทําบุญที่ไหนในกรุงเทพฯ",
-            "answer_romanization": "chan samant tha bun thinai nai krungthep",
-            "source_german": "Wo kann ich in Bangkok ein Verdienst machen?"
+            "source_english": "Where can I make a merit in Bangkok?",
+            "source_german": "Wo kann ich in Bangkok ein Verdienst machen?",
+            "answer_thai": "ฉันสามารถทําบุญที่ไหนในกรุงเทพฯ",
+            "answer_romanization": "chan samant tha bun thinai nai krungthep"
           },
           {
-            "english": "I feel more relaxing after I went shopping.",
-            "thai": "ฉันรู้สึกสบายใจมากขึ้นหลังจากไปเลือกซื้อ",
-            "answer_romanization": "chan rusuek sabaichai makkhuen lang chakpai lueak sue",
-            "source_german": "Ich fühlte mich entspannter, nachdem ich einkaufen ging."
+            "source_english": "I feel more relaxing after I went shopping.",
+            "source_german": "Ich fühlte mich entspannter, nachdem ich einkaufen ging.",
+            "answer_thai": "ฉันรู้สึกสบายใจมากขึ้นหลังจากไปเลือกซื้อ",
+            "answer_romanization": "chan rusuek sabaichai makkhuen lang chakpai lueak sue"
           },
           {
-            "english": "I was very surprised!",
-            "thai": "ฉันตกใจมาก",
-            "answer_romanization": "chan takachai mak",
-            "source_german": "Ich war sehr überrascht!"
+            "source_english": "I was very surprised!",
+            "source_german": "Ich war sehr überrascht!",
+            "answer_thai": "ฉันตกใจมาก",
+            "answer_romanization": "chan takachai mak"
           },
           {
-            "english": "I won't say this one is strange, but I will say this one is interesting.",
-            "thai": "ฉันจะไม่บอกว่านี่แปลก แต่ฉันจะบอกว่านี่น่าสนใจ",
-            "answer_romanization": "chan cha mai bo kwa ni paenk tae chan cha bo kwa ni natnchai",
-            "source_german": "Ich würde das nicht seltsam nennen, aber ich würde sagen, das ist interessant."
+            "source_english": "I won't say this one is strange, but I will say this one is interesting.",
+            "source_german": "Ich würde das nicht seltsam nennen, aber ich würde sagen, das ist interessant.",
+            "answer_thai": "ฉันจะไม่บอกว่านี่แปลก แต่ฉันจะบอกว่านี่น่าสนใจ",
+            "answer_romanization": "chan cha mai bo kwa ni paenk tae chan cha bo kwa ni natnchai"
           },
           {
-            "english": "We must wash hands before eating and after using toilet.",
-            "thai": "เราต้องล้างมือก่อนกินและหลังจากใช้ห้องน้ํา",
-            "answer_romanization": "rao tong langmue kon kin lae langchak chai ong na",
-            "source_german": "Wir müssen vor dem Essen und nach der Toilettenbenutzung die Hände waschen."
+            "source_english": "We must wash hands before eating and after using toilet.",
+            "source_german": "Wir müssen vor dem Essen und nach der Toilettenbenutzung die Hände waschen.",
+            "answer_thai": "เราต้องล้างมือก่อนกินและหลังจากใช้ห้องน้ํา",
+            "answer_romanization": "rao tong langmue kon kin lae langchak chai ong na"
           }
         ]
       },
@@ -4467,70 +4437,60 @@ const COURSE_DATA = {
       "exercises": {
         "conversation": [
           {
-            "question": "คุณเลี้ยงสัตว์ไหม เลี้ยงสัตว์ประเภทไหน",
             "english": "Do you have any pets? What kind?",
             "german": "Hast du Haustiere? Was für welche?",
             "thai": "คุณเลี้ยงสัตว์ไหม เลี้ยงสัตว์ประเภทไหน",
             "romanization": ""
           },
           {
-            "question": "ทําไมคุณจึงเลือกเลี้ยงสัตว์นั้น",
             "english": "Why did you choose that type of pet?",
             "german": "Warum hast du dich für diese Art von Haustier entschieden?",
             "thai": "ทําไมคุณจึงเลือกเลี้ยงสัตว์นั้น",
             "romanization": ""
           },
           {
-            "question": "คุณเลี้ยงสัตว์ที่ไหน ที่บ้านหรือที่ไหน",
             "english": "Where do you keep your pets? At home or somewhere else?",
             "german": "Wo hältst du deine Haustiere? Zu Hause oder woanders?",
             "thai": "คุณเลี้ยงสัตว์ที่ไหน ที่บ้านหรือที่ไหน",
             "romanization": ""
           },
           {
-            "question": "คุณรักสัตว์เลี้ยงของคุณไหม",
             "english": "Do you love your pets?",
             "german": "Liebst du deine Haustiere?",
             "thai": "คุณรักสัตว์เลี้ยงของคุณไหม",
             "romanization": ""
           },
           {
-            "question": "คุณเคยเห็นแมวจรจัดไหม ที่ไหน",
             "english": "Have you ever seen a stray cat? Where?",
             "german": "Hast du schon eine streunende Katze gesehen? Wo?",
             "thai": "คุณเคยเห็นแมวจรจัดไหม ที่ไหน",
             "romanization": ""
           },
           {
-            "question": "คุณจะช่วยแมวจรจัดไหมถ้าเห็น",
             "english": "Would you help a stray cat if you saw one?",
             "german": "Würdest du eine streunende Katze helfen, wenn du eine sehen würdest?",
             "thai": "คุณจะช่วยแมวจรจัดไหมถ้าเห็น",
             "romanization": ""
           },
           {
-            "question": "การเลี้ยงสัตว์มีข้อดีอะไรบ้าง",
             "english": "What are the benefits of keeping pets?",
             "german": "Was sind die Vorteile, Haustiere zu halten?",
             "thai": "การเลี้ยงสัตว์มีข้อดีอะไรบ้าง",
             "romanization": ""
           },
           {
-            "question": "การเลี้ยงสัตว์มีข้อเสียอะไรบ้าง",
             "english": "What are the disadvantages of keeping pets?",
             "german": "Was sind die Nachteile, Haustiere zu halten?",
             "thai": "การเลี้ยงสัตว์มีข้อเสียอะไรบ้าง",
             "romanization": ""
           },
           {
-            "question": "คุณเชื่อเรื่องโชคร้ายเรื่องสัตว์ไหม",
             "english": "Do you believe in superstitions about animals?",
             "german": "Glaubst du an Aberglauben über Tiere?",
             "thai": "คุณเชื่อเรื่องโชคร้ายเรื่องสัตว์ไหม",
             "romanization": ""
           },
           {
-            "question": "คุณเคยพาสัตว์ไปหมอสัตวแพทย์ไหม เมื่อไหร่",
             "english": "Have you ever taken your pet to the veterinarian? When?",
             "german": "Hast du dein Haustier schon zum Tierarzt gebracht? Wann?",
             "thai": "คุณเคยพาสัตว์ไปหมอสัตวแพทย์ไหม เมื่อไหร่",
@@ -4538,39 +4498,39 @@ const COURSE_DATA = {
           }
         ],
         "pronunciation": {
-          "word": "ขอบคุณนะที่เอาแมวมาเลี้ยง",
-          "meaning": "Thank you for bringing the cat to raise."
+          "thai": "การศึกษาเป็นสิ่งสำคัญสำหรับอนาคต",
+          "romanization": "kan sueksa pen sing samkhan samrap anakhot"
         },
         "translation": [
           {
-            "english": "Now we have a dog at home.",
-            "thai": "ตอนนี้เรามีหมาที่บ้าน",
-            "answer_romanization": "tonni rao mi ma thi ban",
-            "source_german": "Jetzt haben wir einen Hund zu Hause."
+            "source_english": "Now we have a dog at home.",
+            "source_german": "Jetzt haben wir einen Hund zu Hause.",
+            "answer_thai": "ตอนนี้เรามีหมาที่บ้าน",
+            "answer_romanization": "tonni rao mi ma thi ban"
           },
           {
-            "english": "Actually, I don't want to have pets, but my son took a stray dog back home.",
-            "thai": "จริงๆ แล้ว ฉันไม่อยากมีสัตว์เลี้ยง แต่ลูกชายของฉันเอาหมาจรจัดกลับมา",
-            "answer_romanization": "chring laeo chan mai yak mi satliang tae lukchai khong chan ao ma chrachat klapma",
-            "source_german": "Eigentlich wollte ich keine Haustiere haben, aber mein Sohn brachte einen streunenden Hund nach Hause."
+            "source_english": "Actually, I don't want to have pets, but my son took a stray dog back home.",
+            "source_german": "Eigentlich wollte ich keine Haustiere haben, aber mein Sohn brachte einen streunenden Hund nach Hause.",
+            "answer_thai": "จริงๆ แล้ว ฉันไม่อยากมีสัตว์เลี้ยง แต่ลูกชายของฉันเอาหมาจรจัดกลับมา",
+            "answer_romanization": "chring laeo chan mai yak mi satliang tae lukchai khong chan ao ma chrachat klapma"
           },
           {
-            "english": "I allowed my son to have the dog.",
-            "thai": "ฉันอนุญาตให้ลูกชายเลี้ยงหมา",
-            "answer_romanization": "chan nuyat hai lukchai liang ma",
-            "source_german": "Ich erlaubte meinem Sohn, den Hund zu haben."
+            "source_english": "I allowed my son to have the dog.",
+            "source_german": "Ich erlaubte meinem Sohn, den Hund zu haben.",
+            "answer_thai": "ฉันอนุญาตให้ลูกชายเลี้ยงหมา",
+            "answer_romanization": "chan nuyat hai lukchai liang ma"
           },
           {
-            "english": "He takes care of the dog very well and will bring it to see a veterinarian on Saturday.",
-            "thai": "เขาดูแลหมาได้ดีมาก และจะพามันไปหมอสัตวแพทย์ในวันเสาร์",
-            "answer_romanization": "khao dulae ma dai dimak lae cha pha man pai mo satphaet nai wan sao",
-            "source_german": "Er kümmert sich sehr gut um den Hund und wird ihn am Samstag zum Tierarzt bringen."
+            "source_english": "He takes care of the dog very well and will bring it to see a veterinarian on Saturday.",
+            "source_german": "Er kümmert sich sehr gut um den Hund und wird ihn am Samstag zum Tierarzt bringen.",
+            "answer_thai": "เขาดูแลหมาได้ดีมาก และจะพามันไปหมอสัตวแพทย์ในวันเสาร์",
+            "answer_romanization": "khao dulae ma dai dimak lae cha pha man pai mo satphaet nai wan sao"
           },
           {
-            "english": "The dog's name is Lucky.",
-            "thai": "ชื่อหมาคือ โชคดี",
-            "answer_romanization": "chue ma khue chokdi",
-            "source_german": "Der Name des Hundes ist Lucky."
+            "source_english": "The dog's name is Lucky.",
+            "source_german": "Der Name des Hundes ist Lucky.",
+            "answer_thai": "ชื่อหมาคือ โชคดี",
+            "answer_romanization": "chue ma khue chokdi"
           }
         ]
       },
@@ -5065,70 +5025,60 @@ const COURSE_DATA = {
       "exercises": {
         "conversation": [
           {
-            "question": "คุณมีเพื่อนบ้านดีไหม",
             "english": "Do you have good neighbors?",
             "german": "Hast du gute Nachbarn?",
             "thai": "คุณมีเพื่อนบ้านดีไหม",
             "romanization": ""
           },
           {
-            "question": "คุณคุยกับเพื่อนบ้านบ่อยไหม",
             "english": "Do you talk to your neighbors often?",
             "german": "Sprichst du oft mit deinen Nachbarn?",
             "thai": "คุณคุยกับเพื่อนบ้านบ่อยไหม",
             "romanization": ""
           },
           {
-            "question": "เพื่อนบ้านของคุณมาจากประเทศไหน",
             "english": "What country are your neighbors from?",
             "german": "Aus welchem Land kommen deine Nachbarn?",
             "thai": "เพื่อนบ้านของคุณมาจากประเทศไหน",
             "romanization": ""
           },
           {
-            "question": "คุณเคยแบ่งของให้เพื่อนบ้านไหม",
             "english": "Have you ever shared things with your neighbors?",
             "german": "Hast du schon etwas mit deinen Nachbarn geteilt?",
             "thai": "คุณเคยแบ่งของให้เพื่อนบ้านไหม",
             "romanization": ""
           },
           {
-            "question": "ห้องข้างบน/ข้างล่าง/ข้างซ้าย/ข้างขวา มีเพื่อนบ้านไหม",
             "english": "Do you have neighbors above, below, left, or right of you?",
             "german": "Hast du Nachbarn über, unter, links oder rechts von dir?",
             "thai": "ห้องข้างบน/ข้างล่าง/ข้างซ้าย/ข้างขวา มีเพื่อนบ้านไหม",
             "romanization": ""
           },
           {
-            "question": "เพื่อนบ้านของคุณ มีเด็กไหม",
             "english": "Do your neighbors have any children?",
             "german": "Haben deine Nachbarn Kinder?",
             "thai": "เพื่อนบ้านของคุณ มีเด็กไหม",
             "romanization": ""
           },
           {
-            "question": "คุณรู้สึกกับเสียงดังจากเพื่อนบ้านไหม",
             "english": "Do you mind the noise from your neighbors?",
             "german": "Störst du dich am Lärm deiner Nachbarn?",
             "thai": "คุณรู้สึกกับเสียงดังจากเพื่อนบ้านไหม",
             "romanization": ""
           },
           {
-            "question": "คุณจะบ่นเรื่องเพื่อนบ้านไหม",
             "english": "Would you complain about your neighbors?",
             "german": "Würdest du dich über deine Nachbarn beschweren?",
             "thai": "คุณจะบ่นเรื่องเพื่อนบ้านไหม",
             "romanization": ""
           },
           {
-            "question": "บ้านของคุณรอบๆ เงียบไหม",
             "english": "Is the area around your house quiet?",
             "german": "Ist die Gegend um dein Haus ruhig?",
             "thai": "บ้านของคุณรอบๆ เงียบไหม",
             "romanization": ""
           },
           {
-            "question": "คุณคิดว่ามีเพื่อนบ้านดีเป็นประโยชน์ไหม",
             "english": "Do you think having good neighbors is beneficial?",
             "german": "Denkst du, dass gute Nachbarn vorteilhaft sind?",
             "thai": "คุณคิดว่ามีเพื่อนบ้านดีเป็นประโยชน์ไหม",
@@ -5136,39 +5086,39 @@ const COURSE_DATA = {
           }
         ],
         "pronunciation": {
-          "word": "สวัสดีค่ะ ฉันทํา…มาให้ค่ะ ยังร้อนๆ อยู่เลย",
-          "meaning": "Hello, I made... for you. It's still warm."
+          "thai": "วัฒนธรรมไทยมีความงดงามและน่าสนใจ",
+          "romanization": "watthanatham thai mi khwam ngotngam lae na sonjai"
         },
         "translation": [
           {
-            "english": "I am living in a condominium around Sukhumvit.",
-            "thai": "ฉันอยู่ในคอนโดประมาณ สุขุมวิท",
-            "answer_romanization": "chan yu nai khondo praman sukhumwit",
-            "source_german": "Ich lebe in einem Wohnhaus um die Sukhumvit."
+            "source_english": "I am living in a condominium around Sukhumvit.",
+            "source_german": "Ich lebe in einem Wohnhaus um die Sukhumvit.",
+            "answer_thai": "ฉันอยู่ในคอนโดประมาณ สุขุมวิท",
+            "answer_romanization": "chan yu nai khondo praman sukhumwit"
           },
           {
-            "english": "My condominium is quiet and peaceful.",
-            "thai": "คอนโดของฉันเงียบและสงบ",
-            "answer_romanization": "khondo khong chan ngiap lae sangop",
-            "source_german": "Mein Wohnhaus ist ruhig und friedlich."
+            "source_english": "My condominium is quiet and peaceful.",
+            "source_german": "Mein Wohnhaus ist ruhig und friedlich.",
+            "answer_thai": "คอนโดของฉันเงียบและสงบ",
+            "answer_romanization": "khondo khong chan ngiap lae sangop"
           },
           {
-            "english": "I am living on the 12th floor.",
-            "thai": "ฉันอยู่ที่ชั้น 12",
-            "answer_romanization": "chan yu thi chan 12",
-            "source_german": "Ich wohne in der 12. Etage."
+            "source_english": "I am living on the 12th floor.",
+            "source_german": "Ich wohne in der 12. Etage.",
+            "answer_thai": "ฉันอยู่ที่ชั้น 12",
+            "answer_romanization": "chan yu thi chan 12"
           },
           {
-            "english": "I do not know any neighbors.",
-            "thai": "ฉันไม่รู้จักเพื่อนบ้าน",
-            "answer_romanization": "chan mai ruchak phueanban",
-            "source_german": "Ich kenne keine Nachbarn."
+            "source_english": "I do not know any neighbors.",
+            "source_german": "Ich kenne keine Nachbarn.",
+            "answer_thai": "ฉันไม่รู้จักเพื่อนบ้าน",
+            "answer_romanization": "chan mai ruchak phueanban"
           },
           {
-            "english": "We smile when we meet in the lift but we have never talked.",
-            "thai": "เรายิ้มเมื่อเจอกันในลิฟต์ แต่ไม่เคยคุยกัน",
-            "answer_romanization": "rao yim muea choekan nai lip tae mai khoei khui kan",
-            "source_german": "Wir lächeln, wenn wir im Aufzug aufeinander treffen, aber wir haben nie geredet."
+            "source_english": "We smile when we meet in the lift but we have never talked.",
+            "source_german": "Wir lächeln, wenn wir im Aufzug aufeinander treffen, aber wir haben nie geredet.",
+            "answer_thai": "เรายิ้มเมื่อเจอกันในลิฟต์ แต่ไม่เคยคุยกัน",
+            "answer_romanization": "rao yim muea choekan nai lip tae mai khoei khui kan"
           }
         ]
       },
@@ -5745,73 +5695,98 @@ const COURSE_DATA = {
           {
             "thai": "คุณเอ็มมาและคุณคริสคิดว่าคอนโดฯ ที่เขาอยู่ดีอย่างไร",
             "romanization": "",
-            "german": "",
-            "english": ""
+            "german": "Was denken Emma und Chris über ihr Condo? — Sie finden es komfortabel und gut gelegen.",
+            "english": "What do Emma and Chris think about their condo? — They find it comfortable and well located."
           },
           {
             "thai": "อาชีพยาม มีหน้าที่อะไร",
             "romanization": "",
-            "german": "",
-            "english": ""
+            "german": "Was sind die Aufgaben eines Sicherheitsbeamten? — Bewachung, Zugangskontrolle und Patrouillen.",
+            "english": "What are the duties of a security guard? — Guarding, access control, and patrols."
           },
           {
             "thai": "อาชีพแม่บ้าน มีหน้าที่อะไร",
             "romanization": "",
-            "german": "",
-            "english": ""
+            "german": "Was sind die Aufgaben einer Haushälterin? — Putzen, Wäsche und allgemeine Sauberkeit.",
+            "english": "What are the duties of a housekeeper? — Cleaning, laundry, and general tidiness."
           },
           {
             "thai": "อาชีพเจ้าหน้าที่ นิติฯ มีหน้าที่อะไร",
             "romanization": "",
-            "german": "",
-            "english": ""
+            "german": "Was sind die Aufgaben der Hausverwaltung? — Verwaltung, Beschwerden bearbeiten und Regeln durchsetzen.",
+            "english": "What are the duties of building management? — Administration, handling complaints, and enforcing rules."
           },
           {
             "thai": "อาชีพช่าง มีหน้าที่อะไร",
             "romanization": "",
-            "german": "",
-            "english": ""
+            "german": "Was sind die Aufgaben eines Technikers? — Reparaturen, Wartung und technische Probleme lösen.",
+            "english": "What are the duties of a technician? — Repairs, maintenance, and solving technical problems."
           },
           {
             "thai": "คุณเอ็มมาและคุณคริสคิดอย่างไรกับพนักงานที่คอนโดฯ",
             "romanization": "",
-            "german": "",
-            "english": ""
+            "german": "Wie denken Emma und Chris über das Personal? — Sie schätzen das Personal und sind dankbar.",
+            "english": "What do Emma and Chris think of the staff? — They appreciate the staff and are grateful."
           },
           {
             "thai": "คุณเอ็มมาและคุณคริสรู้สึกอย่างไรกับการอยู่ที่คอนโดฯ",
             "romanization": "",
-            "german": "",
-            "english": ""
+            "german": "Wie fühlen sich Emma und Chris beim Wohnen im Condo? — Sie fühlen sich sicher und wohl.",
+            "english": "How do Emma and Chris feel about living in the condo? — They feel safe and comfortable."
           },
           {
             "thai": "ทุกครั้งที่ไปต่างจังหวัด คุณเอ็มมาจะเอาอะไรมาให้พนักงาน",
             "romanization": "",
-            "german": "",
-            "english": ""
+            "german": "Was bringt Emma mit, wenn sie aufs Land fährt? — Lokale Spezialitäten als Geschenke.",
+            "english": "What does Emma bring when going to the countryside? — Local specialties as gifts."
           },
           {
             "thai": "ทุกๆ ปีใหม่ คุณเอ็มมาจะเอาอะไรมาให้พนักงาน",
             "romanization": "",
-            "german": "",
-            "english": ""
+            "german": "Was schenkt Emma dem Personal zu Neujahr? — Kleine Geschenke und Trinkgeld.",
+            "english": "What does Emma give the staff at New Year? — Small gifts and tips."
           },
           {
             "thai": "ทำไมคุณเอ็มมาเอาของให้พนักงานที่คอนโดฯ",
             "romanization": "",
-            "german": "",
-            "english": ""
+            "german": "Warum gibt Emma dem Personal Geschenke? — Aus Dankbarkeit für den guten Service.",
+            "english": "Why does Emma give gifts to the staff? — Out of gratitude for the good service."
           }
         ],
-        "pronunciation": [
-          "สวัสดีค่ะ ฉันมีของฝากเล็กๆ น้อยๆ มาให้ค่ะ"
-        ],
+        "pronunciation": {
+          "thai": "บ้านข้างเคียงมีสวนสวยและต้นไม้ร่มรื่น",
+          "romanization": "ban khang khiang mi suan suai lae tonmai romruen"
+        },
         "translation": [
           {
-            "source_english": "My family is living in a หมู่บ้าน, not a condominium. My หมู่บ้าน has นิติฯ and security guards.",
-            "answer_thai": "",
-            "source_german": "",
-            "answer_romanization": ""
+            "source_german": "Meine Nachbarn sind sehr freundlich.",
+            "source_english": "My neighbors are very friendly.",
+            "answer_thai": "เพื่อนบ้านของฉันเป็นมิตรมาก",
+            "answer_romanization": "phuean ban khong chan pen mit mak"
+          },
+          {
+            "source_german": "In unserer Nachbarschaft gibt es einen Park.",
+            "source_english": "There is a park in our neighborhood.",
+            "answer_thai": "ในละแวกบ้านของเรามีสวนสาธารณะ",
+            "answer_romanization": "nai lawaek ban khong rao mi suan satharana"
+          },
+          {
+            "source_german": "Der Sicherheitsdienst arbeitet rund um die Uhr.",
+            "source_english": "The security guards work around the clock.",
+            "answer_thai": "รปภ. ทำงานตลอดยี่สิบสี่ชั่วโมง",
+            "answer_romanization": "ropho thamgnan talot yisip si chuamong"
+          },
+          {
+            "source_german": "Unser Wohngebiet ist sehr ruhig.",
+            "source_english": "Our residential area is very quiet.",
+            "answer_thai": "หมู่บ้านของเราเงียบสงบมาก",
+            "answer_romanization": "muban khong rao ngiap sa-ngop mak"
+          },
+          {
+            "source_german": "Es gibt ein 7-Eleven in der Nähe.",
+            "source_english": "There is a 7-Eleven nearby.",
+            "answer_thai": "มีเซเว่นอยู่ใกล้ๆ",
+            "answer_romanization": "mi sewen yu klai klai"
           }
         ]
       },
@@ -6424,15 +6399,40 @@ const COURSE_DATA = {
             "romanization": ""
           }
         ],
-        "pronunciation": [
-          "ผม/ฉันงงไปหมดแล้ว"
-        ],
+        "pronunciation": {
+          "thai": "เทศกาลลอยกระทงจัดขึ้นในเดือนพฤศจิกายน",
+          "romanization": "thetsakan loi krathong chat khuen nai duean phruetsachikayon"
+        },
         "translation": [
           {
-            "source_english": "First year working in Bangkok, my colleague explained to me that our office would ทำบุญออฟฟิศ.",
-            "answer_thai": "",
-            "source_german": "",
-            "answer_romanization": ""
+            "source_german": "Loy Krathong ist mein Lieblingsfest.",
+            "source_english": "Loy Krathong is my favorite festival.",
+            "answer_thai": "ลอยกระทงเป็นเทศกาลที่ชอบที่สุด",
+            "answer_romanization": "loi krathong pen thetsakan thi chop thisut"
+          },
+          {
+            "source_german": "Wir zünden Kerzen und Räucherstäbchen an.",
+            "source_english": "We light candles and incense.",
+            "answer_thai": "เราจุดเทียนและธูป",
+            "answer_romanization": "rao chut thian lae thup"
+          },
+          {
+            "source_german": "An Songkran bespritzt man sich mit Wasser.",
+            "source_english": "At Songkran people splash water on each other.",
+            "answer_thai": "วันสงกรานต์คนสาดน้ำกัน",
+            "answer_romanization": "wan songkran khon sat nam kan"
+          },
+          {
+            "source_german": "Die Mönche erhalten jeden Morgen Essen.",
+            "source_english": "The monks receive food every morning.",
+            "answer_thai": "พระสงฆ์รับอาหารทุกเช้า",
+            "answer_romanization": "phra song rap ahan thuk chao"
+          },
+          {
+            "source_german": "Das neue Jahr beginnt am 13. April.",
+            "source_english": "The new year begins on April 13th.",
+            "answer_thai": "ปีใหม่เริ่มวันที่สิบสามเมษายน",
+            "answer_romanization": "pi mai roem wan thi sip sam mesayon"
           }
         ]
       },
@@ -7101,21 +7101,40 @@ const COURSE_DATA = {
             "romanization": ""
           }
         ],
-        "pronunciation": [
-          "ปกติผม/ฉันไม่กินเหล้า แต่ถ้าต้องฉลองอะไรก็จะกินนิดหน่อย"
-        ],
+        "pronunciation": {
+          "thai": "ภูเขาทางเหนือของไทยสวยงามมากในฤดูหนาว",
+          "romanization": "phukhao thang nuea khong thai suai-ngam mak nai ruedunao"
+        },
         "translation": [
           {
-            "source_english": "I like a long weekend in Bangkok. It has less traffic congestion, less people, and the weather is good.",
-            "answer_thai": "",
-            "source_german": "",
-            "answer_romanization": ""
+            "source_german": "Der Strand ist wunderschön bei Sonnenuntergang.",
+            "source_english": "The beach is beautiful at sunset.",
+            "answer_thai": "ชายหาดสวยมากตอนพระอาทิตย์ตก",
+            "answer_romanization": "chai hat suai mak ton phra-athit tok"
           },
           {
-            "source_english": "I feel unsafe when I see drunk people.",
-            "answer_thai": "",
-            "source_german": "",
-            "answer_romanization": ""
+            "source_german": "Im Norden gibt es viele Berge.",
+            "source_english": "There are many mountains in the north.",
+            "answer_thai": "ทางเหนือมีภูเขาหลายลูก",
+            "answer_romanization": "thang nuea mi phukhao lai luk"
+          },
+          {
+            "source_german": "Der Fluss fließt durch die Stadt.",
+            "source_english": "The river flows through the city.",
+            "answer_thai": "แม่น้ำไหลผ่านเมือง",
+            "answer_romanization": "maenam lai phan mueang"
+          },
+          {
+            "source_german": "Die Regenzeit dauert von Juni bis Oktober.",
+            "source_english": "The rainy season lasts from June to October.",
+            "answer_thai": "ฤดูฝนอยู่ตั้งแต่มิถุนายนถึงตุลาคม",
+            "answer_romanization": "ruedu fon yu tangtae mithunyon thueng tulakhom"
+          },
+          {
+            "source_german": "Wir haben einen Elefanten im Nationalpark gesehen.",
+            "source_english": "We saw an elephant in the national park.",
+            "answer_thai": "เราเห็นช้างในอุทยานแห่งชาติ",
+            "answer_romanization": "rao hen chang nai utthayan haeng chat"
           }
         ]
       },
@@ -7769,21 +7788,40 @@ const COURSE_DATA = {
             "romanization": ""
           }
         ],
-        "pronunciation": [
-          "ไม่เอาถุงครับ/ค่ะ"
-        ],
+        "pronunciation": {
+          "thai": "ข่าวออนไลน์เผยแพร่ได้เร็วกว่าหนังสือพิมพ์",
+          "romanization": "khao onlai phoei-phrae dai reo kwa nangsuephim"
+        },
         "translation": [
           {
-            "source_english": "Nowadays, I do not use plastic bag when I go to a supermarket.",
-            "answer_thai": "",
-            "source_german": "",
-            "answer_romanization": ""
+            "source_german": "Ich lese jeden Tag die Nachrichten online.",
+            "source_english": "I read the news online every day.",
+            "answer_thai": "ฉันอ่านข่าวออนไลน์ทุกวัน",
+            "answer_romanization": "chan an khao onlai thuk wan"
           },
           {
-            "source_english": "I get used to life in Bangkok after living here for six months.",
-            "answer_thai": "",
-            "source_german": "",
-            "answer_romanization": ""
+            "source_german": "Thailändische Seifenopern sind sehr beliebt.",
+            "source_english": "Thai soap operas are very popular.",
+            "answer_thai": "ละครไทยเป็นที่นิยมมาก",
+            "answer_romanization": "lakhon thai pen thi niyom mak"
+          },
+          {
+            "source_german": "Soziale Medien verändern unsere Kommunikation.",
+            "source_english": "Social media changes our communication.",
+            "answer_thai": "สื่อสังคมเปลี่ยนแปลงการสื่อสารของเรา",
+            "answer_romanization": "sue sangkhom plianplaeng kan suesan khong rao"
+          },
+          {
+            "source_german": "Welchen Fernsehsender sehen Sie gern?",
+            "source_english": "Which TV channel do you like to watch?",
+            "answer_thai": "คุณชอบดูช่องไหน",
+            "answer_romanization": "khun chop du chong nai"
+          },
+          {
+            "source_german": "Die Werbung im Fernsehen ist zu laut.",
+            "source_english": "The TV commercials are too loud.",
+            "answer_thai": "โฆษณาในทีวีดังเกินไป",
+            "answer_romanization": "khotsana nai thiwi dang koenpai"
           }
         ]
       },
@@ -8432,19 +8470,40 @@ const COURSE_DATA = {
             "romanization": ""
           }
         ],
-        "pronunciation": [],
+        "pronunciation": {
+          "thai": "กลิ่นอาหารไทยหอมมากจนทำให้หิว",
+          "romanization": "klin ahaan thai hom mak chon thamhai hiu"
+        },
         "translation": [
           {
-            "source_english": "We have known that ถนนข้าวสาร is a very famous street in Bangkok. Tourist go there at night for street food and seeing things. First time I went there it was very amazing.",
-            "answer_thai": "",
-            "source_german": "",
-            "answer_romanization": ""
+            "source_german": "Das Essen riecht sehr gut.",
+            "source_english": "The food smells very good.",
+            "answer_thai": "อาหารมีกลิ่นหอมมาก",
+            "answer_romanization": "ahan mi klin hom mak"
           },
           {
-            "source_english": "My friend asked me to bring him to เยาวราช at day time. He wanted to take photos of Chinese herbal medicine shops.",
-            "answer_thai": "",
-            "source_german": "",
-            "answer_romanization": ""
+            "source_german": "Diese Frucht schmeckt süß und sauer.",
+            "source_english": "This fruit tastes sweet and sour.",
+            "answer_thai": "ผลไม้นี้รสหวานและเปรี้ยว",
+            "answer_romanization": "phonlamai ni rot wan lae priao"
+          },
+          {
+            "source_german": "Der Tempel ist wunderbar anzusehen.",
+            "source_english": "The temple is wonderful to look at.",
+            "answer_thai": "วัดนี้งดงามน่ามอง",
+            "answer_romanization": "wat ni ngotngam na mong"
+          },
+          {
+            "source_german": "Die Musik klingt sehr schön.",
+            "source_english": "The music sounds very beautiful.",
+            "answer_thai": "ดนตรีเสียงไพเราะมาก",
+            "answer_romanization": "dontri siang phairaw mak"
+          },
+          {
+            "source_german": "Im Sommer ist es in Bangkok sehr heiß.",
+            "source_english": "In summer it is very hot in Bangkok.",
+            "answer_thai": "หน้าร้อนกรุงเทพฯ ร้อนมาก",
+            "answer_romanization": "na ron krungthep ron mak"
           }
         ]
       },
@@ -9049,84 +9108,100 @@ const COURSE_DATA = {
       "exercises": {
         "conversation": [
           {
-            "question": "กรุงเทพฯ มีกลิ่นอะไรบ้าง",
-            "answer": "กรุงเทพฯ มีกลิ่นอากาศชื้น กลิ่นอาหาร กลิ่นควันรถ บางครั้งมีกลิ่นเหม็นจากท่อระบายน้ำ และในรถไฟฟ้ามีกลิ่นหอมจากน้ำหอม",
-            "german": "",
-            "english": "",
-            "thai": "กรุงเทพฯ มีกลิ่นอะไรบ้าง\nกรุงเทพฯ มีกลิ่นอากาศชื้น กลิ่นอาหาร กลิ่นควันรถ บางครั้งมีกลิ่นเหม็นจากท่อระบายน้ำ และในรถไฟฟ้ามีกลิ่นหอมจากน้ำหอม",
+            "german": "Wie riecht Bangkok? — Bangkok riecht nach feuchter Luft, Essen, Autoabgasen, manchmal stinkt es aus den Abflüssen, und in der U-Bahn riecht es nach Parfüm.",
+            "english": "What does Bangkok smell like? — Bangkok smells of humid air, food, car exhaust, sometimes sewage stink, and perfume in the train.",
+            "thai": "กรุงเทพฯ มีกลิ่นอะไรบ้าง — กรุงเทพฯ มีกลิ่นอากาศชื้น กลิ่นอาหาร กลิ่นควันรถ บางครั้งมีกลิ่นเหม็นจากท่อระบายน้ำ และในรถไฟฟ้ามีกลิ่นหอมจากน้ำหอม",
             "romanization": ""
           },
           {
-            "question": "คุณคิดว่ากลิ่นทุเรียนเป็นอย่างไร",
-            "answer": "ฉันคิดว่ากลิ่นทุเรียนน่าแปลกใจสำหรับคนต่างชาติ แต่ฉันไม่มีปัญหา",
-            "german": "",
-            "english": "",
-            "thai": "คุณคิดว่ากลิ่นทุเรียนเป็นอย่างไร\nฉันคิดว่ากลิ่นทุเรียนน่าแปลกใจสำหรับคนต่างชาติ แต่ฉันไม่มีปัญหา",
+            "german": "Wie findest du den Geruch von Durian? — Ich finde den Durian-Geruch überraschend für Ausländer, aber ich habe kein Problem damit.",
+            "english": "What do you think of the durian smell? — I think the durian smell is surprising for foreigners, but I have no problem with it.",
+            "thai": "คุณคิดว่ากลิ่นทุเรียนเป็นอย่างไร — ฉันคิดว่ากลิ่นทุเรียนน่าแปลกใจสำหรับคนต่างชาติ แต่ฉันไม่มีปัญหา",
             "romanization": ""
           },
           {
-            "question": "ทำไมคุณคิดว่าผู้หญิงดมกลิ่นได้ดีกว่าผู้ชาย",
-            "answer": "ฉันคิดว่าผู้หญิงมีความสามารถในการดมกลิ่นได้ดีกว่าผู้ชาย",
-            "german": "",
-            "english": "",
-            "thai": "ทำไมคุณคิดว่าผู้หญิงดมกลิ่นได้ดีกว่าผู้ชาย\nฉันคิดว่าผู้หญิงมีความสามารถในการดมกลิ่นได้ดีกว่าผู้ชาย",
+            "german": "Was sind angenehme Gerüche in Thailand? — Jasminblüten, thailändisches Essen, Räucherstäbchen im Tempel und frisches Obst.",
+            "english": "What are pleasant smells in Thailand? — Jasmine flowers, Thai food, incense in temples, and fresh fruit.",
+            "thai": "ทำไมคุณคิดว่าผู้หญิงดมกลิ่นได้ดีกว่าผู้ชาย — ฉันคิดว่าผู้หญิงมีความสามารถในการดมกลิ่นได้ดีกว่าผู้ชาย",
             "romanization": ""
           },
           {
-            "question": "การใส่หน้ากากที่ประเทศไทยเป็นเรื่องแปลกไหม",
-            "answer": "ไม่ การใส่หน้ากากที่ประเทศไทยเป็นเรื่องปกติธรรมดา",
-            "german": "",
-            "english": "",
-            "thai": "การใส่หน้ากากที่ประเทศไทยเป็นเรื่องแปลกไหม\nไม่ การใส่หน้ากากที่ประเทศไทยเป็นเรื่องปกติธรรมดา",
+            "german": "Was sind unangenehme Gerüche in Bangkok? — Abgase, offene Abwasserkanäle, Müll bei heißem Wetter und Abfälle vom Markt.",
+            "english": "What are unpleasant smells in Bangkok? — Exhaust fumes, open sewers, garbage in hot weather, and market waste.",
+            "thai": "การใส่หน้ากากที่ประเทศไทยเป็นเรื่องแปลกไหม — ไม่ การใส่หน้ากากที่ประเทศไทยเป็นเรื่องปกติธรรมดา",
             "romanization": ""
           },
           {
-            "question": "คนไทยใส่หน้ากากเมื่อไหร่",
-            "answer": "คนไทยใส่หน้ากากเวลาเป็นหวัดและเวลาที่มีปัญหาเกี่ยวกับฝุ่น PM 2.5",
-            "german": "",
-            "english": "",
-            "thai": "คนไทยใส่หน้ากากเมื่อไหร่\nคนไทยใส่หน้ากากเวลาเป็นหวัดและเวลาที่มีปัญหาเกี่ยวกับฝุ่น PM 2.5",
+            "german": "Wie riecht thailändisches Essen? — Es riecht nach Kräutern, Knoblauch, Chili und Kokosmilch.",
+            "english": "What does Thai food smell like? — It smells of herbs, garlic, chili, and coconut milk.",
+            "thai": "คนไทยใส่หน้ากากเมื่อไหร่ — คนไทยใส่หน้ากากเวลาเป็นหวัดและเวลาที่มีปัญหาเกี่ยวกับฝุ่น PM 2.5",
             "romanization": ""
           },
           {
-            "question": "ถ้าไม่ชอบกลิ่นทุเรียนต้องทำอย่างไร",
-            "answer": "ถ้าไม่ชอบกลิ่นทุเรียนสามารถใส่หน้ากากแก้ปัญหาได้",
-            "german": "",
-            "english": "",
-            "thai": "ถ้าไม่ชอบกลิ่นทุเรียนต้องทำอย่างไร\nถ้าไม่ชอบกลิ่นทุเรียนสามารถใส่หน้ากากแก้ปัญหาได้",
+            "german": "Kann man am Geruch erkennen, welches Essen gekocht wird? — Ja, Tom Yum am Zitronengras und Pad Thai am gebratenen Knoblauch.",
+            "english": "Can you tell by the smell what food is being cooked? — Yes, Tom Yum by lemongrass and Pad Thai by fried garlic.",
+            "thai": "ถ้าไม่ชอบกลิ่นทุเรียนต้องทำอย่างไร — ถ้าไม่ชอบกลิ่นทุเรียนสามารถใส่หน้ากากแก้ปัญหาได้",
             "romanization": ""
           },
           {
-            "question": "กลิ่นหอมในรถไฟฟ้ามาจากอะไร",
-            "answer": "กลิ่นหอมในรถไฟฟ้ามาจากเสื้อผ้าและน้ำหอมของคนในรถ",
-            "german": "",
-            "english": "",
-            "thai": "กลิ่นหอมในรถไฟฟ้ามาจากอะไร\nกลิ่นหอมในรถไฟฟ้ามาจากเสื้อผ้าและน้ำหอมของคนในรถ",
+            "german": "Welche Blume riecht am besten? — Maliblüten (Jasmin) riechen am besten, besonders abends.",
+            "english": "Which flower smells the best? — Jasmine flowers smell the best, especially in the evening.",
+            "thai": "กลิ่นหอมในรถไฟฟ้ามาจากอะไร — กลิ่นหอมในรถไฟฟ้ามาจากเสื้อผ้าและน้ำหอมของคนในรถ",
             "romanization": ""
           },
           {
-            "question": "ประเทศไทยมีปัญหาเรื่องฝุ่นเมื่อไหร่",
-            "answer": "ประเทศไทยมีปัญหาฝุ่น PM 2.5 ในฤดูร้อนและฤดูหนาว",
-            "german": "",
-            "english": "",
-            "thai": "ประเทศไทยมีปัญหาเรื่องฝุ่นเมื่อไหร่\nประเทศไทยมีปัญหาฝุ่น PM 2.5 ในฤดูร้อนและฤดูหนาว",
+            "german": "Mag deine Familie Räucherstäbchen? — Ja, wir zünden jeden Tag Räucherstäbchen im Geisterhäuschen an.",
+            "english": "Does your family like incense? — Yes, we light incense at the spirit house every day.",
+            "thai": "ประเทศไทยมีปัญหาเรื่องฝุ่นเมื่อไหร่ — ประเทศไทยมีปัญหาฝุ่น PM 2.5 ในฤดูร้อนและฤดูหนาว",
             "romanization": ""
           },
           {
-            "question": "กลิ่นเหม็นในกรุงเทพฯ มาจากไหน",
-            "answer": "กลิ่นเหม็นในกรุงเทพฯ มาจากท่อระบายน้ำและควันรถ",
-            "german": "",
-            "english": "",
-            "thai": "กลิ่นเหม็นในกรุงเทพฯ มาจากไหน\nกลิ่นเหม็นในกรุงเทพฯ มาจากท่อระบายน้ำและควันรถ",
+            "german": "Stört dich der Geruch von Streetfood? — Nein, der Geruch macht mich hungrig.",
+            "english": "Does the smell of street food bother you? — No, the smell makes me hungry.",
+            "thai": "กลิ่นเหม็นในกรุงเทพฯ มาจากไหน — กลิ่นเหม็นในกรุงเทพฯ มาจากท่อระบายน้ำและควันรถ",
             "romanization": ""
           },
           {
-            "question": "เวลาอยู่ในรถไฟฟ้าหรือรถไฟใต้ดินจะได้กลิ่นอะไร",
-            "answer": "เวลาอยู่ในรถไฟฟ้าหรือรถไฟใต้ดินจะได้กลิ่นหอมจากเสื้อผ้าและน้ำหอมของคนในรถ",
-            "german": "",
-            "english": "",
-            "thai": "เวลาอยู่ในรถไฟฟ้าหรือรถไฟใต้ดินจะได้กลิ่นอะไร\nเวลาอยู่ในรถไฟฟ้าหรือรถไฟใต้ดินจะได้กลิ่นหอมจากเสื้อผ้าและน้ำหอมของคนในรถ",
+            "german": "Was riecht besser: Thai-Essen oder westliches Essen? — Thai-Essen riecht aromatischer wegen der frischen Kräuter.",
+            "english": "What smells better: Thai or Western food? — Thai food smells more aromatic because of the fresh herbs.",
+            "thai": "เวลาอยู่ในรถไฟฟ้าหรือรถไฟใต้ดินจะได้กลิ่นอะไร — เวลาอยู่ในรถไฟฟ้าหรือรถไฟใต้ดินจะได้กลิ่นหอมจากเสื้อผ้าและน้ำหอมของคนในรถ",
             "romanization": ""
+          }
+        ],
+        "pronunciation": {
+          "thai": "กลิ่นดอกมะลิหอมหวานในตอนเย็น",
+          "romanization": "klin dok mali hom wan nai ton yen"
+        },
+        "translation": [
+          {
+            "source_german": "Jasminblüten duften am Abend am stärksten.",
+            "source_english": "Jasmine flowers smell strongest in the evening.",
+            "answer_thai": "ดอกมะลิหอมที่สุดตอนเย็น",
+            "answer_romanization": "dok mali hom thisut ton yen"
+          },
+          {
+            "source_german": "Der Geruch von Durian ist für viele ungewöhnlich.",
+            "source_english": "The smell of durian is unusual for many.",
+            "answer_thai": "กลิ่นทุเรียนแปลกสำหรับหลายคน",
+            "answer_romanization": "klin thurian plaek samrap lai khon"
+          },
+          {
+            "source_german": "In der Küche riecht es nach Knoblauch.",
+            "source_english": "The kitchen smells of garlic.",
+            "answer_thai": "ในครัวมีกลิ่นกระเทียม",
+            "answer_romanization": "nai khrua mi klin krathiam"
+          },
+          {
+            "source_german": "Das Räucherstäbchen verbreitet einen angenehmen Duft.",
+            "source_english": "The incense spreads a pleasant scent.",
+            "answer_thai": "ธูปส่งกลิ่นหอมน่าสบายใจ",
+            "answer_romanization": "thup song klin hom na sabai chai"
+          },
+          {
+            "source_german": "Bitte öffnen Sie das Fenster, es riecht schlecht.",
+            "source_english": "Please open the window, it smells bad.",
+            "answer_thai": "กรุณาเปิดหน้าต่าง มีกลิ่นเหม็น",
+            "answer_romanization": "karuna poet natang mi klin men"
           }
         ]
       },
@@ -9715,84 +9790,100 @@ const COURSE_DATA = {
       "exercises": {
         "conversation": [
           {
-            "question": "ประเทศไทยมีกี่ฤดู",
-            "answer": "ประเทศไทยมีสามฤดู คือ ฤดูร้อน ฤดูฝน และฤดูหนาว",
             "english": "How many seasons does Thailand have",
             "german": "Wie viele Jahreszeiten hat Thailand",
-            "thai": "ประเทศไทยมีกี่ฤดู\nประเทศไทยมีสามฤดู คือ ฤดูร้อน ฤดูฝน และฤดูหนาว",
+            "thai": "ประเทศไทยมีกี่ฤดู — ประเทศไทยมีสามฤดู คือ ฤดูร้อน ฤดูฝน และฤดูหนาว",
             "romanization": ""
           },
           {
-            "question": "ฤดูร้อนที่กรุงเทพฯ ร้อนเพราะอะไร",
-            "answer": "ฤดูร้อนที่กรุงเทพฯ ร้อนเพราะนอกจากร้อนตามธรรมชาติแล้วยังมีความร้อนจากพื้นถนนและตึกสูง",
             "english": "Why is Bangkok so hot in summer? — Because besides natural heat, there's also heat from roads and tall buildings.",
             "german": "Warum ist es in Bangkok in der heißen Jahreszeit so heiß? — Weil es neben der natürlichen Hitze auch Hitze von Straßen und Hochhäusern gibt.",
-            "thai": "ฤดูร้อนที่กรุงเทพฯ ร้อนเพราะอะไร\nฤดูร้อนที่กรุงเทพฯ ร้อนเพราะนอกจากร้อนตามธรรมชาติแล้วยังมีความร้อนจากพื้นถนนและตึกสูง",
+            "thai": "ฤดูร้อนที่กรุงเทพฯ ร้อนเพราะอะไร — ฤดูร้อนที่กรุงเทพฯ ร้อนเพราะนอกจากร้อนตามธรรมชาติแล้วยังมีความร้อนจากพื้นถนนและตึกสูง",
             "romanization": ""
           },
           {
-            "question": "คนต่างชาติที่มาใหม่ๆ ชอบอากาศร้อนหรือเปล่า",
-            "answer": "บางคนชอบอากาศร้อนเพราะเบื่ออากาศหนาว",
             "english": "Do newly arrived foreigners like the hot weather? — Some like it because they're tired of cold weather.",
             "german": "Mögen Ausländer, die neu ankommen, das heiße Wetter? — Manche mögen es, weil sie kaltes Wetter satt haben.",
-            "thai": "คนต่างชาติที่มาใหม่ๆ ชอบอากาศร้อนหรือเปล่า\nบางคนชอบอากาศร้อนเพราะเบื่ออากาศหนาว",
+            "thai": "คนต่างชาติที่มาใหม่ๆ ชอบอากาศร้อนหรือเปล่า — บางคนชอบอากาศร้อนเพราะเบื่ออากาศหนาว",
             "romanization": ""
           },
           {
-            "question": "คนที่อยู่กรุงเทพฯ มาหลายปีชอบอากาศร้อนไหม",
-            "answer": "ไม่ พวกเขาไม่ชอบเพราะร้อนเกินไป",
             "english": "Do people who've lived in Bangkok for years like the hot weather? — No, they don't because it's too hot.",
             "german": "Mögen Leute, die schon Jahre in Bangkok leben, das heiße Wetter? — Nein, sie mögen es nicht, weil es zu heiß ist.",
-            "thai": "คนที่อยู่กรุงเทพฯ มาหลายปีชอบอากาศร้อนไหม\nไม่ พวกเขาไม่ชอบเพราะร้อนเกินไป",
+            "thai": "คนที่อยู่กรุงเทพฯ มาหลายปีชอบอากาศร้อนไหม — ไม่ พวกเขาไม่ชอบเพราะร้อนเกินไป",
             "romanization": ""
           },
           {
-            "question": "ฤดูฝนที่กรุงเทพฯ เป็นอย่างไร",
-            "answer": "ฤดูฝนที่กรุงเทพฯ ร้อนและชื้นมากด้วย บางคนบอกว่าหายใจไม่สะดวก",
             "english": "What's the rainy season like in Bangkok? — Hot and very humid, some say it's hard to breathe.",
             "german": "Wie ist die Regenzeit in Bangkok? — Heiß und sehr feucht, manche sagen, man kann kaum atmen.",
-            "thai": "ฤดูฝนที่กรุงเทพฯ เป็นอย่างไร\nฤดูฝนที่กรุงเทพฯ ร้อนและชื้นมากด้วย บางคนบอกว่าหายใจไม่สะดวก",
+            "thai": "ฤดูฝนที่กรุงเทพฯ เป็นอย่างไร — ฤดูฝนที่กรุงเทพฯ ร้อนและชื้นมากด้วย บางคนบอกว่าหายใจไม่สะดวก",
             "romanization": ""
           },
           {
-            "question": "ฤดูหนาวที่กรุงเทพฯ หนาวจริงไหม",
-            "answer": "ไม่ ฤดูหนาวที่กรุงเทพฯ ไม่หนาวจริงๆ อากาศแค่เย็นๆ เท่านั้น",
             "english": "Is Bangkok really cold in winter? — No, the weather is just a bit cool.",
             "german": "Ist es in Bangkok im Winter wirklich kalt? — Nein, es ist nur ein bisschen kühl.",
-            "thai": "ฤดูหนาวที่กรุงเทพฯ หนาวจริงไหม\nไม่ ฤดูหนาวที่กรุงเทพฯ ไม่หนาวจริงๆ อากาศแค่เย็นๆ เท่านั้น",
+            "thai": "ฤดูหนาวที่กรุงเทพฯ หนาวจริงไหม — ไม่ ฤดูหนาวที่กรุงเทพฯ ไม่หนาวจริงๆ อากาศแค่เย็นๆ เท่านั้น",
             "romanization": ""
           },
           {
-            "question": "เวลาเย็นที่กรุงเทพฯ นานเท่าไหร่",
-            "answer": "บางปีมีสองสามวัน แต่บางปีมีสองสามสัปดาห์",
             "english": "How long does the cool weather last in Bangkok? — Sometimes a few days, sometimes a few weeks.",
             "german": "Wie lange dauert die kühle Zeit in Bangkok? — Manchmal ein paar Tage, manchmal ein paar Wochen.",
-            "thai": "เวลาเย็นที่กรุงเทพฯ นานเท่าไหร่\nบางปีมีสองสามวัน แต่บางปีมีสองสามสัปดาห์",
+            "thai": "เวลาเย็นที่กรุงเทพฯ นานเท่าไหร่ — บางปีมีสองสามวัน แต่บางปีมีสองสามสัปดาห์",
             "romanization": ""
           },
           {
-            "question": "ฝุ่น PM 2.5 เกิดในฤดูอะไร",
-            "answer": "ฝุ่น PM 2.5 เกิดในฤดูร้อนและฤดูหนาว",
             "english": "In which season does PM 2.5 dust occur? — In summer and winter.",
             "german": "In welcher Jahreszeit gibt es PM 2.5 Feinstaub? — In der heißen und der kalten Jahreszeit.",
-            "thai": "ฝุ่น PM 2.5 เกิดในฤดูอะไร\nฝุ่น PM 2.5 เกิดในฤดูร้อนและฤดูหนาว",
+            "thai": "ฝุ่น PM 2.5 เกิดในฤดูอะไร — ฝุ่น PM 2.5 เกิดในฤดูร้อนและฤดูหนาว",
             "romanization": ""
           },
           {
-            "question": "คุณคริสชอบอากาศที่กรุงเทพฯ หรือลอนดอน",
-            "answer": "คุณคริสชอบอากาศที่กรุงเทพฯ มากกว่าลอนดอน",
             "english": "Does Chris prefer Bangkok or London weather? — Chris prefers Bangkok over London.",
             "german": "Mag Chris das Wetter in Bangkok oder London lieber? — Chris mag Bangkok lieber als London.",
-            "thai": "คุณคริสชอบอากาศที่กรุงเทพฯ หรือลอนดอน\nคุณคริสชอบอากาศที่กรุงเทพฯ มากกว่าลอนดอน",
+            "thai": "คุณคริสชอบอากาศที่กรุงเทพฯ หรือลอนดอน — คุณคริสชอบอากาศที่กรุงเทพฯ มากกว่าลอนดอน",
             "romanization": ""
           },
           {
-            "question": "ของที่ต้องมีสำหรับอากาศที่กรุงเทพฯ คืออะไรบ้าง",
-            "answer": "ของที่ต้องมีคือร่มและหน้ากาก ไม่ต้องมีเสื้อกันหนาว",
             "english": "What are must-haves for Bangkok weather? — Umbrella and mask, no winter coat needed.",
             "german": "Was sind Must-haves für das Wetter in Bangkok? — Regenschirm und Maske, keinen Wintermantel.",
-            "thai": "ของที่ต้องมีสำหรับอากาศที่กรุงเทพฯ คืออะไรบ้าง\nของที่ต้องมีคือร่มและหน้ากาก ไม่ต้องมีเสื้อกันหนาว",
+            "thai": "ของที่ต้องมีสำหรับอากาศที่กรุงเทพฯ คืออะไรบ้าง — ของที่ต้องมีคือร่มและหน้ากาก ไม่ต้องมีเสื้อกันหนาว",
             "romanization": ""
+          }
+        ],
+        "pronunciation": {
+          "thai": "ภาษาไทยมีห้าเสียงวรรณยุกต์ที่ต้องฝึกฝน",
+          "romanization": "phasa thai mi ha siang wannayuk thi tong fuekfon"
+        },
+        "translation": [
+          {
+            "source_german": "Thai hat fünf Töne.",
+            "source_english": "Thai has five tones.",
+            "answer_thai": "ภาษาไทยมีห้าเสียงวรรณยุกต์",
+            "answer_romanization": "phasa thai mi ha siang wannayuk"
+          },
+          {
+            "source_german": "Ich übe jeden Tag Lesen und Schreiben.",
+            "source_english": "I practice reading and writing every day.",
+            "answer_thai": "ฉันฝึกอ่านและเขียนทุกวัน",
+            "answer_romanization": "chan fuek an lae khian thuk wan"
+          },
+          {
+            "source_german": "Das schwierigste am Thai sind die Töne.",
+            "source_english": "The hardest part of Thai is the tones.",
+            "answer_thai": "สิ่งที่ยากที่สุดในภาษาไทยคือเสียงวรรณยุกต์",
+            "answer_romanization": "sing thi yak thisut nai phasa thai khue siang wannayuk"
+          },
+          {
+            "source_german": "Mein Sprachlehrer ist sehr geduldig.",
+            "source_english": "My language teacher is very patient.",
+            "answer_thai": "อาจารย์สอนภาษาของฉันอดทนมาก",
+            "answer_romanization": "achan son phasa khong chan otthon mak"
+          },
+          {
+            "source_german": "Ich verstehe gesprochenes Thai besser als geschriebenes.",
+            "source_english": "I understand spoken Thai better than written.",
+            "answer_thai": "ฉันเข้าใจภาษาไทยพูดได้ดีกว่าเขียน",
+            "answer_romanization": "chan khaojai phasa thai phut dai di kwa khian"
           }
         ]
       },
@@ -10397,84 +10488,100 @@ const COURSE_DATA = {
       "exercises": {
         "conversation": [
           {
-            "question": "คุณคริสและเพื่อนๆ ชอบบริการอะไรในประเทศไทย",
-            "answer": "คุณคริสและเพื่อนๆ ชอบบริการทำฟันในประเทศไทย",
             "english": "What services do Chris and friends prefer in Thailand",
             "german": "Welche Dienstleistungen mögen Chris und seine Freunde in Thailand",
-            "thai": "คุณคริสและเพื่อนๆ ชอบบริการอะไรในประเทศไทย\nคุณคริสและเพื่อนๆ ชอบบริการทำฟันในประเทศไทย",
+            "thai": "คุณคริสและเพื่อนๆ ชอบบริการอะไรในประเทศไทย — คุณคริสและเพื่อนๆ ชอบบริการทำฟันในประเทศไทย",
             "romanization": ""
           },
           {
-            "question": "ทำไมเพื่อนชาวอังกฤษบอกว่าการไปหาหมอฟันที่กรุงเทพฯ น่าประทับใจ",
-            "answer": "เพราะหมอฟันที่นี่เก่งมาก มือเบา ทำให้ไม่เจ็บ และราคาไม่แพง",
             "english": "Why does Chris's British friend say dentistry in Bangkok is impressive? — Because dentists here are very skilled, have light hands, painless, and affordable.",
             "german": "Warum sagt Chris' englischer Freund, dass der Zahnarzt in Bangkok beeindruckend ist? — Weil die Zahnärzte hier sehr gut sind, sanft arbeiten, es nicht wehtut und günstig ist.",
-            "thai": "ทำไมเพื่อนชาวอังกฤษบอกว่าการไปหาหมอฟันที่กรุงเทพฯ น่าประทับใจ\nเพราะหมอฟันที่นี่เก่งมาก มือเบา ทำให้ไม่เจ็บ และราคาไม่แพง",
+            "thai": "ทำไมเพื่อนชาวอังกฤษบอกว่าการไปหาหมอฟันที่กรุงเทพฯ น่าประทับใจ — เพราะหมอฟันที่นี่เก่งมาก มือเบา ทำให้ไม่เจ็บ และราคาไม่แพง",
             "romanization": ""
           },
           {
-            "question": "ทำไมคุณคริสไม่ชอบไปหาหมอฟัน",
-            "answer": "เพราะเขาไม่ชอบเสียงของเครื่องมือและกลิ่นของคลินิก",
             "english": "Why doesn't Chris like going to the dentist? — Because he doesn't like the sound of instruments and the smell of the clinic.",
             "german": "Warum geht Chris nicht gerne zum Zahnarzt? — Weil er den Klang der Instrumente und den Geruch der Klinik nicht mag.",
-            "thai": "ทำไมคุณคริสไม่ชอบไปหาหมอฟัน\nเพราะเขาไม่ชอบเสียงของเครื่องมือและกลิ่นของคลินิก",
+            "thai": "ทำไมคุณคริสไม่ชอบไปหาหมอฟัน — เพราะเขาไม่ชอบเสียงของเครื่องมือและกลิ่นของคลินิก",
             "romanization": ""
           },
           {
-            "question": "คุณคริสไปหาหมอฟันที่โรงพยาบาลหรือคลินิก",
-            "answer": "คุณคริสไปหาหมอฟันที่คลินิก",
             "english": "Does Chris go to the dentist at a hospital or clinic? — At a clinic.",
             "german": "Geht Chris zum Zahnarzt im Krankenhaus oder in einer Klinik? — In einer Klinik.",
-            "thai": "คุณคริสไปหาหมอฟันที่โรงพยาบาลหรือคลินิก\nคุณคริสไปหาหมอฟันที่คลินิก",
+            "thai": "คุณคริสไปหาหมอฟันที่โรงพยาบาลหรือคลินิก — คุณคริสไปหาหมอฟันที่คลินิก",
             "romanization": ""
           },
           {
-            "question": "หมอฟันทำอะไรกับฟันของคุณคริสบ้าง",
-            "answer": "หมอขูดหินปูน อุดฟัน และรักษารากฟัน",
             "english": "What did the dentist do with Chris's teeth? — Scaling, filling, and root canal treatment.",
             "german": "Was hat der Zahnarzt mit Chris' Zähnen gemacht? — Zahnstein entfernt, Füllung gemacht und Wurzelbehandlung.",
-            "thai": "หมอฟันทำอะไรกับฟันของคุณคริสบ้าง\nหมอขูดหินปูน อุดฟัน และรักษารากฟัน",
+            "thai": "หมอฟันทำอะไรกับฟันของคุณคริสบ้าง — หมอขูดหินปูน อุดฟัน และรักษารากฟัน",
             "romanization": ""
           },
           {
-            "question": "คุณคริสคิดว่าเพื่อนของเขาพูดถูกไหม",
-            "answer": "ใช่ คุณคริสเชื่อว่าเพื่อนของเขาพูดถูก",
             "english": "Does Chris think his friend was right? — Yes, Chris believes his friend was right.",
             "german": "Denkt Chris, dass sein Freund recht hatte? — Ja, Chris glaubt, dass sein Freund recht hatte.",
-            "thai": "คุณคริสคิดว่าเพื่อนของเขาพูดถูกไหม\nใช่ คุณคริสเชื่อว่าเพื่อนของเขาพูดถูก",
+            "thai": "คุณคริสคิดว่าเพื่อนของเขาพูดถูกไหม — ใช่ คุณคริสเชื่อว่าเพื่อนของเขาพูดถูก",
             "romanization": ""
           },
           {
-            "question": "ธุรกิจทัวร์ทำฟันให้บริการอะไรบ้าง",
-            "answer": "ธุรกิจทัวร์พานักท่องเที่ยวมาทำฟันที่กรุงเทพฯ ทำฟันเสร็จแล้วก็ไปเที่ยว",
             "english": "What do dental tourism businesses offer? — They bring tourists for dental treatment in Bangkok, then sightseeing.",
             "german": "Was bieten Zahnreise-Unternehmen an? — Sie bringen Touristen zur Zahnbehandlung nach Bangkok und danach auf Sightseeing-Tour.",
-            "thai": "ธุรกิจทัวร์ทำฟันให้บริการอะไรบ้าง\nธุรกิจทัวร์พานักท่องเที่ยวมาทำฟันที่กรุงเทพฯ ทำฟันเสร็จแล้วก็ไปเที่ยว",
+            "thai": "ธุรกิจทัวร์ทำฟันให้บริการอะไรบ้าง — ธุรกิจทัวร์พานักท่องเที่ยวมาทำฟันที่กรุงเทพฯ ทำฟันเสร็จแล้วก็ไปเที่ยว",
             "romanization": ""
           },
           {
-            "question": "คุณเอ็มมาคิดอย่างไรกับการบริการต่างๆ ที่ประเทศไทย",
-            "answer": "คุณเอ็มมาบอกว่าที่ประเทศไทยมีบริการหลายอย่างที่ดีมากๆ และไม่แพง",
             "english": "What does Emma think about services in Thailand? — She says Thailand has many excellent and affordable services.",
             "german": "Was denkt Emma über die Dienstleistungen in Thailand? — Sie sagt, Thailand hat viele ausgezeichnete und günstige Dienstleistungen.",
-            "thai": "คุณเอ็มมาคิดอย่างไรกับการบริการต่างๆ ที่ประเทศไทย\nคุณเอ็มมาบอกว่าที่ประเทศไทยมีบริการหลายอย่างที่ดีมากๆ และไม่แพง",
+            "thai": "คุณเอ็มมาคิดอย่างไรกับการบริการต่างๆ ที่ประเทศไทย — คุณเอ็มมาบอกว่าที่ประเทศไทยมีบริการหลายอย่างที่ดีมากๆ และไม่แพง",
             "romanization": ""
           },
           {
-            "question": "คนไทยชอบไปหาหมอฟันไหม",
-            "answer": "ไม่ มากขึ้นคนไทยคิดว่าค่าทำฟันแพงอยู่มาก ถ้าไม่จำเป็นก็ไม่อยากไป",
             "english": "Do Thai people like going to the dentist? — No, many think it's expensive and only go if necessary.",
             "german": "Gehen Thailänder gerne zum Zahnarzt? — Nein, viele finden es zu teuer und gehen nur wenn nötig.",
-            "thai": "คนไทยชอบไปหาหมอฟันไหม\nไม่ มากขึ้นคนไทยคิดว่าค่าทำฟันแพงอยู่มาก ถ้าไม่จำเป็นก็ไม่อยากไป",
+            "thai": "คนไทยชอบไปหาหมอฟันไหม — ไม่ มากขึ้นคนไทยคิดว่าค่าทำฟันแพงอยู่มาก ถ้าไม่จำเป็นก็ไม่อยากไป",
             "romanization": ""
           },
           {
-            "question": "ค่าทำฟันที่ประเทศไทยเปรียบเทียบกับที่อังกฤษอย่างไร",
-            "answer": "ค่าทำฟันที่ประเทศไทยถูกกว่าที่อังกฤษและอเมริกา",
             "english": "How do dental costs in Thailand compare to England? — Cheaper than England and America.",
             "german": "Wie sind die Zahnarztkosten in Thailand im Vergleich zu England? — Günstiger als in England und Amerika.",
-            "thai": "ค่าทำฟันที่ประเทศไทยเปรียบเทียบกับที่อังกฤษอย่างไร\nค่าทำฟันที่ประเทศไทยถูกกว่าที่อังกฤษและอเมริกา",
+            "thai": "ค่าทำฟันที่ประเทศไทยเปรียบเทียบกับที่อังกฤษอย่างไร — ค่าทำฟันที่ประเทศไทยถูกกว่าที่อังกฤษและอเมริกา",
             "romanization": ""
+          }
+        ],
+        "pronunciation": {
+          "thai": "เทคโนโลยีจะเปลี่ยนแปลงชีวิตของเราในอนาคต",
+          "romanization": "theknologi cha plianplaeng chiwit khong rao nai anakhot"
+        },
+        "translation": [
+          {
+            "source_german": "In der Zukunft möchte ich in Thailand leben.",
+            "source_english": "In the future I want to live in Thailand.",
+            "answer_thai": "ในอนาคตฉันอยากอยู่ในประเทศไทย",
+            "answer_romanization": "nai anakhot chan yak yu nai prathet thai"
+          },
+          {
+            "source_german": "Die Technologie wird sich schnell verändern.",
+            "source_english": "Technology will change quickly.",
+            "answer_thai": "เทคโนโลยีจะเปลี่ยนแปลงอย่างรวดเร็ว",
+            "answer_romanization": "theknologi cha plianplaeng yang ruatrew"
+          },
+          {
+            "source_german": "Ich plane, nächstes Jahr Thai fließend zu sprechen.",
+            "source_english": "I plan to speak Thai fluently next year.",
+            "answer_thai": "ฉันวางแผนจะพูดไทยคล่องปีหน้า",
+            "answer_romanization": "chan wang phaen cha phut thai khlong pi na"
+          },
+          {
+            "source_german": "Bangkok wird in zehn Jahren ganz anders sein.",
+            "source_english": "Bangkok will be very different in ten years.",
+            "answer_thai": "กรุงเทพฯ จะเปลี่ยนไปมากในสิบปีข้างหน้า",
+            "answer_romanization": "krungthep cha plian pai mak nai sip pi khang na"
+          },
+          {
+            "source_german": "Ich hoffe, dass meine Kinder auch Thai lernen.",
+            "source_english": "I hope my children will also learn Thai.",
+            "answer_thai": "ฉันหวังว่าลูกๆ จะเรียนภาษาไทยด้วย",
+            "answer_romanization": "chan wang wa luk luk cha rian phasa thai duai"
           }
         ]
       },
@@ -11052,84 +11159,100 @@ const COURSE_DATA = {
       "exercises": {
         "conversation": [
           {
-            "question": "คุณคริสมีสัญญาทำงานกี่ปี",
-            "answer": "คุณคริสมีสัญญาทำงานสี่ปี",
             "english": "How many years is Chris's work contract",
             "german": "Wie lange ist Christi Arbeitsvertrag",
-            "thai": "คุณคริสมีสัญญาทำงานกี่ปี\nคุณคริสมีสัญญาทำงานสี่ปี",
+            "thai": "คุณคริสมีสัญญาทำงานกี่ปี — คุณคริสมีสัญญาทำงานสี่ปี",
             "romanization": ""
           },
           {
-            "question": "คุณคริสจะทำงานครบสัญญาเมื่อไหร่",
-            "answer": "อีกครึ่งปีคุณคริสจะทำงานครบสัญญา",
             "english": "When does Chris's contract end? — In half a year.",
             "german": "Wann endet Chris' Arbeitsvertrag? — In einem halben Jahr.",
-            "thai": "คุณคริสจะทำงานครบสัญญาเมื่อไหร่\nอีกครึ่งปีคุณคริสจะทำงานครบสัญญา",
+            "thai": "คุณคริสจะทำงานครบสัญญาเมื่อไหร่ — อีกครึ่งปีคุณคริสจะทำงานครบสัญญา",
             "romanization": ""
           },
           {
-            "question": "คุณคริสจะต่อสัญญาไหม",
-            "answer": "ไม่ คุณคริสตัดสินใจไม่ต่อสัญญา",
             "english": "Will Chris extend his contract? — No, he decided not to extend.",
             "german": "Wird Chris seinen Vertrag verlängern? — Nein, er hat beschlossen, nicht zu verlängern.",
-            "thai": "คุณคริสจะต่อสัญญาไหม\nไม่ คุณคริสตัดสินใจไม่ต่อสัญญา",
+            "thai": "คุณคริสจะต่อสัญญาไหม — ไม่ คุณคริสตัดสินใจไม่ต่อสัญญา",
             "romanization": ""
           },
           {
-            "question": "คุณคริสจะย้ายไปทำงานที่ไหน",
-            "answer": "คุณคริสจะย้ายไปทำงานที่ญี่ปุ่น",
             "english": "Where will Chris move to work? — To Japan.",
             "german": "Wohin wird Chris zur Arbeit ziehen? — Nach Japan.",
-            "thai": "คุณคริสจะย้ายไปทำงานที่ไหน\nคุณคริสจะย้ายไปทำงานที่ญี่ปุ่น",
+            "thai": "คุณคริสจะย้ายไปทำงานที่ไหน — คุณคริสจะย้ายไปทำงานที่ญี่ปุ่น",
             "romanization": ""
           },
           {
-            "question": "คุณคริสเซ็นสัญญากับบริษัทญี่ปุ่นแล้วไหม",
-            "answer": "ใช่ คุณคริสเซ็นสัญญากับบริษัทญี่ปุ่นเรียบร้อยแล้ว",
             "english": "Has Chris signed the contract with the Japanese company? — Yes, already signed.",
             "german": "Hat Chris den Vertrag mit der japanischen Firma schon unterschrieben? — Ja, bereits unterschrieben.",
-            "thai": "คุณคริสเซ็นสัญญากับบริษัทญี่ปุ่นแล้วไหม\nใช่ คุณคริสเซ็นสัญญากับบริษัทญี่ปุ่นเรียบร้อยแล้ว",
+            "thai": "คุณคริสเซ็นสัญญากับบริษัทญี่ปุ่นแล้วไหม — ใช่ คุณคริสเซ็นสัญญากับบริษัทญี่ปุ่นเรียบร้อยแล้ว",
             "romanization": ""
           },
           {
-            "question": "ช่วงนี้คุณคริสกับคุณเอ็มมาเตรียมตัวอย่างไร",
-            "answer": "คุณคริสเตรียมตัวจัดการงาน คุณเอ็มมาจัดการงานและวางแผนเกี่ยวกับการย้าย",
             "english": "How are Chris and Emma preparing? — Chris handles work, Emma plans the move.",
             "german": "Wie bereiten sich Chris und Emma vor? — Chris kümmert sich um die Arbeit, Emma plant den Umzug.",
-            "thai": "ช่วงนี้คุณคริสกับคุณเอ็มมาเตรียมตัวอย่างไร\nคุณคริสเตรียมตัวจัดการงาน คุณเอ็มมาจัดการงานและวางแผนเกี่ยวกับการย้าย",
+            "thai": "ช่วงนี้คุณคริสกับคุณเอ็มมาเตรียมตัวอย่างไร — คุณคริสเตรียมตัวจัดการงาน คุณเอ็มมาจัดการงานและวางแผนเกี่ยวกับการย้าย",
             "romanization": ""
           },
           {
-            "question": "คุณคริสกับคุณเอ็มมาจะทำอย่างไรกับข้าวของต่างๆ",
-            "answer": "เขาจะเก็บของ ส่งกลับไปอังกฤษ ส่งไปญี่ปุ่น หรือให้เพื่อนไทยกับบริจาค",
             "english": "What will Chris and Emma do with their belongings? — Pack, ship to England, ship to Japan, or give to Thai friends/donate.",
             "german": "Was machen Chris und Emma mit ihren Sachen? — Einpacken, nach England schicken, nach Japan schicken, oder an Thai-Freunde verschenken/spenden.",
-            "thai": "คุณคริสกับคุณเอ็มมาจะทำอย่างไรกับข้าวของต่างๆ\nเขาจะเก็บของ ส่งกลับไปอังกฤษ ส่งไปญี่ปุ่น หรือให้เพื่อนไทยกับบริจาค",
+            "thai": "คุณคริสกับคุณเอ็มมาจะทำอย่างไรกับข้าวของต่างๆ — เขาจะเก็บของ ส่งกลับไปอังกฤษ ส่งไปญี่ปุ่น หรือให้เพื่อนไทยกับบริจาค",
             "romanization": ""
           },
           {
-            "question": "คุณคริสมีประสบการณ์ย้ายประเทศมากี่ครั้ง",
-            "answer": "คุณคริสมีประสบการณ์ย้ายประเทศสามครั้ง",
             "english": "How many times has Chris moved countries? — Three times.",
             "german": "Wie oft ist Chris schon umgezogen? — Drei Mal.",
-            "thai": "คุณคริสมีประสบการณ์ย้ายประเทศมากี่ครั้ง\nคุณคริสมีประสบการณ์ย้ายประเทศสามครั้ง",
+            "thai": "คุณคริสมีประสบการณ์ย้ายประเทศมากี่ครั้ง — คุณคริสมีประสบการณ์ย้ายประเทศสามครั้ง",
             "romanization": ""
           },
           {
-            "question": "คุณคริสย้ายจากที่ไหนไปที่ไหนบ้าง",
-            "answer": "ครั้งแรกจากอังกฤษไปสิงคโปร์ ครั้งที่สองจากสิงคโปร์มาประเทศไทย ครั้งนี้ไปญี่ปุ่น",
             "english": "Where has Chris moved to? — First from England to Singapore, then Thailand, now Japan.",
             "german": "Wohin ist Chris jeweils gezogen? — Erst von England nach Singapur, dann nach Thailand, jetzt nach Japan.",
-            "thai": "คุณคริสย้ายจากที่ไหนไปที่ไหนบ้าง\nครั้งแรกจากอังกฤษไปสิงคโปร์ ครั้งที่สองจากสิงคโปร์มาประเทศไทย ครั้งนี้ไปญี่ปุ่น",
+            "thai": "คุณคริสย้ายจากที่ไหนไปที่ไหนบ้าง — ครั้งแรกจากอังกฤษไปสิงคโปร์ ครั้งที่สองจากสิงคโปร์มาประเทศไทย ครั้งนี้ไปญี่ปุ่น",
             "romanization": ""
           },
           {
-            "question": "คุณเอ็มมาวางแผนจะทำอะไรที่ญี่ปุ่น",
-            "answer": "คุณเอ็มมาวางแผนจะเขียนสารคดีเกี่ยวกับวัดที่ญี่ปุ่น",
             "english": "What does Emma plan to do in Japan? — She plans to write a documentary about Japanese temples.",
             "german": "Was plant Emma in Japan zu tun? — Sie plant, eine Dokumentation über japanische Tempel zu schreiben.",
-            "thai": "คุณเอ็มมาวางแผนจะทำอะไรที่ญี่ปุ่น\nคุณเอ็มมาวางแผนจะเขียนสารคดีเกี่ยวกับวัดที่ญี่ปุ่น",
+            "thai": "คุณเอ็มมาวางแผนจะทำอะไรที่ญี่ปุ่น — คุณเอ็มมาวางแผนจะเขียนสารคดีเกี่ยวกับวัดที่ญี่ปุ่น",
             "romanization": ""
+          }
+        ],
+        "pronunciation": {
+          "thai": "การย้ายไปอยู่ต่างประเทศต้องเตรียมตัวหลายอย่าง",
+          "romanization": "kan yai pai yu tang prathet tong triam tua lai yang"
+        },
+        "translation": [
+          {
+            "source_german": "Man braucht ein Visum, um in Thailand zu arbeiten.",
+            "source_english": "You need a visa to work in Thailand.",
+            "answer_thai": "ต้องมีวีซ่าเพื่อทำงานในประเทศไทย",
+            "answer_romanization": "tong mi wisa phuea thamgnan nai prathet thai"
+          },
+          {
+            "source_german": "Ich habe meinen Arbeitsvertrag unterschrieben.",
+            "source_english": "I signed my work contract.",
+            "answer_thai": "ฉันเซ็นสัญญาทำงานแล้ว",
+            "answer_romanization": "chan sen sanya thamgnan laeo"
+          },
+          {
+            "source_german": "Das Leben im Ausland ist aufregend aber schwierig.",
+            "source_english": "Life abroad is exciting but difficult.",
+            "answer_thai": "ชีวิตในต่างประเทศตื่นเต้นแต่ก็ยาก",
+            "answer_romanization": "chiwit nai tang prathet tuentten tae ko yak"
+          },
+          {
+            "source_german": "Meine Familie vermisst mich sehr.",
+            "source_english": "My family misses me a lot.",
+            "answer_thai": "ครอบครัวของฉันคิดถึงฉันมาก",
+            "answer_romanization": "khropkhrua khong chan khitthung chan mak"
+          },
+          {
+            "source_german": "Ich möchte die thailändische Staatsbürgerschaft beantragen.",
+            "source_english": "I want to apply for Thai citizenship.",
+            "answer_thai": "ฉันอยากขอสัญชาติไทย",
+            "answer_romanization": "chan yak kho sanchat thai"
           }
         ]
       },
@@ -11695,84 +11818,100 @@ const COURSE_DATA = {
       "exercises": {
         "conversation": [
           {
-            "question": "เอ็กซ์แพตต้องกังวลและระมัดระวังเกี่ยวกับอะไร",
-            "answer": "เอ็กซ์แพตต้องกังวลและระมัดระวังเกี่ยวกับความปลอดภัย เรื่องสุขภาพ และวัฒนธรรม",
             "english": "What should expats be concerned and careful about",
             "german": "Worüber sollten Expats besorgt und vorsichtig sein",
-            "thai": "เอ็กซ์แพตต้องกังวลและระมัดระวังเกี่ยวกับอะไร\nเอ็กซ์แพตต้องกังวลและระมัดระวังเกี่ยวกับความปลอดภัย เรื่องสุขภาพ และวัฒนธรรม",
+            "thai": "เอ็กซ์แพตต้องกังวลและระมัดระวังเกี่ยวกับอะไร — เอ็กซ์แพตต้องกังวลและระมัดระวังเกี่ยวกับความปลอดภัย เรื่องสุขภาพ และวัฒนธรรม",
             "romanization": ""
           },
           {
-            "question": "เรื่องที่สำคัญที่สุดสำหรับเอ็กซ์แพตคืออะไร",
-            "answer": "เรื่องที่สำคัญที่สุดคือความปลอดภัย",
             "english": "What's most important for expats? — Safety.",
             "german": "Was ist das Wichtigste für Expats? — Sicherheit.",
-            "thai": "เรื่องที่สำคัญที่สุดสำหรับเอ็กซ์แพตคืออะไร\nเรื่องที่สำคัญที่สุดคือความปลอดภัย",
+            "thai": "เรื่องที่สำคัญที่สุดสำหรับเอ็กซ์แพตคืออะไร — เรื่องที่สำคัญที่สุดคือความปลอดภัย",
             "romanization": ""
           },
           {
-            "question": "ก่อนย้ายประเทศต้องพิจารณาเรื่องอะไรบ้าง",
-            "answer": "ต้องพิจารณาความปลอดภัยเรื่องสุขภาพ ความปลอดภัยในชีวิตและทรัพย์สิน และความปลอดภัยเกี่ยวกับวัฒนธรรม",
             "english": "What must you consider before moving abroad? — Health safety, personal safety, and cultural safety.",
             "german": "Was muss man vor einem Umzug ins Ausland bedenken? — Gesundheitssicherheit, persönliche Sicherheit und kulturelle Sicherheit.",
-            "thai": "ก่อนย้ายประเทศต้องพิจารณาเรื่องอะไรบ้าง\nต้องพิจารณาความปลอดภัยเรื่องสุขภาพ ความปลอดภัยในชีวิตและทรัพย์สิน และความปลอดภัยเกี่ยวกับวัฒนธรรม",
+            "thai": "ก่อนย้ายประเทศต้องพิจารณาเรื่องอะไรบ้าง — ต้องพิจารณาความปลอดภัยเรื่องสุขภาพ ความปลอดภัยในชีวิตและทรัพย์สิน และความปลอดภัยเกี่ยวกับวัฒนธรรม",
             "romanization": ""
           },
           {
-            "question": "ประเทศที่ปลอดภัยเรื่องสุขภาพต้องมีอะไร",
-            "answer": "ต้องไม่มีโรคระบาด ต้องมีโรงพยาบาลที่ดี และมีหมอที่เก่ง",
             "english": "What does a health-safe country need? — No epidemics, good hospitals, and skilled doctors.",
             "german": "Was braucht ein gesundheitlich sicheres Land? — Keine Epidemien, gute Krankenhäuser und kompetente Ärzte.",
-            "thai": "ประเทศที่ปลอดภัยเรื่องสุขภาพต้องมีอะไร\nต้องไม่มีโรคระบาด ต้องมีโรงพยาบาลที่ดี และมีหมอที่เก่ง",
+            "thai": "ประเทศที่ปลอดภัยเรื่องสุขภาพต้องมีอะไร — ต้องไม่มีโรคระบาด ต้องมีโรงพยาบาลที่ดี และมีหมอที่เก่ง",
             "romanization": ""
           },
           {
-            "question": "ความปลอดภัยในชีวิตและทรัพย์สินหมายถึงอะไร",
-            "answer": "หมายถึงการอยู่โดยไม่ต้องกลัวโจรหรือขโมยจนเกินไป ไม่มีอุบัติเหตุร้ายแรงบ่อยๆ ไม่มีการประท้วงรุนแรง",
             "english": "What does personal safety mean? — Living without excessive fear of thieves, without frequent serious accidents.",
             "german": "Was bedeutet persönliche Sicherheit? — Leben ohne übermäßige Angst vor Dieben, ohne häufige schwere Unfälle.",
-            "thai": "ความปลอดภัยในชีวิตและทรัพย์สินหมายถึงอะไร\nหมายถึงการอยู่โดยไม่ต้องกลัวโจรหรือขโมยจนเกินไป ไม่มีอุบัติเหตุร้ายแรงบ่อยๆ ไม่มีการประท้วงรุนแรง",
+            "thai": "ความปลอดภัยในชีวิตและทรัพย์สินหมายถึงอะไร — หมายถึงการอยู่โดยไม่ต้องกลัวโจรหรือขโมยจนเกินไป ไม่มีอุบัติเหตุร้ายแรงบ่อยๆ ไม่มีการประท้วงรุนแรง",
             "romanization": ""
           },
           {
-            "question": "ความปลอดภัยเกี่ยวกับวัฒนธรรมคืออะไร",
-            "answer": "คือการพิจารณาว่าสามารถปรับตัวให้เข้ากับวัฒนธรรมประเทศนั้นได้หรือไม่",
             "english": "What is cultural safety? — Considering whether you can adapt to that country's culture.",
             "german": "Was ist kulturelle Sicherheit? — Zu prüfen, ob man sich an die Kultur des Landes anpassen kann.",
-            "thai": "ความปลอดภัยเกี่ยวกับวัฒนธรรมคืออะไร\nคือการพิจารณาว่าสามารถปรับตัวให้เข้ากับวัฒนธรรมประเทศนั้นได้หรือไม่",
+            "thai": "ความปลอดภัยเกี่ยวกับวัฒนธรรมคืออะไร — คือการพิจารณาว่าสามารถปรับตัวให้เข้ากับวัฒนธรรมประเทศนั้นได้หรือไม่",
             "romanization": ""
           },
           {
-            "question": "ถ้าไม่สามารถปรับตัวได้จะเกิดอะไร",
-            "answer": "อาจอยู่อย่างไม่สบายใจและคนท้องถิ่นก็จะไม่สบายใจด้วย",
             "english": "What happens if you can't adapt? — You live uncomfortably and locals feel uncomfortable too.",
             "german": "Was passiert, wenn man sich nicht anpassen kann? — Man lebt unwohl und die Einheimischen fühlen sich auch unwohl.",
-            "thai": "ถ้าไม่สามารถปรับตัวได้จะเกิดอะไร\nอาจอยู่อย่างไม่สบายใจและคนท้องถิ่นก็จะไม่สบายใจด้วย",
+            "thai": "ถ้าไม่สามารถปรับตัวได้จะเกิดอะไร — อาจอยู่อย่างไม่สบายใจและคนท้องถิ่นก็จะไม่สบายใจด้วย",
             "romanization": ""
           },
           {
-            "question": "คุณคริสกับภรรยากำลังจะย้ายไปไหน",
-            "answer": "กำลังจะย้ายไปที่โตเกียว",
             "english": "Where are Chris and his wife moving? — To Tokyo.",
             "german": "Wohin ziehen Chris und seine Frau? — Nach Tokio.",
-            "thai": "คุณคริสกับภรรยากำลังจะย้ายไปไหน\nกำลังจะย้ายไปที่โตเกียว",
+            "thai": "คุณคริสกับภรรยากำลังจะย้ายไปไหน — กำลังจะย้ายไปที่โตเกียว",
             "romanization": ""
           },
           {
-            "question": "คุณคริสคิดว่าที่นั่นปลอดภัยไหม",
-            "answer": "ใช่ คิดว่าปลอดภัยมากในทุกๆ ด้าน",
             "english": "Does Chris think it's safe there? — Yes, he thinks it's very safe in every way.",
             "german": "Denkt Chris, dass es dort sicher ist? — Ja, er denkt es ist in jeder Hinsicht sehr sicher.",
-            "thai": "คุณคริสคิดว่าที่นั่นปลอดภัยไหม\nใช่ คิดว่าปลอดภัยมากในทุกๆ ด้าน",
+            "thai": "คุณคริสคิดว่าที่นั่นปลอดภัยไหม — ใช่ คิดว่าปลอดภัยมากในทุกๆ ด้าน",
             "romanization": ""
           },
           {
-            "question": "คุณคริสกับภรรยาวางแผนว่าเกษียณแล้วจะทำอะไร",
-            "answer": "วางแผนว่าถ้าเป็นไปได้จะกลับมาใช้ชีวิตที่ประเทศไทย",
             "english": "What do Chris and his wife plan after retirement? — If possible, return to live in Thailand.",
             "german": "Was planen Chris und seine Frau nach der Rente? — Wenn möglich, zurück nach Thailand ziehen.",
-            "thai": "คุณคริสกับภรรยาวางแผนว่าเกษียณแล้วจะทำอะไร\nวางแผนว่าถ้าเป็นไปได้จะกลับมาใช้ชีวิตที่ประเทศไทย",
+            "thai": "คุณคริสกับภรรยาวางแผนว่าเกษียณแล้วจะทำอะไร — วางแผนว่าถ้าเป็นไปได้จะกลับมาใช้ชีวิตที่ประเทศไทย",
             "romanization": ""
+          }
+        ],
+        "pronunciation": {
+          "thai": "ขอบคุณสำหรับทุกอย่างและหวังว่าจะได้พบกันอีก",
+          "romanization": "khopkhun samrap thuk yang lae wang wa cha dai phop kan ik"
+        },
+        "translation": [
+          {
+            "source_german": "Es war schön, Sie kennenzulernen.",
+            "source_english": "It was nice to meet you.",
+            "answer_thai": "ยินดีที่ได้รู้จักคุณ",
+            "answer_romanization": "yindi thi dai ruchak khun"
+          },
+          {
+            "source_german": "Ich werde euch alle vermissen.",
+            "source_english": "I will miss all of you.",
+            "answer_thai": "ฉันจะคิดถึงพวกคุณทุกคน",
+            "answer_romanization": "chan cha khitthung phuak khun thuk khon"
+          },
+          {
+            "source_german": "Vielen Dank für Ihre Hilfe.",
+            "source_english": "Thank you very much for your help.",
+            "answer_thai": "ขอบคุณมากสำหรับความช่วยเหลือ",
+            "answer_romanization": "khopkhun mak samrap khwam chuailua"
+          },
+          {
+            "source_german": "Auf Wiedersehen und alles Gute!",
+            "source_english": "Goodbye and all the best!",
+            "answer_thai": "ลาก่อนและขอให้โชคดี",
+            "answer_romanization": "la kon lae kho hai chok di"
+          },
+          {
+            "source_german": "Wir sehen uns hoffentlich bald wieder.",
+            "source_english": "Hopefully we will see each other again soon.",
+            "answer_thai": "หวังว่าจะได้พบกันอีกเร็วๆ นี้",
+            "answer_romanization": "wang wa cha dai phop kan ik reo reo ni"
           }
         ]
       },
@@ -12087,4 +12226,3 @@ const COURSE_DATA = {
     }
   ]
 };
-if (typeof module !== 'undefined' && module.exports) { module.exports = COURSE_DATA; }
