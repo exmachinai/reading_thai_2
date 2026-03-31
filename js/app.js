@@ -17,11 +17,11 @@ const XP_REWARDS = {
 };
 
 const LEVELS = [
-  { level: 1, name: 'Anfänger', minXP: 0, maxXP: 200, emoji: '🌱' },
-  { level: 2, name: 'Schüler', minXP: 201, maxXP: 500, emoji: '📚' },
-  { level: 3, name: 'Leser', minXP: 501, maxXP: 1000, emoji: '📖' },
-  { level: 4, name: 'Sprecher', minXP: 1001, maxXP: 2000, emoji: '🗣️' },
-  { level: 5, name: 'Experte', minXP: 2001, maxXP: Infinity, emoji: '🏆' }
+  { level: 1, name: 'Anfänger · Beginner · ผู้เริ่มต้น', minXP: 0, maxXP: 200, emoji: '🌱' },
+  { level: 2, name: 'Schüler · Student · นักเรียน', minXP: 201, maxXP: 500, emoji: '📚' },
+  { level: 3, name: 'Leser · Reader · ผู้อ่าน', minXP: 501, maxXP: 1000, emoji: '📖' },
+  { level: 4, name: 'Sprecher · Speaker · ผู้พูด', minXP: 1001, maxXP: 2000, emoji: '🗣️' },
+  { level: 5, name: 'Experte · Expert · ผู้เชี่ยวชาญ', minXP: 2001, maxXP: Infinity, emoji: '🏆' }
 ];
 
 const BADGE_EMOJIS = {
@@ -239,7 +239,7 @@ function getLevel() {
 
   return {
     level: 1,
-    name: 'Anfänger',
+    name: 'Anfänger · Beginner · ผู้เริ่มต้น',
     emoji: '🌱',
     minXP: 0,
     maxXP: 200,

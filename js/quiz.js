@@ -124,7 +124,7 @@ function renderQuestion() {
       </div>
 
       <div class="quiz-footer">
-        <p class="quiz-hint">Tippe eine Antwort an</p>
+        <p class="quiz-hint">Tippe eine Antwort an · Select an answer · เลือกคำตอบ</p>
       </div>
     </div>
   `;
@@ -140,7 +140,7 @@ function renderQuestion() {
  */
 function renderAnswerOptions(question) {
   if (!question.options || question.options.length === 0) {
-    return '<p>Keine Optionen verfügbar</p>';
+    return '<p>Keine Optionen verfügbar · No options available · ไม่มีตัวเลือก</p>';
   }
 
   return question.options
@@ -252,7 +252,7 @@ function handleAnswer(button, question) {
 
     const hint = document.querySelector('.quiz-hint');
     if (hint) {
-      hint.textContent = 'Richtig! 🎉';
+      hint.textContent = 'Richtig! · Correct! · ถูก! 🎉';
     }
 
     autoAdvance();
@@ -284,7 +284,7 @@ function handleAnswer(button, question) {
 
     const hint = document.querySelector('.quiz-hint');
     if (hint) {
-      hint.textContent = 'Falsch. Tippe zum Fortfahren';
+      hint.textContent = 'Falsch · Wrong · ผิด - Tap to continue · แตะเพื่อดำเนินการต่อ';
     }
 
     autoAdvance();
@@ -378,7 +378,7 @@ function renderResults() {
       <div class="results-card">
         <div class="results-header">
           <h2 class="results-title">
-            ${passed ? 'Bestanden! 🎉' : 'Nicht bestanden 😔'}
+            ${passed ? 'Bestanden! · Passed! · ผ่าน! 🎉' : 'Nicht bestanden · Not passed · ไม่ผ่าน 😔'}
           </h2>
         </div>
 
@@ -397,7 +397,7 @@ function renderResults() {
           <div class="results-badge">
             <span class="badge-emoji">${badgeEmoji}</span>
             <p class="badge-text">
-              ${isPerfect ? 'Perfekt!' : 'Gut gemacht!'}
+              ${isPerfect ? 'Perfekt! · Perfect! · ยอดเยี่ยม!' : 'Gut gemacht! · Well done! · ทำได้ดี!'}
             </p>
           </div>
         `
@@ -406,7 +406,7 @@ function renderResults() {
 
         <div class="results-xp ${xpReward > 0 ? 'earned' : ''}">
           <p class="xp-text">
-            ${xpReward > 0 ? `+${xpReward} XP verdient` : 'Versuche es nächstes Mal erneut!'}
+            ${xpReward > 0 ? `+${xpReward} XP verdient · earned · ได้รับ` : 'Versuche es nächstes Mal erneut! · Try again next time! · พยายามอีกครั้งในครั้งต่อไป!'}
           </p>
         </div>
 
@@ -418,10 +418,10 @@ function renderResults() {
 
         <div class="results-actions">
           <button class="btn btn-primary" id="retry-quiz-btn">
-            Quiz wiederholen
+            Quiz wiederholen · Retry Quiz · ลองใหม่
           </button>
           <button class="btn btn-secondary" id="back-to-chapter-btn">
-            Zurück zum Kapitel
+            Zurück zum Kapitel · Back to Chapter · กลับไปยังบท
           </button>
         </div>
       </div>
@@ -459,15 +459,15 @@ function getFeedbackText(correct, total) {
   const percentage = (correct / total) * 100;
 
   if (percentage === 100) {
-    return 'Ausgezeichnet! Du hast alle Fragen richtig beantwortet!';
+    return 'Ausgezeichnet! Du hast alle Fragen richtig beantwortet! · Excellent! You answered all questions correctly! · ยอดเยี่ยม! คุณตอบคำถามทั้งหมดถูกต้อง!';
   } else if (percentage >= 80) {
-    return 'Sehr gut! Du hast die meisten Fragen richtig beantwortet.';
+    return 'Sehr gut! Du hast die meisten Fragen richtig beantwortet. · Very good! You answered most questions correctly. · ดีมาก! คุณตอบคำถามส่วนใหญ่ถูกต้อง';
   } else if (percentage >= 70) {
-    return 'Gut! Du hast die Prüfung bestanden, aber es gibt noch Raum für Verbesserungen.';
+    return 'Gut! Du hast die Prüfung bestanden, aber es gibt noch Raum für Verbesserungen. · Good! You passed the quiz, but there is room for improvement. · ดี! คุณผ่านการสอบ แต่ยังมีที่ปรับปรุงเพิ่มเติม';
   } else if (percentage >= 50) {
-    return 'Nicht ganz. Versuche, die Themen erneut zu überprüfen.';
+    return 'Nicht ganz. Versuche, die Themen erneut zu überprüfen. · Not quite. Try reviewing the topics again. · ยังไม่ถึง ลองทบทวนหัวข้อใหม่';
   } else {
-    return 'Lass dich nicht entmutigen! Wiederhole das Kapitel und versuche es erneut.';
+    return 'Lass dich nicht entmutigen! Wiederhole das Kapitel und versuche es erneut. · Don\'t be discouraged! Repeat the chapter and try again. · อย่ายอมแพ้! ทำซ้ำบทและพยายามอีกครั้ง';
   }
 }
 

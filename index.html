@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>Thai Lesen II — Thailändisch Lesen lernen</title>
+    <title>Thai Lesen — Thailändisch Lesen lernen</title>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,7 +13,7 @@
     <header class="header">
         <div class="header-content">
             <div class="header-left">
-                <h1 class="header-title">ไทยอ่าน II · Thai Lesen II · Reading Thai II</h1>
+                <h1 class="header-title">ไทยอ่าน · Thai Lesen · Reading Thai</h1>
                 <div class="header-level">
                     <span class="level-badge" id="levelBadge">🌱 Stufe 1 · Anfänger</span>
                     <div class="level-progress">
@@ -23,36 +23,36 @@
                 </div>
                 <div class="header-streak">
                     <span class="streak-icon">🔥</span>
-                    <span class="streak-text" id="streakText">Starte deinen ersten Lerntag!</span>
+                    <span class="streak-text" id="streakText">Starte deinen ersten Lerntag! · Start your first day! · เริ่มวันแรก!</span>
                 </div>
             </div>
-            <img src="img/logo-palm-samran.png" alt="Palm Samran" class="header-logo">
+            <img src="img/exmachinai-logo-white.png" alt="exmachinAI" class="header-logo">
         </div>
     </header>
 
     <!-- Lernfortschritt (didaktisch optimiert) -->
-    <section class="stats-banner">
+    <section class="stats-banner" role="region" aria-label="Learning statistics">
         <div class="stat-card">
-            <div class="stat-number" id="userXP">0</div>
-            <div class="stat-label">Punkte</div>
+            <div class="stat-number" id="userXP" aria-label="Experience points">0</div>
+            <div class="stat-label">Punkte · Points · คะแนน</div>
         </div>
         <div class="stat-card">
-            <div class="stat-number" id="vocabCount">0</div>
-            <div class="stat-label">Wörter gelernt</div>
+            <div class="stat-number" id="vocabCount" aria-label="Words learned">0</div>
+            <div class="stat-label">Wörter · Words · คำศัพท์</div>
         </div>
         <div class="stat-card">
-            <div class="stat-number" id="quizCount">0/20</div>
-            <div class="stat-label">Quiz bestanden</div>
+            <div class="stat-number" id="quizCount" aria-label="Quiz completion progress">0/20</div>
+            <div class="stat-label">Quiz · ควิซ</div>
         </div>
         <div class="stat-card">
-            <div class="stat-number" id="userStreak">0</div>
-            <div class="stat-label">Tage am Stück</div>
+            <div class="stat-number" id="userStreak" aria-label="Day streak">0</div>
+            <div class="stat-label">Tage · Days · วัน</div>
         </div>
     </section>
 
     <!-- Kapitelübersicht -->
     <section class="chapters-section">
-        <h2 class="section-title">20 Kapitel</h2>
+        <h2 class="section-title">20 Kapitel · Chapters · บท</h2>
         <div class="chapters-grid">
             <a href="chapters/ch01.html" class="chapter-card">
                 <div class="card-emoji">👨‍👩‍👧</div>
@@ -280,9 +280,9 @@
                 const lvl = stats.level;
                 document.getElementById('levelBadge').textContent = lvl.emoji + ' Stufe ' + lvl.level + ' · ' + lvl.name;
                 document.getElementById('levelProgress').style.width = lvl.progress + '%';
-                document.getElementById('levelXP').textContent = stats.xp + ' Punkte';
+                document.getElementById('levelXP').textContent = stats.xp + ' Punkte · Points · คะแนน';
                 document.getElementById('streakText').textContent =
-                    stats.streak > 0 ? stats.streak + ' Tage am Stück gelernt!' : 'Starte deinen ersten Lerntag!';
+                    stats.streak > 0 ? stats.streak + ' Tage am Stück gelernt! · ' + stats.streak + ' days straight! · ' + stats.streak + ' วันติดต่อกัน!' : 'Starte deinen ersten Lerntag! · Start your first day! · เริ่มวันแรก!';
             } catch(e) { console.warn(e); }
         });
 
