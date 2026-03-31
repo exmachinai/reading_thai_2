@@ -111,6 +111,7 @@ function renderQuestion() {
 
       <div class="quiz-content">
         <div class="quiz-question">
+          <p class="question-label" style="font-size:0.8rem;color:#888;margin:0 0 4px;">Frage · Question · คำถาม</p>
           <p class="question-text">${escapeHtml(questionText)}</p>
         </div>
 

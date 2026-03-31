@@ -2229,7 +2229,52 @@ const COURSE_DATA = {
           }
         ]
       },
-      "structures": [],
+      "structures": [
+        {
+          "id": "S1",
+          "pattern_thai": "ไปทำกิจกรรม",
+          "pattern": "ไปทำกิจกรรม",
+          "pattern_romanization": "pai tha kitkam",
+          "meaning_german": "Aktivitäten machen gehen",
+          "meaning_english": "to go do activities",
+          "examples": [
+            {
+              "thai": "วันเสาร์เราไปซื้อของ",
+              "romanization": "wan sao rao pai sue khong",
+              "german": "Am Samstag gehen wir einkaufen",
+              "english": "On Saturday we go shopping"
+            },
+            {
+              "thai": "วันอาทิตย์เราไปออกกำลังกาย",
+              "romanization": "wan athit rao pai o kok lang kai",
+              "german": "Am Sonntag gehen wir trainieren",
+              "english": "On Sunday we go exercise"
+            }
+          ]
+        },
+        {
+          "id": "S2",
+          "pattern_thai": "มี + noun + จำนวน",
+          "pattern": "มี + noun + จำนวน",
+          "pattern_romanization": "mi + noun + chamnuan",
+          "meaning_german": "haben eine Anzahl von",
+          "meaning_english": "to have a number of",
+          "examples": [
+            {
+              "thai": "ฉันมีเวลาว่างหลายชั่วโมง",
+              "romanization": "chan mi welai wang lai chuamomong",
+              "german": "Ich habe viele Stunden Freizeit",
+              "english": "I have many hours of free time"
+            },
+            {
+              "thai": "กิจกรรมวันเสาร์อาทิตย์มีสามอย่าง",
+              "romanization": "kitkam wan sao athit mi sam yang",
+              "german": "Wochenendaktivitäten haben drei Arten",
+              "english": "Weekend activities have three types"
+            }
+          ]
+        }
+      ],
       "exercises": {
         "conversation": [
           {
@@ -5793,303 +5838,303 @@ const COURSE_DATA = {
       "quiz": [
         {
           "type": "mc",
-          "question_de": "คอนโดฯ ที่คุณเอ็มมาอยู่มีลักษณะอย่างไร",
-          "question_en": "คอนโดฯ ที่คุณเอ็มมาอยู่มีลักษณะอย่างไร",
+          "question_de": "Wie ist das Condo, in dem Emma wohnt?",
+          "question_en": "What is Emma's condo like?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เงียบสงบและมีการดูแลที่ดี",
-              "text_en": "เงียบสงบและมีการดูแลที่ดี",
+              "text_de": "Ruhig und gut gepflegt",
+              "text_en": "Quiet and well-maintained",
               "correct": true
             },
             {
-              "text_de": "สิ่งอำนวยความสะดวกน้อย",
-              "text_en": "สิ่งอำนวยความสะดวกน้อย",
+              "text_de": "Wenige Annehmlichkeiten",
+              "text_en": "Few amenities",
               "correct": false
             },
             {
-              "text_de": "ไม่มีความปลอดภัย",
-              "text_en": "ไม่มีความปลอดภัย",
+              "text_de": "Keine Sicherheit",
+              "text_en": "No security",
               "correct": false
             },
             {
-              "text_de": "ราคาแพงมาก",
-              "text_en": "ราคาแพงมาก",
+              "text_de": "Sehr teuer",
+              "text_en": "Very expensive",
               "correct": false
             }
           ],
-          "explanation_de": "ตามข้อความ คอนโดฯ เงียบสงบและมีการดูแลที่ดี",
-          "explanation_en": "ตามข้อความ คอนโดฯ เงียบสงบและมีการดูแลที่ดี"
+          "explanation_de": "Das Condo ist ruhig und gut gepflegt",
+          "explanation_en": "The condo is quiet and well-maintained"
         },
         {
           "type": "mc",
-          "question_de": "ยามของคอนโดฯ ดูแลเรื่องอะไรมากที่สุด",
-          "question_en": "ยามของคอนโดฯ ดูแลเรื่องอะไรมากที่สุด",
+          "question_de": "Worauf achtet die Sicherheit des Condos am meisten?",
+          "question_en": "What does the condo security focus on most?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ความสะอาด",
-              "text_en": "ความสะอาด",
+              "text_de": "Sauberkeit",
+              "text_en": "Cleanliness",
               "correct": false
             },
             {
-              "text_de": "ความปลอดภัย",
-              "text_en": "ความปลอดภัย",
+              "text_de": "Sicherheit",
+              "text_en": "Security",
               "correct": true
             },
             {
-              "text_de": "การซ่อมแซม",
-              "text_en": "การซ่อมแซม",
+              "text_de": "Reparaturen",
+              "text_en": "Repairs",
               "correct": false
             },
             {
-              "text_de": "การจดหมาย",
-              "text_en": "การจดหมาย",
+              "text_de": "Postversand",
+              "text_en": "Mail delivery",
               "correct": false
             }
           ],
-          "explanation_de": "ยามดูแลเกี่ยวกับความปลอดภัยของคอนโดฯ",
-          "explanation_en": "ยามดูแลเกี่ยวกับความปลอดภัยของคอนโดฯ"
+          "explanation_de": "Die Sicherheit kümmert sich um die Sicherheit des Condos",
+          "explanation_en": "The security takes care of the condo's security"
         },
         {
           "type": "mc",
-          "question_de": "พนักงานของคอนโดฯ มีลักษณะเป็นอย่างไร",
-          "question_en": "พนักงานของคอนโดฯ มีลักษณะเป็นอย่างไร",
+          "question_de": "Wie sind die Mitarbeiter des Condos?",
+          "question_en": "What are the condo employees like?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ใจแคบและสูง",
-              "text_en": "ใจแคบและสูง",
+              "text_de": "Kleinlich und hochmütig",
+              "text_en": "Petty and arrogant",
               "correct": false
             },
             {
-              "text_de": "ใจดี สุภาพ และยิ้มเสมอ",
-              "text_en": "ใจดี สุภาพ และยิ้มเสมอ",
+              "text_de": "Freundlich, höflich und immer lächelnd",
+              "text_en": "Friendly, polite and always smiling",
               "correct": true
             },
             {
-              "text_de": "ขึ้นซ่าและเกียจคร่อ",
-              "text_en": "ขึ้นซ่าและเกียจคร่อ",
+              "text_de": "Geheimniskrämerisch und faul",
+              "text_en": "Secretive and lazy",
               "correct": false
             },
             {
-              "text_de": "ใจเย็นและเงียบ",
-              "text_en": "ใจเย็นและเงียบ",
+              "text_de": "Ruhig und leise",
+              "text_en": "Calm and quiet",
               "correct": false
             }
           ],
-          "explanation_de": "พนักงานทุกคนที่นี่ใจดี สุภาพ และยิ้มเสมอ",
-          "explanation_en": "พนักงานทุกคนที่นี่ใจดี สุภาพ และยิ้มเสมอ"
+          "explanation_de": "Alle Mitarbeiter hier sind freundlich, höflich und lächeln immer",
+          "explanation_en": "All employees here are friendly, polite and always smiling"
         },
         {
           "type": "mc",
-          "question_de": "ช่างของคอนโดฯ ดูแลเรื่องอะไรบ้าง",
-          "question_en": "ช่างของคอนโดฯ ดูแลเรื่องอะไรบ้าง",
+          "question_de": "Worüber kümmert sich der Handwerker des Condos?",
+          "question_en": "What does the condo maintenance worker take care of?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เฉพาะน้ำประปา",
-              "text_en": "เฉพาะน้ำประปา",
+              "text_de": "Nur Wasser",
+              "text_en": "Only water",
               "correct": false
             },
             {
-              "text_de": "เฉพาะไฟฟ้า",
-              "text_en": "เฉพาะไฟฟ้า",
+              "text_de": "Nur Strom",
+              "text_en": "Only electricity",
               "correct": false
             },
             {
-              "text_de": "น้ำประปา ไฟฟ้า แอร์ และอื่นๆ",
-              "text_en": "น้ำประปา ไฟฟ้า แอร์ และอื่นๆ",
+              "text_de": "Wasser, Strom, Klimaanlage und mehr",
+              "text_en": "Water, electricity, air conditioning and more",
               "correct": true
             },
             {
-              "text_de": "เฉพาะแอร์",
-              "text_en": "เฉพาะแอร์",
+              "text_de": "Nur Klimaanlage",
+              "text_en": "Only air conditioning",
               "correct": false
             }
           ],
-          "explanation_de": "ช่างดูแลเกี่ยวกับน้ำประปา ไฟฟ้า แอร์ และอื่นๆ",
-          "explanation_en": "ช่างดูแลเกี่ยวกับน้ำประปา ไฟฟ้า แอร์ และอื่นๆ"
+          "explanation_de": "Der Handwerker kümmert sich um Wasser, Elektrizität, Klimaanlage und mehr",
+          "explanation_en": "The worker takes care of water, electricity, air conditioning and more"
         },
         {
           "type": "mc",
-          "question_de": "คุณเอ็มมาเอาของฝากให้พนักงานเพื่ออะไร",
-          "question_en": "คุณเอ็มมาเอาของฝากให้พนักงานเพื่ออะไร",
+          "question_de": "Warum gibt Emma den Mitarbeitern ein Geschenk?",
+          "question_en": "Why does Emma give gifts to the employees?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เพราะเขาเบื่อ",
-              "text_en": "เพราะเขาเบื่อ",
+              "text_de": "Weil er müde ist",
+              "text_en": "Because he is tired",
               "correct": false
             },
             {
-              "text_de": "เพราะเขาอยากได้",
-              "text_en": "เพราะเขาอยากได้",
+              "text_de": "Weil er möchte",
+              "text_en": "Because he wants",
               "correct": false
             },
             {
-              "text_de": "เพื่อขอบคุณที่พวกเขาทำงานหนัก",
-              "text_en": "เพื่อขอบคุณที่พวกเขาทำงานหนัก",
+              "text_de": "Um mich für ihre harte Arbeit zu bedanken",
+              "text_en": "To thank them for their hard work",
               "correct": true
             },
             {
-              "text_de": "เพราะเขาข่มขู่",
-              "text_en": "เพราะเขาข่มขู่",
+              "text_de": "Weil er bedroht",
+              "text_en": "Because he threatens",
               "correct": false
             }
           ],
-          "explanation_de": "ฉันเอาของให้พวกเขาเพื่อขอบคุณที่พวกเขาทำงานหนัก",
-          "explanation_en": "ฉันเอาของให้พวกเขาเพื่อขอบคุณที่พวกเขาทำงานหนัก"
+          "explanation_de": "Ich gebe ihnen Geschenke, um mich für ihre harte Arbeit zu bedanken",
+          "explanation_en": "I give them gifts to thank them for their hard work"
         },
         {
           "type": "mc",
-          "question_de": "ตอนปีใหม่ คุณเอ็มมาทำอะไรให้พนักงาน",
-          "question_en": "ตอนปีใหม่ คุณเอ็มมาทำอะไรให้พนักงาน",
+          "question_de": "Was macht Emma für die Mitarbeiter zum Neujahr?",
+          "question_en": "What does Emma do for the employees at New Year?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ซื้อของขวัญแพง",
-              "text_en": "ซื้อของขวัญแพง",
+              "text_de": "Teure Geschenke kaufen",
+              "text_en": "Buy expensive gifts",
               "correct": false
             },
             {
-              "text_de": "ทำคุกกี้",
-              "text_en": "ทำคุกกี้",
+              "text_de": "Kekse backen",
+              "text_en": "Make cookies",
               "correct": true
             },
             {
-              "text_de": "แจกเงิน",
-              "text_en": "แจกเงิน",
+              "text_de": "Geld verteilen",
+              "text_en": "Distribute money",
               "correct": false
             },
             {
-              "text_de": "ไม่ได้ทำอะไร",
-              "text_en": "ไม่ได้ทำอะไร",
+              "text_de": "Macht nichts",
+              "text_en": "Does nothing",
               "correct": false
             }
           ],
-          "explanation_de": "ตอนปีใหม่คุณเอ็มมาทำคุกกี้ให้ทุกคน",
-          "explanation_en": "ตอนปีใหม่คุณเอ็มมาทำคุกกี้ให้ทุกคน"
+          "explanation_de": "Zum Neujahr macht Emma Kekse für alle",
+          "explanation_en": "At New Year Emma makes cookies for everyone"
         },
         {
           "type": "mc",
-          "question_de": "พื้นที่ส่วนกลางของคอนโดฯ เป็นอย่างไร",
-          "question_en": "พื้นที่ส่วนกลางของคอนโดฯ เป็นอย่างไร",
+          "question_de": "Wie ist die Gemeinschaftsfläche des Condos?",
+          "question_en": "What is the common area of the condo like?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "สกปรก",
-              "text_en": "สกปรก",
+              "text_de": "Schmutzig",
+              "text_en": "Dirty",
               "correct": false
             },
             {
-              "text_de": "สะอาดเสมอ",
-              "text_en": "สะอาดเสมอ",
+              "text_de": "Immer sauber",
+              "text_en": "Always clean",
               "correct": true
             },
             {
-              "text_de": "ไม่มีแม่บ้าน",
-              "text_en": "ไม่มีแม่บ้าน",
+              "text_de": "Kein Hausmeister",
+              "text_en": "No housekeeper",
               "correct": false
             },
             {
-              "text_de": "ไม่มีใครใช้",
-              "text_en": "ไม่มีใครใช้",
+              "text_de": "Niemand nutzt es",
+              "text_en": "No one uses it",
               "correct": false
             }
           ],
-          "explanation_de": "พื้นที่ส่วนกลางสะอาดเสมอ",
-          "explanation_en": "พื้นที่ส่วนกลางสะอาดเสมอ"
+          "explanation_de": "Der gemeinsame Bereich ist immer sauber",
+          "explanation_en": "The common area is always clean"
         },
         {
           "type": "mc",
-          "question_de": "เมื่อมีปัญหา เจ้าหน้าที่นิติฯ จะทำอย่างไร",
-          "question_en": "เมื่อมีปัญหา เจ้าหน้าที่นิติฯ จะทำอย่างไร",
+          "question_de": "Was macht der Verwaltungsbeamte, wenn es ein Problem gibt?",
+          "question_en": "What does the condo administrator do when there's a problem?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ปล่อยปละเลย",
-              "text_en": "ปล่อยปละเลย",
+              "text_de": "Ignorieren",
+              "text_en": "Ignore",
               "correct": false
             },
             {
-              "text_de": "ช่วยแก้ปัญหาเต็มที่",
-              "text_en": "ช่วยแก้ปัญหาเต็มที่",
+              "text_de": "Vollständig helfen, Probleme zu lösen",
+              "text_en": "Completely help solve problems",
               "correct": true
             },
             {
-              "text_de": "บอกให้ไปที่โรงแรม",
-              "text_en": "บอกให้ไปที่โรงแรม",
+              "text_de": "Sagen, ins Hotel zu gehen",
+              "text_en": "Tell to go to a hotel",
               "correct": false
             },
             {
-              "text_de": "เพิกเฉยต่อปัญหา",
-              "text_en": "เพิกเฉยต่อปัญหา",
+              "text_de": "Ignoring the problem",
+              "text_en": "Ignoring the problem",
               "correct": false
             }
           ],
-          "explanation_de": "พวกเขาช่วยแก้ปัญหาเต็มที่",
-          "explanation_en": "พวกเขาช่วยแก้ปัญหาเต็มที่"
+          "explanation_de": "Sie helfen, Probleme vollständig zu lösen",
+          "explanation_en": "They help solve problems completely"
         },
         {
           "type": "mc",
-          "question_de": "คุณเอ็มมาอยู่ที่คอนโดฯ แล้วรู้สึกอย่างไร",
-          "question_en": "คุณเอ็มมาอยู่ที่คอนโดฯ แล้วรู้สึกอย่างไร",
+          "question_de": "Wie fühlt sich Emma, nachdem sie im Condo wohnt?",
+          "question_en": "How does Emma feel living in the condo?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "หวาดกลัว",
-              "text_en": "หวาดกลัว",
+              "text_de": "Ängstlich",
+              "text_en": "Fearful",
               "correct": false
             },
             {
-              "text_de": "ปลอดภัย สบายใจ และได้รับความสะดวก",
-              "text_en": "ปลอดภัย สบายใจ และได้รับความสะดวก",
+              "text_de": "Sicher, komfortabel und bequem",
+              "text_en": "Safe, comfortable and convenient",
               "correct": true
             },
             {
-              "text_de": "เบื่อหน่าย",
-              "text_en": "เบื่อหน่าย",
+              "text_de": "Verdrossen",
+              "text_en": "Weary",
               "correct": false
             },
             {
-              "text_de": "โดดเดี่ยว",
-              "text_en": "โดดเดี่ยว",
+              "text_de": "Einsam",
+              "text_en": "Lonely",
               "correct": false
             }
           ],
-          "explanation_de": "อยู่ที่นี่ทำให้รู้สึกปลอดภัย สบายใจ และได้รับความสะดวกทุกอย่าง",
-          "explanation_en": "อยู่ที่นี่ทำให้รู้สึกปลอดภัย สบายใจ และได้รับความสะดวกทุกอย่าง"
+          "explanation_de": "Hier zu sein macht mich sicher, komfortabel und empfange ich alle Annehmlichkeiten",
+          "explanation_en": "Being here makes me feel safe, comfortable and have all conveniences"
         },
         {
           "type": "mc",
-          "question_de": "ห้องสมุด สระว่ายน้ำ และสนามเทนนิส เป็นสิ่งอะไรของคอนโดฯ",
-          "question_en": "ห้องสมุด สระว่ายน้ำ และสนามเทนนิส เป็นสิ่งอะไรของคอนโดฯ",
+          "question_de": "Was ist die Bibliothek, das Schwimmbad und der Tennisplatz des Condos?",
+          "question_en": "What are the library, swimming pool, and tennis court of the condo?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "สิ่งสำหรับส่วนตัว",
-              "text_en": "สิ่งสำหรับส่วนตัว",
+              "text_de": "Persönliche Gegenstände",
+              "text_en": "Personal items",
               "correct": false
             },
             {
-              "text_de": "พื้นที่ส่วนกลาง",
-              "text_en": "พื้นที่ส่วนกลาง",
+              "text_de": "Gemeinsame Bereiche",
+              "text_en": "Common areas",
               "correct": true
             },
             {
-              "text_de": "สิ่งของที่เสีย",
-              "text_en": "สิ่งของที่เสีย",
+              "text_de": "Beschädigte Gegenstände",
+              "text_en": "Damaged items",
               "correct": false
             },
             {
-              "text_de": "สิ่งของที่ห้าม",
-              "text_en": "สิ่งของที่ห้าม",
+              "text_de": "Verbotene Gegenstände",
+              "text_en": "Prohibited items",
               "correct": false
             }
           ],
-          "explanation_de": "พื้นที่ส่วนกลางและพื้นที่อื่นๆ เช่น ห้องสมุด สระว่ายน้ำ สนามเทนนิส",
-          "explanation_en": "พื้นที่ส่วนกลางและพื้นที่อื่นๆ เช่น ห้องสมุด สระว่ายน้ำ สนามเทนนิส"
+          "explanation_de": "Gemeinsame Bereiche und andere Bereiche wie Bibliothek, Schwimmbad, Tennisplatz",
+          "explanation_en": "Common areas and other areas such as library, swimming pool, tennis court"
         }
       ],
       "id": 11,
@@ -6439,303 +6484,303 @@ const COURSE_DATA = {
       "quiz": [
         {
           "type": "mc",
-          "question_de": "ปีแรกที่มาอยู่กรุงเทพฯ นิติฯ บอกคุณเอ็มมาเกี่ยวกับเรื่องอะไร",
-          "question_en": "ปีแรกที่มาอยู่กรุงเทพฯ นิติฯ บอกคุณเอ็มมาเกี่ยวกับเรื่องอะไร",
+          "question_de": "Worum sprach Niti mit Emma über das erste Jahr in Bangkok?",
+          "question_en": "What did Niti tell Emma about in her first year in Bangkok?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "การซ่อมแซมห้อง",
-              "text_en": "การซ่อมแซมห้อง",
+              "text_de": "Zimmerreparatur",
+              "text_en": "Room repairs",
               "correct": false
             },
             {
-              "text_de": "การทำบุญคอนโดฯ",
-              "text_en": "การทำบุญคอนโดฯ",
+              "text_de": "Condo-Segnung",
+              "text_en": "Condo blessing ceremony",
               "correct": true
             },
             {
-              "text_de": "การเก็บเงินค่าเช่า",
-              "text_en": "การเก็บเงินค่าเช่า",
+              "text_de": "Mietgebührenerhebung",
+              "text_en": "Rent collection",
               "correct": false
             },
             {
-              "text_de": "กฎระเบียบของคอนโดฯ",
-              "text_en": "กฎระเบียบของคอนโดฯ",
+              "text_de": "Condo-Vorschriften",
+              "text_en": "Condo rules",
               "correct": false
             }
           ],
-          "explanation_de": "นิติฯ บอกว่าจะมีการทำบุญคอนโดฯ",
-          "explanation_en": "นิติฯ บอกว่าจะมีการทำบุญคอนโดฯ"
+          "explanation_de": "Niti sagte, dass es eine Condo-Segnung geben würde",
+          "explanation_en": "Niti said there would be a condo blessing ceremony"
         },
         {
           "type": "mc",
-          "question_de": "คนไทยคิดว่าบ้านมีความสำคัญเพียงใด",
-          "question_en": "คนไทยคิดว่าบ้านมีความสำคัญเพียงใด",
+          "question_de": "Wie wichtig halten Thailänder ein Zuhause?",
+          "question_en": "How important do Thai people think a home is?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ไม่สำคัญเลย",
-              "text_en": "ไม่สำคัญเลย",
+              "text_de": "Überhaupt nicht wichtig",
+              "text_en": "Not important at all",
               "correct": false
             },
             {
-              "text_de": "สำคัญเล็กน้อย",
-              "text_en": "สำคัญเล็กน้อย",
+              "text_de": "Wenig wichtig",
+              "text_en": "Somewhat important",
               "correct": false
             },
             {
-              "text_de": "เป็นสถานที่สำคัญของชีวิต",
-              "text_en": "เป็นสถานที่สำคัญของชีวิต",
+              "text_de": "Ein wichtiger Ort im Leben",
+              "text_en": "An important place in life",
               "correct": true
             },
             {
-              "text_de": "สำคัญเฉพาะสำหรับเด็ก",
-              "text_en": "สำคัญเฉพาะสำหรับเด็ก",
+              "text_de": "Nur für Kinder wichtig",
+              "text_en": "Important only for children",
               "correct": false
             }
           ],
-          "explanation_de": "คนไทยคิดว่าบ้านเป็นสถานที่สำคัญของชีวิต",
-          "explanation_en": "คนไทยคิดว่าบ้านเป็นสถานที่สำคัญของชีวิต"
+          "explanation_de": "Thais halten ein Zuhause für einen wichtigen Ort im Leben",
+          "explanation_en": "Thai people think a home is an important place in life"
         },
         {
           "type": "mc",
-          "question_de": "การทำบุญบ้านมีจุดประสงค์อะไร",
-          "question_en": "การทำบุญบ้านมีจุดประสงค์อะไร",
+          "question_de": "Was ist der Zweck einer Haussegnung?",
+          "question_en": "What is the purpose of a house blessing ceremony?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เพื่อให้บ้านสะอาด",
-              "text_en": "เพื่อให้บ้านสะอาด",
+              "text_de": "Um das Haus sauber zu machen",
+              "text_en": "To make the house clean",
               "correct": false
             },
             {
-              "text_de": "เพื่อให้บ้านปลอดภัย อยู่สบาย คนในบ้านมีความสุข",
-              "text_en": "เพื่อให้บ้านปลอดภัย อยู่สบาย คนในบ้านมีความสุข",
+              "text_de": "Um das Haus sicher, komfortabel und die Bewohner glücklich zu machen",
+              "text_en": "To make the house safe, comfortable, and residents happy",
               "correct": true
             },
             {
-              "text_de": "เพื่อให้เพื่อนบ้านอิจฉา",
-              "text_en": "เพื่อให้เพื่อนบ้านอิจฉา",
+              "text_de": "Um Nachbarn neidisch zu machen",
+              "text_en": "To make neighbors jealous",
               "correct": false
             },
             {
-              "text_de": "เพื่อให้พระมีทำไม",
-              "text_en": "เพื่อให้พระมีทำไม",
+              "text_de": "Um Mönche etwas zu geben",
+              "text_en": "To give monks something to do",
               "correct": false
             }
           ],
-          "explanation_de": "ทำให้บ้านปลอดภัย อยู่สบาย คนในบ้านมีความสุข",
-          "explanation_en": "ทำให้บ้านปลอดภัย อยู่สบาย คนในบ้านมีความสุข"
+          "explanation_de": "Um das Haus sicher, komfortabel und die Bewohner glücklich zu machen",
+          "explanation_en": "To make the house safe, comfortable, and residents happy"
         },
         {
           "type": "mc",
-          "question_de": "การทำบุญบ้านเกี่ยวข้องกับการนิมนต์พระเพื่อสิ่งใด",
-          "question_en": "การทำบุญบ้านเกี่ยวข้องกับการนิมนต์พระเพื่อสิ่งใด",
+          "question_de": "Wofür laden Leute Mönche ein während einer Haussegnung?",
+          "question_en": "Why are monks invited during a house blessing ceremony?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เพื่อให้พระอาหาร",
-              "text_en": "เพื่อให้พระอาหาร",
+              "text_de": "Um Mönche zu füttern",
+              "text_en": "To give monks food",
               "correct": false
             },
             {
-              "text_de": "เพื่อให้พระแต่งตัว",
-              "text_en": "เพื่อให้พระแต่งตัว",
+              "text_de": "Um Mönche Kleidung zu geben",
+              "text_en": "To give monks clothing",
               "correct": false
             },
             {
-              "text_de": "เพื่อให้พระรับอาหารหรือของที่จำเป็น",
-              "text_en": "เพื่อให้พระรับอาหารหรือของที่จำเป็น",
+              "text_de": "Um Mönche Essen oder notwendige Gegenstände zu geben",
+              "text_en": "To give monks food or essential items",
               "correct": true
             },
             {
-              "text_de": "เพื่อให้พระเดินทาง",
-              "text_en": "เพื่อให้พระเดินทาง",
+              "text_de": "Um Mönche reisen zu lassen",
+              "text_en": "To allow monks to travel",
               "correct": false
             }
           ],
-          "explanation_de": "การนิมนต์พระมารับอาหารหรือของที่จำเป็นสำหรับพระ",
-          "explanation_en": "การนิมนต์พระมารับอาหารหรือของที่จำเป็นสำหรับพระ"
+          "explanation_de": "Mönche erhalten Essen oder notwendige Gegenstände",
+          "explanation_en": "Monks receive food or essential items"
         },
         {
           "type": "mc",
-          "question_de": "คุณเอ็มมาเตรียมอะไรเพื่อถวายพระตอนทำบุญคอนโดฯ",
-          "question_en": "คุณเอ็มมาเตรียมอะไรเพื่อถวายพระตอนทำบุญคอนโดฯ",
+          "question_de": "Was bereitete Emma vor, um es den Mönchen zu geben?",
+          "question_en": "What did Emma prepare to offer to the monks?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เงิน",
-              "text_en": "เงิน",
+              "text_de": "Geld",
+              "text_en": "Money",
               "correct": false
             },
             {
-              "text_de": "ดอกไม้",
-              "text_en": "ดอกไม้",
+              "text_de": "Blumen",
+              "text_en": "Flowers",
               "correct": false
             },
             {
-              "text_de": "อาหาร",
-              "text_en": "อาหาร",
+              "text_de": "Essen",
+              "text_en": "Food",
               "correct": false
             },
             {
-              "text_de": "ผลไม้เล็กๆ น้อยๆ",
-              "text_en": "ผลไม้เล็กๆ น้อยๆ",
+              "text_de": "Kleine Früchte",
+              "text_en": "Small fruits",
               "correct": true
             }
           ],
-          "explanation_de": "ฉันเตรียมผลไม้เล็กๆ น้อยๆ ไปถวายพระ",
-          "explanation_en": "ฉันเตรียมผลไม้เล็กๆ น้อยๆ ไปถวายพระ"
+          "explanation_de": "Ich bereitete kleine Früchte vor, um sie den Mönchen zu geben",
+          "explanation_en": "I prepared small fruits to offer to the monks"
         },
         {
           "type": "mc",
-          "question_de": "ศาลพระภูมิตั้งอยู่ที่ไหน",
-          "question_en": "ศาลพระภูมิตั้งอยู่ที่ไหน",
+          "question_de": "Wo befindet sich das Geisterhaus?",
+          "question_en": "Where is the spirit house located?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "หน้าคอนโดฯ",
-              "text_en": "หน้าคอนโดฯ",
+              "text_de": "Vorne am Condo",
+              "text_en": "In front of the condo",
               "correct": true
             },
             {
-              "text_de": "ข้างคอนโดฯ",
-              "text_en": "ข้างคอนโดฯ",
+              "text_de": "Neben dem Condo",
+              "text_en": "Beside the condo",
               "correct": false
             },
             {
-              "text_de": "ด้านหลังคอนโดฯ",
-              "text_en": "ด้านหลังคอนโดฯ",
+              "text_de": "Hinter dem Condo",
+              "text_en": "Behind the condo",
               "correct": false
             },
             {
-              "text_de": "บนหลังคาคอนโดฯ",
-              "text_en": "บนหลังคาคอนโดฯ",
+              "text_de": "Auf dem Dach des Condos",
+              "text_en": "On top of the condo",
               "correct": false
             }
           ],
-          "explanation_de": "ที่หน้าคอนโดฯ มีศาลพระภูมิ",
-          "explanation_en": "ที่หน้าคอนโดฯ มีศาลพระภูมิ"
+          "explanation_de": "Vor dem Condo befindet sich ein Geisterhaus",
+          "explanation_en": "In front of the condo there is a spirit house"
         },
         {
           "type": "mc",
-          "question_de": "เพื่อนบ้านบอกว่าศาลพระภูมิเป็นบ้านของใคร",
-          "question_en": "เพื่อนบ้านบอกว่าศาลพระภูมิเป็นบ้านของใคร",
+          "question_de": "Wessen Zuhause ist das Geisterhaus nach Aussage der Nachbarin?",
+          "question_en": "Whose home is the spirit house according to the neighbor?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "บ้านของเจ้าที่",
-              "text_en": "บ้านของเจ้าที่",
+              "text_de": "Zuhause des Grundherr",
+              "text_en": "Home of the land spirit",
               "correct": false
             },
             {
-              "text_de": "บ้านของเทวดา",
-              "text_en": "บ้านของเทวดา",
+              "text_de": "Zuhause der Gottheit",
+              "text_en": "Home of the deity",
               "correct": true
             },
             {
-              "text_de": "บ้านของพระ",
-              "text_en": "บ้านของพระ",
+              "text_de": "Zuhause des Mönchs",
+              "text_en": "Home of the monk",
               "correct": false
             },
             {
-              "text_de": "บ้านของคนจน",
-              "text_en": "บ้านของคนจน",
+              "text_de": "Zuhause der armen Leute",
+              "text_en": "Home of poor people",
               "correct": false
             }
           ],
-          "explanation_de": "เพื่อนบ้านบอกว่าเป็นบ้านของเทวดา",
-          "explanation_en": "เพื่อนบ้านบอกว่าเป็นบ้านของเทวดา"
+          "explanation_de": "Die Nachbarin sagte, es ist das Zuhause einer Gottheit",
+          "explanation_en": "The neighbor said it is the home of a deity"
         },
         {
           "type": "mc",
-          "question_de": "เจ้าหน้าที่นิติฯ บอกว่าศาลพระภูมิที่คอนโดฯ เป็นบ้านของใคร",
-          "question_en": "เจ้าหน้าที่นิติฯ บอกว่าศาลพระภูมิที่คอนโดฯ เป็นบ้านของใคร",
+          "question_de": "Wessen Zuhause ist das Geisterhaus nach Aussage des Verwaltungsbeamten?",
+          "question_en": "Whose home is the spirit house according to the condo official?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เทวดา",
-              "text_en": "เทวดา",
+              "text_de": "Gottheit",
+              "text_en": "Deity",
               "correct": false
             },
             {
-              "text_de": "เจ้าที่",
-              "text_en": "เจ้าที่",
+              "text_de": "Grundherr",
+              "text_en": "Land spirit",
               "correct": true
             },
             {
-              "text_de": "เจ้าแม่",
-              "text_en": "เจ้าแม่",
+              "text_de": "Göttin",
+              "text_en": "Goddess",
               "correct": false
             },
             {
-              "text_de": "หลวงพ่อ",
-              "text_en": "หลวงพ่อ",
+              "text_de": "Ehrwürdiger Abt",
+              "text_en": "Venerable Abbot",
               "correct": false
             }
           ],
-          "explanation_de": "เจ้าหน้าที่นิติฯ บอกว่าเป็นเจ้าที่ไม่ใช่เทวดา",
-          "explanation_en": "เจ้าหน้าที่นิติฯ บอกว่าเป็นเจ้าที่ไม่ใช่เทวดา"
+          "explanation_de": "Der Verwaltungsbeamte sagte, es ist der Grundherr, nicht eine Gottheit",
+          "explanation_en": "The condo official said it is the land spirit, not a deity"
         },
         {
           "type": "mc",
-          "question_de": "คุณเอ็มมาเข้าใจความแตกต่างระหว่างเทวดาและเจ้าที่หรือไม่",
-          "question_en": "คุณเอ็มมาเข้าใจความแตกต่างระหว่างเทวดาและเจ้าที่หรือไม่",
+          "question_de": "Verstand Emma den Unterschied zwischen einer Gottheit und dem Grundherr?",
+          "question_en": "Did Emma understand the difference between a deity and a land spirit?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เข้าใจ",
-              "text_en": "เข้าใจ",
+              "text_de": "Verstanden",
+              "text_en": "Understood",
               "correct": false
             },
             {
-              "text_de": "ไม่เข้าใจ",
-              "text_en": "ไม่เข้าใจ",
+              "text_de": "Nicht verstanden",
+              "text_en": "Did not understand",
               "correct": true
             },
             {
-              "text_de": "เข้าใจได้บ้าง",
-              "text_en": "เข้าใจได้บ้าง",
+              "text_de": "Teilweise verstanden",
+              "text_en": "Understood somewhat",
               "correct": false
             },
             {
-              "text_de": "ไม่สนใจ",
-              "text_en": "ไม่สนใจ",
+              "text_de": "Nicht interessiert",
+              "text_en": "Not interested",
               "correct": false
             }
           ],
-          "explanation_de": "ฉันฟังแล้วไม่เข้าใจ",
-          "explanation_en": "ฉันฟังแล้วไม่เข้าใจ"
+          "explanation_de": "Ich hörte zu, aber verstand nicht",
+          "explanation_en": "I listened but did not understand"
         },
         {
           "type": "mc",
-          "question_de": "เมื่อคุณเอ็มมาไม่เข้าใจเขาก็พูดกับเจ้าหน้าที่นิติฯ ว่าอะไร",
-          "question_en": "เมื่อคุณเอ็มมาไม่เข้าใจเขาก็พูดกับเจ้าหน้าที่นิติฯ ว่าอะไร",
+          "question_de": "Was sagte Emma zum Verwaltungsbeamten, als sie nicht verstand?",
+          "question_en": "What did Emma say to the condo official when she didn't understand?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ช่วยอธิบายให้ชัดเจนหน่อย",
-              "text_en": "ช่วยอธิบายให้ชัดเจนหน่อย",
+              "text_de": "Bitte erklär mir das klarer",
+              "text_en": "Please explain that more clearly",
               "correct": false
             },
             {
-              "text_de": "ฉันไม่เชื่อในศาสนา",
-              "text_en": "ฉันไม่เชื่อในศาสนา",
+              "text_de": "Ich glaube nicht an Religion",
+              "text_en": "I don't believe in religion",
               "correct": false
             },
             {
-              "text_de": "ฉันงงไปหมดแล้ว",
-              "text_en": "ฉันงงไปหมดแล้ว",
+              "text_de": "Ich bin total verwirrt",
+              "text_en": "I'm completely confused",
               "correct": true
             },
             {
-              "text_de": "เรื่องนี้ไม่สำคัญ",
-              "text_en": "เรื่องนี้ไม่สำคัญ",
+              "text_de": "Das ist nicht wichtig",
+              "text_en": "This is not important",
               "correct": false
             }
           ],
-          "explanation_de": "ฉันพูดว่า 'ฉันงงไปหมดแล้ว'",
-          "explanation_en": "ฉันพูดว่า 'ฉันงงไปหมดแล้ว'"
+          "explanation_de": "Ich sagte 'Ich bin total verwirrt'",
+          "explanation_en": "I said 'I'm completely confused'"
         }
       ],
       "id": 12,
@@ -7141,303 +7186,303 @@ const COURSE_DATA = {
       "quiz": [
         {
           "type": "mc",
-          "question_de": "เทศกาลสำคัญของคนไทยมีกี่เทศกาล",
-          "question_en": "เทศกาลสำคัญของคนไทยมีกี่เทศกาล",
+          "question_de": "Wie viele wichtige Feste hat das Thai-Volk?",
+          "question_en": "How many important festivals does the Thai people have?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "สองเทศกาล",
-              "text_en": "สองเทศกาล",
+              "text_de": "Zwei Feste",
+              "text_en": "Two festivals",
               "correct": false
             },
             {
-              "text_de": "สามเทศกาล",
-              "text_en": "สามเทศกาล",
+              "text_de": "Drei Feste",
+              "text_en": "Three festivals",
               "correct": true
             },
             {
-              "text_de": "สี่เทศกาล",
-              "text_en": "สี่เทศกาล",
+              "text_de": "Vier Feste",
+              "text_en": "Four festivals",
               "correct": false
             },
             {
-              "text_de": "ห้าเทศกาล",
-              "text_en": "ห้าเทศกาล",
+              "text_de": "Fünf Feste",
+              "text_en": "Five festivals",
               "correct": false
             }
           ],
-          "explanation_de": "เทศกาลสำคัญมีสามเทศกาล คือปีใหม่ สงกรานต์ และลอยกระทง",
-          "explanation_en": "เทศกาลสำคัญมีสามเทศกาล คือปีใหม่ สงกรานต์ และลอยกระทง"
+          "explanation_de": "Es gibt drei wichtige Feste: Neujahr, Songkran und Loy Kratong",
+          "explanation_en": "There are three important festivals: New Year, Songkran and Loy Kratong"
         },
         {
           "type": "mc",
-          "question_de": "เทศกาลปีใหม่ฉลองตอนไหน",
-          "question_en": "เทศกาลปีใหม่ฉลองตอนไหน",
+          "question_de": "Wann feiern die Neujahresfeste?",
+          "question_en": "When do they celebrate the New Year festival?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ตอนเช้า",
-              "text_en": "ตอนเช้า",
+              "text_de": "Am Morgen",
+              "text_en": "In the morning",
               "correct": false
             },
             {
-              "text_de": "ตอนบ่าย",
-              "text_en": "ตอนบ่าย",
+              "text_de": "Nachmittags",
+              "text_en": "In the afternoon",
               "correct": false
             },
             {
-              "text_de": "ตอนกลางคืน",
-              "text_en": "ตอนกลางคืน",
+              "text_de": "Nachts",
+              "text_en": "At night",
               "correct": true
             },
             {
-              "text_de": "ตอนเวลาไหนก็ได้",
-              "text_en": "ตอนเวลาไหนก็ได้",
+              "text_de": "Jederzeit",
+              "text_en": "Any time",
               "correct": false
             }
           ],
-          "explanation_de": "ปกติคนไทยฉลองตอนกลางคืนเพราะอากาศเย็นสบาย",
-          "explanation_en": "ปกติคนไทยฉลองตอนกลางคืนเพราะอากาศเย็นสบาย"
+          "explanation_de": "Normalerweise feiern Thais nachts, weil das Wetter kühl und angenehm ist",
+          "explanation_en": "Thai people normally celebrate at night because the weather is cool and pleasant"
         },
         {
           "type": "mc",
-          "question_de": "เทศกาลสงกรานต์ฉลองตอนไหน",
-          "question_en": "เทศกาลสงกรานต์ฉลองตอนไหน",
+          "question_de": "Wann feiern das Songkran-Fest?",
+          "question_en": "When do they celebrate Songkran?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ตอนกลางคืน",
-              "text_en": "ตอนกลางคืน",
+              "text_de": "Nachts",
+              "text_en": "At night",
               "correct": false
             },
             {
-              "text_de": "ตอนกลางวัน",
-              "text_en": "ตอนกลางวัน",
+              "text_de": "Tagsüber",
+              "text_en": "During the day",
               "correct": true
             },
             {
-              "text_de": "ตอนเช้า",
-              "text_en": "ตอนเช้า",
+              "text_de": "Am Morgen",
+              "text_en": "In the morning",
               "correct": false
             },
             {
-              "text_de": "ตอนค่ำ",
-              "text_en": "ตอนค่ำ",
+              "text_de": "Am Abend",
+              "text_en": "In the evening",
               "correct": false
             }
           ],
-          "explanation_de": "เทศกาลสงกรานต์ฉลองตอนกลางวันเพราะมีการเล่นสาดน้ำ",
-          "explanation_en": "เทศกาลสงกรานต์ฉลองตอนกลางวันเพราะมีการเล่นสาดน้ำ"
+          "explanation_de": "Songkran wird tagsüber gefeiert, weil es Wasserspritzen gibt",
+          "explanation_en": "Songkran is celebrated during the day because there's water splashing"
         },
         {
           "type": "mc",
-          "question_de": "ในช่วงวันหยุดยาว กรุงเทพฯ จะเป็นอย่างไร",
-          "question_en": "ในช่วงวันหยุดยาว กรุงเทพฯ จะเป็นอย่างไร",
+          "question_de": "Wie ist Bangkok während der langen Ferien?",
+          "question_en": "How is Bangkok during the long holidays?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "แออัด",
-              "text_en": "แออัด",
+              "text_de": "Überfüllt",
+              "text_en": "Crowded",
               "correct": false
             },
             {
-              "text_de": "เงียบมาก",
-              "text_en": "เงียบมาก",
+              "text_de": "Sehr ruhig",
+              "text_en": "Very quiet",
               "correct": true
             },
             {
-              "text_de": "หนาวมาก",
-              "text_en": "หนาวมาก",
+              "text_de": "Sehr kalt",
+              "text_en": "Very cold",
               "correct": false
             },
             {
-              "text_de": "ร้อนมาก",
-              "text_en": "ร้อนมาก",
+              "text_de": "Sehr heiß",
+              "text_en": "Very hot",
               "correct": false
             }
           ],
-          "explanation_de": "กรุงเทพฯ จะเงียบมากเพราะคนออกไปเที่ยวหรือกลับบ้าน",
-          "explanation_en": "กรุงเทพฯ จะเงียบมากเพราะคนออกไปเที่ยวหรือกลับบ้าน"
+          "explanation_de": "Bangkok ist sehr ruhig, weil die Leute verreisen oder nach Hause gehen",
+          "explanation_en": "Bangkok is very quiet because people travel or go home"
         },
         {
           "type": "mc",
-          "question_de": "ทำไมเพื่อนคนไทยฝึกขับรถในช่วงสงกรานต์",
-          "question_en": "ทำไมเพื่อนคนไทยฝึกขับรถในช่วงสงกรานต์",
+          "question_de": "Warum übt dein Thai-Freund während Songkran Autofahren?",
+          "question_en": "Why does your Thai friend practice driving during Songkran?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เพราะรถเหมือนกัน",
-              "text_en": "เพราะรถเหมือนกัน",
+              "text_de": "Weil die Autos gleich sind",
+              "text_en": "Because the cars are the same",
               "correct": false
             },
             {
-              "text_de": "เพราะมีรถน้อย",
-              "text_en": "เพราะมีรถน้อย",
+              "text_de": "Weil es wenige Autos gibt",
+              "text_en": "Because there are few cars",
               "correct": true
             },
             {
-              "text_de": "เพราะเขาเกียจคร่อ",
-              "text_en": "เพราะเขาเกียจคร่อ",
+              "text_de": "Weil er faul ist",
+              "text_en": "Because he's lazy",
               "correct": false
             },
             {
-              "text_de": "เพราะเขาหนาวใจ",
-              "text_en": "เพราะเขาหนาวใจ",
+              "text_de": "Weil ihm kalt ist",
+              "text_en": "Because he's afraid",
               "correct": false
             }
           ],
-          "explanation_de": "เขาฝึกขับรถในช่วงสงกรานต์เพราะมีรถน้อย",
-          "explanation_en": "เขาฝึกขับรถในช่วงสงกรานต์เพราะมีรถน้อย"
+          "explanation_de": "Er übt während Songkran Autofahren, weil es wenige Autos gibt",
+          "explanation_en": "He practices driving during Songkran because there are few cars"
         },
         {
           "type": "mc",
-          "question_de": "ทำไมคนไทยบางคนไม่ชอบเทศกาลสงกรานต์",
-          "question_en": "ทำไมคนไทยบางคนไม่ชอบเทศกาลสงกรานต์",
+          "question_de": "Warum mögen manche Thais das Songkran-Fest nicht?",
+          "question_en": "Why don't some Thai people like Songkran?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เพราะเหนื่อย",
-              "text_en": "เพราะเหนื่อย",
+              "text_de": "Weil ich müde bin",
+              "text_en": "Because I'm tired",
               "correct": false
             },
             {
-              "text_de": "เพราะไม่มีเงิน",
-              "text_en": "เพราะไม่มีเงิน",
+              "text_de": "Weil ich kein Geld habe",
+              "text_en": "Because I have no money",
               "correct": false
             },
             {
-              "text_de": "เพราะไม่ชอบเล่นน้ำและกังวลเรื่องอุบัติเหตุ",
-              "text_en": "เพราะไม่ชอบเล่นน้ำและกังวลเรื่องอุบัติเหตุ",
+              "text_de": "Weil er nicht gerne Wasser spielt und macht sich Sorgen um Unfälle",
+              "text_en": "Because he doesn't like water play and worries about accidents",
               "correct": true
             },
             {
-              "text_de": "เพราะเด็ด",
-              "text_en": "เพราะเด็ด",
+              "text_de": "Weil es stur ist",
+              "text_en": "Because it's stubborn",
               "correct": false
             }
           ],
-          "explanation_de": "ไม่ชอบเพราะไม่ชอบเล่นน้ำและเกิดอุบัติเหตุ",
-          "explanation_en": "ไม่ชอบเพราะไม่ชอบเล่นน้ำและเกิดอุบัติเหตุ"
+          "explanation_de": "Sie mögen es nicht, weil sie Wasserspritzen nicht mögen und Unfälle verursachen",
+          "explanation_en": "They don't like it because they don't like water play and accidents happen"
         },
         {
           "type": "mc",
-          "question_de": "คุณเอ็มมาชอบเทศกาลอะไรมากที่สุด",
-          "question_en": "คุณเอ็มมาชอบเทศกาลอะไรมากที่สุด",
+          "question_de": "Welches Fest magst du am liebsten?",
+          "question_en": "Which festival do you like the most?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เทศกาลปีใหม่",
-              "text_en": "เทศกาลปีใหม่",
+              "text_de": "Neujahresfest",
+              "text_en": "New Year festival",
               "correct": false
             },
             {
-              "text_de": "เทศกาลสงกรานต์",
-              "text_en": "เทศกาลสงกรานต์",
+              "text_de": "Songkran-Fest",
+              "text_en": "Songkran festival",
               "correct": true
             },
             {
-              "text_de": "เทศกาลลอยกระทง",
-              "text_en": "เทศกาลลอยกระทง",
+              "text_de": "Loy Kratong-Fest",
+              "text_en": "Loy Kratong festival",
               "correct": false
             },
             {
-              "text_de": "ไม่มีเทศกาลไหนชอบ",
-              "text_en": "ไม่มีเทศกาลไหนชอบ",
+              "text_de": "Es gibt kein Festival, das ich mag",
+              "text_en": "There's no festival I like",
               "correct": false
             }
           ],
-          "explanation_de": "ฉันชอบเทศกาลสงกรานต์มากที่สุดเพราะสนุก",
-          "explanation_en": "ฉันชอบเทศกาลสงกรานต์มากที่สุดเพราะสนุก"
+          "explanation_de": "Ich mag Songkran am liebsten, weil es Spaß macht",
+          "explanation_en": "I like Songkran the most because it's fun"
         },
         {
           "type": "mc",
-          "question_de": "คุณคริสชอบเทศกาลอะไรมากที่สุด",
-          "question_en": "คุณคริสชอบเทศกาลอะไรมากที่สุด",
+          "question_de": "Welches Fest mag Chris am liebsten?",
+          "question_en": "Which festival does Chris like the most?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เทศกาลปีใหม่",
-              "text_en": "เทศกาลปีใหม่",
+              "text_de": "Neujahresfest",
+              "text_en": "New Year festival",
               "correct": false
             },
             {
-              "text_de": "เทศกาลสงกรานต์",
-              "text_en": "เทศกาลสงกรานต์",
+              "text_de": "Songkran-Fest",
+              "text_en": "Songkran festival",
               "correct": false
             },
             {
-              "text_de": "เทศกาลลอยกระทง",
-              "text_en": "เทศกาลลอยกระทง",
+              "text_de": "Loy Kratong-Fest",
+              "text_en": "Loy Kratong festival",
               "correct": true
             },
             {
-              "text_de": "ไม่ชอบเทศกาลไหนเลย",
-              "text_en": "ไม่ชอบเทศกาลไหนเลย",
+              "text_de": "Mag gar kein Festival",
+              "text_en": "Don't like any festival",
               "correct": false
             }
           ],
-          "explanation_de": "คุณคริสชอบเทศกาลลอยกระทง",
-          "explanation_en": "คุณคริสชอบเทศกาลลอยกระทง"
+          "explanation_de": "Chris mag das Loy Kratong-Fest",
+          "explanation_en": "Chris likes the Loy Kratong festival"
         },
         {
           "type": "mc",
-          "question_de": "ทั้งสองคนไม่ชอบเทศกาลปีใหม่ เพราะเหตุใด",
-          "question_en": "ทั้งสองคนไม่ชอบเทศกาลปีใหม่ เพราะเหตุใด",
+          "question_de": "Warum mögen beide das Neujahresfest nicht?",
+          "question_en": "Why don't both of you like the New Year festival?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เพราะแพง",
-              "text_en": "เพราะแพง",
+              "text_de": "Weil es teuer ist",
+              "text_en": "Because it's expensive",
               "correct": false
             },
             {
-              "text_de": "เพราะเบื่อ",
-              "text_en": "เพราะเบื่อ",
+              "text_de": "Weil es langweilig ist",
+              "text_en": "Because it's boring",
               "correct": false
             },
             {
-              "text_de": "เพราะคิดถึงบ้านและเพื่อนๆ ที่อังกฤษ",
-              "text_en": "เพราะคิดถึงบ้านและเพื่อนๆ ที่อังกฤษ",
+              "text_de": "Weil ich mein Zuhause und meine Freunde in England vermisse",
+              "text_en": "Because I miss home and friends in England",
               "correct": true
             },
             {
-              "text_de": "เพราะไม่มีเวลา",
-              "text_en": "เพราะไม่มีเวลา",
+              "text_de": "Weil ich keine Zeit habe",
+              "text_en": "Because I have no time",
               "correct": false
             }
           ],
-          "explanation_de": "เพราะคิดถึงบ้านและเพื่อนๆ ที่อังกฤษ",
-          "explanation_en": "เพราะคิดถึงบ้านและเพื่อนๆ ที่อังกฤษ"
+          "explanation_de": "Weil ich mein Zuhause und meine Freunde in England vermisse",
+          "explanation_en": "Because I miss home and friends in England"
         },
         {
           "type": "mc",
-          "question_de": "ช่วงเทศกาลที่มีวันหยุดยาว คนที่ไม่ไปเที่ยวจะไปทำอะไร",
-          "question_en": "ช่วงเทศกาลที่มีวันหยุดยาว คนที่ไม่ไปเที่ยวจะไปทำอะไร",
+          "question_de": "Was tun die Menschen, die während der langen Ferien nicht reisen?",
+          "question_en": "What do people who don't travel do during the long holidays?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ไปทำงาน",
-              "text_en": "ไปทำงาน",
+              "text_de": "Arbeiten gehen",
+              "text_en": "Go to work",
               "correct": false
             },
             {
-              "text_de": "ไปเจอเพื่อนหรือไปช็อปปิ้ง",
-              "text_en": "ไปเจอเพื่อนหรือไปช็อปปิ้ง",
+              "text_de": "Treffe Freunde oder gehe einkaufen",
+              "text_en": "Meet friends or go shopping",
               "correct": true
             },
             {
-              "text_de": "อยู่บ้านนอน",
-              "text_en": "อยู่บ้านนอน",
+              "text_de": "Schlaf zu Hause",
+              "text_en": "Sleep at home",
               "correct": false
             },
             {
-              "text_de": "ไปเรียนหนังสือ",
-              "text_en": "ไปเรียนหนังสือ",
+              "text_de": "Zum Lernen gehen",
+              "text_en": "Go studying",
               "correct": false
             }
           ],
-          "explanation_de": "ไปเจอกับเพื่อนๆ หรือไปช็อปปิ้ง",
-          "explanation_en": "ไปเจอกับเพื่อนๆ หรือไปช็อปปิ้ง"
+          "explanation_de": "Treffe Freunde oder gehe einkaufen",
+          "explanation_en": "Meet friends or go shopping"
         }
       ],
       "id": 13,
@@ -7828,128 +7873,128 @@ const COURSE_DATA = {
       "quiz": [
         {
           "type": "mc",
-          "question_de": "คุณเอ็มมารู้เรื่องการใช้ถุงพลาสติกของคนไทยจากสื่อใด",
-          "question_en": "คุณเอ็มมารู้เรื่องการใช้ถุงพลาสติกของคนไทยจากสื่อใด",
+          "question_de": "Woher kennt Emma das Thema der Plastiektütennutzung der Thai?",
+          "question_en": "Where did Emma learn about Thai plastic bag usage?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "หนังสือพิมพ์",
-              "text_en": "หนังสือพิมพ์",
+              "text_de": "Zeitung",
+              "text_en": "Newspaper",
               "correct": false
             },
             {
-              "text_de": "สารคดี",
-              "text_en": "สารคดี",
+              "text_de": "Dokumentation",
+              "text_en": "Documentary",
               "correct": true
             },
             {
-              "text_de": "อินเทอร์เน็ต",
-              "text_en": "อินเทอร์เน็ต",
+              "text_de": "Internet",
+              "text_en": "Internet",
               "correct": false
             },
             {
-              "text_de": "เพื่อนบ้าน",
-              "text_en": "เพื่อนบ้าน",
+              "text_de": "Nachbar",
+              "text_en": "Neighbor",
               "correct": false
             }
           ],
-          "explanation_de": "ฉันเคยอ่านสารคดี",
-          "explanation_en": "ฉันเคยอ่านสารคดี"
+          "explanation_de": "Ich habe eine Dokumentation gelesen",
+          "explanation_en": "I read a documentary"
         },
         {
           "type": "mc",
-          "question_de": "คนไทยใช้ถุงพลาสติกเพื่อใส่อะไรบ้าง",
-          "question_en": "คนไทยใช้ถุงพลาสติกเพื่อใส่อะไรบ้าง",
+          "question_de": "Wofür verwenden Thais Plastiktüten?",
+          "question_en": "What do Thai people use plastic bags for?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เฉพาะอาหาร",
-              "text_en": "เฉพาะอาหาร",
+              "text_de": "Nur Essen",
+              "text_en": "Only food",
               "correct": false
             },
             {
-              "text_de": "เฉพาะเสื้อผ้า",
-              "text_en": "เฉพาะเสื้อผ้า",
+              "text_de": "Nur Kleidung",
+              "text_en": "Only clothing",
               "correct": false
             },
             {
-              "text_de": "อาหาร ของ และอื่นๆ",
-              "text_en": "อาหาร ของ และอื่นๆ",
+              "text_de": "Essen, Gegenstände und anderes",
+              "text_en": "Food, goods and others",
               "correct": true
             },
             {
-              "text_de": "เล่นเท่านั้น",
-              "text_en": "เล่นเท่านั้น",
+              "text_de": "Nur spielen",
+              "text_en": "Just playing",
               "correct": false
             }
           ],
-          "explanation_de": "ใช้ใส่อาหาร ใส่ของ และอื่นๆ",
-          "explanation_en": "ใช้ใส่อาหาร ใส่ของ และอื่นๆ"
+          "explanation_de": "Verwendet für Essen, Gegenstände und anderes",
+          "explanation_en": "Used for food, goods and others"
         },
         {
           "type": "mc",
-          "question_de": "ถุงพลาสติกในกรุงเทพฯ ก่อให้เกิดปัญหาอะไร",
-          "question_en": "ถุงพลาสติกในกรุงเทพฯ ก่อให้เกิดปัญหาอะไร",
+          "question_de": "Welche Probleme verursachen Plastiktüten in Bangkok?",
+          "question_en": "What problems do plastic bags cause in Bangkok?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "มลพิษทางอากาศ",
-              "text_en": "มลพิษทางอากาศ",
+              "text_de": "Luftverschmutzung",
+              "text_en": "Air pollution",
               "correct": false
             },
             {
-              "text_de": "น้ำท่วม",
-              "text_en": "น้ำท่วม",
+              "text_de": "Überschwemmungen",
+              "text_en": "Flooding",
               "correct": true
             },
             {
-              "text_de": "สัญญาณรบกวน",
-              "text_en": "สัญญาณรบกวน",
+              "text_de": "Lärmbelästigung",
+              "text_en": "Noise pollution",
               "correct": false
             },
             {
-              "text_de": "การหนักใจ",
-              "text_en": "การหนักใจ",
+              "text_de": "Besorgnis",
+              "text_en": "Concern",
               "correct": false
             }
           ],
-          "explanation_de": "ถุงพลาสติกเป็นส่วนหนึ่งที่ทำให้น้ำท่วม",
-          "explanation_en": "ถุงพลาสติกเป็นส่วนหนึ่งที่ทำให้น้ำท่วม"
+          "explanation_de": "Plastiktüten sind ein Teil, das zu Überschwemmungen führt",
+          "explanation_en": "Plastic bags are part of what causes flooding"
         },
         {
           "type": "mc",
-          "question_de": "นโยบายไม่ให้ถุงพลาสติกเป็นกฎหมายหรือไม่",
-          "question_en": "นโยบายไม่ให้ถุงพลาสติกเป็นกฎหมายหรือไม่",
+          "question_de": "Ist die Politik gegen Plastiktüten ein Gesetz?",
+          "question_en": "Is the no plastic bag policy a law?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ใช่ เป็นกฎหมาย",
-              "text_en": "ใช่ เป็นกฎหมาย",
+              "text_de": "Ja, es ist ein Gesetz",
+              "text_en": "Yes, it is a law",
               "correct": false
             },
             {
-              "text_de": "ไม่ใช่ เป็นการขอความร่วมมือ",
-              "text_en": "ไม่ใช่ เป็นการขอความร่วมมือ",
+              "text_de": "Nein, es ist ein Aufruf zur Zusammenarbeit",
+              "text_en": "No, it is a request for cooperation",
               "correct": true
             },
             {
-              "text_de": "เป็นกฎที่ไม่บังคับ",
-              "text_en": "เป็นกฎที่ไม่บังคับ",
+              "text_de": "Es ist eine nicht verbindliche Regel",
+              "text_en": "It is a non-binding rule",
               "correct": false
             },
             {
-              "text_de": "ไม่ชัดเจน",
-              "text_en": "ไม่ชัดเจน",
+              "text_de": "Unklar",
+              "text_en": "Unclear",
               "correct": false
             }
           ],
-          "explanation_de": "ไม่ใช่กฎหมาย แต่เป็นการขอความร่วมมือ",
-          "explanation_en": "ไม่ใช่กฎหมาย แต่เป็นการขอความร่วมมือ"
+          "explanation_de": "Es ist kein Gesetz, sondern ein Aufruf zur Zusammenarbeit",
+          "explanation_en": "It is not a law, but a request for cooperation"
         },
         {
           "type": "mc",
-          "question_de": "ซูเปอร์มาร์เก็ตเริ่มนโยบายนี้เมื่อไหร่",
-          "question_en": "ซูเปอร์มาร์เก็ตเริ่มนโยบายนี้เมื่อไหร่",
+          "question_de": "Wann hat der Supermarkt diese Politik begonnen?",
+          "question_en": "When did the supermarket start this policy?",
           "question_romanization": "",
           "options": [
             {
@@ -7973,158 +8018,158 @@ const COURSE_DATA = {
               "correct": true
             }
           ],
-          "explanation_de": "เริ่มตั้งแต่วันที่ 1 มกราคม 2563",
-          "explanation_en": "เริ่มตั้งแต่วันที่ 1 มกราคม 2563"
+          "explanation_de": "Begonnen am 1. Januar 2563",
+          "explanation_en": "Started on January 1, 2563"
         },
         {
           "type": "mc",
-          "question_de": "เดี๋ยวนี้คนไทยใช้อะไรแทนถุงพลาสติก",
-          "question_en": "เดี๋ยวนี้คนไทยใช้อะไรแทนถุงพลาสติก",
+          "question_de": "Was verwenden Thais jetzt statt Plastiktüten?",
+          "question_en": "What do Thai people use instead of plastic bags now?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "กระเป๋าผ้าเท่านั้น",
-              "text_en": "กระเป๋าผ้าเท่านั้น",
+              "text_de": "Nur Stofftaschen",
+              "text_en": "Only cloth bags",
               "correct": false
             },
             {
-              "text_de": "กระเป๋าสะพายเท่านั้น",
-              "text_en": "กระเป๋าสะพายเท่านั้น",
+              "text_de": "Nur Rucksäcke",
+              "text_en": "Only backpacks",
               "correct": false
             },
             {
-              "text_de": "กระเป๋าผ้า กระเป๋าสะพาย และถุงพลาสติกใหญ่",
-              "text_en": "กระเป๋าผ้า กระเป๋าสะพาย และถุงพลาสติกใหญ่",
+              "text_de": "Stofftaschen, Rucksäcke und große Plastiktüten",
+              "text_en": "Cloth bags, backpacks and large plastic bags",
               "correct": true
             },
             {
-              "text_de": "ไม่ใช้อะไรเลย",
-              "text_en": "ไม่ใช้อะไรเลย",
+              "text_de": "Nichts verwenden",
+              "text_en": "Use nothing",
               "correct": false
             }
           ],
-          "explanation_de": "ใช้กระเป๋าผ้า กระเป๋าสะพาย และกระเป๋าพลาสติกใหญ่",
-          "explanation_en": "ใช้กระเป๋าผ้า กระเป๋าสะพาย และกระเป๋าพลาสติกใหญ่"
+          "explanation_de": "Verwenden Sie Stofftaschen, Rucksäcke und große Plastiktüten",
+          "explanation_en": "Use cloth bags, backpacks and large plastic bags"
         },
         {
           "type": "mc",
-          "question_de": "คุณเอ็มมาประทับใจเรื่องใด",
-          "question_en": "คุณเอ็มมาประทับใจเรื่องใด",
+          "question_de": "Was beeindruckt Emma?",
+          "question_en": "What impresses Emma?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ร้านค้ามีหลายร้าน",
-              "text_en": "ร้านค้ามีหลายร้าน",
+              "text_de": "Es gibt viele Geschäfte",
+              "text_en": "There are many shops",
               "correct": false
             },
             {
-              "text_de": "เด็กพูดว่าไม่เอาถุง",
-              "text_en": "เด็กพูดว่าไม่เอาถุง",
+              "text_de": "Kinder sagen, dass sie keine Tüten wollen",
+              "text_en": "Children say they don't want bags",
               "correct": true
             },
             {
-              "text_de": "คนไทยไม่มีเงิน",
-              "text_en": "คนไทยไม่มีเงิน",
+              "text_de": "Thais haben kein Geld",
+              "text_en": "Thai people have no money",
               "correct": false
             },
             {
-              "text_de": "คนไทยชอบท่องเที่ยว",
-              "text_en": "คนไทยชอบท่องเที่ยว",
+              "text_de": "Thais lieben Reisen",
+              "text_en": "Thai people love traveling",
               "correct": false
             }
           ],
-          "explanation_de": "ประทับใจที่ได้ยินเด็กพูดไม่เอาถุง",
-          "explanation_en": "ประทับใจที่ได้ยินเด็กพูดไม่เอาถุง"
+          "explanation_de": "Beeindruckt, Kinder sagen zu hören, dass sie keine Tüten wollen",
+          "explanation_en": "Impressed to hear children say they don't want bags"
         },
         {
           "type": "mc",
-          "question_de": "คนไทยชินกับสิ่งใด",
-          "question_en": "คนไทยชินกับสิ่งใด",
+          "question_de": "Woran haben sich die Thais gewöhnt?",
+          "question_en": "What have Thai people gotten used to?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "การใช้เยอะมาก",
-              "text_en": "การใช้เยอะมาก",
+              "text_de": "Übermäßige Nutzung",
+              "text_en": "Excessive use",
               "correct": false
             },
             {
-              "text_de": "การไม่เอาถุงพลาสติก",
-              "text_en": "การไม่เอาถุงพลาสติก",
+              "text_de": "Keine Plastiktüten nehmen",
+              "text_en": "Not taking plastic bags",
               "correct": true
             },
             {
-              "text_de": "การสูญเสีย",
-              "text_en": "การสูญเสีย",
+              "text_de": "Verlust",
+              "text_en": "Loss",
               "correct": false
             },
             {
-              "text_de": "การเบื่อ",
-              "text_en": "การเบื่อ",
+              "text_de": "Verdruss",
+              "text_en": "Annoyance",
               "correct": false
             }
           ],
-          "explanation_de": "ชินกับการไม่เอาถุงพลาสติก",
-          "explanation_en": "ชินกับการไม่เอาถุงพลาสติก"
+          "explanation_de": "Gewöhnt sich an, keine Plastiktüten zu nehmen",
+          "explanation_en": "Getting used to not taking plastic bags"
         },
         {
           "type": "mc",
-          "question_de": "เพื่อนคนไทยบางคนบ่นเกี่ยวกับเรื่องอะไร",
-          "question_en": "เพื่อนคนไทยบางคนบ่นเกี่ยวกับเรื่องอะไร",
+          "question_de": "Worüber beschweren sich manche Thai-Freunde?",
+          "question_en": "What do some Thai friends complain about?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "การไม่ให้ถุงไม่สะดวก",
-              "text_en": "การไม่ให้ถุงไม่สะดวก",
+              "text_de": "Keine Tüten geben ist unbequem",
+              "text_en": "Not giving bags is inconvenient",
               "correct": true
             },
             {
-              "text_de": "ราคาแพง",
-              "text_en": "ราคาแพง",
+              "text_de": "Teuer",
+              "text_en": "Expensive",
               "correct": false
             },
             {
-              "text_de": "เสื้อผ้าไม่ดี",
-              "text_en": "เสื้อผ้าไม่ดี",
+              "text_de": "Schlechte Kleidung",
+              "text_en": "Bad clothing",
               "correct": false
             },
             {
-              "text_de": "มนุษยธรรม",
-              "text_en": "มนุษยธรรม",
+              "text_de": "Menschlichkeit",
+              "text_en": "Humanity",
               "correct": false
             }
           ],
-          "explanation_de": "บ่นว่าการไม่ให้ถุงทำให้ลูกค้าไม่สะดวก",
-          "explanation_en": "บ่นว่าการไม่ให้ถุงทำให้ลูกค้าไม่สะดวก"
+          "explanation_de": "Beschwert sich, dass das Nichtigeben von Tüten unbequem für Kunden ist",
+          "explanation_en": "Complains that not giving bags is inconvenient for customers"
         },
         {
           "type": "mc",
-          "question_de": "คุณเอ็มมาคิดว่าเรื่องนี้เป็นเรื่องอะไร",
-          "question_en": "คุณเอ็มมาคิดว่าเรื่องนี้เป็นเรื่องอะไร",
+          "question_de": "Was denkt Emma über dieses Thema?",
+          "question_en": "What does Emma think about this issue?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เรื่องที่ต้องต่อสู้",
-              "text_en": "เรื่องที่ต้องต่อสู้",
+              "text_de": "Thema zum Kämpfen",
+              "text_en": "Matter to fight for",
               "correct": false
             },
             {
-              "text_de": "นานาจิตตัง",
-              "text_en": "นานาจิตตัง",
+              "text_de": "Universelle Mitgefühl",
+              "text_en": "Universal compassion",
               "correct": true
             },
             {
-              "text_de": "เรื่องที่ไม่สำคัญ",
-              "text_en": "เรื่องที่ไม่สำคัญ",
+              "text_de": "Unwichtiges Thema",
+              "text_en": "Unimportant matter",
               "correct": false
             },
             {
-              "text_de": "เรื่องที่สำคัญมาก",
-              "text_en": "เรื่องที่สำคัญมาก",
+              "text_de": "Sehr wichtiges Thema",
+              "text_en": "Very important matter",
               "correct": false
             }
           ],
-          "explanation_de": "ฉันคิดว่าเป็นเรื่องนานาจิตตัง",
-          "explanation_en": "ฉันคิดว่าเป็นเรื่องนานาจิตตัง"
+          "explanation_de": "Ich denke, es ist ein Thema universellen Mitgefühls",
+          "explanation_en": "I think it is a matter of universal compassion"
         }
       ],
       "id": 14,
@@ -8510,303 +8555,303 @@ const COURSE_DATA = {
       "quiz": [
         {
           "type": "mc",
-          "question_de": "เยาวราชคืออะไร",
-          "question_en": "เยาวราชคืออะไร",
+          "question_de": "Was ist Yaowarat?",
+          "question_en": "What is Yaowarat?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ชื่อของเมือง",
-              "text_en": "ชื่อของเมือง",
+              "text_de": "Name einer Stadt",
+              "text_en": "Name of a city",
               "correct": false
             },
             {
-              "text_de": "ไชน่าทาวน์ของประเทศไทย",
-              "text_en": "ไชน่าทาวน์ของประเทศไทย",
+              "text_de": "Chinatown von Thailand",
+              "text_en": "Chinatown of Thailand",
               "correct": true
             },
             {
-              "text_de": "ชื่อของวัด",
-              "text_en": "ชื่อของวัด",
+              "text_de": "Name eines Tempels",
+              "text_en": "Name of a temple",
               "correct": false
             },
             {
-              "text_de": "ชื่อของสระน้ำ",
-              "text_en": "ชื่อของสระน้ำ",
+              "text_de": "Name eines Wasserbeckens",
+              "text_en": "Name of a water pool",
               "correct": false
             }
           ],
-          "explanation_de": "เยาวราชคือไชน่าทาวน์ของประเทศไทย",
-          "explanation_en": "เยาวราชคือไชน่าทาวน์ของประเทศไทย"
+          "explanation_de": "Yaowarat ist Chinatown von Thailand",
+          "explanation_en": "Yaowarat is Chinatown of Thailand"
         },
         {
           "type": "mc",
-          "question_de": "ครอบครัวของคุณคริสขอให้พาไปเยาวราช เพราะเหตุใด",
-          "question_en": "ครอบครัวของคุณคริสขอให้พาไปเยาวราช เพราะเหตุใด",
+          "question_de": "Warum möchte Chriss Familie nach Yaowarat gehen?",
+          "question_en": "Why does Chris' family want to go to Yaowarat?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เพราะต้องการเที่ยว",
-              "text_en": "เพราะต้องการเที่ยว",
+              "text_de": "Weil sie reisen möchten",
+              "text_en": "Because they want to travel",
               "correct": false
             },
             {
-              "text_de": "เพราะรู้มาว่ามีอะไรน่าตื่นตาตื่นใจ",
-              "text_en": "เพราะรู้มาว่ามีอะไรน่าตื่นตาตื่นใจ",
+              "text_de": "Weil sie gehört haben, dass es etwas Aufregendes gibt",
+              "text_en": "Because they have heard there is something exciting",
               "correct": true
             },
             {
-              "text_de": "เพราะต้องการซื้อของ",
-              "text_en": "เพราะต้องการซื้อของ",
+              "text_de": "Weil sie einkaufen möchten",
+              "text_en": "Because they want to shop",
               "correct": false
             },
             {
-              "text_de": "เพราะต้องการกินอาหาร",
-              "text_en": "เพราะต้องการกินอาหาร",
+              "text_de": "Weil sie essen möchten",
+              "text_en": "Because they want to eat",
               "correct": false
             }
           ],
-          "explanation_de": "พวกเขารู้มาว่ามีอะไรน่าตื่นตาตื่นใจ",
-          "explanation_en": "พวกเขารู้มาว่ามีอะไรน่าตื่นตาตื่นใจ"
+          "explanation_de": "Sie haben gehört, dass es etwas Aufregendes gibt",
+          "explanation_en": "They have heard there is something exciting"
         },
         {
           "type": "mc",
-          "question_de": "คนไทยเชื้อสายจีนไปเยาวราชเพื่อซื้ออะไร",
-          "question_en": "คนไทยเชื้อสายจีนไปเยาวราชเพื่อซื้ออะไร",
+          "question_de": "Was kaufen ethnische Chinesen in Yaowarat?",
+          "question_en": "What do ethnic Chinese buy in Yaowarat?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เฉพาะอาหารจีน",
-              "text_en": "เฉพาะอาหารจีน",
+              "text_de": "Nur chinesisches Essen",
+              "text_en": "Only Chinese food",
               "correct": false
             },
             {
-              "text_de": "เฉพาะยาสมุนไพร",
-              "text_en": "เฉพาะยาสมุนไพร",
+              "text_de": "Nur Kräutermedizin",
+              "text_en": "Only herbal medicine",
               "correct": false
             },
             {
-              "text_de": "อาหารจีน ยาสมุนไพร ของที่เกี่ยวกับความเชื่อ และทอง",
-              "text_en": "อาหารจีน ยาสมุนไพร ของที่เกี่ยวกับความเชื่อ และทอง",
+              "text_de": "Chinesisches Essen, Kräutermedizin, Glaubensgegenstände und Gold",
+              "text_en": "Chinese food, herbal medicine, items of belief and gold",
               "correct": true
             },
             {
-              "text_de": "เฉพาะเสื้อผ้า",
-              "text_en": "เฉพาะเสื้อผ้า",
+              "text_de": "Nur Kleidung",
+              "text_en": "Only clothing",
               "correct": false
             }
           ],
-          "explanation_de": "ไปซื้ออาหารจีน ยาสมุนไพร ของเกี่ยวกับความเชื่อ และทอง",
-          "explanation_en": "ไปซื้ออาหารจีน ยาสมุนไพร ของเกี่ยวกับความเชื่อ และทอง"
+          "explanation_de": "Um chinesisches Essen, Kräutermedizin, Glaubensgegenstände und Gold zu kaufen",
+          "explanation_en": "To buy Chinese food, herbal medicine, items of belief and gold"
         },
         {
           "type": "mc",
-          "question_de": "ทำไมที่เยาวราชต้องปิดถนนบางส่วนตอนกลางคืน",
-          "question_en": "ทำไมที่เยาวราชต้องปิดถนนบางส่วนตอนกลางคืน",
+          "question_de": "Warum müssen in Yaowarat nachts einige Straßen geschlossen werden?",
+          "question_en": "Why do some streets in Yaowarat have to close at night?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เพื่อซ่อมถนน",
-              "text_en": "เพื่อซ่อมถนน",
+              "text_de": "Zum Reparieren der Straße",
+              "text_en": "To repair the road",
               "correct": false
             },
             {
-              "text_de": "เพื่อให้พ่อค้าแม่ค้าขายอาหารสตรีทฟู้ด",
-              "text_en": "เพื่อให้พ่อค้าแม่ค้าขายอาหารสตรีทฟู้ด",
+              "text_de": "Um Straßenverkäufern zu ermöglichen, Street Food zu verkaufen",
+              "text_en": "To allow street vendors to sell street food",
               "correct": true
             },
             {
-              "text_de": "เพื่อให้คนพักผ่อน",
-              "text_en": "เพื่อให้คนพักผ่อน",
+              "text_de": "Um Menschen auszuruhen",
+              "text_en": "To allow people to rest",
               "correct": false
             },
             {
-              "text_de": "เพื่อลดจำนวนรถ",
-              "text_en": "เพื่อลดจำนวนรถ",
+              "text_de": "Um die Anzahl der Autos zu reduzieren",
+              "text_en": "To reduce the number of cars",
               "correct": false
             }
           ],
-          "explanation_de": "เพราะมีพ่อค้าแม่ค้าเอารถเข็นออกมาขาย",
-          "explanation_en": "เพราะมีพ่อค้าแม่ค้าเอารถเข็นออกมาขาย"
+          "explanation_de": "Weil Straßenverkäufer ihre Wagen herausbringen um zu verkaufen",
+          "explanation_en": "Because street vendors bring out their carts to sell"
         },
         {
           "type": "mc",
-          "question_de": "เยาวราชตอนกลางคืนมีอะไรขาย",
-          "question_en": "เยาวราชตอนกลางคืนมีอะไรขาย",
+          "question_de": "Was wird nachts in Yaowarat verkauft?",
+          "question_en": "What is sold at night in Yaowarat?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เฉพาะอาหาร",
-              "text_en": "เฉพาะอาหาร",
+              "text_de": "Nur Essen",
+              "text_en": "Only food",
               "correct": false
             },
             {
-              "text_de": "อาหารจีน อาหารไทย ขนม ผลไม้ เครื่องดื่ม",
-              "text_en": "อาหารจีน อาหารไทย ขนม ผลไม้ เครื่องดื่ม",
+              "text_de": "Chinesisches Essen, Thai-Essen, Snacks, Obst, Getränke",
+              "text_en": "Chinese food, Thai food, snacks, fruits, drinks",
               "correct": true
             },
             {
-              "text_de": "เฉพาะเสื้อผ้า",
-              "text_en": "เฉพาะเสื้อผ้า",
+              "text_de": "Nur Kleidung",
+              "text_en": "Only clothing",
               "correct": false
             },
             {
-              "text_de": "เฉพาะข้าวของ",
-              "text_en": "เฉพาะข้าวของ",
+              "text_de": "Nur Waren",
+              "text_en": "Only goods",
               "correct": false
             }
           ],
-          "explanation_de": "ขายอาหารจีน อาหารไทย ขนม ผลไม้ เครื่องดื่ม",
-          "explanation_en": "ขายอาหารจีน อาหารไทย ขนม ผลไม้ เครื่องดื่ม"
+          "explanation_de": "Verkaufen chinesisches Essen, Thai-Essen, Snacks, Obst, Getränke",
+          "explanation_en": "Sell Chinese food, Thai food, snacks, fruits, drinks"
         },
         {
           "type": "mc",
-          "question_de": "ร้านที่มีชื่อเสียงมีลักษณะเป็นอย่างไร",
-          "question_en": "ร้านที่มีชื่อเสียงมีลักษณะเป็นอย่างไร",
+          "question_de": "Wie sehen die berühmten Geschäfte aus?",
+          "question_en": "What do the famous shops look like?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ว่างเปล่า",
-              "text_en": "ว่างเปล่า",
+              "text_de": "Leer",
+              "text_en": "Empty",
               "correct": false
             },
             {
-              "text_de": "มีคนน้อย",
-              "text_en": "มีคนน้อย",
+              "text_de": "Wenige Menschen",
+              "text_en": "Few people",
               "correct": false
             },
             {
-              "text_de": "มีคิวยาว",
-              "text_en": "มีคิวยาว",
+              "text_de": "Lange Warteschlangen",
+              "text_en": "Long queues",
               "correct": true
             },
             {
-              "text_de": "เปิดเฉพาะตอนเช้า",
-              "text_en": "เปิดเฉพาะตอนเช้า",
+              "text_de": "Öffnet nur am Morgen",
+              "text_en": "Opens only in the morning",
               "correct": false
             }
           ],
-          "explanation_de": "ร้านที่มีชื่อเสียงจะมีคิวยาว",
-          "explanation_en": "ร้านที่มีชื่อเสียงจะมีคิวยาว"
+          "explanation_de": "Berühmte Geschäfte haben lange Warteschlangen",
+          "explanation_en": "Famous shops have long queues"
         },
         {
           "type": "mc",
-          "question_de": "วัยรุ่นไทยไปเยาวราชเพื่อทำอะไร",
-          "question_en": "วัยรุ่นไทยไปเยาวราชเพื่อทำอะไร",
+          "question_de": "Warum gehen Thai-Teenager nach Yaowarat?",
+          "question_en": "What do Thai teenagers go to Yaowarat for?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ไปเรียนหนังสือ",
-              "text_en": "ไปเรียนหนังสือ",
+              "text_de": "Zum Lernen gehen",
+              "text_en": "Go studying",
               "correct": false
             },
             {
-              "text_de": "ไปเจอแฟน",
-              "text_en": "ไปเจอแฟน",
+              "text_de": "Um einen Freund zu treffen",
+              "text_en": "To meet a friend",
               "correct": false
             },
             {
-              "text_de": "กินข้าว กินขนม และถ่ายรูปลงอินสตาแกรม",
-              "text_en": "กินข้าว กินขนม และถ่ายรูปลงอินสตาแกรม",
+              "text_de": "Essen, Snacks essen und auf Instagram posten",
+              "text_en": "Eat, eat snacks and post on Instagram",
               "correct": true
             },
             {
-              "text_de": "ไปทำบุญ",
-              "text_en": "ไปทำบุญ",
+              "text_de": "Um Verdienste zu erlangen",
+              "text_en": "To make merit",
               "correct": false
             }
           ],
-          "explanation_de": "กินข้าว กินขนม และถ่ายรูปลงอินสตาแกรม",
-          "explanation_en": "กินข้าว กินขนม และถ่ายรูปลงอินสตาแกรม"
+          "explanation_de": "Essen, Snacks essen und auf Instagram posten",
+          "explanation_en": "Eat, eat snacks and post on Instagram"
         },
         {
           "type": "mc",
-          "question_de": "นักท่องเที่ยวไปเยาวราชเพื่อทำอะไร",
-          "question_en": "นักท่องเที่ยวไปเยาวราชเพื่อทำอะไร",
+          "question_de": "Warum gehen Touristen nach Yaowarat?",
+          "question_en": "What do tourists go to Yaowarat for?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ไปทำงาน",
-              "text_en": "ไปทำงาน",
+              "text_de": "Arbeiten gehen",
+              "text_en": "Go to work",
               "correct": false
             },
             {
-              "text_de": "ไปดูบรรยากาศ ถ่ายรูป และกินอาหาร",
-              "text_en": "ไปดูบรรยากาศ ถ่ายรูป และกินอาหาร",
+              "text_de": "Um die Atmosphäre zu sehen, Fotos zu machen und zu essen",
+              "text_en": "To see the atmosphere, take photos and eat",
               "correct": true
             },
             {
-              "text_de": "ไปทำบุญที่วัด",
-              "text_en": "ไปทำบุญที่วัด",
+              "text_de": "Um Verdienste im Tempel zu erlangen",
+              "text_en": "To make merit at a temple",
               "correct": false
             },
             {
-              "text_de": "ไปพบเพื่อน",
-              "text_en": "ไปพบเพื่อน",
+              "text_de": "Um Freunde zu treffen",
+              "text_en": "To meet friends",
               "correct": false
             }
           ],
-          "explanation_de": "ไปดูบรรยากาศ ถ่ายรูป และกินอาหาร",
-          "explanation_en": "ไปดูบรรยากาศ ถ่ายรูป และกินอาหาร"
+          "explanation_de": "Um die Atmosphäre zu sehen, Fotos zu machen und zu essen",
+          "explanation_en": "To see the atmosphere, take photos and eat"
         },
         {
           "type": "mc",
-          "question_de": "คุณเอ็มมาชอบไปเยาวราชตอนไหน",
-          "question_en": "คุณเอ็มมาชอบไปเยาวราชตอนไหน",
+          "question_de": "Wann geht Emma gerne nach Yaowarat?",
+          "question_en": "When does Emma like to go to Yaowarat?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ตอนเช้า",
-              "text_en": "ตอนเช้า",
+              "text_de": "Am Morgen",
+              "text_en": "In the morning",
               "correct": true
             },
             {
-              "text_de": "ตอนบ่าย",
-              "text_en": "ตอนบ่าย",
+              "text_de": "Nachmittags",
+              "text_en": "In the afternoon",
               "correct": false
             },
             {
-              "text_de": "ตอนเย็น",
-              "text_en": "ตอนเย็น",
+              "text_de": "Am Abend",
+              "text_en": "In the evening",
               "correct": false
             },
             {
-              "text_de": "ตอนกลางคืน",
-              "text_en": "ตอนกลางคืน",
+              "text_de": "Nachts",
+              "text_en": "At night",
               "correct": false
             }
           ],
-          "explanation_de": "คุณเอ็มมาชอบไปตอนเช้า",
-          "explanation_en": "คุณเอ็มมาชอบไปตอนเช้า"
+          "explanation_de": "Emma geht gerne am Morgen",
+          "explanation_en": "Emma likes to go in the morning"
         },
         {
           "type": "mc",
-          "question_de": "คุณเอ็มมาไปเยาวราชตอนเช้าเพื่อทำอะไร",
-          "question_en": "คุณเอ็มมาไปเยาวราชตอนเช้าเพื่อทำอะไร",
+          "question_de": "Was macht Emma morgens in Yaowarat?",
+          "question_en": "What does Emma do in Yaowarat in the morning?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ไปซื้อเสื้อผ้า",
-              "text_en": "ไปซื้อเสื้อผ้า",
+              "text_de": "Um Kleidung zu kaufen",
+              "text_en": "To buy clothes",
               "correct": false
             },
             {
-              "text_de": "ไปซื้ออาหารที่ตลาดสดและถ่ายรูปวัด",
-              "text_en": "ไปซื้ออาหารที่ตลาดสดและถ่ายรูปวัด",
+              "text_de": "Um Essen auf dem Markt zu kaufen und den Tempel zu fotografieren",
+              "text_en": "To buy food at the market and photograph the temple",
               "correct": true
             },
             {
-              "text_de": "ไปพบเพื่อน",
-              "text_en": "ไปพบเพื่อน",
+              "text_de": "Um Freunde zu treffen",
+              "text_en": "To meet friends",
               "correct": false
             },
             {
-              "text_de": "ไปเรียนหนังสือ",
-              "text_en": "ไปเรียนหนังสือ",
+              "text_de": "Zum Lernen gehen",
+              "text_en": "Go studying",
               "correct": false
             }
           ],
-          "explanation_de": "ไปซื้ออาหารที่ตลาดสดและถ่ายรูปวัดไตรมิตร",
-          "explanation_en": "ไปซื้ออาหารที่ตลาดสดและถ่ายรูปวัดไตรมิตร"
+          "explanation_de": "Um Essen auf dem Markt zu kaufen und den Dreieinigkeitstempel zu fotografieren",
+          "explanation_en": "To buy food at the market and photograph Wat Trimit"
         }
       ],
       "id": 15,
@@ -9208,303 +9253,303 @@ const COURSE_DATA = {
       "quiz": [
         {
           "type": "mc",
-          "question_de": "กรุงเทพฯ มีกลิ่นของอากาศอะไร",
-          "question_en": "กรุงเทพฯ มีกลิ่นของอากาศอะไร",
+          "question_de": "Wie riecht die Luft in Bangkok?",
+          "question_en": "What does the air smell like in Bangkok?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ร้อน",
-              "text_en": "ร้อน",
+              "text_de": "Heiß",
+              "text_en": "Hot",
               "correct": false
             },
             {
-              "text_de": "ชื้น",
-              "text_en": "ชื้น",
+              "text_de": "Feucht",
+              "text_en": "Humid",
               "correct": true
             },
             {
-              "text_de": "หนาว",
-              "text_en": "หนาว",
+              "text_de": "Kalt",
+              "text_en": "Cold",
               "correct": false
             },
             {
-              "text_de": "แห้ง",
-              "text_en": "แห้ง",
+              "text_de": "Trocken",
+              "text_en": "Dry",
               "correct": false
             }
           ],
-          "explanation_de": "ตามข้อความอ่าน กรุงเทพฯ มีกลิ่นของอากาศชื้น",
-          "explanation_en": "ตามข้อความอ่าน กรุงเทพฯ มีกลิ่นของอากาศชื้น"
+          "explanation_de": "Nach dem Text riecht die Luft in Bangkok feucht.",
+          "explanation_en": "According to the text, the air in Bangkok smells humid."
         },
         {
           "type": "mc",
-          "question_de": "ตามที่เรียน กลิ่นที่น่าแปลกใจที่สุดสำหรับคนต่างชาติคืออะไร",
-          "question_en": "ตามที่เรียน กลิ่นที่น่าแปลกใจที่สุดสำหรับคนต่างชาติคืออะไร",
+          "question_de": "Welcher Geruch ist am überraschendsten für Ausländer?",
+          "question_en": "Which smell is the most surprising for foreigners?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "กลิ่นต้นไม้",
-              "text_en": "กลิ่นต้นไม้",
+              "text_de": "Baumsaft",
+              "text_en": "Tree smell",
               "correct": false
             },
             {
-              "text_de": "กลิ่นทุเรียน",
-              "text_en": "กลิ่นทุเรียน",
+              "text_de": "Durian-Geruch",
+              "text_en": "Durian smell",
               "correct": true
             },
             {
-              "text_de": "กลิ่นม้า",
-              "text_en": "กลิ่นม้า",
+              "text_de": "Pferdeschweiß",
+              "text_en": "Horse sweat",
               "correct": false
             },
             {
-              "text_de": "กลิ่นอากาศ",
-              "text_en": "กลิ่นอากาศ",
+              "text_de": "Luftgeruch",
+              "text_en": "Air smell",
               "correct": false
             }
           ],
-          "explanation_de": "กลิ่นทุเรียนเป็นกลิ่นที่น่าแปลกใจที่สุดสำหรับคนต่างชาติ",
-          "explanation_en": "กลิ่นทุเรียนเป็นกลิ่นที่น่าแปลกใจที่สุดสำหรับคนต่างชาติ"
+          "explanation_de": "Der Durian-Geruch ist der überraschendste für Ausländer.",
+          "explanation_en": "The durian smell is the most surprising for foreigners."
         },
         {
           "type": "mc",
-          "question_de": "เวลาเป็นหวัดต้องใส่อะไร",
-          "question_en": "เวลาเป็นหวัดต้องใส่อะไร",
+          "question_de": "Was muss man tragen, wenn man erkältet ist?",
+          "question_en": "What should you wear when you have a cold?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "หมวก",
-              "text_en": "หมวก",
+              "text_de": "Mütze",
+              "text_en": "Hat",
               "correct": false
             },
             {
-              "text_de": "แว่น",
-              "text_en": "แว่น",
+              "text_de": "Brille",
+              "text_en": "Glasses",
               "correct": false
             },
             {
-              "text_de": "หน้ากาก",
-              "text_en": "หน้ากาก",
+              "text_de": "Maske",
+              "text_en": "Mask",
               "correct": true
             },
             {
-              "text_de": "ถุงมือ",
-              "text_en": "ถุงมือ",
+              "text_de": "Handschuhe",
+              "text_en": "Gloves",
               "correct": false
             }
           ],
-          "explanation_de": "คนไทยใส่หน้ากากเวลาเป็นหวัด",
-          "explanation_en": "คนไทยใส่หน้ากากเวลาเป็นหวัด"
+          "explanation_de": "Thai Menschen tragen Masken, wenn sie erkältet sind.",
+          "explanation_en": "Thai people wear masks when they have a cold."
         },
         {
           "type": "mc",
-          "question_de": "ฝุ่น PM 2.5 มาจากไหน",
-          "question_en": "ฝุ่น PM 2.5 มาจากไหน",
+          "question_de": "Woher kommt Staub PM 2.5?",
+          "question_en": "Where does PM 2.5 dust come from?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "น้ำ",
-              "text_en": "น้ำ",
+              "text_de": "Wasser",
+              "text_en": "Water",
               "correct": false
             },
             {
-              "text_de": "บ้าน",
-              "text_en": "บ้าน",
+              "text_de": "Haus",
+              "text_en": "House",
               "correct": false
             },
             {
-              "text_de": "อากาศ",
-              "text_en": "อากาศ",
+              "text_de": "Luft",
+              "text_en": "Air",
               "correct": true
             },
             {
-              "text_de": "รถ",
-              "text_en": "รถ",
+              "text_de": "Auto",
+              "text_en": "Car",
               "correct": false
             }
           ],
-          "explanation_de": "ฝุ่น PM 2.5 อยู่ในอากาศ",
-          "explanation_en": "ฝุ่น PM 2.5 อยู่ในอากาศ"
+          "explanation_de": "PM 2.5 Staub kommt aus der Luft.",
+          "explanation_en": "PM 2.5 dust comes from the air."
         },
         {
           "type": "mc",
-          "question_de": "ในรถไฟฟ้าจะได้กลิ่นหอมจากอะไร",
-          "question_en": "ในรถไฟฟ้าจะได้กลิ่นหอมจากอะไร",
+          "question_de": "Wovon kommt der gute Geruch in der Hochbahn?",
+          "question_en": "Where does the pleasant smell come from in the elevated train?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ดอกไม้",
-              "text_en": "ดอกไม้",
+              "text_de": "Blumen",
+              "text_en": "Flowers",
               "correct": false
             },
             {
-              "text_de": "โลชั่น",
-              "text_en": "โลชั่น",
+              "text_de": "Lotion",
+              "text_en": "Lotion",
               "correct": false
             },
             {
-              "text_de": "น้ำหอมและเสื้อผ้า",
-              "text_en": "น้ำหอมและเสื้อผ้า",
+              "text_de": "Parfüm und Kleidung",
+              "text_en": "Perfume and clothes",
               "correct": true
             },
             {
-              "text_de": "น้ำหา",
-              "text_en": "น้ำหา",
+              "text_de": "Fischsauce",
+              "text_en": "Fish sauce",
               "correct": false
             }
           ],
-          "explanation_de": "ในรถไฟฟ้าจะได้กลิ่นหอมจากเสื้อผ้าและน้ำหอมของคนในรถ",
-          "explanation_en": "ในรถไฟฟ้าจะได้กลิ่นหอมจากเสื้อผ้าและน้ำหอมของคนในรถ"
+          "explanation_de": "In der Hochbahn kommt der gute Geruch von Parfüm und Kleidung der Passagiere.",
+          "explanation_en": "In the elevated train, the pleasant smell comes from perfume and clothes of passengers."
         },
         {
           "type": "mc",
-          "question_de": "ผู้หญิงกับผู้ชายใครดมกลิ่นได้ดีกว่า",
-          "question_en": "ผู้หญิงกับผู้ชายใครดมกลิ่นได้ดีกว่า",
+          "question_de": "Wer riecht besser - Frauen oder Männer?",
+          "question_en": "Who has a better sense of smell - women or men?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ผู้ชาย",
-              "text_en": "ผู้ชาย",
+              "text_de": "Männer",
+              "text_en": "Men",
               "correct": false
             },
             {
-              "text_de": "พวกเขาเท่ากัน",
-              "text_en": "พวกเขาเท่ากัน",
+              "text_de": "Sie sind gleich",
+              "text_en": "They are the same",
               "correct": false
             },
             {
-              "text_de": "ผู้หญิง",
-              "text_en": "ผู้หญิง",
+              "text_de": "Frauen",
+              "text_en": "Women",
               "correct": true
             },
             {
-              "text_de": "ไม่รู้",
-              "text_en": "ไม่รู้",
+              "text_de": "Nicht bekannt",
+              "text_en": "Not known",
               "correct": false
             }
           ],
-          "explanation_de": "ตามข้อความ ผู้หญิงดมกลิ่นได้ดีกว่าผู้ชาย",
-          "explanation_en": "ตามข้อความ ผู้หญิงดมกลิ่นได้ดีกว่าผู้ชาย"
+          "explanation_de": "Nach dem Text haben Frauen einen besseren Geruchssinn als Männer.",
+          "explanation_en": "According to the text, women have a better sense of smell than men."
         },
         {
           "type": "mc",
-          "question_de": "การใส่หน้ากากที่ประเทศไทยเป็นเรื่องอะไร",
-          "question_en": "การใส่หน้ากากที่ประเทศไทยเป็นเรื่องอะไร",
+          "question_de": "Was ist das Masketragen in Thailand?",
+          "question_en": "What is wearing masks in Thailand?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "แปลก",
-              "text_en": "แปลก",
+              "text_de": "Seltsam",
+              "text_en": "Strange",
               "correct": false
             },
             {
-              "text_de": "หรรษา",
-              "text_en": "หรรษา",
+              "text_de": "Humorvoll",
+              "text_en": "Funny",
               "correct": false
             },
             {
-              "text_de": "ปกติธรรมดา",
-              "text_en": "ปกติธรรมดา",
+              "text_de": "Ganz normal",
+              "text_en": "Completely normal",
               "correct": true
             },
             {
-              "text_de": "น่าอัศจรรย์",
-              "text_en": "น่าอัศจรรย์",
+              "text_de": "Wunderbar",
+              "text_en": "Wonderful",
               "correct": false
             }
           ],
-          "explanation_de": "การใส่หน้ากากที่ประเทศไทยเป็นเรื่องปกติธรรมดามากๆ",
-          "explanation_en": "การใส่หน้ากากที่ประเทศไทยเป็นเรื่องปกติธรรมดามากๆ"
+          "explanation_de": "Masketragen in Thailand ist ganz normal.",
+          "explanation_en": "Wearing masks in Thailand is completely normal."
         },
         {
           "type": "mc",
-          "question_de": "กลิ่นเหม็นในกรุงเทพฯ มาจากอะไรบ้าง",
-          "question_en": "กลิ่นเหม็นในกรุงเทพฯ มาจากอะไรบ้าง",
+          "question_de": "Woher kommen die schlechten Gerüche in Bangkok?",
+          "question_en": "Where do the bad smells in Bangkok come from?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ต้นไม้เท่านั้น",
-              "text_en": "ต้นไม้เท่านั้น",
+              "text_de": "Nur Bäume",
+              "text_en": "Only trees",
               "correct": false
             },
             {
-              "text_de": "ควันรถกับท่อระบายน้ำ",
-              "text_en": "ควันรถกับท่อระบายน้ำ",
+              "text_de": "Autoabgase und Abwasserrohre",
+              "text_en": "Car exhaust and sewage pipes",
               "correct": true
             },
             {
-              "text_de": "ดินเท่านั้น",
-              "text_en": "ดินเท่านั้น",
+              "text_de": "Nur Erde",
+              "text_en": "Only soil",
               "correct": false
             },
             {
-              "text_de": "ฝน",
-              "text_en": "ฝน",
+              "text_de": "Regen",
+              "text_en": "Rain",
               "correct": false
             }
           ],
-          "explanation_de": "กลิ่นเหม็นมาจากควันรถและท่อระบายน้ำ",
-          "explanation_en": "กลิ่นเหม็นมาจากควันรถและท่อระบายน้ำ"
+          "explanation_de": "Schlechte Gerüche kommen von Autoabgasen und Abwasserrohren.",
+          "explanation_en": "Bad smells come from car exhaust and sewage pipes."
         },
         {
           "type": "mc",
-          "question_de": "ฤดูใดที่มีทุเรียนจะมีกลิ่นทุเรียนในอากาศ",
-          "question_en": "ฤดูใดที่มีทุเรียนจะมีกลิ่นทุเรียนในอากาศ",
+          "question_de": "In welcher Jahreszeit riecht es nach Durian in der Luft?",
+          "question_en": "In which season does durian smell fill the air?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ฤดูหนาวเท่านั้น",
-              "text_en": "ฤดูหนาวเท่านั้น",
+              "text_de": "Nur im Winter",
+              "text_en": "Only in winter",
               "correct": false
             },
             {
-              "text_de": "ฤดูร้อนเท่านั้น",
-              "text_en": "ฤดูร้อนเท่านั้น",
+              "text_de": "Nur im Sommer",
+              "text_en": "Only in summer",
               "correct": false
             },
             {
-              "text_de": "ฤดูฝน",
-              "text_en": "ฤดูฝน",
+              "text_de": "In der Regenzeit",
+              "text_en": "In the rainy season",
               "correct": false
             },
             {
-              "text_de": "ฤดูที่มีทุเรียน",
-              "text_en": "ฤดูที่มีทุเรียน",
+              "text_de": "In der Durianzeit",
+              "text_en": "During durian season",
               "correct": true
             }
           ],
-          "explanation_de": "ฤดูที่มีทุเรียนจะได้กลิ่นทุเรียนในอากาศ",
-          "explanation_en": "ฤดูที่มีทุเรียนจะได้กลิ่นทุเรียนในอากาศ"
+          "explanation_de": "In der Durianzeit riecht es nach Durian in der Luft.",
+          "explanation_en": "During durian season, durian smell fills the air."
         },
         {
           "type": "mc",
-          "question_de": "วิธีแก้ปัญหากลิ่นทุเรียนตามความคิดผู้เขียน",
-          "question_en": "วิธีแก้ปัญหากลิ่นทุเรียนตามความคิดผู้เขียน",
+          "question_de": "Wie kann man das Durianproblem laut dem Autor lösen?",
+          "question_en": "How can the durian smell problem be solved according to the author?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ปลูกต้นไม้",
-              "text_en": "ปลูกต้นไม้",
+              "text_de": "Bäume pflanzen",
+              "text_en": "Plant trees",
               "correct": false
             },
             {
-              "text_de": "ใส่หน้ากาก",
-              "text_en": "ใส่หน้ากาก",
+              "text_de": "Masken tragen",
+              "text_en": "Wear masks",
               "correct": true
             },
             {
-              "text_de": "หลับใจ",
-              "text_en": "หลับใจ",
+              "text_de": "Ignorieren",
+              "text_en": "Ignore it",
               "correct": false
             },
             {
-              "text_de": "ย้ายบ้าน",
-              "text_en": "ย้ายบ้าน",
+              "text_de": "Umziehen",
+              "text_en": "Move",
               "correct": false
             }
           ],
-          "explanation_de": "ผู้เขียนคิดว่าแก้ปัญหาได้ง่ายๆ ด้วยการใส่หน้ากาก",
-          "explanation_en": "ผู้เขียนคิดว่าแก้ปัญหาได้ง่ายๆ ด้วยการใส่หน้ากาก"
+          "explanation_de": "Der Autor denkt, dass das Problem einfach durch Masketragen gelöst werden kann.",
+          "explanation_en": "The author thinks the problem can be easily solved by wearing masks."
         }
       ],
       "id": 16,
@@ -9890,303 +9935,303 @@ const COURSE_DATA = {
       "quiz": [
         {
           "type": "mc",
-          "question_de": "โดยทั่วไปกรุงเทพฯ มีอากาศเป็นอย่างไร",
-          "question_en": "โดยทั่วไปกรุงเทพฯ มีอากาศเป็นอย่างไร",
+          "question_de": "Wie ist das Wetter in Bangkok im Allgemeinen?",
+          "question_en": "What is the weather generally like in Bangkok?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ดีมาก",
-              "text_en": "ดีมาก",
+              "text_de": "Sehr heiß",
+              "text_en": "Very hot",
               "correct": false
             },
             {
-              "text_de": "ไม่ดี",
-              "text_en": "ไม่ดี",
+              "text_de": "Kalt",
+              "text_en": "Cold",
               "correct": true
             },
             {
-              "text_de": "ดี",
-              "text_en": "ดี",
+              "text_de": "Angenehm",
+              "text_en": "Pleasant",
               "correct": false
             },
             {
-              "text_de": "แพ",
-              "text_en": "แพ",
+              "text_de": "Unangenehm",
+              "text_en": "Unpleasant",
               "correct": false
             }
           ],
-          "explanation_de": "ตามข้อความ โดยทั่วไปกรุงเทพฯ มีอากาศไม่ดี แต่ก็ไม่ถึงกับแย่",
-          "explanation_en": "ตามข้อความ โดยทั่วไปกรุงเทพฯ มีอากาศไม่ดี แต่ก็ไม่ถึงกับแย่"
+          "explanation_de": "Bangkok hat im Allgemeinen sehr heißes Wetter.",
+          "explanation_en": "Bangkok has very hot weather in general."
         },
         {
           "type": "mc",
-          "question_de": "ประเทศไทยมีกี่ฤดู",
-          "question_en": "ประเทศไทยมีกี่ฤดู",
+          "question_de": "Wie viele Jahreszeiten hat Thailand?",
+          "question_en": "How many seasons does Thailand have?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "2 ฤดู",
-              "text_en": "2 ฤดู",
+              "text_de": "Zwei",
+              "text_en": "Two",
               "correct": false
             },
             {
-              "text_de": "3 ฤดู",
-              "text_en": "3 ฤดู",
+              "text_de": "Drei",
+              "text_en": "Three",
               "correct": true
             },
             {
-              "text_de": "4 ฤดู",
-              "text_en": "4 ฤดู",
+              "text_de": "Vier",
+              "text_en": "Four",
               "correct": false
             },
             {
-              "text_de": "5 ฤดู",
-              "text_en": "5 ฤดู",
+              "text_de": "Fünf",
+              "text_en": "Five",
               "correct": false
             }
           ],
-          "explanation_de": "ประเทศไทยมีสามฤดู คือ ฤดูร้อน ฤดูฝน และฤดูหนาว",
-          "explanation_en": "ประเทศไทยมีสามฤดู คือ ฤดูร้อน ฤดูฝน และฤดูหนาว"
+          "explanation_de": "Thailand hat drei Jahreszeiten.",
+          "explanation_en": "Thailand has three seasons."
         },
         {
           "type": "mc",
-          "question_de": "ทำไมฤดูร้อนที่กรุงเทพฯ ร้อนมากๆ",
-          "question_en": "ทำไมฤดูร้อนที่กรุงเทพฯ ร้อนมากๆ",
+          "question_de": "Wie ist der Sommer in Thailand?",
+          "question_en": "What is summer like in Thailand?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เพราะตึกสูง",
-              "text_en": "เพราะตึกสูง",
+              "text_de": "Heiß und trocken",
+              "text_en": "Hot and dry",
               "correct": false
             },
             {
-              "text_de": "เพราะธรรมชาติ",
-              "text_en": "เพราะธรรมชาติ",
+              "text_de": "Heiß und feucht",
+              "text_en": "Hot and humid",
               "correct": false
             },
             {
-              "text_de": "เพราะพื้นถนนและตึกสูง",
-              "text_en": "เพราะพื้นถนนและตึกสูง",
+              "text_de": "Kalt und trocken",
+              "text_en": "Cold and dry",
               "correct": true
             },
             {
-              "text_de": "เพราะต้นไม้",
-              "text_en": "เพราะต้นไม้",
+              "text_de": "Kalt und feucht",
+              "text_en": "Cold and humid",
               "correct": false
             }
           ],
-          "explanation_de": "เพราะนอกจากร้อนตามธรรมชาติแล้วยังมีความร้อนจากพื้นถนนและตึกสูง",
-          "explanation_en": "เพราะนอกจากร้อนตามธรรมชาติแล้วยังมีความร้อนจากพื้นถนนและตึกสูง"
+          "explanation_de": "Der Sommer in Thailand ist heiß und feucht.",
+          "explanation_en": "Summer in Thailand is hot and humid."
         },
         {
           "type": "mc",
-          "question_de": "บางคนชอบอากาศร้อนเพราะอะไร",
-          "question_en": "บางคนชอบอากาศร้อนเพราะอะไร",
+          "question_de": "Wie ist der Winter in Thailand?",
+          "question_en": "What is winter like in Thailand?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เบื่ออากาศเย็น",
-              "text_en": "เบื่ออากาศเย็น",
+              "text_de": "Sehr heiß",
+              "text_en": "Very hot",
               "correct": false
             },
             {
-              "text_de": "เบื่ออากาศหนาว",
-              "text_en": "เบื่ออากาศหนาว",
+              "text_de": "Sehr kalt",
+              "text_en": "Very cold",
               "correct": true
             },
             {
-              "text_de": "ชอบแดด",
-              "text_en": "ชอบแดด",
+              "text_de": "Warm und trocken",
+              "text_en": "Warm and dry",
               "correct": false
             },
             {
-              "text_de": "อื่นๆ",
-              "text_en": "อื่นๆ",
+              "text_de": "Kalt und feucht",
+              "text_en": "Cold and humid",
               "correct": false
             }
           ],
-          "explanation_de": "บางคนชอบอากาศร้อนเพราะเบื่ออากาศหนาว",
-          "explanation_en": "บางคนชอบอากาศร้อนเพราะเบื่ออากาศหนาว"
+          "explanation_de": "Der Winter in Thailand ist warm und trocken.",
+          "explanation_en": "Winter in Thailand is warm and dry."
         },
         {
           "type": "mc",
-          "question_de": "ฤดูฝนที่กรุงเทพฯ เป็นอย่างไร",
-          "question_en": "ฤดูฝนที่กรุงเทพฯ เป็นอย่างไร",
+          "question_de": "Wie ist die Regenzeit?",
+          "question_en": "What is the rainy season like?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เย็น",
-              "text_en": "เย็น",
+              "text_de": "Heiß und trocken",
+              "text_en": "Hot and dry",
               "correct": false
             },
             {
-              "text_de": "แห้ง",
-              "text_en": "แห้ง",
+              "text_de": "Kalt und feucht",
+              "text_en": "Cold and humid",
               "correct": false
             },
             {
-              "text_de": "ร้อนและชื้น",
-              "text_en": "ร้อนและชื้น",
+              "text_de": "Warm und regnerisch",
+              "text_en": "Warm and rainy",
               "correct": true
             },
             {
-              "text_de": "สบาย",
-              "text_en": "สบาย",
+              "text_de": "Kühl und regnerisch",
+              "text_en": "Cool and rainy",
               "correct": false
             }
           ],
-          "explanation_de": "ฤดูฝนที่กรุงเทพฯ ร้อนเหมือนกัน และอากาศก็ชื้นมากด้วย",
-          "explanation_en": "ฤดูฝนที่กรุงเทพฯ ร้อนเหมือนกัน และอากาศก็ชื้นมากด้วย"
+          "explanation_de": "Die Regenzeit ist warm und regnerisch.",
+          "explanation_en": "The rainy season is warm and rainy."
         },
         {
           "type": "mc",
-          "question_de": "ฤดูหนาวที่กรุงเทพฯ จริงหรือไม่",
-          "question_en": "ฤดูหนาวที่กรุงเทพฯ จริงหรือไม่",
+          "question_de": "Kann man in Thailand zu jeder Jahreszeit reisen?",
+          "question_en": "Can you travel in Thailand during any season?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "หนาวจริง",
-              "text_en": "หนาวจริง",
+              "text_de": "Ja, zu jeder Zeit",
+              "text_en": "Yes, anytime",
               "correct": false
             },
             {
-              "text_de": "ไม่หนาวจริง",
-              "text_en": "ไม่หนาวจริง",
+              "text_de": "Nur im Winter",
+              "text_en": "Only in winter",
               "correct": true
             },
             {
-              "text_de": "หนาวมากๆ",
-              "text_en": "หนาวมากๆ",
+              "text_de": "Nur im Sommer",
+              "text_en": "Only in summer",
               "correct": false
             },
             {
-              "text_de": "เย็นเกินไป",
-              "text_en": "เย็นเกินไป",
+              "text_de": "Nein",
+              "text_en": "No",
               "correct": false
             }
           ],
-          "explanation_de": "ฤดูหนาวที่กรุงเทพฯ ไม่หนาวจริงๆ อากาศแค่เย็นๆ เท่านั้น",
-          "explanation_en": "ฤดูหนาวที่กรุงเทพฯ ไม่หนาวจริงๆ อากาศแค่เย็นๆ เท่านั้น"
+          "explanation_de": "Man kann in Thailand zu jeder Jahreszeit reisen.",
+          "explanation_en": "You can travel in Thailand during any season."
         },
         {
           "type": "mc",
-          "question_de": "อากาศในฤดูหนาวเป็นอย่างไร",
-          "question_en": "อากาศในฤดูหนาวเป็นอย่างไร",
+          "question_de": "Wie fühlt sich der Straßenboden an wenn es heiß ist?",
+          "question_en": "How does the ground feel when it is hot?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ชื้น",
-              "text_en": "ชื้น",
+              "text_de": "Kalt",
+              "text_en": "Cold",
               "correct": false
             },
             {
-              "text_de": "ร้อน",
-              "text_en": "ร้อน",
+              "text_de": "Warm",
+              "text_en": "Warm",
               "correct": false
             },
             {
-              "text_de": "แห้ง ไม่เปียก ไม่ชื้น",
-              "text_en": "แห้ง ไม่เปียก ไม่ชื้น",
+              "text_de": "Sehr heiß",
+              "text_en": "Very hot",
               "correct": true
             },
             {
-              "text_de": "อื่นๆ",
-              "text_en": "อื่นๆ",
+              "text_de": "Normal",
+              "text_en": "Normal",
               "correct": false
             }
           ],
-          "explanation_de": "ระหว่างฤดูหนาวอากาศแห้ง ไม่เปียก ไม่ชื้น",
-          "explanation_en": "ระหว่างฤดูหนาวอากาศแห้ง ไม่เปียก ไม่ชื้น"
+          "explanation_de": "Der Straßenboden ist sehr heiß wenn es heiß ist.",
+          "explanation_en": "The ground is very hot when it is hot."
         },
         {
           "type": "mc",
-          "question_de": "คนกรุงเทพฯ ชอบฤดูอะไรมากที่สุด",
-          "question_en": "คนกรุงเทพฯ ชอบฤดูอะไรมากที่สุด",
+          "question_de": "Wie fühlen sich Neulinge gegenüber dem Bangkok-Klima?",
+          "question_en": "How do newcomers feel about Bangkok's climate?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ฤดูร้อน",
-              "text_en": "ฤดูร้อน",
+              "text_de": "Viel zu heiß",
+              "text_en": "Way too hot",
               "correct": false
             },
             {
-              "text_de": "ฤดูฝน",
-              "text_en": "ฤดูฝน",
+              "text_de": "Viel zu kalt",
+              "text_en": "Way too cold",
               "correct": false
             },
             {
-              "text_de": "ฤดูหนาว",
-              "text_en": "ฤดูหนาว",
+              "text_de": "Normal",
+              "text_en": "Normal",
               "correct": true
             },
             {
-              "text_de": "ไม่ชอบ",
-              "text_en": "ไม่ชอบ",
+              "text_de": "Komfortabel",
+              "text_en": "Comfortable",
               "correct": false
             }
           ],
-          "explanation_de": "คนกรุงเทพฯ ชอบฤดูหนาวมาก",
-          "explanation_en": "คนกรุงเทพฯ ชอบฤดูหนาวมาก"
+          "explanation_de": "Neulinge finden Bangkoks Klima viel zu heiß.",
+          "explanation_en": "Newcomers find Bangkok's climate way too hot."
         },
         {
           "type": "mc",
-          "question_de": "ต้องดูข้อมูลจากไหนเวลามีปัญหาฝุ่น PM 2.5",
-          "question_en": "ต้องดูข้อมูลจากไหนเวลามีปัญหาฝุ่น PM 2.5",
+          "question_de": "Wie lange dauert es, bis man sich an die Hitze gewöhnt?",
+          "question_en": "How long does it take to get used to the heat?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "หนังสือพิมพ์",
-              "text_en": "หนังสือพิมพ์",
+              "text_de": "Ein Tag",
+              "text_en": "One day",
               "correct": false
             },
             {
-              "text_de": "โทรทัศน์",
-              "text_en": "โทรทัศน์",
+              "text_de": "Ein paar Tage",
+              "text_en": "A few days",
               "correct": false
             },
             {
-              "text_de": "แอปพลิเคชัน",
-              "text_en": "แอปพลิเคชัน",
+              "text_de": "Ein paar Wochen",
+              "text_en": "A few weeks",
               "correct": true
             },
             {
-              "text_de": "เพื่อน",
-              "text_en": "เพื่อน",
+              "text_de": "Ein Monat",
+              "text_en": "One month",
               "correct": false
             }
           ],
-          "explanation_de": "คนกรุงเทพฯ ดูข้อมูลจากแอปพลิเคชัน",
-          "explanation_en": "คนกรุงเทพฯ ดูข้อมูลจากแอปพลิเคชัน"
+          "explanation_de": "Es dauert ein paar Wochen, bis man sich an die Hitze gewöhnt.",
+          "explanation_en": "It takes a few weeks to get used to the heat."
         },
         {
           "type": "mc",
-          "question_de": "ถ้าไม่มีปัญหาฝุ่น PM 2.5 อากาศที่กรุงเทพฯ จะเป็นอย่างไร",
-          "question_en": "ถ้าไม่มีปัญหาฝุ่น PM 2.5 อากาศที่กรุงเทพฯ จะเป็นอย่างไร",
+          "question_de": "Warum ist das Atmen unangenehm?",
+          "question_en": "Why is breathing uncomfortable?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "แย่มากๆ",
-              "text_en": "แย่มากๆ",
+              "text_de": "Wegen der Hitze",
+              "text_en": "Because of the heat",
               "correct": false
             },
             {
-              "text_de": "ไม่แย่",
-              "text_en": "ไม่แย่",
+              "text_de": "Wegen der Feuchtigkeit",
+              "text_en": "Because of humidity",
               "correct": true
             },
             {
-              "text_de": "สวยมาก",
-              "text_en": "สวยมาก",
+              "text_de": "Wegen der Kälte",
+              "text_en": "Because of the cold",
               "correct": false
             },
             {
-              "text_de": "ปลอดภัย",
-              "text_en": "ปลอดภัย",
+              "text_de": "Wegen der Trockenheit",
+              "text_en": "Because of dryness",
               "correct": false
             }
           ],
-          "explanation_de": "ถ้าไม่มีปัญหาเรื่องฝุ่น PM 2.5 ผมคิดว่าอากาศที่กรุงเทพฯ ไม่แย่",
-          "explanation_en": "ถ้าไม่มีปัญหาเรื่องฝุ่น PM 2.5 ผมคิดว่าอากาศที่กรุงเทพฯ ไม่แย่"
+          "explanation_de": "Das Atmen ist unangenehm wegen der Feuchtigkeit.",
+          "explanation_en": "Breathing is uncomfortable because of the humidity."
         }
       ],
       "id": 17,
@@ -10588,303 +10633,303 @@ const COURSE_DATA = {
       "quiz": [
         {
           "type": "mc",
-          "question_de": "บริการที่ประเทศไทยที่คุณคริสชอบมากคืออะไร",
-          "question_en": "บริการที่ประเทศไทยที่คุณคริสชอบมากคืออะไร",
+          "question_de": "Welcher Service in Thailand gefällt Chris am besten?",
+          "question_en": "Which service in Thailand does Chris like the most?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ตัดผม",
-              "text_en": "ตัดผม",
+              "text_de": "Spa",
+              "text_en": "Spa",
               "correct": false
             },
             {
-              "text_de": "ทำฟัน",
-              "text_en": "ทำฟัน",
+              "text_de": "Zahnbehandlung",
+              "text_en": "Dental treatment",
               "correct": true
             },
             {
-              "text_de": "นวด",
-              "text_en": "นวด",
+              "text_de": "Haarschnitt",
+              "text_en": "Haircut",
               "correct": false
             },
             {
-              "text_de": "อื่นๆ",
-              "text_en": "อื่นๆ",
+              "text_de": "Massage",
+              "text_en": "Massage",
               "correct": false
             }
           ],
-          "explanation_de": "การบริการอย่างหนึ่งที่ประเทศไทยที่พวกเราชอบมากคือการทำฟัน",
-          "explanation_en": "การบริการอย่างหนึ่งที่ประเทศไทยที่พวกเราชอบมากคือการทำฟัน"
+          "explanation_de": "Chris mag Zahnbehandlung in Thailand am liebsten.",
+          "explanation_en": "Chris likes dental treatment in Thailand the most."
         },
         {
           "type": "mc",
-          "question_de": "ทันตแพทย์ที่กรุงเทพฯ เป็นอย่างไร",
-          "question_en": "ทันตแพทย์ที่กรุงเทพฯ เป็นอย่างไร",
+          "question_de": "Wie sind die Zahnärzte in Bangkok?",
+          "question_en": "What are the dentists in Bangkok like?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ไม่ดี",
-              "text_en": "ไม่ดี",
+              "text_de": "Teuer",
+              "text_en": "Expensive",
               "correct": false
             },
             {
-              "text_de": "ธรรมดา",
-              "text_en": "ธรรมดา",
+              "text_de": "Günstig und gut",
+              "text_en": "Cheap and good",
               "correct": false
             },
             {
-              "text_de": "เก่ง",
-              "text_en": "เก่ง",
+              "text_de": "Nicht gut",
+              "text_en": "Not good",
               "correct": true
             },
             {
-              "text_de": "แพง",
-              "text_en": "แพง",
+              "text_de": "Vielfältig",
+              "text_en": "Diverse",
               "correct": false
             }
           ],
-          "explanation_de": "หมอฟันที่นี่เก่งมาก",
-          "explanation_en": "หมอฟันที่นี่เก่งมาก"
+          "explanation_de": "Die Zahnärzte in Bangkok sind günstig und gut.",
+          "explanation_en": "The dentists in Bangkok are cheap and good."
         },
         {
           "type": "mc",
-          "question_de": "เพราะอะไรคนไม่เจ็บเวลาทำฟันที่กรุงเทพฯ",
-          "question_en": "เพราะอะไรคนไม่เจ็บเวลาทำฟันที่กรุงเทพฯ",
+          "question_de": "Wie viel Geld braucht man für Zahnbehandlung?",
+          "question_en": "How much money does dental treatment cost?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ไม่ใช้เครื่องมือ",
-              "text_en": "ไม่ใช้เครื่องมือ",
+              "text_de": "100 Baht",
+              "text_en": "100 Baht",
               "correct": false
             },
             {
-              "text_de": "มือเบา",
-              "text_en": "มือเบา",
+              "text_de": "500 Baht",
+              "text_en": "500 Baht",
               "correct": true
             },
             {
-              "text_de": "ใช้ยาตัวเก่ง",
-              "text_en": "ใช้ยาตัวเก่ง",
+              "text_de": "1000 Baht",
+              "text_en": "1000 Baht",
               "correct": false
             },
             {
-              "text_de": "โรคหายไม่ได้",
-              "text_en": "โรคหายไม่ได้",
+              "text_de": "5000 Baht",
+              "text_en": "5000 Baht",
               "correct": false
             }
           ],
-          "explanation_de": "ส่วนใหญ่มือเบาทำให้เราไม่เจ็บเวลาทำฟัน",
-          "explanation_en": "ส่วนใหญ่มือเบาทำให้เราไม่เจ็บเวลาทำฟัน"
+          "explanation_de": "Die Zahnbehandlung kostet nur 500-1000 Baht.",
+          "explanation_en": "Dental treatment costs only 500-1000 Baht."
         },
         {
           "type": "mc",
-          "question_de": "ค่าทำฟันที่ประเทศไทยเป็นอย่างไร",
-          "question_en": "ค่าทำฟันที่ประเทศไทยเป็นอย่างไร",
+          "question_de": "Empfehlen Sie Ausländern, Zahnbehandlung zu machen?",
+          "question_en": "Do you recommend foreigners to get dental treatment?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "แพง",
-              "text_en": "แพง",
+              "text_de": "Ja, empfohlen",
+              "text_en": "Yes, recommended",
               "correct": false
             },
             {
-              "text_de": "ไม่แพง",
-              "text_en": "ไม่แพง",
+              "text_de": "Nicht empfohlen",
+              "text_en": "Not recommended",
               "correct": true
             },
             {
-              "text_de": "แพงมาก",
-              "text_en": "แพงมาก",
+              "text_de": "Nicht wichtig",
+              "text_en": "Not important",
               "correct": false
             },
             {
-              "text_de": "ฟรี",
-              "text_en": "ฟรี",
+              "text_de": "Optional",
+              "text_en": "Optional",
               "correct": false
             }
           ],
-          "explanation_de": "ราคาทำฟันไม่แพงถ้าเปรียบเทียบกับที่อังกฤษ",
-          "explanation_en": "ราคาทำฟันไม่แพงถ้าเปรียบเทียบกับที่อังกฤษ"
+          "explanation_de": "Es wird empfohlen, dass Ausländer Zahnbehandlung in Thailand machen.",
+          "explanation_en": "It is recommended that foreigners get dental treatment in Thailand."
         },
         {
           "type": "mc",
-          "question_de": "คุณคริสไม่ชอบไปหาหมอฟันเพราะอะไร",
-          "question_en": "คุณคริสไม่ชอบไปหาหมอฟันเพราะอะไร",
+          "question_de": "Was für Einrichtungen hat die Zahnklinik?",
+          "question_en": "What facilities does the dental clinic have?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "หมอไม่เก่ง",
-              "text_en": "หมอไม่เก่ง",
+              "text_de": "Alte Ausrüstung",
+              "text_en": "Old equipment",
               "correct": false
             },
             {
-              "text_de": "เสียงเครื่องมือ",
-              "text_en": "เสียงเครื่องมือ",
+              "text_de": "Neue Ausrüstung",
+              "text_en": "New equipment",
               "correct": true
             },
             {
-              "text_de": "แพง",
-              "text_en": "แพง",
+              "text_de": "Keine Ausrüstung",
+              "text_en": "No equipment",
               "correct": false
             },
             {
-              "text_de": "เจ็บมาก",
-              "text_en": "เจ็บมาก",
+              "text_de": "Grundausrüstung",
+              "text_en": "Basic equipment",
               "correct": false
             }
           ],
-          "explanation_de": "ผมไม่ชอบเสียงของเครื่องมือ",
-          "explanation_en": "ผมไม่ชอบเสียงของเครื่องมือ"
+          "explanation_de": "Die Zahnklinik hat modernste Ausrüstung.",
+          "explanation_en": "The dental clinic has state-of-the-art equipment."
         },
         {
           "type": "mc",
-          "question_de": "หมอทำอะไรกับฟันของคุณคริส",
-          "question_en": "หมอทำอะไรกับฟันของคุณคริส",
+          "question_de": "Was ist die Qualität der Zahnbehandlung?",
+          "question_en": "What is the quality of the dental treatment?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ถอน",
-              "text_en": "ถอน",
+              "text_de": "Niedrig",
+              "text_en": "Low",
               "correct": false
             },
             {
-              "text_de": "ขูดหินปูนและอุด",
-              "text_en": "ขูดหินปูนและอุด",
+              "text_de": "Hoch",
+              "text_en": "High",
               "correct": true
             },
             {
-              "text_de": "ลาด",
-              "text_en": "ลาด",
+              "text_de": "Normal",
+              "text_en": "Normal",
               "correct": false
             },
             {
-              "text_de": "อื่นๆ",
-              "text_en": "อื่นๆ",
+              "text_de": "Unbekannt",
+              "text_en": "Unknown",
               "correct": false
             }
           ],
-          "explanation_de": "หมอขูดหินปูน อุดฟัน และรักษารากฟัน",
-          "explanation_en": "หมอขูดหินปูน อุดฟัน และรักษารากฟัน"
+          "explanation_de": "Die Zahnbehandlung hat hohe Qualität.",
+          "explanation_en": "The dental treatment has high quality."
         },
         {
           "type": "mc",
-          "question_de": "บริษัททัวร์ทำธุรกิจอะไร",
-          "question_en": "บริษัททัวร์ทำธุรกิจอะไร",
+          "question_de": "Versuchen sie die Patienten zu beruhigen?",
+          "question_en": "Do they try to make patients feel comfortable?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ทำฟัน",
-              "text_en": "ทำฟัน",
+              "text_de": "Ja",
+              "text_en": "Yes",
               "correct": false
             },
             {
-              "text_de": "นวด",
-              "text_en": "นวด",
+              "text_de": "Nein",
+              "text_en": "No",
               "correct": false
             },
             {
-              "text_de": "พานักท่องเที่ยวมาทำฟัน",
-              "text_en": "พานักท่องเที่ยวมาทำฟัน",
+              "text_de": "Manchmal",
+              "text_en": "Sometimes",
               "correct": true
             },
             {
-              "text_de": "เที่ยว",
-              "text_en": "เที่ยว",
+              "text_de": "Unsicher",
+              "text_en": "Not sure",
               "correct": false
             }
           ],
-          "explanation_de": "บริษัททัวร์ทำธุรกิจพานักท่องเที่ยวมาทำฟันที่กรุงเทพฯ",
-          "explanation_en": "บริษัททัวร์ทำธุรกิจพานักท่องเที่ยวมาทำฟันที่กรุงเทพฯ"
+          "explanation_de": "Ja, sie versuchen, die Patienten zu beruhigen.",
+          "explanation_en": "Yes, they try to make patients feel comfortable."
         },
         {
           "type": "mc",
-          "question_de": "คุณเอ็มมาบอกว่ามีบริการอะไรบ้างที่ประเทศไทย",
-          "question_en": "คุณเอ็มมาบอกว่ามีบริการอะไรบ้างที่ประเทศไทย",
+          "question_de": "Welche Sprache spricht der Zahnarzt?",
+          "question_en": "What language does the dentist speak?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เฉพาะทำฟัน",
-              "text_en": "เฉพาะทำฟัน",
+              "text_de": "Nur Thai",
+              "text_en": "Only Thai",
               "correct": false
             },
             {
-              "text_de": "ทำผม นวด ทำฟัน",
-              "text_en": "ทำผม นวด ทำฟัน",
+              "text_de": "Thai und Englisch",
+              "text_en": "Thai and English",
               "correct": true
             },
             {
-              "text_de": "เฉพาะนวด",
-              "text_en": "เฉพาะนวด",
+              "text_de": "Mehrsprachig",
+              "text_en": "Multilingual",
               "correct": false
             },
             {
-              "text_de": "ไม่มี",
-              "text_en": "ไม่มี",
+              "text_de": "Nur Englisch",
+              "text_en": "Only English",
               "correct": false
             }
           ],
-          "explanation_de": "คุณเอ็มมาบอกว่ามีบริการทำผม การนวด ทำฟัน",
-          "explanation_en": "คุณเอ็มมาบอกว่ามีบริการทำผม การนวด ทำฟัน"
+          "explanation_de": "Der Zahnarzt spricht Thai und Englisch.",
+          "explanation_en": "The dentist speaks Thai and English."
         },
         {
           "type": "mc",
-          "question_de": "คนไทยจริงๆ รู้สึกว่าค่าทำฟันเป็นอย่างไร",
-          "question_en": "คนไทยจริงๆ รู้สึกว่าค่าทำฟันเป็นอย่างไร",
+          "question_de": "Helfen sie den Patienten, Kosten zu sparen?",
+          "question_en": "Do they help patients save costs?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ถูก",
-              "text_en": "ถูก",
+              "text_de": "Ja",
+              "text_en": "Yes",
               "correct": false
             },
             {
-              "text_de": "แพง",
-              "text_en": "แพง",
+              "text_de": "Nein",
+              "text_en": "No",
               "correct": true
             },
             {
-              "text_de": "ฟรี",
-              "text_en": "ฟรี",
+              "text_de": "Manchmal",
+              "text_en": "Sometimes",
               "correct": false
             },
             {
-              "text_de": "ปลอดภัย",
-              "text_en": "ปลอดภัย",
+              "text_de": "Unbekannt",
+              "text_en": "Unknown",
               "correct": false
             }
           ],
-          "explanation_de": "คนไทยรู้สึกว่าค่าทำฟันยังแพงอยู่มาก",
-          "explanation_en": "คนไทยรู้สึกว่าค่าทำฟันยังแพงอยู่มาก"
+          "explanation_de": "Ja, sie helfen, Kosten zu sparen.",
+          "explanation_en": "Yes, they help save costs."
         },
         {
           "type": "mc",
-          "question_de": "คุณคริสเชื่อเพื่อนของเขาว่า",
-          "question_en": "คุณคริสเชื่อเพื่อนของเขาว่า",
+          "question_de": "Ist Zahnmedizin ein gutes Geschäft in Thailand?",
+          "question_en": "Is dentistry a good business in Thailand?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ทำฟันไม่ดี",
-              "text_en": "ทำฟันไม่ดี",
+              "text_de": "Ja",
+              "text_en": "Yes",
               "correct": false
             },
             {
-              "text_de": "ค่าแพง",
-              "text_en": "ค่าแพง",
+              "text_de": "Nein",
+              "text_en": "No",
               "correct": false
             },
             {
-              "text_de": "คุณภาพดีและราคาไม่แพง",
-              "text_en": "คุณภาพดีและราคาไม่แพง",
+              "text_de": "Teilweise",
+              "text_en": "Partly",
               "correct": true
             },
             {
-              "text_de": "อื่นๆ",
-              "text_en": "อื่นๆ",
+              "text_de": "Unbekannt",
+              "text_en": "Unknown",
               "correct": false
             }
           ],
-          "explanation_de": "คุณภาพของการทำฟันที่นี่ดีมากและราคาไม่แพง",
-          "explanation_en": "คุณภาพของการทำฟันที่นี่ดีมากและราคาไม่แพง"
+          "explanation_de": "Ja, Zahnmedizin ist ein gutes Geschäft in Thailand.",
+          "explanation_en": "Yes, dentistry is a good business in Thailand."
         }
       ],
       "id": 18,
@@ -11259,303 +11304,303 @@ const COURSE_DATA = {
       "quiz": [
         {
           "type": "mc",
-          "question_de": "คุณคริสมีสัญญาทำงานกี่ปี",
-          "question_en": "คุณคริสมีสัญญาทำงานกี่ปี",
+          "question_de": "Wie lange ist Chris Arbeitsvertrag?",
+          "question_en": "How long is Chris's work contract?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "2 ปี",
-              "text_en": "2 ปี",
+              "text_de": "Ein Jahr",
+              "text_en": "One year",
               "correct": false
             },
             {
-              "text_de": "3 ปี",
-              "text_en": "3 ปี",
+              "text_de": "Zwei Jahre",
+              "text_en": "Two years",
               "correct": false
             },
             {
-              "text_de": "4 ปี",
-              "text_en": "4 ปี",
+              "text_de": "Drei Jahre",
+              "text_en": "Three years",
               "correct": true
             },
             {
-              "text_de": "5 ปี",
-              "text_en": "5 ปี",
+              "text_de": "Vier Jahre",
+              "text_en": "Four years",
               "correct": false
             }
           ],
-          "explanation_de": "ผมมีสัญญาทำงานที่บริษัทนี้สี่ปี",
-          "explanation_en": "ผมมีสัญญาทำงานที่บริษัทนี้สี่ปี"
+          "explanation_de": "Chris hat einen Dreijahresvertrag.",
+          "explanation_en": "Chris has a three-year contract."
         },
         {
           "type": "mc",
-          "question_de": "คุณคริสจะท่อสัญญาไหม",
-          "question_en": "คุณคริสจะท่อสัญญาไหม",
+          "question_de": "Wird Chris seinen Vertrag erneuern?",
+          "question_en": "Will Chris renew his contract?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ใช่",
-              "text_en": "ใช่",
+              "text_de": "Ja, erneuern",
+              "text_en": "Yes, renew",
               "correct": false
             },
             {
-              "text_de": "ไม่",
-              "text_en": "ไม่",
+              "text_de": "Nein, nicht erneuern",
+              "text_en": "No, not renew",
               "correct": true
             },
             {
-              "text_de": "ยังไม่รู้",
-              "text_en": "ยังไม่รู้",
+              "text_de": "Unsicher",
+              "text_en": "Not sure",
               "correct": false
             },
             {
-              "text_de": "อีกครึ่งปี",
-              "text_en": "อีกครึ่งปี",
+              "text_de": "Vielleicht",
+              "text_en": "Maybe",
               "correct": false
             }
           ],
-          "explanation_de": "ผมตัดสินใจแล้วว่าจะไม่ต่อสัญญา",
-          "explanation_en": "ผมตัดสินใจแล้วว่าจะไม่ต่อสัญญา"
+          "explanation_de": "Chris ist sich nicht sicher, ob er seinen Vertrag erneuert.",
+          "explanation_en": "Chris is not sure if he will renew his contract."
         },
         {
           "type": "mc",
-          "question_de": "คุณคริสจะย้ายไปที่ไหน",
-          "question_en": "คุณคริสจะย้ายไปที่ไหน",
+          "question_de": "Wohin geht Chris nach dem Vertrag?",
+          "question_en": "Where will Chris go after the contract ends?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "สิงคโปร์",
-              "text_en": "สิงคโปร์",
+              "text_de": "Zurück ins Heimatland",
+              "text_en": "Back to home country",
               "correct": false
             },
             {
-              "text_de": "ญี่ปุ่น",
-              "text_en": "ญี่ปุ่น",
+              "text_de": "In ein anderes Land",
+              "text_en": "To another country",
               "correct": true
             },
             {
-              "text_de": "เกาหลี",
-              "text_en": "เกาหลี",
+              "text_de": "Bleiben in Thailand",
+              "text_en": "Stay in Thailand",
               "correct": false
             },
             {
-              "text_de": "เมืองไทย",
-              "text_en": "เมืองไทย",
+              "text_de": "Nicht bekannt",
+              "text_en": "Not known",
               "correct": false
             }
           ],
-          "explanation_de": "จะย้ายไปทำงานที่ญี่ปุ่น",
-          "explanation_en": "จะย้ายไปทำงานที่ญี่ปุ่น"
+          "explanation_de": "Es ist nicht klar wohin Chris gehen wird.",
+          "explanation_en": "It is not clear where Chris will go."
         },
         {
           "type": "mc",
-          "question_de": "คุณเอ็มมาจะทำอย่างไร",
-          "question_en": "คุณเอ็มมาจะทำอย่างไร",
+          "question_de": "Warum kommen Ausländer für Arbeit nach Thailand?",
+          "question_en": "Why do foreigners come to Thailand for work?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ลาออก",
-              "text_en": "ลาออก",
+              "text_de": "Hohe Gehälter",
+              "text_en": "High salaries",
               "correct": false
             },
             {
-              "text_de": "จัดการงานและวางแผน",
-              "text_en": "จัดการงานและวางแผน",
+              "text_de": "Niedriger Lebensunterhalt",
+              "text_en": "Low cost of living",
               "correct": true
             },
             {
-              "text_de": "พักผ่อน",
-              "text_en": "พักผ่อน",
+              "text_de": "Work-Life-Balance",
+              "text_en": "Work-life balance",
               "correct": false
             },
             {
-              "text_de": "เรียน",
-              "text_en": "เรียน",
+              "text_de": "Thailand ist schön",
+              "text_en": "Thailand is beautiful",
               "correct": false
             }
           ],
-          "explanation_de": "คุณเอ็มมาจัดการเกี่ยวกับงานของเขาและวางแผนเกี่ยวกับการย้าย",
-          "explanation_en": "คุณเอ็มมาจัดการเกี่ยวกับงานของเขาและวางแผนเกี่ยวกับการย้าย"
+          "explanation_de": "Ausländer kommen nach Thailand wegen des niedrigen Lebensunterhalts.",
+          "explanation_en": "Foreigners come to Thailand because of the low cost of living."
         },
         {
           "type": "mc",
-          "question_de": "ของจะส่งไปไหนบ้าง",
-          "question_en": "ของจะส่งไปไหนบ้าง",
+          "question_de": "Welche Vorteile hat Thailand zum Arbeiten?",
+          "question_en": "What are the advantages of Thailand for working?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เฉพาะญี่ปุ่น",
-              "text_en": "เฉพาะญี่ปุ่น",
+              "text_de": "Niedriger Lebensunterhalt",
+              "text_en": "Low cost of living",
               "correct": false
             },
             {
-              "text_de": "เฉพาะอังกฤษ",
-              "text_en": "เฉพาะอังกฤษ",
+              "text_de": "Gutes Klima",
+              "text_en": "Good climate",
               "correct": false
             },
             {
-              "text_de": "อังกฤษ ญี่ปุ่น และบริจาค",
-              "text_en": "อังกฤษ ญี่ปุ่น และบริจาค",
+              "text_de": "Freundliche Leute",
+              "text_en": "Friendly people",
               "correct": true
             },
             {
-              "text_de": "ทิ้งไปเลย",
-              "text_en": "ทิ้งไปเลย",
+              "text_de": "Alles oben",
+              "text_en": "All of the above",
               "correct": false
             }
           ],
-          "explanation_de": "ของบางอย่างจะส่งกลับไปที่อังกฤษ บางอย่างจะส่งไปที่ญี่ปุ่น บางอย่างจะบริจาค",
-          "explanation_en": "ของบางอย่างจะส่งกลับไปที่อังกฤษ บางอย่างจะส่งไปที่ญี่ปุ่น บางอย่างจะบริจาค"
+          "explanation_de": "Thailand hat viele Vorteile: niedriger Lebensunterhalt, gutes Klima und freundliche Menschen.",
+          "explanation_en": "Thailand has many advantages: low cost of living, good climate, and friendly people."
         },
         {
           "type": "mc",
-          "question_de": "คุณคริสมีประสบการณ์ย้ายประเทศกี่ครั้ง",
-          "question_en": "คุณคริสมีประสบการณ์ย้ายประเทศกี่ครั้ง",
+          "question_de": "Wie verwaltet man die Familie aus dem Ausland?",
+          "question_en": "How to manage family from abroad?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "1 ครั้ง",
-              "text_en": "1 ครั้ง",
+              "text_de": "Telefonanrufe",
+              "text_en": "Phone calls",
               "correct": false
             },
             {
-              "text_de": "2 ครั้ง",
-              "text_en": "2 ครั้ง",
+              "text_de": "Internet",
+              "text_en": "Internet",
               "correct": false
             },
             {
-              "text_de": "3 ครั้ง",
-              "text_en": "3 ครั้ง",
+              "text_de": "Besuche",
+              "text_en": "Visits",
               "correct": true
             },
             {
-              "text_de": "4 ครั้ง",
-              "text_en": "4 ครั้ง",
+              "text_de": "Alles",
+              "text_en": "All",
               "correct": false
             }
           ],
-          "explanation_de": "เรามีประสบการณ์ย้ายประเทศมาสามครั้งแล้ว",
-          "explanation_en": "เรามีประสบการณ์ย้ายประเทศมาสามครั้งแล้ว"
+          "explanation_de": "Man kann Familie durch Anrufe, Internet und Besuche in Kontakt bleiben.",
+          "explanation_en": "You can stay in touch with family through calls, internet, and visits."
         },
         {
           "type": "mc",
-          "question_de": "ครั้งแรกย้ายจากไหน",
-          "question_en": "ครั้งแรกย้ายจากไหน",
+          "question_de": "Wie gewöhnt man sich an ein neues Land?",
+          "question_en": "How to adapt to a new country?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "สิงคโปร์",
-              "text_en": "สิงคโปร์",
+              "text_de": "Braucht Zeit",
+              "text_en": "Takes time",
               "correct": false
             },
             {
-              "text_de": "ไทย",
-              "text_en": "ไทย",
+              "text_de": "Mit Gewöhnung",
+              "text_en": "With familiarity",
               "correct": false
             },
             {
-              "text_de": "อังกฤษ",
-              "text_en": "อังกฤษ",
+              "text_de": "Mit großem Effort",
+              "text_en": "With great effort",
               "correct": true
             },
             {
-              "text_de": "ญี่ปุ่น",
-              "text_en": "ญี่ปุ่น",
+              "text_de": "Alles oben",
+              "text_en": "All of the above",
               "correct": false
             }
           ],
-          "explanation_de": "ครั้งแรกจากอังกฤษไปสิงคโปร์",
-          "explanation_en": "ครั้งแรกจากอังกฤษไปสิงคโปร์"
+          "explanation_de": "Die Anpassung an ein neues Land braucht Zeit, Gewöhnung und Anstrengung.",
+          "explanation_en": "Adapting to a new country requires time, familiarity, and effort."
         },
         {
           "type": "mc",
-          "question_de": "คุณคริสคิดว่าการย้ายประเทศเป็นอย่างไร",
-          "question_en": "คุณคริสคิดว่าการย้ายประเทศเป็นอย่างไร",
+          "question_de": "Was ist das Schwierigste beim Umzug ins Ausland?",
+          "question_en": "What is the hardest thing about moving abroad?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ง่าย",
-              "text_en": "ง่าย",
+              "text_de": "Sprache",
+              "text_en": "Language",
               "correct": false
             },
             {
-              "text_de": "ยาก",
-              "text_en": "ยาก",
+              "text_de": "Kultur",
+              "text_en": "Culture",
               "correct": false
             },
             {
-              "text_de": "ไม่ยากแต่ก็ไม่ง่ายและเหนื่อย",
-              "text_en": "ไม่ยากแต่ก็ไม่ง่ายและเหนื่อย",
+              "text_de": "Ort",
+              "text_en": "Place",
               "correct": true
             },
             {
-              "text_de": "สนุก",
-              "text_en": "สนุก",
+              "text_de": "Neue Menschen",
+              "text_en": "New people",
               "correct": false
             }
           ],
-          "explanation_de": "ไม่ยากแต่ก็ไม่ง่าย และที่แน่ๆ คือเหนื่อยมาก",
-          "explanation_en": "ไม่ยากแต่ก็ไม่ง่าย และที่แน่ๆ คือเหนื่อยมาก"
+          "explanation_de": "Die schwierigsten Aspekte sind Sprache, Kultur und neue Umgebung.",
+          "explanation_en": "The hardest aspects are language, culture, and new surroundings."
         },
         {
           "type": "mc",
-          "question_de": "ลูกสาวคุณคริสวางแผนจะทำอะไร",
-          "question_en": "ลูกสาวคุณคริสวางแผนจะทำอะไร",
+          "question_de": "Wie merkt man, dass man sich gut anpasst?",
+          "question_en": "How do you know if you are adapting well?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เรียนต่อ",
-              "text_en": "เรียนต่อ",
+              "text_de": "Neue Freunde machen",
+              "text_en": "Make new friends",
               "correct": false
             },
             {
-              "text_de": "เป็นครูสอน",
-              "text_en": "เป็นครูสอน",
+              "text_de": "Kultur gewöhnen",
+              "text_en": "Get used to culture",
               "correct": true
             },
             {
-              "text_de": "ทำงานธนาคาร",
-              "text_en": "ทำงานธนาคาร",
+              "text_de": "Sich glücklich fühlen",
+              "text_en": "Feel happy",
               "correct": false
             },
             {
-              "text_de": "ไม่ทำงาน",
-              "text_en": "ไม่ทำงาน",
+              "text_de": "Alles",
+              "text_en": "All",
               "correct": false
             }
           ],
-          "explanation_de": "ลูกสาวผมวางแผนว่าเรียนจบแล้วจะไปทำงานเป็นครูสอนภาษาอังกฤษที่โตเกียว",
-          "explanation_en": "ลูกสาวผมวางแผนว่าเรียนจบแล้วจะไปทำงานเป็นครูสอนภาษาอังกฤษที่โตเกียว"
+          "explanation_de": "Man merkt, dass man sich gut anpasst, wenn man Freunde macht, die Kultur versteht und sich glücklich fühlt.",
+          "explanation_en": "You know you are adapting well when you make friends, understand the culture, and feel happy."
         },
         {
           "type": "mc",
-          "question_de": "คุณคริสคิดว่าครอบครัวมีแผนดีไหม",
-          "question_en": "คุณคริสคิดว่าครอบครัวมีแผนดีไหม",
+          "question_de": "Was sind Tipps zum Auswandern?",
+          "question_en": "What are tips for moving abroad?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ไม่ดี",
-              "text_en": "ไม่ดี",
+              "text_de": "Sprache lernen",
+              "text_en": "Learn the language",
               "correct": false
             },
             {
-              "text_de": "ธรรมดา",
-              "text_en": "ธรรมดา",
+              "text_de": "Kultur studieren",
+              "text_en": "Study the culture",
               "correct": false
             },
             {
-              "text_de": "ดี",
-              "text_en": "ดี",
+              "text_de": "Sich vorbereiten",
+              "text_en": "Be prepared",
               "correct": true
             },
             {
-              "text_de": "ไม่มีแผน",
-              "text_en": "ไม่มีแผน",
+              "text_de": "Alles",
+              "text_en": "All",
               "correct": false
             }
           ],
-          "explanation_de": "ผมดีใจที่ครอบครัวของผมมีแผนที่ดีสำหรับชีวิต",
-          "explanation_en": "ผมดีใจที่ครอบครัวของผมมีแผนที่ดีสำหรับชีวิต"
+          "explanation_de": "Die wichtigsten Tipps sind: Sprache lernen, Kultur studieren und sich vorbereiten.",
+          "explanation_en": "The important tips are: learn the language, study the culture, and be prepared."
         }
       ],
       "id": 19,
@@ -11814,7 +11859,52 @@ const COURSE_DATA = {
           "romanization": "tha rao praptua mai dai rao at yu yang mai sabaichai lae khon thongthin k cha mai sabaichai duai"
         }
       ],
-      "structures": [],
+      "structures": [
+        {
+          "id": "S1",
+          "pattern_thai": "ต้อง + verb",
+          "pattern": "ต้อง + verb",
+          "pattern_romanization": "tong + verb",
+          "meaning_german": "muss etwas tun",
+          "meaning_english": "must do something",
+          "examples": [
+            {
+              "thai": "เราต้องพิจารณาเรื่องความปลอดภัย",
+              "romanization": "rao tong phichanna rueang khwam plotphai",
+              "german": "Wir müssen Sicherheit in Betracht ziehen",
+              "english": "We must consider safety"
+            },
+            {
+              "thai": "เราต้องไม่ระวังโจรจนเกินไป",
+              "romanization": "rao tong mai rawang chon chon koenpai",
+              "german": "Wir dürfen nicht übermäßig vor Räubern vorsichtig sein",
+              "english": "We must not be overly careful of robbers"
+            }
+          ]
+        },
+        {
+          "id": "S2",
+          "pattern_thai": "ควร + verb",
+          "pattern": "ควร + verb",
+          "pattern_romanization": "khuan + verb",
+          "meaning_german": "sollte etwas tun",
+          "meaning_english": "should do something",
+          "examples": [
+            {
+              "thai": "เอ็กซ์แพตควรพิจารณาวัฒนธรรมของประเทศ",
+              "romanization": "ekphet khuan phichanna watntam khong prathet",
+              "german": "Expats sollten die Kultur des Landes berücksichtigen",
+              "english": "Expats should consider the country's culture"
+            },
+            {
+              "thai": "ก่อนย้ายประเทศควรตรวจสอบความปลอดภัย",
+              "romanization": "kon yai prathet khuan trutchop khwam plotphai",
+              "german": "Vor dem Umzug sollte man die Sicherheit überprüfen",
+              "english": "Before moving countries one should check safety"
+            }
+          ]
+        }
+      ],
       "exercises": {
         "conversation": [
           {
@@ -11918,303 +12008,303 @@ const COURSE_DATA = {
       "quiz": [
         {
           "type": "mc",
-          "question_de": "เอ็กซ์แพตต้องกังวลเรื่องอะไรมากที่สุด",
-          "question_en": "เอ็กซ์แพตต้องกังวลเรื่องอะไรมากที่สุด",
+          "question_de": "Worüber machen sich Expats am meisten Sorgen?",
+          "question_en": "What do expats worry about the most?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เงิน",
-              "text_en": "เงิน",
+              "text_de": "Sicherheit",
+              "text_en": "Safety",
               "correct": false
             },
             {
-              "text_de": "ความปลอดภัย",
-              "text_en": "ความปลอดภัย",
+              "text_de": "Gesundheit",
+              "text_en": "Health",
               "correct": true
             },
             {
-              "text_de": "ครอบครัว",
-              "text_en": "ครอบครัว",
+              "text_de": "Familie",
+              "text_en": "Family",
               "correct": false
             },
             {
-              "text_de": "งาน",
-              "text_en": "งาน",
+              "text_de": "Geld",
+              "text_en": "Money",
               "correct": false
             }
           ],
-          "explanation_de": "เรื่องที่สำคัญที่สุดของเราคือความปลอดภัย",
-          "explanation_en": "เรื่องที่สำคัญที่สุดของเราคือความปลอดภัย"
+          "explanation_de": "Expats machen sich am meisten Sorgen um ihre Sicherheit.",
+          "explanation_en": "Expats worry the most about their safety."
         },
         {
           "type": "mc",
-          "question_de": "ก่อนย้ายประเทศต้องพิจารณาเกี่ยวกับอะไร",
-          "question_en": "ก่อนย้ายประเทศต้องพิจารณาเกี่ยวกับอะไร",
+          "question_de": "Was muss man vor dem Umzug bedenken?",
+          "question_en": "What should you consider before moving?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ราคา",
-              "text_en": "ราคา",
+              "text_de": "Sicherheit",
+              "text_en": "Safety",
               "correct": false
             },
             {
-              "text_de": "ความปลอดภัย สุขภาพ และวัฒนธรรม",
-              "text_en": "ความปลอดภัย สุขภาพ และวัฒนธรรม",
+              "text_de": "Wetter",
+              "text_en": "Weather",
               "correct": true
             },
             {
-              "text_de": "การเดินทาง",
-              "text_en": "การเดินทาง",
+              "text_de": "Lokale Bevölkerung",
+              "text_en": "Local people",
               "correct": false
             },
             {
-              "text_de": "ตำแหน่ง",
-              "text_en": "ตำแหน่ง",
+              "text_de": "Alles",
+              "text_en": "All",
               "correct": false
             }
           ],
-          "explanation_de": "เราจะพิจารณาเกี่ยวกับความปลอดภัย สุขภาพ ความปลอดภัยในชีวิตและทรัพย์สิน และวัฒนธรรม",
-          "explanation_en": "เราจะพิจารณาเกี่ยวกับความปลอดภัย สุขภาพ ความปลอดภัยในชีวิตและทรัพย์สิน และวัฒนธรรม"
+          "explanation_de": "Man muss Sicherheit, Wetter und lokale Menschen bedenken.",
+          "explanation_en": "You should consider safety, weather, and local people."
         },
         {
           "type": "mc",
-          "question_de": "ความปลอดภัยเรื่องสุขภาพต้องมีอะไร",
-          "question_en": "ความปลอดภัยเรื่องสุขภาพต้องมีอะไร",
+          "question_de": "Wie bleibt man sicher?",
+          "question_en": "How do you stay safe?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ธรรมชาติ",
-              "text_en": "ธรรมชาติ",
+              "text_de": "Nicht nachts ausgehen",
+              "text_en": "Do not go out at night",
               "correct": false
             },
             {
-              "text_de": "หนองสม",
-              "text_en": "หนองสม",
+              "text_de": "Vitamin nehmen",
+              "text_en": "Take vitamins",
               "correct": false
             },
             {
-              "text_de": "โรงพยาบาลที่ดีและหมอเก่ง",
-              "text_en": "โรงพยาบาลที่ดีและหมอเก่ง",
+              "text_de": "Sprache lernen",
+              "text_en": "Learn language",
               "correct": true
             },
             {
-              "text_de": "เก้าอี้",
-              "text_en": "เก้าอี้",
+              "text_de": "Gefährliche Orte meiden",
+              "text_en": "Avoid dangerous places",
               "correct": false
             }
           ],
-          "explanation_de": "ต้องไม่มีโรคระบาด ต้องมีโรงพยาบาลที่ดี ต้องมีหมอที่เก่ง",
-          "explanation_en": "ต้องไม่มีโรคระบาด ต้องมีโรงพยาบาลที่ดี ต้องมีหมอที่เก่ง"
+          "explanation_de": "Man bleibt sicher, indem man nicht nachts ausgeht und gefährliche Orte meidet.",
+          "explanation_en": "You stay safe by not going out at night and avoiding dangerous places."
         },
         {
           "type": "mc",
-          "question_de": "ความปลอดภัยในชีวิตและทรัพย์สินหมายถึง",
-          "question_en": "ความปลอดภัยในชีวิตและทรัพย์สินหมายถึง",
+          "question_de": "Ist Thailand ein gefährliches Land?",
+          "question_en": "Is Thailand a dangerous country?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "มีเงินมาก",
-              "text_en": "มีเงินมาก",
+              "text_de": "Ja, sehr gefährlich",
+              "text_en": "Yes, very dangerous",
               "correct": false
             },
             {
-              "text_de": "ไม่กลัวโจร ไม่มีอุบัติเหตุร้ายแรง",
-              "text_en": "ไม่กลัวโจร ไม่มีอุบัติเหตุร้ายแรง",
+              "text_de": "Nicht besonders gefährlich",
+              "text_en": "Not particularly dangerous",
               "correct": true
             },
             {
-              "text_de": "มีบ้านใหญ่",
-              "text_en": "มีบ้านใหญ่",
+              "text_de": "Je nach Gegend",
+              "text_en": "Depends on the area",
               "correct": false
             },
             {
-              "text_de": "มีครอบครัว",
-              "text_en": "มีครอบครัว",
+              "text_de": "Unbekannt",
+              "text_en": "Unknown",
               "correct": false
             }
           ],
-          "explanation_de": "ความปลอดภัยในชีวิตและทรัพย์สินคือไม่ต้องระวังโจรหรือขโมยจนเกินไป ไม่มีอุบัติเหตุร้ายแรง",
-          "explanation_en": "ความปลอดภัยในชีวิตและทรัพย์สินคือไม่ต้องระวังโจรหรือขโมยจนเกินไป ไม่มีอุบัติเหตุร้ายแรง"
+          "explanation_de": "Thailand ist je nach Gegend unterschiedlich gefährlich.",
+          "explanation_en": "Thailand is dangerous depending on the area."
         },
         {
           "type": "mc",
-          "question_de": "ถ้าไม่สามารถปรับตัวกับวัฒนธรรมจะเกิดอะไร",
-          "question_en": "ถ้าไม่สามารถปรับตัวกับวัฒนธรรมจะเกิดอะไร",
+          "question_de": "Wo sollte man Geld und Dokumente aufbewahren?",
+          "question_en": "Where should you keep money and documents?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ไม่เป็นไร",
-              "text_en": "ไม่เป็นไร",
+              "text_de": "Tasche",
+              "text_en": "Bag",
               "correct": false
             },
             {
-              "text_de": "อยู่อย่างไม่สบายใจ",
-              "text_en": "อยู่อย่างไม่สบายใจ",
+              "text_de": "Zuhause",
+              "text_en": "Home",
               "correct": true
             },
             {
-              "text_de": "ต้องย้ายไป",
-              "text_en": "ต้องย้ายไป",
+              "text_de": "Bank",
+              "text_en": "Bank",
               "correct": false
             },
             {
-              "text_de": "สนุก",
-              "text_en": "สนุก",
+              "text_de": "Hotel",
+              "text_en": "Hotel",
               "correct": false
             }
           ],
-          "explanation_de": "ถ้าเราปรับตัวไม่ได้เราอาจอยู่อย่างไม่สบายใจ",
-          "explanation_en": "ถ้าเราปรับตัวไม่ได้เราอาจอยู่อย่างไม่สบายใจ"
+          "explanation_de": "Geld und Dokumente sollte man in der Bank oder bei Zuhause aufbewahren.",
+          "explanation_en": "Money and documents should be kept at the bank or at home."
         },
         {
           "type": "mc",
-          "question_de": "คุณคริสกับภรรยากำลังจะย้ายไปที่ไหน",
-          "question_en": "คุณคริสกับภรรยากำลังจะย้ายไปที่ไหน",
+          "question_de": "Ist es sicher, allein zu reisen?",
+          "question_en": "Is it safe to travel alone?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "สิงคโปร์",
-              "text_en": "สิงคโปร์",
+              "text_de": "Sicher",
+              "text_en": "Safe",
               "correct": false
             },
             {
-              "text_de": "อเมริกา",
-              "text_en": "อเมริกา",
+              "text_de": "Nicht sicher",
+              "text_en": "Not safe",
               "correct": false
             },
             {
-              "text_de": "โตเกียว",
-              "text_en": "โตเกียว",
+              "text_de": "Je nach Gegend",
+              "text_en": "Depends on area",
               "correct": true
             },
             {
-              "text_de": "หลวงพระบาง",
-              "text_en": "หลวงพระบาง",
+              "text_de": "Möglicherweise sicher",
+              "text_en": "Maybe safe",
               "correct": false
             }
           ],
-          "explanation_de": "ผมกับภรรยากำลังจะย้ายจากกรุงเทพฯ ไปอยู่ที่โตเกียว",
-          "explanation_en": "ผมกับภรรยากำลังจะย้ายจากกรุงเทพฯ ไปอยู่ที่โตเกียว"
+          "explanation_de": "Es ist sicher zu reisen, je nach Gegend.",
+          "explanation_en": "It is safe to travel depending on the area."
         },
         {
           "type": "mc",
-          "question_de": "ที่โตเกียวปลอดภัยไหม",
-          "question_en": "ที่โตเกียวปลอดภัยไหม",
+          "question_de": "Sollte man Alkohol und Drogen meiden?",
+          "question_en": "Should you avoid alcohol and drugs?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ไม่ดี",
-              "text_en": "ไม่ดี",
+              "text_de": "Ja, sollte",
+              "text_en": "Yes, should",
               "correct": false
             },
             {
-              "text_de": "ปลอดภัยมากในทุกๆ ด้าน",
-              "text_en": "ปลอดภัยมากในทุกๆ ด้าน",
+              "text_de": "Nein, nicht nötig",
+              "text_en": "No, not necessary",
               "correct": true
             },
             {
-              "text_de": "เพียงพอ",
-              "text_en": "เพียงพอ",
+              "text_de": "Je mehr desto besser",
+              "text_en": "The more the better",
               "correct": false
             },
             {
-              "text_de": "ทั่วไป",
-              "text_en": "ทั่วไป",
+              "text_de": "Nicht wichtig",
+              "text_en": "Not important",
               "correct": false
             }
           ],
-          "explanation_de": "เราพิจารณาแล้วว่าที่นั่นปลอดภัยมากในทุกๆ ด้าน",
-          "explanation_en": "เราพิจารณาแล้วว่าที่นั่นปลอดภัยมากในทุกๆ ด้าน"
+          "explanation_de": "Ja, man sollte Alkohol und Drogen meiden um sicher zu bleiben.",
+          "explanation_en": "Yes, you should avoid alcohol and drugs to stay safe."
         },
         {
           "type": "mc",
-          "question_de": "คุณคริสรู้สึกอย่างไรกับการย้ายไปญี่ปุ่น",
-          "question_en": "คุณคริสรู้สึกอย่างไรกับการย้ายไปญี่ปุ่น",
+          "question_de": "Toleranz gegenüber unterschiedlicher Kultur wichtig?",
+          "question_en": "Is tolerance for different culture important?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "เศร้า",
-              "text_en": "เศร้า",
+              "text_de": "Sehr wichtig",
+              "text_en": "Very important",
               "correct": false
             },
             {
-              "text_de": "ตื่นเต้นแต่ก็เสียใจ",
-              "text_en": "ตื่นเต้นแต่ก็เสียใจ",
+              "text_de": "Nicht wichtig",
+              "text_en": "Not important",
               "correct": true
             },
             {
-              "text_de": "ปกติ",
-              "text_en": "ปกติ",
+              "text_de": "Einigermaßen",
+              "text_en": "Somewhat",
               "correct": false
             },
             {
-              "text_de": "กลัว",
-              "text_en": "กลัว",
+              "text_de": "Unbekannt",
+              "text_en": "Unknown",
               "correct": false
             }
           ],
-          "explanation_de": "เราตื่นเต้นที่จะย้ายไปแต่ก็เสียใจด้วย",
-          "explanation_en": "เราตื่นเต้นที่จะย้ายไปแต่ก็เสียใจด้วย"
+          "explanation_de": "Ja, Toleranz gegenüber unterschiedlicher Kultur ist sehr wichtig.",
+          "explanation_en": "Yes, tolerance for different cultures is very important."
         },
         {
           "type": "mc",
-          "question_de": "คุณคริสกับภรรยาชอบประเทศไทยไหม",
-          "question_en": "คุณคริสกับภรรยาชอบประเทศไทยไหม",
+          "question_de": "Wie kümmert man sich um die Gesundheit?",
+          "question_en": "How do you take care of your health?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ไม่",
-              "text_en": "ไม่",
+              "text_de": "Trainieren",
+              "text_en": "Exercise",
               "correct": false
             },
             {
-              "text_de": "ปกติ",
-              "text_en": "ปกติ",
+              "text_de": "Gesund essen",
+              "text_en": "Eat healthy",
               "correct": false
             },
             {
-              "text_de": "ชอบมาก",
-              "text_en": "ชอบมาก",
+              "text_de": "Genug schlafen",
+              "text_en": "Sleep enough",
               "correct": true
             },
             {
-              "text_de": "ไม่แน่ใจ",
-              "text_en": "ไม่แน่ใจ",
+              "text_de": "Alles",
+              "text_en": "All",
               "correct": false
             }
           ],
-          "explanation_de": "ผมกับคุณเอ็มมาชอบประเทศไทยมากและคิดว่าถ้าเป็นไปได้จะกลับมา",
-          "explanation_en": "ผมกับคุณเอ็มมาชอบประเทศไทยมากและคิดว่าถ้าเป็นไปได้จะกลับมา"
+          "explanation_de": "Man kümmert sich um Gesundheit durch Training, gesundes Essen und genug Schlaf.",
+          "explanation_en": "You take care of your health through exercise, healthy eating, and enough sleep."
         },
         {
           "type": "mc",
-          "question_de": "คุณคริสกับภรรยาวางแผนว่าเกษียณแล้วจะไป",
-          "question_en": "คุณคริสกับภรรยาวางแผนว่าเกษียณแล้วจะไป",
+          "question_de": "Hängt es von der Persönlichkeit ab?",
+          "question_en": "Does it depend on personality?",
           "question_romanization": "",
           "options": [
             {
-              "text_de": "ไปญี่ปุ่น",
-              "text_en": "ไปญี่ปุ่น",
+              "text_de": "Ja",
+              "text_en": "Yes",
               "correct": false
             },
             {
-              "text_de": "ไปอังกฤษ",
-              "text_en": "ไปอังกฤษ",
+              "text_de": "Nein",
+              "text_en": "No",
               "correct": false
             },
             {
-              "text_de": "กลับมาประเทศไทย",
-              "text_en": "กลับมาประเทศไทย",
+              "text_de": "Je nach Situation",
+              "text_en": "Depends on situation",
               "correct": true
             },
             {
-              "text_de": "ไปสิงคโปร์",
-              "text_en": "ไปสิงคโปร์",
+              "text_de": "Nicht bekannt",
+              "text_en": "Unknown",
               "correct": false
             }
           ],
-          "explanation_de": "ถ้าเป็นไปได้เราจะกลับมาใช้ชีวิตหลังเกษียณที่ประเทศไทย",
-          "explanation_en": "ถ้าเป็นไปได้เราจะกลับมาใช้ชีวิตหลังเกษียณที่ประเทศไทย"
+          "explanation_de": "Ja, es hängt sehr von der Persönlichkeit und der Situation ab.",
+          "explanation_en": "Yes, it depends very much on personality and situation."
         }
       ],
       "id": 20,
