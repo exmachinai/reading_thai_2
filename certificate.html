@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>🎓 Zertifikat — Thai Lesen II</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Certificate-specific styles */
+    .certificate-wrapper {
+      display: flex; justify-content: center; align-items: center;
+      min-height: 100vh; padding: 20px;
+      background: var(--color-bg, #FFF8F0);
+    }
+    .certificate {
+      background: white; border: 4px double #D4AF37;
+      padding: 40px 30px; max-width: 600px; width: 100%;
+      text-align: center; position: relative;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    .certificate::before, .certificate::after {
+      content: '🪷'; position: absolute; top: 15px; font-size: 1.5rem;
+    }
+    .certificate::before { left: 20px; }
+    .certificate::after { right: 20px; }
+    .cert-icon { font-size: 3rem; margin-bottom: 10px; }
+    .cert-title { font-size: 1.8rem; font-weight: 700; color: #D4AF37; margin: 10px 0; }
+    .cert-thai { font-family: 'Sarabun', sans-serif; font-size: 1.2rem; color: #666; }
+    .cert-body { margin: 20px 0; line-height: 1.8; color: #2C3E50; }
+    .cert-course { font-size: 1.3rem; font-weight: 700; color: #D4AF37; margin: 15px 0; }
+    .cert-date { margin: 20px 0; color: #666; }
+    .cert-badges { font-size: 1.5rem; letter-spacing: 3px; margin: 20px 0; }
+    .cert-actions { margin-top: 25px; display: flex; gap: 10px; justify-content: center; }
+    .cert-actions button {
+      padding: 12px 24px; border: none; border-radius: 8px;
+      font-size: 1rem; cursor: pointer; min-height: 44px;
+    }
+    .btn-print { background: #D4AF37; color: white; }
+    .btn-home { background: #2C3E50; color: white; }
+
+    /* Confetti animation */
+    .confetti { position: fixed; top: -10px; z-index: 1000; animation: confetti-fall 3s ease-in forwards; pointer-events: none; }
+    @keyframes confetti-fall {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+    }
+
+    /* Not ready state */
+    .not-ready { text-align: center; padding: 60px 20px; }
+    .not-ready h2 { color: #2C3E50; margin-bottom: 15px; }
+    .not-ready p { color: #666; margin-bottom: 20px; }
+    .progress-info { font-size: 1.2rem; margin: 20px 0; }
+
+    @media print {
+      body { margin: 0; padding: 0; }
+      .certificate-wrapper { min-height: auto; padding: 0; background: white; }
+      .certificate { border: 3px double #D4AF37; box-shadow: none; max-width: 100%; }
+      .cert-actions, .confetti, .not-ready { display: none; }
+      @page { size: A4 portrait; margin: 2cm; }
+    }
+  </style>
+</head>
+<body>
+  <div class="certificate-wrapper" id="cert-wrapper">
+    <!-- Content loaded by JS -->
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById('cert-wrapper');
+
+    // Check if all 20 chapters passed
+    let allPassed = true;
+    let passedCount = 0;
+    try {
+      for (let i = 1; i <= 20; i++) {
+        if (hasBadge(i)) { passedCount++; }
+        else { allPassed = false; }
+      }
+    } catch(e) { allPassed = false; }
+
+    if (allPassed) {
+      showCertificate(wrapper);
+      launchConfetti();
+    } else {
+      showNotReady(wrapper, passedCount);
+    }
+  });
+
+  function showCertificate(wrapper) {
+    const today = new Date().toLocaleDateString('de-DE');
+    const badges = '👨‍👩‍👧 🎮 💼 📅 🛒 📦 🚇 🛕 🐱 🏘️\n🏢 🙏 🎉 🛍️ 🏮 👃 ☀️ 🦷 ✈️ 🔒';
+
+    wrapper.innerHTML = `
+      <div class="certificate">
+        <div class="cert-icon">🪷 🏛️ 🪷</div>
+        <div class="cert-title">ZERTIFIKAT / CERTIFICATE</div>
+        <div class="cert-thai">ใบรับรองการเรียน</div>
+
+        <div class="cert-body">
+          <p>Dieses Zertifikat bestätigt, dass der/die Lernende<br>
+          den Kurs erfolgreich abgeschlossen hat:</p>
+
+          <div class="cert-course">„I Can Read Thai – Book II"</div>
+
+          <p><em>This certificate confirms that the learner<br>
+          has successfully completed the course<br>
+          "I Can Read Thai – Book II".</em></p>
+
+          <p class="cert-thai">ใบรับรองนี้ยืนยันว่าผู้เรียน<br>
+          ได้เรียนจบหลักสูตรสําเร็จแล้ว</p>
+        </div>
+
+        <div class="cert-date">
+          <strong>Datum / Date:</strong> ${today}
+        </div>
+
+        <div class="cert-badges">${badges}</div>
+
+        <div class="cert-actions">
+          <button class="btn-print" onclick="window.print()">🖨️ Drucken / Print</button>
+          <button class="btn-home" onclick="location.href='index.html'">🏠 Dashboard</button>
+        </div>
+      </div>
+    `;
+  }
+
+  function showNotReady(wrapper, passedCount) {
+    wrapper.innerHTML = `
+      <div class="not-ready">
+        <div style="font-size:4rem">🔒</div>
+        <h2>Zertifikat noch nicht freigeschaltet</h2>
+        <p>Du musst alle 20 Kapitel-Tests bestehen, um das Zertifikat zu erhalten.</p>
+        <div class="progress-info">
+          <strong>${passedCount} / 20</strong> Kapitel bestanden
+        </div>
+        <div style="background:#e0e0e0;border-radius:10px;height:20px;max-width:300px;margin:0 auto;">
+          <div style="background:linear-gradient(90deg,#D4AF37,#F0C040);height:100%;border-radius:10px;width:${(passedCount/20)*100}%;transition:width 0.5s;"></div>
+        </div>
+        <br>
+        <button class="btn-home" onclick="location.href='index.html'" style="padding:12px 24px;border:none;border-radius:8px;font-size:1rem;cursor:pointer;background:#2C3E50;color:white;">
+          🏠 Zurück zum Dashboard
+        </button>
+      </div>
+    `;
+  }
+
+  function launchConfetti() {
+    const colors = ['#D4AF37', '#C0392B', '#1ABC9C', '#3498DB', '#E74C3C', '#2ECC71'];
+    for (let i = 0; i < 50; i++) {
+      setTimeout(() => {
+        const el = document.createElement('div');
+        el.className = 'confetti';
+        el.style.left = Math.random() * 100 + 'vw';
+        el.style.fontSize = (Math.random() * 15 + 10) + 'px';
+        el.style.color = colors[Math.floor(Math.random() * colors.length)];
+        el.style.animationDuration = (Math.random() * 2 + 2) + 's';
+        el.textContent = ['🪷','🐘','⭐','🎉','✨','🏆'][Math.floor(Math.random() * 6)];
+        document.body.appendChild(el);
+        setTimeout(() => el.remove(), 5000);
+      }, i * 100);
+    }
+  }
+  </script>
+</body>
+</html>

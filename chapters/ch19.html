@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>🪷 Kapitel 19 — ย้ายประเทศ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="chapter-header">
+    <a href="../index.html" class="back-link">← Zurück</a>
+    <h1><span class="chapter-emoji" id="chapter-emoji"></span> Kapitel <span id="ch-num">19</span></h1>
+    <h2 id="chapter-title"></h2>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="vocab" role="tab" aria-selected="true">📖 Vokabeln</button>
+    <button class="tab" data-tab="reading" role="tab">📚 Lesetext</button>
+    <button class="tab" data-tab="grammar" role="tab">🧠 Grammatik</button>
+    <button class="tab" data-tab="exercises" role="tab">💬 Übungen</button>
+    <button class="tab" data-tab="quiz" role="tab">🏆 Quiz</button>
+  </nav>
+
+  <!-- Tab 1: Vocabulary / Flashcards -->
+  <section id="tab-vocab" class="tab-content active">
+    <div class="flashcard-container">
+      <div class="flashcard-counter"><span id="card-current">1</span> / <span id="card-total">0</span></div>
+      <div class="flashcard" id="flashcard" onclick="flipCard()">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="thai-big" id="fc-thai"></div>
+            <div class="romanization" id="fc-roman"></div>
+            <button class="tts-btn" onclick="event.stopPropagation(); speak(document.getElementById('fc-thai').textContent)">🔊</button>
+            <div class="flip-hint">Antippen zum Umdrehen 🔄</div>
+          </div>
+          <div class="card-back">
+            <div class="translation">
+              <span class="flag">🇩🇪</span> <span id="fc-german"></span>
+            </div>
+            <div class="translation">
+              <span class="flag">🇬🇧</span> <span id="fc-english"></span>
+            </div>
+            <div class="example-section" id="fc-example"></div>
+            <button class="tts-btn" onclick="event.stopPropagation(); speak(document.getElementById('fc-thai').textContent)">🔊 Aussprache</button>
+            <div class="card-actions">
+              <button class="btn btn-review" onclick="event.stopPropagation(); nextCard(false)">❌ Noch üben</button>
+              <button class="btn btn-learned" onclick="event.stopPropagation(); nextCard(true)">✅ Gelernt</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swipe-hint">⬅️ Noch üben | Gelernt ➡️</div>
+    </div>
+  </section>
+
+  <!-- Tab 2: Reading Text -->
+  <section id="tab-reading" class="tab-content">
+    <div id="reading-text" class="reading-container"></div>
+    <div class="accordion">
+      <button class="accordion-toggle" onclick="toggleAccordion(this)">▶ 🇩🇪 Deutsche Übersetzung anzeigen</button>
+      <div class="accordion-content" id="reading-german"></div>
+    </div>
+    <div class="accordion">
+      <button class="accordion-toggle" onclick="toggleAccordion(this)">▶ 🇬🇧 English Translation</button>
+      <div class="accordion-content" id="reading-english"></div>
+    </div>
+    <button class="btn btn-primary btn-read-done" id="btn-read-done" onclick="markReadingDone()">
+      📖 Ich habe den Text gelesen (+20 XP)
+    </button>
+  </section>
+
+  <!-- Tab 3: Grammar / Structures -->
+  <section id="tab-grammar" class="tab-content">
+    <div id="grammar-content" class="grammar-container"></div>
+  </section>
+
+  <!-- Tab 4: Exercises -->
+  <section id="tab-exercises" class="tab-content">
+    <h3>💬 Übung 1 — Konversation</h3>
+    <div id="exercise-conversation" class="exercise-list"></div>
+
+    <h3>🔊 Übung 2 — Aussprache</h3>
+    <div id="exercise-pronunciation" class="exercise-pronunciation"></div>
+
+    <h3>🔄 Übung 3 — Übersetzung</h3>
+    <div id="exercise-translation" class="exercise-list"></div>
+  </section>
+
+  <!-- Tab 5: Quiz -->
+  <section id="tab-quiz" class="tab-content">
+    <div id="quiz-container"></div>
+  </section>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/quiz.js"></script>
+  <script>
+  const CHAPTER_ID = 19;
+  let currentCardIndex = 0;
+  let chapterData = null;
+
+  document.addEventListener('DOMContentLoaded', () => {
+    chapterData = COURSE_DATA.chapters.find(c => c.id === CHAPTER_ID);
+    if (!chapterData) { document.body.innerHTML = '<p>Kapitel nicht gefunden</p>'; return; }
+
+    // Set titles
+    document.getElementById('chapter-emoji').textContent = chapterData.emoji || '';
+    document.getElementById('chapter-title').innerHTML =
+      '<span class="thai-title">' + chapterData.thai_title + '</span> · ' +
+      '<span class="german-title">' + chapterData.german_title + '</span> · ' +
+      '<span class="english-title">' + chapterData.english_title + '</span>';
+    document.title = '🪷 Kapitel ' + CHAPTER_ID + ' — ' + chapterData.thai_title;
+
+    initVocab();
+    initReading();
+    initGrammar();
+    initExercises();
+    initTabs();
+    updateStreak();
+  });
+
+  // === TABS ===
+  function initTabs() {
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected','true');
+        document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+      });
+    });
+  }
+
+  // === FLASHCARDS ===
+  function initVocab() {
+    const vocab = chapterData.vocabulary || [];
+    document.getElementById('card-total').textContent = vocab.length;
+    if (vocab.length > 0) showCard(0);
+  }
+
+  function showCard(index) {
+    const vocab = chapterData.vocabulary || [];
+    if (index >= vocab.length) { index = 0; }
+    currentCardIndex = index;
+    const v = vocab[index];
+    document.getElementById('fc-thai').textContent = v.thai;
+    document.getElementById('fc-roman').textContent = v.romanization || '';
+    document.getElementById('fc-german').textContent = v.german || '';
+    document.getElementById('fc-english').textContent = v.english || '';
+    const exDiv = document.getElementById('fc-example');
+    if (v.example_thai) {
+      exDiv.innerHTML = '<div class="example-label">📝 Beispiel:</div>' +
+        '<div class="example-thai">' + v.example_thai + '</div>' +
+        (v.example_german ? '<div class="example-trans">🇩🇪 ' + v.example_german + '</div>' : '') +
+        (v.example_english ? '<div class="example-trans">🇬🇧 ' + v.example_english + '</div>' : '');
+    } else { exDiv.innerHTML = ''; }
+    document.getElementById('card-current').textContent = index + 1;
+    document.getElementById('flashcard').classList.remove('flipped');
+  }
+
+  function flipCard() { document.getElementById('flashcard').classList.toggle('flipped'); }
+
+  function nextCard(learned) {
+    if (learned) {
+      try { awardFlashcardXP(CHAPTER_ID, currentCardIndex); } catch(e){}
+    }
+    showCard(currentCardIndex + 1);
+  }
+
+  // === SWIPE ===
+  let touchStartX = 0;
+  document.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, {passive:true});
+  document.addEventListener('touchend', e => {
+    const diff = e.changedTouches[0].screenX - touchStartX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) nextCard(true);   // swipe right = learned
+      else nextCard(false);            // swipe left = review
+    }
+  }, {passive:true});
+
+  // === READING ===
+  function initReading() {
+    const sentences = chapterData.reading?.sentences || chapterData.reading || [];
+    const thaiDiv = document.getElementById('reading-text');
+    const deDiv = document.getElementById('reading-german');
+    const enDiv = document.getElementById('reading-english');
+
+    let thaiHtml = '', deHtml = '', enHtml = '';
+    sentences.forEach(s => {
+      thaiHtml += '<p class="reading-thai">' + (s.thai||'') + '</p>';
+      deHtml += '<p>' + (s.german||'') + '</p>';
+      enHtml += '<p>' + (s.english||'') + '</p>';
+    });
+    thaiDiv.innerHTML = thaiHtml || '<p>Kein Lesetext verfügbar.</p>';
+    deDiv.innerHTML = deHtml;
+    enDiv.innerHTML = enHtml;
+
+    // Check if already read
+    try {
+      if (localStorage.getItem('read_ch' + CHAPTER_ID)) {
+        const btn = document.getElementById('btn-read-done');
+        btn.textContent = '✅ Bereits gelesen';
+        btn.disabled = true;
+        btn.classList.add('btn-disabled');
+      }
+    } catch(e){}
+  }
+
+  function markReadingDone() {
+    try {
+      if (!localStorage.getItem('read_ch' + CHAPTER_ID)) {
+        localStorage.setItem('read_ch' + CHAPTER_ID, 'true');
+        addXP(20);
+        const btn = document.getElementById('btn-read-done');
+        btn.textContent = '✅ Gelesen! +20 XP';
+        btn.disabled = true;
+        btn.classList.add('btn-disabled');
+        showXPAnimation(20);
+      }
+    } catch(e){}
+  }
+
+  // === GRAMMAR ===
+  function initGrammar() {
+    const structures = chapterData.structures || [];
+    const container = document.getElementById('grammar-content');
+    if (structures.length === 0) {
+      container.innerHTML = '<p class="empty-state">Keine Grammatik-Strukturen für dieses Kapitel.</p>';
+      return;
+    }
+    let html = '';
+    structures.forEach((s, i) => {
+      html += '<div class="structure-card">' +
+        '<h4>🏗️ Struktur ' + (i+1) + '</h4>' +
+        '<div class="structure-pattern"><strong>Thai:</strong> ' + (s.pattern_thai||s.pattern||'') + '</div>' +
+        (s.meaning_german ? '<div class="structure-meaning">🇩🇪 ' + s.meaning_german + '</div>' : '') +
+        (s.meaning_english ? '<div class="structure-meaning">🇬🇧 ' + s.meaning_english + '</div>' : '') +
+        '<div class="structure-examples">';
+      (s.examples || []).forEach(ex => {
+        html += '<div class="example-item">' +
+          '<div class="example-thai">• ' + (ex.thai||'') + '</div>' +
+          (ex.german ? '<div class="example-trans">🇩🇪 ' + ex.german + '</div>' : '') +
+          (ex.english ? '<div class="example-trans">🇬🇧 ' + ex.english + '</div>' : '') +
+          '</div>';
+      });
+      html += '</div></div>';
+    });
+    container.innerHTML = html;
+  }
+
+  // === EXERCISES ===
+  function initExercises() {
+    const ex = chapterData.exercises || {};
+
+    // Conversation
+    const convDiv = document.getElementById('exercise-conversation');
+    const conv = ex.conversation || [];
+    let convHtml = '';
+    conv.forEach((q, i) => {
+      convHtml += '<div class="exercise-item">' +
+        '<div class="exercise-num">' + (i+1) + '.</div>' +
+        '<div class="exercise-content">' +
+        '<div class="exercise-thai">' + (q.thai||'') + '</div>' +
+        (q.german ? '<div class="exercise-trans">🇩🇪 ' + q.german + '</div>' : '') +
+        (q.english ? '<div class="exercise-trans">🇬🇧 ' + q.english + '</div>' : '') +
+        '<button class="btn btn-small btn-self-assess" onclick="this.textContent=\'✅ Kann ich!\'">✅ Kann ich beantworten</button>' +
+        '</div></div>';
+    });
+    convDiv.innerHTML = convHtml || '<p class="empty-state">Keine Konversationsübungen.</p>';
+
+    // Pronunciation
+    const pronDiv = document.getElementById('exercise-pronunciation');
+    const pron = ex.pronunciation || {};
+    if (pron.thai) {
+      pronDiv.innerHTML = '<div class="pronunciation-card">' +
+        '<div class="thai-big">' + pron.thai + '</div>' +
+        '<button class="tts-btn" onclick="speak(\'' + pron.thai.replace(/'/g,"\\'") + '\')">🔊 Anhören</button>' +
+        '<div class="self-assess-row">' +
+        '<button class="btn btn-small btn-accent" onclick="speak(\'' + pron.thai.replace(/'/g,"\\'") + '\')">🔄 Nochmal</button>' +
+        '<button class="btn btn-small btn-learned" onclick="this.textContent=\'✅ Gut!\'">✅ Aussprache gut</button>' +
+        '</div></div>';
+    } else {
+      pronDiv.innerHTML = '<p class="empty-state">Keine Ausspracheübung.</p>';
+    }
+
+    // Translation (write-free: show solution on tap)
+    const transDiv = document.getElementById('exercise-translation');
+    const trans = ex.translation || [];
+    let transHtml = '';
+    trans.forEach((t, i) => {
+      const source = t.source_english || t.source_text || t.english || '';
+      const answer = t.answer_thai || t.thai || '';
+      transHtml += '<div class="exercise-item translation-item">' +
+        '<div class="exercise-num">' + (i+1) + '.</div>' +
+        '<div class="exercise-content">' +
+        '<div class="exercise-source">🇬🇧 ' + source + '</div>' +
+        '<button class="btn btn-small btn-reveal" onclick="this.nextElementSibling.style.display=\'block\'; this.style.display=\'none\';">🔍 Thai-Lösung anzeigen</button>' +
+        '<div class="reveal-answer" style="display:none">' +
+        '<div class="exercise-thai">▼ ' + answer + '</div>' +
+        '<div class="self-assess-row">' +
+        '<button class="btn btn-small btn-learned" onclick="this.textContent=\'✅\'">✅ Kannte ich</button>' +
+        '<button class="btn btn-small btn-review" onclick="this.textContent=\'❌\'">❌ Noch lernen</button>' +
+        '</div></div></div></div>';
+    });
+    transDiv.innerHTML = transHtml || '<p class="empty-state">Keine Übersetzungsübung.</p>';
+  }
+
+  // === ACCORDION ===
+  function toggleAccordion(btn) {
+    const content = btn.nextElementSibling;
+    const isOpen = content.style.display === 'block';
+    content.style.display = isOpen ? 'none' : 'block';
+    btn.textContent = btn.textContent.replace(isOpen ? '▼' : '▶', isOpen ? '▶' : '▼');
+  }
+
+  // === XP ANIMATION ===
+  function showXPAnimation(amount) {
+    const el = document.createElement('div');
+    el.className = 'xp-float';
+    el.textContent = '+' + amount + ' XP';
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 2000);
+  }
+  </script>
+</body>
+</html>
